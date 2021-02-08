@@ -6,6 +6,14 @@ html, body{
     font-family: Verdana; 
 }
 
+html{
+    background: linear-gradient(to bottom, #00A300 0%, #002642 30% 50%, #FF9900 85%, #EEEE00 95%);
+}
+
+body{
+    background-color: rgba(0,0,0,.2);
+}
+
 #container{
     width: 600px;
 
@@ -23,7 +31,7 @@ html, body{
 
     border-radius: 15px;
 
-    background: purple;
+    background: radial-gradient(rgb(230, 0, 255), rgb(8, 8, 8));
 }
 
 /*BANNER*/
