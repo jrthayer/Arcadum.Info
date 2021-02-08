@@ -37,6 +37,7 @@ for(var x = 0; x < utcTimes.length; x++){
 }
 
 createSchedule();
+var intervalId = window.setInterval(function(){ nextShow();} , 1000);
 console.log(convertedTimes);
 
 //Info: Converts shows into local timezone(in minutes)
@@ -182,4 +183,87 @@ function convertToDay(index){
     }
 
     return day; 
+}
+
+
+
+function nextShow(){
+    var time = new Date();
+    var found = false;
+    var mintuesTill = 0;
+    var countdown = document.getElementById('cdDisplay');
+    var nextName = document.getElementById('showName');
+    var showName;
+
+    var day = time.getDay();
+    var minutes = time.getMinutes() + time.getHours() * 60;
+
+    for(var x = 0; x < convertedTimes[day].length; x++){
+        if(minutes < convertedTimes[day][x][0]){
+            showName = convertedTimes[day][x][1];
+            nextName.innerHTML = "Next Show: "+showName;
+            found = true;
+            mintuesTill = convertedTimes[day][x][0] - minutes;
+            break;
+        }
+    }
+
+    if(found == false){
+        mintuesTill = 1440 - minutes;
+
+        for(var x = 1; x < 6; x++){
+            var nextDay = day + x;
+            if(nextDay > 6){
+                nextDay = nextDay - 7;
+            }
+            console.log(nextDay);
+            console.log(convertedTimes);
+
+            for(var y = 0; y < convertedTimes[nextDay].length; y++){
+                showName = convertedTimes[nextDay][y][1];
+                nextName.innerHTML = "Next Show: "+showName;
+                found = true;
+                mintuesTill = mintuesTill + convertedTimes[nextDay][y][0];
+                break;
+            }
+
+            if(found){
+                break;
+            }
+            else{
+                mintuesTill = mintuesTill + 1440;
+            }
+        }
+    }
+    
+
+    
+    countdown.innerHTML = convertToCount(mintuesTill);
+}
+
+function convertToCount(minutes){
+    var time = new Date();
+    var hours = Math.floor(minutes/60);
+    var min = minutes - hours*60;
+
+    if(hours < 10){
+        hours = "0"+hours;
+    }
+
+    min = min - 1;
+    if(min == -1){
+        hours = hours -1;
+        min = 59;
+    }
+    var sec = 59 - time.getSeconds();
+
+    if(min<10){
+        min = "0"+min;
+    }
+
+    if(sec<10){
+        sec = "0"+sec;
+    }
+    var time = hours+":"+min+":"+sec;
+    return time;
 }
