@@ -138,7 +138,7 @@ body{
 }
 
 #sbCallousRow{
-    flex: 100%;
+    flex: calc(50% - 5px*2 - 3px*2 - 7.5px*2);
 
     color: #e416fb;
     border-color: #e416fb;
@@ -146,7 +146,8 @@ body{
 }
 
 #sbCallousRow img{
-    width: 40px;
+    width: 35px;
+    padding: 0px 5px;
 }
 
 #sbCallousRow:hover{
@@ -157,6 +158,30 @@ body{
 
 #sbCallousRow:hover img{
     filter: brightness(0);
+}
+
+#sbWorldAnvil{
+    flex: calc(50% - 5px*2 - 3px*2 - 7.5px*2);
+
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    background: #c4302b;
+}
+
+#sbWorldAnvil img{
+    width: 30px;
+    padding: 0px 5px;
+    filter: brightness(0) invert(1);
+}
+
+#sbWorldAnvil:hover{
+    border-color: #c4302b;
+    color: #c4302b;
+    background: #FFFFFF;
+}
+
+#sbWorldAnvil:hover img{
+    filter: invert(0);
 }
 
 #sbMerch{
@@ -269,6 +294,14 @@ body{
 @media only screen and (max-width: 600px) {
     #cdDisplay{
         font-size: 35px;
+    }
+
+    #sbWorldAnvil{
+        flex: 100%;
+    }
+
+    #sbCallousRow{
+        flex: 100%;
     }
 
     #schedule h1{
