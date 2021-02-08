@@ -18,13 +18,22 @@ html, body{
 }
 
 .section{
-    padding: 10px;
+    margin: 20px 0px;
+    padding: 20px;
 
     border-radius: 15px;
 
     background: purple;
 }
 
+/*BANNER*/
+/*=============================*/
+#banner{
+    border-radius: 15px;
+}
+
+/*SOCIAL BUTTONS*/
+/*=============================*/
 #socialBtns{
     display: flex;
     flex-wrap: wrap;
