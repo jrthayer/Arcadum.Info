@@ -171,6 +171,27 @@ body{
     background: #080808;
 }
 
+/*Countdown*/
+/*=============================*/
+#countdown{
+    font-size: 30px;
+    text-align: center;
+    background: rgb(8, 8, 8);
+    color: rgb(230, 0, 255);
+    border: solid rgb(230, 0, 255) 3px;
+    border-radius: 15px;
+}
+
+#showName{
+    margin-top: 10px;
+}
+
+#cdDisplay{
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 /*SCHEDULE*/
 /*=============================*/
 #schedule h1{
