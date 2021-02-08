@@ -3,11 +3,52 @@ html, body{
     min-height: 100% !important;
     min-width: 100%;
     overflow: auto;
+    font-family: Verdana; 
 }
 
 #container{
     width: 600px;
-    background: black;
+
     margin: 10px auto;
+    padding: 30px;
+
     border-radius: 10px;
+
+    background: black;
+}
+
+.section{
+    padding: 10px;
+
+    border-radius: 15px;
+
+    background: white;
+}
+
+#socialBtns{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.socialBtn{
+    flex: calc(33% - 7.5px * 2 - 5px * 2 - 3px * 2);
+
+    margin: 7.5px;
+    padding: 10px 5px;
+    border-radius: 15px;
+
+    font-size: 25px;
+
+    text-decoration: none;
+
+    background: white;
+    color: black;
+    border: 3px solid black;
+}
+
+#sbTwitter{
+    background: white;
+    color: rgb(29, 161, 242);
+    border: 3px solid rgb(29, 161, 242);
 }
