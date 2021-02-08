@@ -22,7 +22,7 @@ html, body{
 
     border-radius: 15px;
 
-    background: white;
+    background: purple;
 }
 
 #socialBtns{
@@ -57,9 +57,21 @@ html, body{
     color: rgb(29, 161, 242);
 }
 
+#sbTwitter:hover{
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background: rgb(29, 161, 242);
+}
+
 #sbYouTube{
     color: #c4302b;
     border-color: #c4302b;
+}
+
+#sbYouTube:hover{
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background: #c4302b;
 }
 
 #sbTwitch{
@@ -67,9 +79,21 @@ html, body{
     border-color: #6441a5;
 }
 
+#sbTwitch:hover{
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background: #6441a5;
+}
+
 #sbReddit{
     border-color: #FF5700;
     color: #FF5700;
+}
+
+#sbReddit:hover{
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background: #FF5700;
 }
 
 #sbPatreon{
@@ -77,9 +101,21 @@ html, body{
     border-color: #f96854;
 }
 
+#sbPatreon:hover{
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background: #f96854;
+}
+
 #sbDiscord{
     color: #7289da;
     border-color: #7289da;
+}
+
+#sbDiscord:hover{
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background: #7289da;
 }
 
 #sbCallousRow{
@@ -94,10 +130,26 @@ html, body{
     width: 40px;
 }
 
+#sbCallousRow:hover{
+    border-color: #080808;
+    color: #080808;
+    background: #e416fb;
+}
+
+#sbCallousRow:hover img{
+    filter: brightness(0);
+}
+
 #sbMerch{
     flex: 100%;
 
     color: #080808;
     border-color: #080808;
     background: #FFFFFF;
+}
+
+#sbMerch:hover{
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    background: #080808;
 }
