@@ -47,8 +47,57 @@ html, body{
     border: 3px solid black;
 }
 
+.socialBtn *{
+    padding: 5px;
+    
+}
+
 #sbTwitter{
-    background: white;
+    border-color: rgb(29, 161, 242);
     color: rgb(29, 161, 242);
-    border: 3px solid rgb(29, 161, 242);
+}
+
+#sbYouTube{
+    color: #c4302b;
+    border-color: #c4302b;
+}
+
+#sbTwitch{
+    color: #6441a5;
+    border-color: #6441a5;
+}
+
+#sbReddit{
+    border-color: #FF5700;
+    color: #FF5700;
+}
+
+#sbPatreon{
+    color: #f96854;
+    border-color: #f96854;
+}
+
+#sbDiscord{
+    color: #7289da;
+    border-color: #7289da;
+}
+
+#sbCallousRow{
+    flex: 100%;
+
+    color: #e416fb;
+    border-color: #e416fb;
+    background: #080808;
+}
+
+#sbCallousRow img{
+    width: 40px;
+}
+
+#sbMerch{
+    flex: 100%;
+
+    color: #080808;
+    border-color: #080808;
+    background: #FFFFFF;
 }
