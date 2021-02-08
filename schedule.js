@@ -1,8 +1,8 @@
 var utcTimes = [
 [[0, "Shadow Of Tyre"]],
-[[180, "Shattered Crowns"]],
+[],
 [[180, "Heart Of Tyre"], [1200, "Weal And Woe"]],
-[[0, "Soul Of Tyre"], [1200, "The Herald's Call"]], 
+[[0, "Soul Of Tyre"], [240, "Shattered Crowns"], [1200, "The Herald's Call"]], 
 [[240, "Steel & Silence"]], 
 [[1320, "The Tearing Veil"]],
 [[120, "Callous Row"]]];
@@ -211,13 +211,11 @@ function nextShow(){
     if(found == false){
         mintuesTill = 1440 - minutes;
 
-        for(var x = 1; x < 6; x++){
+        for(var x = 1; x < 7; x++){
             var nextDay = day + x;
             if(nextDay > 6){
                 nextDay = nextDay - 7;
             }
-            console.log(nextDay);
-            console.log(convertedTimes);
 
             for(var y = 0; y < convertedTimes[nextDay].length; y++){
                 showName = convertedTimes[nextDay][y][1];
