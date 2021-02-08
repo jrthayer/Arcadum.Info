@@ -4,3 +4,10 @@ html, body{
     min-width: 100%;
     overflow: auto;
 }
+
+#container{
+    width: 600px;
+    background: black;
+    margin: 10px auto;
+    border-radius: 10px;
+}
