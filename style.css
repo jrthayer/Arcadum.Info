@@ -38,6 +38,8 @@ body{
 /*=============================*/
 #banner{
     border-radius: 15px;
+    max-width: 100%;
+    height: auto;
 }
 
 /*SOCIAL BUTTONS*/
@@ -176,26 +178,30 @@ body{
 #countdown{
     font-size: 30px;
     text-align: center;
-    background: rgb(8, 8, 8);
-    color: rgb(230, 0, 255);
+
     border: solid rgb(230, 0, 255) 3px;
     border-radius: 15px;
+
+    background: rgb(8, 8, 8);
+    color: rgb(230, 0, 255);
 }
 
 #showName{
     margin-top: 10px;
+    padding: 10px;
 }
 
 #cdDisplay{
-    font-size: 50px;
     margin-top: 10px;
     margin-bottom: 20px;
+
+    font-size: 50px;
 }
 
 /*SCHEDULE*/
 /*=============================*/
 #schedule h1{
-    width: 35%;
+    width: 40%;
 
     margin-top: 0px;
     margin-bottom: 10px;
@@ -242,4 +248,60 @@ body{
 
 .data div:nth-of-type(n+2){
     margin-top: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+    body{
+        background-color: rgba(0,0,0,0);
+    }
+
+    #container{
+        width: auto;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .socialBtn{
+        flex: calc(50% - 7.5px*2 - 5px*2 - 3px*2);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #cdDisplay{
+        font-size: 35px;
+    }
+
+    #schedule h1{
+        width: 70%;
+    }
+
+    .label{
+        width: calc(100% - 20px*2);
+        border-bottom: 3px solid rgb(230, 0, 255);
+
+        font-size: 25px;
+    }
+
+    .data{
+        width: calc(100% - 10px*2);
+        border: none;
+        padding: 10px;
+
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #showName{
+        font-size: 25px;
+    }
+
+    #schedule h1{
+        width: 90%;
+        font-size: 1.5em;
+    }
+
+    .socialBtn{
+        flex: 100%;
+    }
 }
