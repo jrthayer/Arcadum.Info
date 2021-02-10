@@ -2,7 +2,7 @@ var utcTimes = [
 [[0, "Shadow Of Tyre"]],
 [],
 [[1200, "Weal And Woe"]],
-[[0, "Soul Of Tyre"], [240, "Shattered Crowns"], [1200, "The Herald's Call"]], 
+[[1200, "The Herald's Call"]], 
 [[240, "Steel & Silence"]], 
 [[1320, "The Tearing Veil"]],
 [[120, "Callous Row"]]];
