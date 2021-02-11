@@ -3,7 +3,7 @@ var utcTimes = [
 [],
 [[1200, "Weal And Woe"]],
 [[1200, "The Herald's Call"]], 
-[[240, "Steel & Silence"]], 
+[], 
 [[1320, "The Tearing Veil"]],
 [[120, "Callous Row"]]];
 
