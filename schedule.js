@@ -1,5 +1,5 @@
 var utcTimes = [
-[[0, "Shadow Of Tyre"]],
+[],
 [],
 [[1200, "Weal And Woe"]],
 [[1200, "The Herald's Call"]], 
