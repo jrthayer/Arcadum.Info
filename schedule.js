@@ -1,8 +1,8 @@
 var utcTimes = [
 [],
 [],
-[[1200, "Weal And Woe"]],
-[[1200, "The Herald's Call"]], 
+[],
+[], 
 [], 
 [],
 [[120, "Callous Row"]]];
