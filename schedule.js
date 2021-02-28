@@ -1,11 +1,11 @@
 var utcTimes = [
 [],
+[[60, "Tyre's End"]],
 [],
-[],
+[[120, "Azolon's Meeting"]], 
 [], 
-[], 
 [],
-[[120, "Callous Row"]]];
+[[120, "Callous Row"],[1200, "The Endgame!!!"]]];
 
 var convertedTimes = [
 [],
