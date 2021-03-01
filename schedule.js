@@ -1,6 +1,6 @@
 var utcTimes = [
 [],
-[[60, "Tyre's End"]],
+[],
 [],
 [[120, "Azolon's Meeting"]], 
 [], 
