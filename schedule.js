@@ -2,7 +2,7 @@ var utcTimes = [
 [],
 [],
 [],
-[[120, "Azolon's Meeting"]], 
+[], 
 [], 
 [],
 [[120, "Callous Row"],[1200, "The Endgame!!!"]]];
