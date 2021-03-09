@@ -5,7 +5,7 @@ var utcTimes = [
 [], 
 [], 
 [],
-[[120, "Callous Row"],[1200, "The Endgame!!!"]]];
+[[120, "Callous Row"]]];
 
 var convertedTimes = [
 [],
