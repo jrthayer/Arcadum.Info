@@ -1,11 +1,11 @@
 var utcTimes = [
+[[0, "Shrine Of Sin"], [180,"The Clash(Fighting Games)"]],
 [],
 [],
-[],
+[[0, "Pride Of The Nightwolf"]], 
 [], 
-[], 
 [],
-[[120, "Callous Row"]]];
+[[60, "Callous Row"], [1140, "Into The Mists"]]];
 
 var convertedTimes = [
 [],
@@ -31,7 +31,16 @@ for(var x = 0; x < utcTimes.length; x++){
                 day = 6;
             }
 
-            convertedTimes[day].push([time, name]);
+            //edge case: utc entry of last index is first index
+            //of converted time. If you push the value it ends up
+            //after the entries of index 0.
+            console.log(name + "==" + timeArray[1]+","+x);
+            if(timeArray[1] == 0 && x == utcTimes.length - 1){
+                convertedTimes[day].unshift([time, name]);
+            }
+            else{
+                convertedTimes[day].push([time, name]);
+            }
         }
     }
 }
