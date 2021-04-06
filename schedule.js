@@ -1,6 +1,6 @@
 var utcTimes = [
 [[0, "Shrine Of Sin"], [180,"The Clash(Fighting Games)"]],
-[],
+[[1140, "Scrolls of Not'Chek"]],
 [],
 [[0, "Pride Of The Nightwolf"]], 
 [], 
