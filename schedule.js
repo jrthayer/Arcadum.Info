@@ -1,11 +1,13 @@
 var utcTimes = [
 [[0, "Shrine Of Sin"], [180,"The Clash(Fighting Games)"]],
 [[1140, "Scrolls of Not'Chek"]],
-[],
+[[60, "Lost At Sea"]],
 [[0, "Pride Of The Nightwolf"]], 
 [], 
 [],
 [[60, "Callous Row"], [1140, "Into The Mists"]]];
+
+//[0, "Lost At Sea"]
 
 var convertedTimes = [
 [],
