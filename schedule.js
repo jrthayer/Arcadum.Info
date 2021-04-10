@@ -32,15 +32,19 @@ for(var x = 0; x < utcTimes.length; x++){
             else if(day < 0){
                 day = 6;
             }
+            
+            var inserted = false;
+            for(var z = 0; z < convertedTimes[day].length; z++){
+                var curTime = convertedTimes[day][z][0];
 
-            //edge case: utc entry of last index is first index
-            //of converted time. If you push the value it ends up
-            //after the entries of index 0.
-            console.log(name + "==" + timeArray[1]+","+x);
-            if(timeArray[1] == 0 && x == utcTimes.length - 1){
-                convertedTimes[day].unshift([time, name]);
+                if(time<curTime){
+                    convertedTimes[day].splice(z, 0, [time, name]);
+                    var inserted = true;
+                    break;   
+                }
             }
-            else{
+
+            if(inserted == false){
                 convertedTimes[day].push([time, name]);
             }
         }
