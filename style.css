@@ -13,8 +13,8 @@ html, body{
 
 html{
     /* background: linear-gradient(to bottom, #00A300 0%, #002642 30% 50%, #FF9900 85%, #EEEE00 95%); */
-    background-image: url(assets/backgroundWaves.png);
-    background-size: contain;
+    background-image: url(assets/25pxSpace_blue.png);
+    /* background-size: contain; */
 }
 
 body{
