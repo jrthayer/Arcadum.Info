@@ -1,0 +1,32 @@
+{
+    "name": "Into The Mists",
+    "twitchCollection": "https://www.twitch.tv/collections/RZRRoj2tdBZlgQ?filter=collections",
+    "youtubeCollection": "https://www.youtube.com/playlist?list=PLfASEnzB7i1Ydqqd5cl8-S-bTgQH_zGr2",
+    "mp4Collection": "https://drive.google.com/drive/u/0/folders/1MdWBy1Eo1L3tpuab3NyP2osM_sACWSQg",
+    "episodeInfo": [
+        {
+            "airDate": "",
+            "duration": "",
+            "youtube": "",
+            "twitch": "",
+            "fanArtDiscord": "",
+            "fanArtTwitch": ""
+        },
+        {
+            "airDate": "4/10/2021",
+            "duration": "3:10:04",
+            "youtube": "https://www.youtube.com/watch?v=ZAHSAMvsK1w&list=PLfASEnzB7i1Ydqqd5cl8-S-bTgQH_zGr2&index=1&ab_channel=Arcadum",
+            "twitch": "https://www.twitch.tv/videos/983277093",
+            "fanArtDiscord": "https://discordapp.com/channels/164927564354289665/716723358682710118/830516077229375510",
+            "fanArtTwitch": "https://www.twitch.tv/videos/983277093?t=2h49m53s"
+        },
+        {
+            "airDate": "4/17/2021",
+            "duration": "2:29:15",
+            "youtube": "https://www.youtube.com/watch?v=rbwE94-VJeY",
+            "twitch": "https://www.twitch.tv/videos/991847100",
+            "fanArtDiscord": "https://discordapp.com/channels/164927564354289665/716723358682710118/833046643019350057",
+            "fanArtTwitch": "https://www.twitch.tv/videos/991847100?t=2h10m23s"
+        }
+    ]
+}

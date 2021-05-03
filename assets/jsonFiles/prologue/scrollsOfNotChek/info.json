@@ -1,0 +1,8 @@
+{
+    "name": "scrollsOfNotChek",
+    "description": "This particular corrector by the name of Adrian Cotour has sent out a call for adventurers to act as his hands and backs to retrieve the sacred documents.",
+    "showImage": "../assets/imgs/showBanners/ScrollsOfNot'Chek.jpg",
+    "iconImage": "../assets/imgs/icons/ScrollsOfNotChekIcon.png",
+    "color700": "#cc6133",
+    "color400": "#e89d7d"
+}

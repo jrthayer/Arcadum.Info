@@ -1,0 +1,32 @@
+{
+    "name": "Scrolls Of Not'Chek",
+    "twitchCollection": "https://www.twitch.tv/collections/KQTAT7JYdRa1lA?filter=collections",
+    "youtubeCollection": "https://www.youtube.com/playlist?list=PLfASEnzB7i1ZY0qy_i-69VSaXCD9pvuai",
+    "mp4Collection": "https://drive.google.com/drive/u/0/folders/13IrSBLjYVzyvlbicsKEuOniS3L7-waRs",
+    "episodeInfo": [
+        {
+            "airDate": "4/5/2021",
+            "duration": "3:05:18",
+            "youtube": "",
+            "twitch": "https://www.twitch.tv/videos/976601032",
+            "fanArtDiscord": "https://discordapp.com/channels/164927564354289665/716723358682710118/828711391073665085",
+            "fanArtTwitch": "https://www.twitch.tv/videos/976601032?t=3h2m56s"
+        },
+        {
+            "airDate": "4/12/2021",
+            "duration": "2:51:55",
+            "youtube": "https://www.youtube.com/watch?v=6_LWrNlG-es&list=PLfASEnzB7i1ZY0qy_i-69VSaXCD9pvuai",
+            "twitch": "https://www.twitch.tv/videos/985768772",
+            "fanArtDiscord": "https://discordapp.com/channels/164927564354289665/716723358682710118/831241170301616139",
+            "fanArtTwitch": "https://www.twitch.tv/videos/985768772?collection=KQTAT7JYdRa1lA&t=2h26m37s"
+        },
+        {
+            "airDate": "4/19/2021",
+            "duration": "3:09:24",
+            "youtube": "",
+            "twitch": "https://www.twitch.tv/videos/994139541",
+            "fanArtDiscord": "https://discordapp.com/channels/164927564354289665/716723358682710118/833771748255596634",
+            "fanArtTwitch": "https://www.twitch.tv/videos/994139541?t=2h41m29s"
+        }
+    ]
+}

@@ -1,0 +1,197 @@
+@font-face {
+    font-family: dolbak;
+    src: url(assets/fonts/TheDolbak-Brush.ttf);
+}
+
+/* 
+==============
+   Global Styles
+============== 
+*/
+img{
+    max-width: 100%;
+}
+
+.disable-select {
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}
+
+/* 
+==============
+   Typography
+============== 
+*/
+h1{
+    padding: .5rem;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+p{
+    margin: 0;
+    padding: .5rem;
+}
+
+/* 
+==============
+   Layout
+============== 
+*/
+body{    
+    margin: 0;
+
+    font-family: sans-serif;
+    font-weight: 100;
+
+    transition: ease-in .5s background-image;  
+}
+
+.container{
+    width: 90%;
+    max-width: 30rem;
+    margin: 4rem auto;
+}
+
+.section{
+    padding: .5rem;
+    margin: 4rem auto;
+
+    background-color: white;
+    color: black;
+    border: 5px black solid;
+
+    box-shadow: 0 0 0 6px white,
+                0 0 0 10px black;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+.show{
+    --color700: #000000;
+    --color400: hsl(0, 0%, 20%);
+    --name: "thisIsATest";
+}
+
+.showCard{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    padding: .5em;
+    margin: 3rem 1rem 0 1rem;
+    border-radius: 1rem;
+
+    background-color: var(--color700);
+    color: white;
+
+    letter-spacing: .08em;
+
+    box-shadow: 0 0 0 6px var(--color400),
+                0 0 0 10px var(--color700);
+
+    /* transition: ease-in 5s display; */
+}
+    .showCard:last-child{
+        margin-bottom: 1.5rem;
+    }
+    .showCard > *{
+        flex: 1;
+    }
+
+
+.imgCol{
+    display: flex;
+}
+    .imgCol img{
+        border-radius: .5rem;
+    }
+
+.infoCol{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    min-height: 220px;
+    padding-top: .5em;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+}
+    .infoCol > p{
+        display: flex;
+        text-align: center;
+        align-items: center;
+
+        padding: 1em;
+        margin: 0;
+        border-radius: .5rem;
+
+        background: rgba(0, 0, 0, .2);
+
+        font-size: 1rem;
+    }
+
+.buttonBar{
+    display: flex;
+    margin: .5rem;
+
+    
+}
+    .buttonBar button{
+        flex: 1;
+
+        height: 50px;
+
+        margin: .5em;
+
+        border-radius: .8rem;
+        border: none;
+
+        background-color: var(--color700);
+        background-image: url(../assets/imgs/icons/arrowIcon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+
+        cursor: pointer;
+    }
+
+    .buttonBar button:first-child{
+        transform: rotate(180deg);
+    }
+
+/* 
+==============
+   Overriding Classes
+============== 
+*/
+.hide{
+    display: none;
+}
+
+/* 
+==============
+   Media Queries
+============== 
+*/
+@media (min-width: 65.5rem) {
+    .container{
+        max-width: 60rem;
+    }
+
+    .showCard{
+        flex-direction: row;
+    }
+
+    .infoCol{
+        padding-top: 0;
+        padding-left: .5em;
+    }
+}

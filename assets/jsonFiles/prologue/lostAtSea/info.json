@@ -1,0 +1,8 @@
+{
+    "name": "lostAtSea",
+    "description": "The winds of destiny fill the sails of this ship but not for all on board. For a new shadow darkens the threshold.",
+    "showImage": "../assets/imgs/showBanners/LostAtSea.png",
+    "iconImage": "../assets/imgs/icons/lostAtSeaIcon.png",
+    "color700": "#28383e",
+    "color400": "#51717b"
+}

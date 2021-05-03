@@ -1,0 +1,32 @@
+{
+    "name": "Shrine Of Sin",
+    "twitchCollection": "https://www.twitch.tv/collections/NiziV3itdBYBPw?filter=collections",
+    "youtubeCollection": "https://www.youtube.com/playlist?list=PLfASEnzB7i1a--Nffy9JXdsxCpgGHjRsF",
+    "mp4Collection": "https://drive.google.com/drive/u/0/folders/1U5vvU-4h9L3R2D07nKk6ZQNxaidFzOGX",
+    "episodeInfo": [
+        {
+            "airDate": "4/3/2021",
+            "duration": "~2:30:00",
+            "youtube": "",
+            "twitch": "https://www.twitch.tv/videos/974480170?t=0h6m2s",
+            "fanArtDiscord": "https://discordapp.com/channels/164927564354289665/716723358682710118/828045782112403456",
+            "fanArtTwitch": "https://www.twitch.tv/videos/974480170?t=2h19m34s"
+        },
+        {
+            "airDate": "4/10/2021",
+            "duration": "3:16:50",
+            "youtube": "https://www.youtube.com/watch?v=KxkZepPEjKQ&list=PLfASEnzB7i1a--Nffy9JXdsxCpgGHjRsF&index=1&t=1s&ab_channel=Arcadum",
+            "twitch": "https://www.twitch.tv/videos/983281732",
+            "fanArtDiscord": "https://discordapp.com/channels/164927564354289665/716723358682710118/830576435537248276",
+            "fanArtTwitch": "https://www.twitch.tv/videos/983281732?collection=NiziV3itdBYBPw&t=2h48m20s"
+        },
+        {
+            "airDate": "4/17/2021",
+            "duration": "1:51:06",
+            "youtube": "",
+            "twitch": "https://www.twitch.tv/videos/991848131",
+            "fanArtDiscord": "https://discordapp.com/channels/164927564354289665/716723358682710118/833110049936113714",
+            "fanArtTwitch": ""
+        }
+    ]
+}

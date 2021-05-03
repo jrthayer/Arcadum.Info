@@ -1,0 +1,8 @@
+{
+    "name": "intoTheMists",
+    "description": "This has separated families and ruined businesses, and now the slow, inexhaustible creep of despair begins to slowly eek its way into these peaceful lands.",
+    "showImage": "../assets/imgs/showBanners/IntoTheMists.png",
+    "iconImage": "../assets/imgs/icons/intoTheMistsIcon.png",
+    "color700": "#28273f",
+    "color400": "#4f4f7d"
+}

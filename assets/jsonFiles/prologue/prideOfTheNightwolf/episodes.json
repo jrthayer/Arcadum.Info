@@ -1,0 +1,32 @@
+{
+    "name": "Pride Of The Nightwolf",
+    "twitchCollection": "https://www.twitch.tv/collections/9aZkRxp5cxb51A?filter=collections",
+    "youtubeCollection": "https://www.youtube.com/playlist?list=PLfASEnzB7i1Yp9AStpH9oFM_slQbH6WLY",
+    "mp4Collection": "https://drive.google.com/drive/u/0/folders/1Q65lpnydMaKgljmcB0wiEplDekdtrKj1",
+    "episodeInfo": [
+        {
+            "airDate": "3/31/2021",
+            "duration": "~2:50:00",
+            "youtube": "",
+            "twitch": "https://www.twitch.tv/videos/969301640?t=2h19m50s",
+            "fanArtDiscord": "https://discordapp.com/channels/164927564354289665/716723358682710118/826607307999412225",
+            "fanArtTwitch": "https://www.twitch.tv/videos/969301640?t=5h5m36s"
+        },
+        {
+            "airDate": "4/6/2021",
+            "duration": "3:21:25",
+            "youtube": "https://www.youtube.com/watch?v=QH3VdFW0NCw&list=PLfASEnzB7i1Yp9AStpH9oFM_slQbH6WLY",
+            "twitch": "https://www.twitch.tv/videos/978377037",
+            "fanArtDiscord": "https://discordapp.com/channels/164927564354289665/716723358682710118/829143432948744254",
+            "fanArtTwitch": "https://www.twitch.tv/videos/978377037?t=2h50m52s"
+        },
+        {
+            "airDate": "4/13/2021",
+            "duration": "3:11:26",
+            "youtube": "",
+            "twitch": "https://www.twitch.tv/videos/986926738",
+            "fanArtDiscord": "https://discordapp.com/channels/164927564354289665/716723358682710118/831677640095825931",
+            "fanArtTwitch": "https://www.twitch.tv/videos/986926738?t=2h43m19s"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "name": "Lost At Sea",
+    "twitchCollection": "https://www.twitch.tv/collections/thNtHcdYdRajYg?filter=collections",
+    "youtubeCollection": "https://www.youtube.com/playlist?list=PLfASEnzB7i1YWMCoomudxDc9jQT3bOR2G",
+    "mp4Collection": "https://drive.google.com/drive/u/0/folders/1SHd4BFI14b-H9Rww1ZbvicqAT8lnjg_C",
+    "episodeInfo": [
+        {
+            "airDate": "4/5/2021",
+            "duration": "3:28:11",
+            "youtube": "",
+            "twitch": "https://www.twitch.tv/videos/976978633",
+            "fanArtDiscord": "https://discordapp.com/channels/164927564354289665/716723358682710118/828796354851373056",
+            "fanArtTwitch": "https://www.twitch.tv/videos/976978633?t=3h13m12s"
+        },
+        {
+            "airDate": "4/12/2021",
+            "duration": "3:13:35",
+            "youtube": "https://www.youtube.com/watch?v=Yf_6rpSn5tc&list=PLfASEnzB7i1YWMCoomudxDc9jQT3bOR2G&index=1",
+            "twitch": "https://www.twitch.tv/videos/985769593",
+            "fanArtDiscord": "https://discordapp.com/channels/164927564354289665/716723358682710118/831326201976586261",
+            "fanArtTwitch": "https://www.twitch.tv/videos/985769593?t=2h45m20s"
+        },
+        {
+            "airDate": "4/19/2021",
+            "duration": "2:43:46",
+            "youtube": "",
+            "twitch": "https://www.twitch.tv/videos/994139869",
+            "fanArtDiscord": "https://discordapp.com/channels/164927564354289665/716723358682710118/833862755253485569",
+            "fanArtTwitch": "https://www.twitch.tv/videos/994139869?collection=thNtHcdYdRajYg&t=2h21m39s"
+        }
+    ]
+}

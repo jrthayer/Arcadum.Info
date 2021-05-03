@@ -1,0 +1,8 @@
+{
+    "name": "shrineOfSin",
+    "description": "Whether you be curious, whether you be hateful or whether you simply wish for a paycheck, your journey has lead you here to the small billowy village hidden at the edge of the Wailing Scars.",
+    "showImage": "../assets/imgs/showBanners/ShrineOfSin.png",
+    "iconImage": "../assets/imgs/icons/ShrineOfSinIcon.png",
+    "color700": "#1a1a1a",
+    "color400": "#4d4d4d"
+}
