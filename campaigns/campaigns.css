@@ -77,7 +77,7 @@ body{
 .show{
     --color700: #000000;
     --color400: hsl(0, 0%, 20%);
-    --name: "thisIsATest";
+    --name: "defaultName";
 }
 
 .showCard{

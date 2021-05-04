@@ -1,0 +1,262 @@
+// Global Variables
+//================================
+//index of current show in each section
+var showIndex = [];
+//url of json structure
+let url = "../assets/jsonFiles/";
+// let baseInfoURL = "../assets/jsonFiles/prologue/shrineOfSin/info.json";
+// let episodesURL = "../assets/jsonFiles/prologue/shrineOfSin/episodes.json";
+let baseInfoURL;
+let episodesURL;
+
+//json files that need to be loaded
+let files = 2;
+//container of all info for the campaigns 
+let campaignInfo = new Array(files);
+
+
+window.onload = function(){
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    baseInfoURL = url+urlParams.get('chapter')+"/"+urlParams.get('campaign')+"/info.json"
+    episodesURL = url+urlParams.get('chapter')+"/"+urlParams.get('campaign')+"/episodes.json"
+
+    loadJsonInfo(baseInfoURL, campaignInfo, 0);
+    loadJsonInfo(episodesURL, campaignInfo, 1);
+    testFiles(50);
+}
+
+function loadJsonInfo(url, campaignInfo, index){
+    let request = new XMLHttpRequest();
+    request.open('GET', url);
+    request.responseType = 'json';
+    request.send();
+
+    request.onload = function(){
+        let info = request.response;
+        campaignInfo[index] = info;
+        files--;
+    }
+}
+
+
+
+//Runs generatePage when all json files are loaded.
+//======================================
+//Parameters
+//+delay = time between recursive calls
+function testFiles(delay){
+    if(files === 0){
+        generatePage();
+    }
+    else{
+        console.log("files remaining to load: " + files);
+        setTimeout(() =>{
+            testFiles();
+        }, delay);
+    }
+}
+
+function generatePage(){
+    console.log(campaignInfo);
+    let body = document.querySelector('body');
+    body.style.backgroundImage = "url(../assets/imgs/backgrounds/bg-"+campaignInfo[0].name+".png)";
+    
+    let container = document.querySelector(".container");
+    document.documentElement.style.setProperty('--color700', campaignInfo[0].color700);
+    document.documentElement.style.setProperty('--color400', campaignInfo[0].color400);
+    
+    //create header section and then append
+    let header = createHeader(campaignInfo[0]);
+    container.appendChild(header);
+
+    let episodeSection = createEpisodeSection(campaignInfo[1]);
+    container.appendChild(episodeSection);
+    //create episodes section
+    //create individual episode
+}
+
+function createHeader(headerInfo){
+    console.log(headerInfo);
+    let section = document.createElement('div');
+    section.classList.add('section');
+
+    let flexCol = document.createElement('div');
+    flexCol.classList.add('flexColToRow');
+    section.appendChild(flexCol);
+
+    let imgCol = document.createElement('div');
+    imgCol.classList.add('imgCol');
+    flexCol.appendChild(imgCol);
+
+    let img = document.createElement('img');
+    img.src = headerInfo.showImage;
+    imgCol.appendChild(img);
+
+    let infoCol = document.createElement('div');
+    infoCol.classList.add('infoCol');
+    infoCol.style.backgroundImage = "url("+headerInfo.iconImage+")";
+    flexCol.appendChild(infoCol);
+
+    let p = document.createElement('p');
+    p.innerHTML = headerInfo.description;
+    infoCol.appendChild(p);
+
+    return section;
+}
+
+function createEpisodeSection(episodeInfo){
+    console.log(episodeInfo);
+    let section = document.createElement('div');
+    section.classList.add('section');
+
+    let flexCol = document.createElement('div');
+    flexCol.classList.add('flexColToRow');
+    section.appendChild(flexCol);
+
+    let h1 = document.createElement('h1');
+    h1.innerHTML = "Episodes";
+    flexCol.appendChild(h1);
+
+    let fullCollection = document.createElement('div');
+    fullCollection.classList.add('fullCollection');
+    flexCol.appendChild(fullCollection);
+
+    let h2 = document.createElement('h2');
+    h2.innerHTML = "Full Collections";
+    fullCollection.appendChild(h2);
+
+    let subSection = document.createElement('div');
+    subSection.classList.add('subSection');
+    fullCollection.appendChild(subSection);
+
+    let a1 = createLink(['icon-youtube'], ['fab','fa-youtube','fa-2x'], episodeInfo.youtubeCollection);
+    subSection.appendChild(a1);
+
+    let a2 = createLink(['icon-twitch'], ['fab','fa-twitch','fa-2x'], episodeInfo.twitchCollection);
+    subSection.appendChild(a2);
+
+    let a3 = createLink(['icon-mp4'], ['fas','fa-music','fa-2x'], episodeInfo.mp4Collection);
+    subSection.appendChild(a3);
+
+    for(let x = 0; x < episodeInfo.episodeInfo.length; x++){
+        let episode = createEpisode(episodeInfo.episodeInfo[x], x);
+        section.appendChild(episode);
+    }
+
+    return section;
+}
+
+function createEpisode(episodeInfo, episodeNum){
+    console.log(episodeInfo);
+    let episode = document.createElement('div');
+    episode.classList.add('episode');
+
+    let h1 = document.createElement('h1');
+    h1.innerHTML = episodeNum;
+    episode.appendChild(h1);
+
+    let flexCol = document.createElement('div');
+    flexCol.classList.add('flexColToRow');
+    episode.appendChild(flexCol);
+
+    let episodeImg = document.createElement('div');
+    episodeImg.classList.add('episodeImg');
+    flexCol.appendChild(episodeImg);
+
+    let img = document.createElement('img');
+    img.src = campaignInfo[0].showImage;
+    episodeImg.appendChild(img);
+
+    let episodeBtns = document.createElement('div');
+    episodeBtns.classList.add('episodeBtns');
+    flexCol.appendChild(episodeBtns);
+
+    let details1 = document.createElement('div');
+    details1.classList.add('details');
+    details1.innerHTML = "Air Date: " + episodeInfo.airDate;
+    episodeBtns.appendChild(details1);
+
+    let details2 = document.createElement('div');
+    details2.classList.add('details');
+    details2.innerHTML = "Duration: " + episodeInfo.duration;
+    episodeBtns.appendChild(details2);
+
+    let episodeVids = document.createElement('div');
+    episodeVids.classList.add('episodeVids', 'subSection');
+    episodeBtns.appendChild(episodeVids);
+
+    let h2 = document.createElement('h2');
+    h2.innerHTML = "Videos";
+    episodeVids.appendChild(h2);
+
+    let a1 = createLink(['icon-youtube'], ['fab','fa-youtube','fa-lg'], episodeInfo.youtube);
+    episodeVids.appendChild(a1);
+
+    let a2 = createLink(['icon-twitch'], ['fab','fa-twitch','fa-lg'], episodeInfo.twitch);
+    episodeVids.appendChild(a2);
+
+    let episodeArt = document.createElement('div');
+    episodeArt.classList.add('episodeVids', 'subSection');
+    episodeBtns.appendChild(episodeArt);
+
+    let h2_2 = document.createElement('h2');
+    h2_2.innerHTML = "Videos";
+    episodeArt.appendChild(h2_2);
+
+    let a3 = createLink(['icon-discord'], ['fab','fa-discord','fa-lg'], episodeInfo.fanArtDiscord);
+    episodeArt.appendChild(a3);
+
+    let a4 = createLink(['icon-twitch'], ['fab','fa-twitch','fa-lg'], episodeInfo.fanArtTwitch);
+    episodeArt.appendChild(a4);
+
+    return episode;
+}
+
+function createLink(aClasses, iClasses, link){
+    console.log(link);
+    let a = document.createElement('a');
+    a.classList.add(aClasses[0]);
+    a.setAttribute('target', '_blank');
+    a.setAttribute("rel", "noopener noreferrer");
+    
+
+    if(link === ""){
+        a.classList.add('unavailable', 'disable-select');
+    }
+    else{
+        a.href = link;
+    }
+
+    let i = document.createElement('i');
+    for(let x = 0; x < iClasses.length; x++){
+        i.classList.add(iClasses[x]);
+    }
+    
+    a.appendChild(i);
+
+    return a;
+}
+
+/* <div class="section disable-select">
+    <div class="episode">
+        <h1>1</h1>
+        <div class="flexColToRow">
+            <div class="episodeImg">
+                <img src="../assets/imgs/1x1.jpg" alt="">
+            </div>
+            <div class="episodeBtns">
+                <div class="details">Air Date: 4/10/2021</div>
+                <div class="details">Duration: 00:00:00</div>
+                <div class="episodeArt subSection">  
+                    <h2>Fan Art</h2>  
+                    <a class="icon-discord" href="https://discordapp.com/channels/164927564354289665/716723358682710118/833046643019350057">
+                        <i class="fab fa-discord fa-lg"></i>
+                        </a>
+                    <a class="icon-twitch" href="https://www.twitch.tv/videos/991847100?t=2h10m23s">
+                        <i class="fab fa-twitch fa-lg"></i>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div> */

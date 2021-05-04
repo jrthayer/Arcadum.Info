@@ -155,7 +155,9 @@ function generatePage(){
     //create chapters
     for(let x = 0; x < chapters.length; x++){
         let chapterInfo = chapters[x];
-        let chapterContainer = createChapter(container, chapterInfo);
+
+        let chapterContainer = createChapter(chapterInfo);
+        container.appendChild(chapterContainer);
 
         //chapter y offset for scrolling background change
         yOffsets.push(chapterContainer.offsetTop + chapterContainer.offsetHeight);
@@ -163,11 +165,13 @@ function generatePage(){
         //create shows
         for(let y = 0; y < chapterInfo.children.length; y++){
             let showInfo = chapterInfo.children[y];
-            let showContainer = createShow(chapterContainer, showInfo);
+
+            let showContainer = createShow(showInfo, chapterInfo.name);
+            chapterContainer.appendChild(showContainer);
             
             //create buttonBar
-            createButtonBar(chapterContainer, showContainer, y);
-
+            let buttonBar = createButtonBar(chapterContainer, showContainer, y);
+            showContainer.appendChild(buttonBar);
             if(y === 0){
                 //make first show visible
                 showContainer.classList.remove('hide');
@@ -187,12 +191,10 @@ function generatePage(){
 //Create chapter element
 //======================================
 //Parameters
-//+parent = section element containing the chapter
 //+chapterInfo = array of chapter information(details in info.json of specific chapter folder)
-function createChapter(parent, chapterInfo){
+function createChapter(chapterInfo){
     let chapter = document.createElement('div');
     chapter.classList.add('section');
-    parent.appendChild(chapter);
 
     let header = document.createElement('h1');
     header.innerHTML = chapterInfo.name;
@@ -210,7 +212,7 @@ function createChapter(parent, chapterInfo){
 //Parameters
 //+parent = chapter element containing the show
 //+showInfo = array of show information(details in info.json of specific show folder)
-function createShow(parent, showInfo){
+function createShow(showInfo, chapterName){
     let show = document.createElement('div');
     show.classList.add('show');
     show.classList.add('hide');
@@ -218,10 +220,9 @@ function createShow(parent, showInfo){
     show.style.setProperty('--color400', showInfo.color400);
     show.style.setProperty('--name', showInfo.name);
 
-    parent.appendChild(show);
-
     let card = document.createElement('a');
-    // card.href = "../show/show.html";
+    card.href = "../show/show.html?"+"chapter="+chapterName+"&campaign="+showInfo.name;
+    //show/show.html?chapter=prologue&campaign=shrineOfSin
     show.appendChild(card);
 
     let showCard = document.createElement('div');
@@ -266,6 +267,8 @@ function createButtonBar(grandParent, parent, curShowIndex){
     let nextButton = document.createElement('button');
     nextButton.addEventListener("click", function(){nextShow(grandParent, parent, curShowIndex);});
     buttonBar.appendChild(nextButton);
+
+    return buttonBar;
 }
 
 

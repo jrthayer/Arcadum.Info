@@ -1,0 +1,355 @@
+/* 
+==============
+   Global Styles
+============== 
+*/
+:root {
+    --color700: #28273f;
+    --color400: #4f4f7d;
+  }
+
+img{
+    max-width:100%;
+}
+
+.disable-select {
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}
+
+a{
+    display: block;
+    margin-bottom: 1em;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: var(--color700);
+}
+
+/* 
+==============
+   Typography
+============== 
+*/
+h1{
+    margin: 0;
+}
+
+/* 
+==============
+   Layout
+============== 
+*/
+body{    
+    margin: 0;
+
+    background-image: url(../assets/imgs/backgrounds/bg-intoTheMists.png);
+
+    font-family: sans-serif;
+    font-weight: 100;
+
+    transition: ease-in .5s background-image;  
+}
+
+.container{
+    width: 90%;
+    max-width: 30rem;
+    margin: 4rem auto;
+}
+
+.section{
+    margin: 4rem auto;
+
+    background-color: white;
+    color: white;
+    border: 5px black solid;
+
+    box-shadow: 0 0 0 6px white,
+                0 0 0 10px black;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+    .section h1{ 
+        padding-top: .5em;
+        padding-bottom: 0;
+
+        text-shadow: 1px 1px 3px var(--color700);
+        color: var(--color400);
+
+        font-size: 2em;
+        text-align: center;
+    }
+    .section:first-child{
+        background-color: var(--color700);
+    }
+
+.flexColToRow{
+    display: flex;
+    flex-direction: column;
+    /* align-items: stretch; */
+    /* justify-content: stretch; */
+    width: 100%;
+
+    letter-spacing: .08em;
+}
+    .flexColToRow > *{
+        flex: 1;
+    }
+    
+
+.showCard{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    color: white;
+
+    letter-spacing: .08em;
+
+    transition: ease-in 5s display;
+
+    background-color: hsl(241, 23%, 20%);
+}
+    .showCard > *{
+        flex: 1;
+    }
+
+
+.imgCol{
+    display: flex;
+}
+
+.infoCol{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    min-height: 220px;
+    
+    background-image: url("../assets/imgs/icons/intoTheMistsIcon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+    .infoCol > p{
+        display: flex;
+        text-align: center;
+        align-items: center;
+
+        padding: 1em;
+        margin: 0;
+
+        background: rgba(0, 0, 0, .2);
+
+        font-size: 1rem;
+    }
+
+
+.episode{
+    display: flex;
+    flex-direction: row;
+    padding: .5em;
+    background-color: var(--color700);
+    margin: 1em .5em;
+    border-radius: 2rem;
+    color: white;
+    border: solid 5px var(--color400);
+    box-shadow: 2px 2px 2px var(--color700);
+}
+    .episode h1{
+        color: white;
+        padding: .1em;
+        position: absolute;
+        background-color: var(--color400);
+        border-top-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+
+.episodeImg{
+    display: flex;
+    border-radius: 1rem;
+    width: calc(100% - 2px * 2);
+    justify-content: flex-start;
+}
+    .episodeImg img{
+        border-radius: 1rem;
+        border: 2px solid var(--color400);
+    }
+
+.episodeBtns{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+    .episodeBtns > *{
+        padding: .5em;
+    }
+    .episodeBtns h2{
+        margin-top: 0;
+    }
+
+.details{
+    align-self: flex-center;
+    padding-top: .5em;
+    padding-left: .5em;
+}
+    .details *{
+        flex: 1;
+        text-align: center;
+        background-color: var(--color400);
+        margin: .5em;
+        border-radius: .5em;
+    }
+
+
+.subSection{
+    display: flex;
+    padding: .5em;
+    margin-top: .5em;
+    border-radius: 1rem;
+
+    background-color: var(--color400);
+    
+    font-size: 1rem;
+   
+    align-items: center;
+}
+    .subSection *{
+        margin: 0;
+        flex: 1;
+    }
+    .subSection h2{
+        flex: 2;
+    }
+    .subSection a{
+        font-size: 1.5rem;
+        align-self: center;
+        text-align: center;
+        padding: .2em;
+    }
+
+.fullCollection{
+    display: flex;
+    flex-direction: column;
+    
+    padding: .5em;
+    margin: 1em 1.2em 0;
+    border-radius: 2rem;
+
+    background-color: var(--color400);
+    color: white;
+    
+}
+    .fullCollection h2{
+        margin: 0;
+
+        text-shadow: 1px 1px 3px var(--color700);
+
+        font-size: 1em;
+        align-self: center;
+        text-align: center;
+        flex: 1.5;
+    }
+    .fullCollection .subSection{
+        padding: 0;
+        
+    }
+    .fullCollection a{
+        font-size: 1em;
+    }
+
+.unavailable{
+    color: var(--color700);
+}
+/* 
+==============
+   Media Queries
+============== 
+*/
+@media (min-width: 20rem) {
+    .section .flexColToRow h1{
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 60rem) {
+    .container{
+        max-width: 60rem;
+    }
+
+    .section .flexColToRow h1{
+        padding-left: .5em;
+
+        font-size: 3.5em;
+        text-align: left;
+    }
+
+    .flexColToRow{
+        flex-direction: row;
+    }
+
+    .fullCollection{
+        flex-direction: column;
+        flex: .5;
+        margin: 1em 1em 0;
+    }
+
+    .episodeImg img{
+        max-height: 300px;
+    }
+
+    .episodeImg{
+        justify-content: flex-end;
+    }
+
+    .episode h1{
+        position: relative;
+        background-color: transparent;
+        border-radius: 0;
+        padding-right: .5em;
+    }
+
+    .episodeBtns{
+        padding-left: .5em;
+    }
+
+    .details{
+        align-self: flex-start;
+    }
+
+    .subSection h2{
+        flex: 1;
+    }
+    .subSection a{
+        font-size: 1rem;
+        align-self: center;
+        text-align: center;
+        padding: .5em;
+    }
+
+    .icon-youtube:after{
+        content: "YouTube";
+        font-size: .9em;
+    }
+
+    .icon-twitch:after{
+        content: "Twitch";
+        font-size: .9em;
+    }
+
+    .icon-discord:after{
+        content: "Discord";
+        font-size: .9em;
+    }
+
+    .icon-mp4:after{
+        content: "MP4s";
+        font-size: .9em;
+    }
+}
