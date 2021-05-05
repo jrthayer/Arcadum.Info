@@ -201,7 +201,7 @@ function createEpisode(episodeInfo, episodeNum){
     episodeBtns.appendChild(episodeArt);
 
     let h2_2 = document.createElement('h2');
-    h2_2.innerHTML = "Videos";
+    h2_2.innerHTML = "Fan Art";
     episodeArt.appendChild(h2_2);
 
     let a3 = createLink(['icon-discord'], ['fab','fa-discord','fa-lg'], episodeInfo.fanArtDiscord);
