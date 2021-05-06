@@ -176,11 +176,6 @@ body{
     display: none;
 }
 
-.unavailable{
-    opacity: .9 !important;
-    pointer-events: none !important;
-}
-
 /* 
 ==============
    Media Queries

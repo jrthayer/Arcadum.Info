@@ -266,7 +266,6 @@ body{
 
 .unavailable{
     color: var(--color700);
-    pointer-events: none;
 }
 /* 
 ==============
