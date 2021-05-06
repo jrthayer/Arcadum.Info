@@ -178,13 +178,13 @@ function generatePage(){
 
                 //hide first show's prev button since it is the first show
                 let firstBtn = showContainer.querySelector('.buttonBar button');
-                firstBtn.classList.add('hide');
+                firstBtn.classList.add('unavailable');
             }
         }
 
         //hide last show's next button since it is the last show
         let lastBtn = chapterContainer.querySelector('.show:last-child .buttonBar button:last-child');
-        lastBtn.classList.add('hide');
+        lastBtn.classList.add('unavailable');
     }
 }
 
