@@ -1,6 +1,6 @@
 {
     "name": "Shrine Of Sin",
-    "twitchCollection": "https://www.twitch.tv/collections/NiziV3itdBYBPw?filter=collections",
+    "twitchCollection": "https://www.twitch.tv/videos/983281732?collection=NiziV3itdBYBPw",
     "youtubeCollection": "https://www.youtube.com/playlist?list=PLfASEnzB7i1a--Nffy9JXdsxCpgGHjRsF",
     "mp4Collection": "https://drive.google.com/drive/u/0/folders/1U5vvU-4h9L3R2D07nKk6ZQNxaidFzOGX",
     "episodeInfo": [
@@ -15,18 +15,26 @@
         {
             "airDate": "4/10/2021",
             "duration": "3:16:50",
-            "youtube": "https://www.youtube.com/watch?v=KxkZepPEjKQ&list=PLfASEnzB7i1a--Nffy9JXdsxCpgGHjRsF&index=1&t=1s&ab_channel=Arcadum",
-            "twitch": "https://www.twitch.tv/videos/983281732",
+            "youtube": "https://www.youtube.com/watch?v=KxkZepPEjKQ&list=PLfASEnzB7i1a--Nffy9JXdsxCpgGHjRsF&index=1&ab_channel=Arcadum",
+            "twitch": "https://www.twitch.tv/videos/983281732?collection=NiziV3itdBYBPw",
             "fanArtDiscord": "https://discordapp.com/channels/164927564354289665/716723358682710118/830576435537248276",
             "fanArtTwitch": "https://www.twitch.tv/videos/983281732?collection=NiziV3itdBYBPw&t=2h48m20s"
         },
         {
             "airDate": "4/17/2021",
             "duration": "1:51:06",
-            "youtube": "",
-            "twitch": "https://www.twitch.tv/videos/991848131",
+            "youtube": "https://www.youtube.com/watch?v=eJjZwenk24U&list=PLfASEnzB7i1a--Nffy9JXdsxCpgGHjRsF&index=2&ab_channel=ArcadumArcadum",
+            "twitch": "https://www.twitch.tv/videos/991848131?collection=NiziV3itdBYBPw",
             "fanArtDiscord": "https://discordapp.com/channels/164927564354289665/716723358682710118/833110049936113714",
             "fanArtTwitch": ""
+        },
+        {
+            "airDate": "4/24/2021",
+            "duration": "3:37:11",
+            "youtube": "https://www.youtube.com/watch?v=_96u_06oS-4&list=PLfASEnzB7i1a--Nffy9JXdsxCpgGHjRsF&index=3&ab_channel=ArcadumArcadum",
+            "twitch": "https://www.twitch.tv/videos/1000184948?collection=NiziV3itdBYBPw",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/835646566752452649",
+            "fanArtTwitch": "https://www.twitch.tv/videos/1000184948?collection=NiziV3itdBYBPw&t=3h13m18s"
         }
     ]
 }

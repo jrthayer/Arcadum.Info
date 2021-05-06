@@ -1,6 +1,6 @@
 {
     "name": "Pride Of The Nightwolf",
-    "twitchCollection": "https://www.twitch.tv/collections/9aZkRxp5cxb51A?filter=collections",
+    "twitchCollection": "https://www.twitch.tv/videos/978377037?collection=9aZkRxp5cxb51A",
     "youtubeCollection": "https://www.youtube.com/playlist?list=PLfASEnzB7i1Yp9AStpH9oFM_slQbH6WLY",
     "mp4Collection": "https://drive.google.com/drive/u/0/folders/1Q65lpnydMaKgljmcB0wiEplDekdtrKj1",
     "episodeInfo": [
@@ -16,17 +16,25 @@
             "airDate": "4/6/2021",
             "duration": "3:21:25",
             "youtube": "https://www.youtube.com/watch?v=QH3VdFW0NCw&list=PLfASEnzB7i1Yp9AStpH9oFM_slQbH6WLY",
-            "twitch": "https://www.twitch.tv/videos/978377037",
+            "twitch": "https://www.twitch.tv/videos/978377037?collection=9aZkRxp5cxb51A",
             "fanArtDiscord": "https://discordapp.com/channels/164927564354289665/716723358682710118/829143432948744254",
-            "fanArtTwitch": "https://www.twitch.tv/videos/978377037?t=2h50m52s"
+            "fanArtTwitch": "https://www.twitch.tv/videos/978377037?collection=9aZkRxp5cxb51A&t=2h50m45s"
         },
         {
             "airDate": "4/13/2021",
             "duration": "3:11:26",
-            "youtube": "",
-            "twitch": "https://www.twitch.tv/videos/986926738",
+            "youtube": "https://www.youtube.com/watch?v=9X-iYAlVny0&list=PLfASEnzB7i1Yp9AStpH9oFM_slQbH6WLY&index=2&ab_channel=ArcadumArcadum",
+            "twitch": "https://www.twitch.tv/videos/986926738?collection=9aZkRxp5cxb51A",
             "fanArtDiscord": "https://discordapp.com/channels/164927564354289665/716723358682710118/831677640095825931",
-            "fanArtTwitch": "https://www.twitch.tv/videos/986926738?t=2h43m19s"
+            "fanArtTwitch": "https://www.twitch.tv/videos/986926738?collection=9aZkRxp5cxb51A&t=2h43m13s"
+        },
+        {
+            "airDate": "4/20/2021",
+            "duration": "3:19:47",
+            "youtube": "https://www.youtube.com/watch?v=dbaI8sGrwgI&list=PLfASEnzB7i1Yp9AStpH9oFM_slQbH6WLY&index=3&ab_channel=ArcadumArcadum",
+            "twitch": "https://www.twitch.tv/videos/1004573133?collection=9aZkRxp5cxb51A",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/836754256463528057",
+            "fanArtTwitch": "https://www.twitch.tv/videos/1004573133?collection=9aZkRxp5cxb51A&t=2h57m38s"
         }
     ]
 }

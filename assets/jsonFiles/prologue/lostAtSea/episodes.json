@@ -1,6 +1,6 @@
 {
     "name": "Lost At Sea",
-    "twitchCollection": "https://www.twitch.tv/collections/thNtHcdYdRajYg?filter=collections",
+    "twitchCollection": "https://www.twitch.tv/videos/985769593?collection=thNtHcdYdRajYg",
     "youtubeCollection": "https://www.youtube.com/playlist?list=PLfASEnzB7i1YWMCoomudxDc9jQT3bOR2G",
     "mp4Collection": "https://drive.google.com/drive/u/0/folders/1SHd4BFI14b-H9Rww1ZbvicqAT8lnjg_C",
     "episodeInfo": [
@@ -15,18 +15,34 @@
         {
             "airDate": "4/12/2021",
             "duration": "3:13:35",
-            "youtube": "https://www.youtube.com/watch?v=Yf_6rpSn5tc&list=PLfASEnzB7i1YWMCoomudxDc9jQT3bOR2G&index=1",
-            "twitch": "https://www.twitch.tv/videos/985769593",
+            "youtube": "https://www.youtube.com/watch?v=Yf_6rpSn5tc&list=PLfASEnzB7i1YWMCoomudxDc9jQT3bOR2G&index=1&ab_channel=ArcadumArcadum",
+            "twitch": "https://www.twitch.tv/videos/985769593?collection=thNtHcdYdRajYg",
             "fanArtDiscord": "https://discordapp.com/channels/164927564354289665/716723358682710118/831326201976586261",
-            "fanArtTwitch": "https://www.twitch.tv/videos/985769593?t=2h45m20s"
+            "fanArtTwitch": "https://www.twitch.tv/videos/985769593?collection=thNtHcdYdRajYg&t=2h45m21s"
         },
         {
             "airDate": "4/19/2021",
             "duration": "2:43:46",
-            "youtube": "",
-            "twitch": "https://www.twitch.tv/videos/994139869",
+            "youtube": "https://www.youtube.com/watch?v=aVFaFpFWUXQ&list=PLfASEnzB7i1YWMCoomudxDc9jQT3bOR2G&index=2&ab_channel=ArcadumArcadum",
+            "twitch": "https://www.twitch.tv/videos/994139869?collection=thNtHcdYdRajYg",
             "fanArtDiscord": "https://discordapp.com/channels/164927564354289665/716723358682710118/833862755253485569",
-            "fanArtTwitch": "https://www.twitch.tv/videos/994139869?collection=thNtHcdYdRajYg&t=2h21m39s"
+            "fanArtTwitch": "https://www.twitch.tv/videos/994139869?collection=thNtHcdYdRajYg&t=2h21m47s"
+        },
+        {
+            "airDate": "4/26/2021",
+            "duration": "3:08:07",
+            "youtube": "https://www.youtube.com/watch?v=1ecFKd1hIXk&list=PLfASEnzB7i1YWMCoomudxDc9jQT3bOR2G&index=3&ab_channel=ArcadumArcadum",
+            "twitch": "https://www.twitch.tv/videos/1003229727?collection=thNtHcdYdRajYg",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/836403005401071656",
+            "fanArtTwitch": "https://www.twitch.tv/videos/1003229727?collection=thNtHcdYdRajYg&t=2h41m27s"
+        },
+        {
+            "airDate": "5/3/2021",
+            "duration": "2:58:32",
+            "youtube": "",
+            "twitch": "https://www.twitch.tv/videos/1012742999?collection=thNtHcdYdRajYg",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/838939786806427698",
+            "fanArtTwitch": "https://www.twitch.tv/videos/1012742999?collection=thNtHcdYdRajYg&t=2h39m27s"
         }
     ]
 }
