@@ -164,9 +164,25 @@ function createEpisode(episodeInfo, episodeNum){
     episodeImg.classList.add('episodeImg');
     flexCol.appendChild(episodeImg);
 
+    //Kinda messy, clean up later
+    let aCredit = document.createElement('a');
+    if(episodeInfo.imgArtist === ""){
+        aCredit.classList.add('disable-select');
+    }
+    else{
+        aCredit.href = episodeInfo.imgArtist;
+    }
+    aCredit.setAttribute('target', '_blank');
+    aCredit.setAttribute("rel", "noopener noreferrer");
+    episodeImg.appendChild(aCredit);
+
+    //this too?
     let img = document.createElement('img');
-    img.src = campaignInfo[0].showImage;
-    episodeImg.appendChild(img);
+    img.src = "../"+campaignInfo[1].episodeImageFolder+"/"+episodeNum+".png";
+    img.onerror = function () {
+        this.src = campaignInfo[0].showImage;
+    };
+    aCredit.appendChild(img);
 
     let episodeBtns = document.createElement('div');
     episodeBtns.classList.add('episodeBtns');

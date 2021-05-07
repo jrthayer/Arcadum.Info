@@ -3,10 +3,12 @@
     "twitchCollection": "https://www.twitch.tv/collections/KQTAT7JYdRa1lA?filter=collections",
     "youtubeCollection": "https://www.youtube.com/playlist?list=PLfASEnzB7i1ZY0qy_i-69VSaXCD9pvuai",
     "mp4Collection": "https://drive.google.com/drive/u/0/folders/13IrSBLjYVzyvlbicsKEuOniS3L7-waRs",
+    "episodeImageFolder": "assets/imgs/episodeImgs/prologue/scrollsOfNotChek",
     "episodeInfo": [
         {
             "airDate": "4/5/2021",
             "duration": "3:05:18",
+            "imgArtist": "",
             "youtube": "",
             "twitch": "https://www.twitch.tv/videos/976601032",
             "fanArtDiscord": "https://discordapp.com/channels/164927564354289665/716723358682710118/828711391073665085",
@@ -15,6 +17,7 @@
         {
             "airDate": "4/12/2021",
             "duration": "2:51:55",
+            "imgArtist": "",
             "youtube": "https://www.youtube.com/watch?v=6_LWrNlG-es&list=PLfASEnzB7i1ZY0qy_i-69VSaXCD9pvuai",
             "twitch": "https://www.twitch.tv/videos/985768772?collection=KQTAT7JYdRa1lA",
             "fanArtDiscord": "https://discordapp.com/channels/164927564354289665/716723358682710118/831241170301616139",
@@ -23,6 +26,7 @@
         {
             "airDate": "4/19/2021",
             "duration": "3:09:24",
+            "imgArtist": "",
             "youtube": "https://www.youtube.com/watch?v=ekJmDIQraNc&list=PLfASEnzB7i1ZY0qy_i-69VSaXCD9pvuai&index=2&ab_channel=ArcadumArcadum",
             "twitch": "https://www.twitch.tv/videos/994139541?collection=KQTAT7JYdRa1lA",
             "fanArtDiscord": "https://discordapp.com/channels/164927564354289665/716723358682710118/833771748255596634",
@@ -31,6 +35,7 @@
         {
             "airDate": "4/26/2021",
             "duration": "2:42:52",
+            "imgArtist": "",
             "youtube": "https://www.youtube.com/watch?v=EhCdIJTTyJQ&list=PLfASEnzB7i1ZY0qy_i-69VSaXCD9pvuai&index=3&ab_channel=ArcadumArcadum",
             "twitch": "https://www.twitch.tv/videos/1003226888?collection=KQTAT7JYdRa1lA",
             "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/836305793988165633",
@@ -39,6 +44,7 @@
         {
             "airDate": "5/4/2021",
             "duration": "3:09:01",
+            "imgArtist": "",
             "youtube": "",
             "twitch": "https://www.twitch.tv/videos/1011244580?collection=KQTAT7JYdRa1lA",
             "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/838851839633915974",

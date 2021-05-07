@@ -176,6 +176,9 @@ body{
     width: calc(100% - 2px * 2);
     justify-content: flex-start;
 }
+    .episodeImg a{
+        margin-bottom: 0;
+    }
     .episodeImg img{
         border-radius: 1rem;
         border: 2px solid var(--color400);

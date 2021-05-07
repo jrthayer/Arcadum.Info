@@ -3,10 +3,12 @@
     "twitchCollection": "https://www.twitch.tv/videos/983281732?collection=NiziV3itdBYBPw",
     "youtubeCollection": "https://www.youtube.com/playlist?list=PLfASEnzB7i1a--Nffy9JXdsxCpgGHjRsF",
     "mp4Collection": "https://drive.google.com/drive/u/0/folders/1U5vvU-4h9L3R2D07nKk6ZQNxaidFzOGX",
+    "episodeImageFolder": "assets/imgs/episodeImgs/prologue/shrineOfSin",
     "episodeInfo": [
         {
             "airDate": "4/3/2021",
             "duration": "~2:30:00",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/828076654638530591",
             "youtube": "",
             "twitch": "https://www.twitch.tv/videos/974480170?t=0h6m2s",
             "fanArtDiscord": "https://discordapp.com/channels/164927564354289665/716723358682710118/828045782112403456",
@@ -15,6 +17,7 @@
         {
             "airDate": "4/10/2021",
             "duration": "3:16:50",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/830601104776495135",
             "youtube": "https://www.youtube.com/watch?v=KxkZepPEjKQ&list=PLfASEnzB7i1a--Nffy9JXdsxCpgGHjRsF&index=1&ab_channel=Arcadum",
             "twitch": "https://www.twitch.tv/videos/983281732?collection=NiziV3itdBYBPw",
             "fanArtDiscord": "https://discordapp.com/channels/164927564354289665/716723358682710118/830576435537248276",
@@ -23,6 +26,7 @@
         {
             "airDate": "4/17/2021",
             "duration": "1:51:06",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/833134954619600896",
             "youtube": "https://www.youtube.com/watch?v=eJjZwenk24U&list=PLfASEnzB7i1a--Nffy9JXdsxCpgGHjRsF&index=2&ab_channel=ArcadumArcadum",
             "twitch": "https://www.twitch.tv/videos/991848131?collection=NiziV3itdBYBPw",
             "fanArtDiscord": "https://discordapp.com/channels/164927564354289665/716723358682710118/833110049936113714",
@@ -31,6 +35,7 @@
         {
             "airDate": "4/24/2021",
             "duration": "3:37:11",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/835688483560882177",
             "youtube": "https://www.youtube.com/watch?v=_96u_06oS-4&list=PLfASEnzB7i1a--Nffy9JXdsxCpgGHjRsF&index=3&ab_channel=ArcadumArcadum",
             "twitch": "https://www.twitch.tv/videos/1000184948?collection=NiziV3itdBYBPw",
             "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/835646566752452649",

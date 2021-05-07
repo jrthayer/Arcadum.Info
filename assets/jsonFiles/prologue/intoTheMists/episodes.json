@@ -3,10 +3,12 @@
     "twitchCollection": "https://www.twitch.tv/videos/983277093?collection=RZRRoj2tdBZlgQ",
     "youtubeCollection": "https://www.youtube.com/playlist?list=PLfASEnzB7i1Ydqqd5cl8-S-bTgQH_zGr2",
     "mp4Collection": "https://drive.google.com/drive/u/0/folders/1MdWBy1Eo1L3tpuab3NyP2osM_sACWSQg",
+    "episodeImageFolder": "assets/imgs/episodeImgs/prologue/intoTheMists",
     "episodeInfo": [
         {
             "airDate": "",
             "duration": "",
+            "imgArtist": "",
             "youtube": "",
             "twitch": "",
             "fanArtDiscord": "",
@@ -15,6 +17,7 @@
         {
             "airDate": "4/10/2021",
             "duration": "3:10:04",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/830555637665890314",
             "youtube": "https://www.youtube.com/watch?v=ZAHSAMvsK1w&list=PLfASEnzB7i1Ydqqd5cl8-S-bTgQH_zGr2&index=1&ab_channel=ArcadumArcadum",
             "twitch": "https://www.twitch.tv/videos/983277093?collection=RZRRoj2tdBZlgQ",
             "fanArtDiscord": "https://discordapp.com/channels/164927564354289665/716723358682710118/830516077229375510",
@@ -23,6 +26,7 @@
         {
             "airDate": "4/17/2021",
             "duration": "2:29:15",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/833090239740379256",
             "youtube": "https://www.youtube.com/watch?v=rbwE94-VJeY&list=PLfASEnzB7i1Ydqqd5cl8-S-bTgQH_zGr2&index=2&ab_channel=ArcadumArcadum",
             "twitch": "https://www.twitch.tv/videos/991847100?collection=RZRRoj2tdBZlgQ",
             "fanArtDiscord": "https://discordapp.com/channels/164927564354289665/716723358682710118/833046643019350057",
@@ -31,6 +35,7 @@
         {
             "airDate": "4/24/2021",
             "duration": "2:57:54",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/835624897367244820",
             "youtube": "https://www.youtube.com/watch?v=U9w7xoYWFEI&list=PLfASEnzB7i1Ydqqd5cl8-S-bTgQH_zGr2&index=3&ab_channel=ArcadumArcadum",
             "twitch": "https://www.twitch.tv/videos/1000184006?collection=RZRRoj2tdBZlgQ",
             "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/835583471120023623",
@@ -39,6 +44,7 @@
         {
             "airDate": "5/1/2021",
             "duration": "2:54:52",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/838161646903230504",
             "youtube": "",
             "twitch": "https://www.twitch.tv/videos/1008447693?collection=RZRRoj2tdBZlgQ",
             "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/838125238356803586",
