@@ -45,10 +45,19 @@
             "airDate": "5/1/2021",
             "duration": "2:54:52",
             "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/838161646903230504",
-            "youtube": "",
+            "youtube": "https://www.youtube.com/watch?v=aL_VbSPjtwU&list=PLfASEnzB7i1Ydqqd5cl8-S-bTgQH_zGr2&index=4",
             "twitch": "https://www.twitch.tv/videos/1008447693?collection=RZRRoj2tdBZlgQ",
             "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/838125238356803586",
             "fanArtTwitch": "https://www.twitch.tv/videos/1008447693?collection=RZRRoj2tdBZlgQ&t=2h36m54s"
+        },
+        {
+            "airDate": "5/8/2021",
+            "duration": "1:42:56",
+            "imgArtist": "",
+            "youtube": "",
+            "twitch": "https://www.twitch.tv/videos/1019234984?collection=RZRRoj2tdBZlgQ",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/840663612741517312",
+            "fanArtTwitch": ""
         }
     ]
 }
