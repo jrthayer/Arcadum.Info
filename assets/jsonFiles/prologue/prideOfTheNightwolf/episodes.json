@@ -3,7 +3,7 @@
     "twitchCollection": "https://www.twitch.tv/videos/978377037?collection=9aZkRxp5cxb51A",
     "youtubeCollection": "https://www.youtube.com/playlist?list=PLfASEnzB7i1Yp9AStpH9oFM_slQbH6WLY",
     "mp4Collection": "https://drive.google.com/drive/u/0/folders/1Q65lpnydMaKgljmcB0wiEplDekdtrKj1",
-    "episodeImageFolder": "assets/imgs/episodeImgs/prologue/prideOfTheNightWolf",
+    "episodeImageFolder": "assets/imgs/episodeImgs/prologue/prideOfTheNightwolf",
     "episodeInfo": [
         {
             "airDate": "3/31/2021",
@@ -44,7 +44,7 @@
         {
             "airDate": "5/4/2021",
             "duration": "2:59:50",
-            "imgArtist": "",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/839328945048256533",
             "youtube": "https://www.youtube.com/watch?v=hcckJUtnf2k&list=PLfASEnzB7i1Yp9AStpH9oFM_slQbH6WLY&index=4&ab_channel=ArcadumArcadum",
             "twitch": "",
             "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/839292384570376203",
@@ -53,7 +53,7 @@
         {
             "airDate": "5/11/2021",
             "duration": "3:12:27",
-            "imgArtist": "",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/841868903532855307",
             "youtube": "",
             "twitch": "https://www.twitch.tv/videos/1019691197?collection=9aZkRxp5cxb51A",
             "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/841827403919917066",
