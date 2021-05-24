@@ -21,7 +21,6 @@ img{
 
 a{
     display: block;
-    margin-bottom: 1em;
     text-decoration: none;
     color: white;
 }
@@ -58,18 +57,16 @@ body{
 .container{
     width: 90%;
     max-width: 30rem;
-    margin: 4rem auto;
+    margin: 0 auto;
 }
 
 .section{
-    margin: 4rem auto;
-
-    background-color: white;
+    margin-top: 2rem;
+    background: rgb(255, 255, 255);
     color: white;
-    border: 5px black solid;
-
-    box-shadow: 0 0 0 6px white,
-                0 0 0 10px black;
+    border: black solid 3px;
+    box-shadow: 0 0 0 4px white,
+                0 0 0 7px #000; 
 
     font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
@@ -78,15 +75,40 @@ body{
         padding-top: .5em;
         padding-bottom: 0;
 
-        text-shadow: 1px 1px 3px var(--color700);
+        text-shadow: 1px 1px 3px rgb(22, 22, 22);
         color: var(--color400);
 
         font-size: 2em;
         text-align: center;
     }
-    .section:first-child{
+    .section:nth-of-type(2){
         background-color: var(--color700);
     }
+    .section:last-of-type{
+        margin-bottom: 2rem;
+    }
+
+nav{
+    display: flex;
+    padding: .5em .5em;
+    color: black;
+    justify-content: center;
+
+    font-size: 25px;
+    letter-spacing: .15em;
+}
+.nav__link{
+    text-decoration: none;
+    color: inherit;
+    margin-left: 1em;
+    padding: .1em;
+}
+.nav__link:hover{
+    color: #000000;
+}
+.nav__link:first-child{
+    margin-left: 0;
+}
 
 .flexColToRow{
     display: flex;

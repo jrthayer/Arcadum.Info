@@ -146,7 +146,7 @@ function checkBackground(scrollPosition){
 //creates the page
 function generatePage(){
     let body = document.querySelector('body');
-    let container = document.querySelector('.container');
+    let container = document.querySelectorAll('.container')[1];
     
     let chapters = campaignInfo[0].children;
     

@@ -25,6 +25,7 @@ nav{
     display: flex;
     padding: .5em .5em;
     color: black;
+    justify-content: center;
 
     font-size: 25px;
     letter-spacing: .15em;
@@ -53,8 +54,8 @@ nav{
 }
 
 .section{
-    margin: 30px 0px;
-    background: white;
+    margin-top: 2rem;
+    background: rgb(255, 255, 255);
     color: black;
     border: black solid 3px;
     box-shadow: 0 0 0 4px white,
@@ -66,14 +67,17 @@ nav{
     .section::nth-child(3), .section::nth-child(4){
         background: rgb(8, 8, 8);
     }
+    .section:last-of-type{
+        margin-bottom: 2rem;
+    }
 
 /*BANNER*/
 /*=============================*/
 #banner{
-    max-width: calc(100% - 2 * 3px);
+    max-width: 100%;
     height: auto;
-    border: black solid 3px;
-    border-top: none;
+    border-bottom: black solid 3px;
+    display: block;
 }
 
 /*SOCIAL BUTTONS*/
