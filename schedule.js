@@ -5,12 +5,11 @@
 //     [[0, "Pride Of The Nightwolf"]], 
 //     [], 
 //     [],
-//     [[60, "Callous Row"], [1140, "Into The Mists"], [1380, "Shrine Of Sin"]]];
-    
+//     [[60, "Callous Row"], [1140, "Into The Mists"], [1380, "Shrine Of Sin"]]]; 
 
 var utcTimes = [
 [],
-[[1140, "Scrolls of Not'Chek"]],
+[[1140, "Scrolls Of Not'Chek"]],
 [[60, "Lost At Sea"]],
 [[0, "Pride Of The Nightwolf"]], 
 [], 
@@ -60,8 +59,8 @@ for(var x = 0; x < utcTimes.length; x++){
 }
 
 createSchedule();
-var intervalId = window.setInterval(function(){ nextShow();} , 1000);
-console.log(convertedTimes);
+nextShowInit();
+// var intervalId = window.setInterval(function(){ nextShow();} , 1000);
 
 //Info: Converts shows into local timezone(in minutes)
 //Parameters:
@@ -213,58 +212,78 @@ function convertToDay(index){
     return day; 
 }
 
+function nextShowInit(){
+    let minutesTill = 0;
+    let iterations = 0;
+    window.setInterval(
+        function(){
+            minutesTill = nextShow(minutesTill);
+        } , 1000);
+}
 
-
-function nextShow(){
+function nextShow(mintuesTill){
     var time = new Date();
     var found = false;
-    var mintuesTill = 0;
     var countdown = document.getElementById('cdDisplay');
     var nextName = document.getElementById('showName');
     var showName;
 
-    var day = time.getDay();
-    var minutes = time.getMinutes() + time.getHours() * 60;
+    if(mintuesTill === 0){
+        var day = time.getDay();
+        var minutes = time.getMinutes() + time.getHours() * 60;
 
-    for(var x = 0; x < convertedTimes[day].length; x++){
-        if(minutes < convertedTimes[day][x][0]){
-            showName = convertedTimes[day][x][1];
-            nextName.innerHTML = "Next Show: "+showName;
-            found = true;
-            mintuesTill = convertedTimes[day][x][0] - minutes;
-            break;
-        }
-    }
-
-    if(found == false){
-        mintuesTill = 1440 - minutes;
-
-        for(var x = 1; x < 7; x++){
-            var nextDay = day + x;
-            if(nextDay > 6){
-                nextDay = nextDay - 7;
-            }
-
-            for(var y = 0; y < convertedTimes[nextDay].length; y++){
-                showName = convertedTimes[nextDay][y][1];
+        for(var x = 0; x < convertedTimes[day].length; x++){
+            if(minutes < convertedTimes[day][x][0]){
+                showName = convertedTimes[day][x][1];
                 nextName.innerHTML = "Next Show: "+showName;
+                let showNameFormatted = showName.replace(/\s/g, '');
+                    showNameFormatted = showNameFormatted.replace('\'', '');
+                    showNameFormatted = showNameFormatted[0].toLowerCase() + showNameFormatted.substring(1);
+                
+                changeBackground(showNameFormatted);
                 found = true;
-                mintuesTill = mintuesTill + convertedTimes[nextDay][y][0];
+                mintuesTill = convertedTimes[day][x][0] - minutes;
                 break;
             }
+        }
 
-            if(found){
-                break;
-            }
-            else{
-                mintuesTill = mintuesTill + 1440;
+        if(found == false){
+            mintuesTill = 1440 - minutes;
+
+            for(var x = 1; x < 7; x++){
+                var nextDay = day + x;
+                if(nextDay > 6){
+                    nextDay = nextDay - 7;
+                }
+
+                for(var y = 0; y < convertedTimes[nextDay].length; y++){
+                    showName = convertedTimes[nextDay][y][1];
+                    nextName.innerHTML = "Next Show: "+showName;
+                    let showNameFormatted = showName.replace(/\s/g, '');
+                    showNameFormatted = showNameFormatted.replace('\'', '');
+                    showNameFormatted = showNameFormatted[0].toLowerCase() + showNameFormatted.substring(1);
+
+
+
+                    changeBackground(showNameFormatted);
+                    found = true;
+                    mintuesTill = mintuesTill + convertedTimes[nextDay][y][0];
+                    break;
+                }
+
+                if(found){
+                    break;
+                }
+                else{
+                    mintuesTill = mintuesTill + 1440;
+                }
             }
         }
     }
     
-
-    
-    countdown.innerHTML = convertToCount(mintuesTill);
+    var cdReturn = convertToCount(mintuesTill);
+    countdown.innerHTML = cdReturn[0];
+    return mintuesTill = cdReturn[1];
 }
 
 function convertToCount(minutes){
@@ -289,7 +308,21 @@ function convertToCount(minutes){
 
     if(sec<10){
         sec = "0"+sec;
+        if(sec === "00"){
+            minutes--;
+        }
     }
     var time = hours+":"+min+":"+sec;
-    return time;
+    return [time, minutes];
+}
+
+//Changes background image of the body element
+//======================================
+//Parameters
+//+showName = name of show for the background
+function changeBackground(showName){
+    console.log(showName);
+    var body = document.querySelector('body');
+    var newBackground = "url(./assets/imgs/backgrounds/bg-"+showName+".png)"; 
+    body.style.backgroundImage = newBackground;
 }
