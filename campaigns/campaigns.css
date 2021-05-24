@@ -97,6 +97,9 @@ body{
     header .section{
         border: none;
     }
+    .section:last-of-type{
+        margin-bottom: 2rem;
+    }
 
 .show{
     --color700: #000000;
