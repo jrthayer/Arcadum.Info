@@ -26,21 +26,10 @@ body{
 
     margin: 10px auto;
     padding: 30px;
-
-    /* border-radius: 10px; */
-    /* background: black; */
-    /* background: rgb(255, 255, 255);
-    border: black solid 3px;
-    box-shadow: 0 0 0 4px #eee,
-                0 0 0 7px #000; */
 }
 
 .section{
     margin: 30px 0px;
-
-
-    /* border-radius: 15px; */
-    /* background: radial-gradient(rgb(230, 0, 255), rgb(8, 8, 8)); */
 
     background: white;
     border: black solid 3px;
@@ -55,10 +44,8 @@ body{
 /*BANNER*/
 /*=============================*/
 #banner{
-    /* border-radius: 15px; */
     max-width: 100%;
     height: auto;
-    /* filter: grayscale(100%); */
 
     border: black solid 3px;
     box-shadow: 0 0 0 4px #eee,
@@ -87,8 +74,6 @@ body{
     background: white;
     color: black;
     border: 3px solid black;
-
-    /* filter: grayscale(100%); */
 }
 
 .socialBtn *{
@@ -227,11 +212,9 @@ body{
     text-align: center;
     padding: 10px;
 
-    /* border: solid rgb(230, 0, 255) 3px;   */
     border-radius: 15px;
 
     background: rgb(8, 8, 8);
-    /* color: rgb(230, 0, 255); */
     
     color: white;
 }
@@ -242,11 +225,8 @@ body{
     font-size: 50px;
     text-align: center;
 
-    /* border: solid rgb(230, 0, 255) 3px; */
-    /* border-radius: 15px; */
-
     background: rgb(8, 8, 8);
-    /* color: rgb(230, 0, 255); */
+
     color: white;
     padding: 5px;
 }
@@ -266,53 +246,55 @@ body{
 /*SCHEDULE*/
 /*=============================*/
 #schedule h1{
-    font-size: 40px;
-
-    width: 40%;
+    font-size: 3em;
 
     margin: 10px;
     margin-top: 0px;
     padding: 10px;
 
-    /* border: solid rgb(230, 0, 255) 3px;   */
-    /* border-radius: 15px; */
-
-    /* color: rgb(230, 0, 255); */
-
     color: white;
-    border-bottom: rgb(30,30,30) 1px solid;
 }
 
 .row{
     min-height: 50px;
     height: auto;
     overflow:auto;
-    margin: 30px 10px;
+    margin: 0px 10px;
+    padding: .5em;
     
 
     font-size: 35px;
 
-    /* border: solid rgb(230, 0, 255) 3px; */
-    /* border-radius: 15px; */
-
-    /* color: rgb(230, 0, 255); */
-
     color: white;
 
-    
+    border-bottom: 2px solid white;
 }
-
-.row:not(:last-child){
-    border-bottom: rgb(30,30,30) 1px solid;
-}
+    .row:first-of-type{
+        border-top: 2px solid white;
+    }
+    .row:last-of-type{
+        border-bottom: none;
+    }
 
 .gameInfo{
     padding: 10px;
+    display: flex;
+    align-items: center;
 }
+    .gameInfo:last-of-type{
+        margin-bottom: 10px;
+        border-bottom: none;
+    }
 
-.row .gameInfo:last-of-type{
-    margin-bottom: 10px;
-}
+    .gameInfo *{
+        display: inline-block;
+    }
+
+    .gameInfo *:first-of-type{
+        margin-right: .5em;
+        width: 80%;
+    }
+
 
 .label{
     float: left;
@@ -323,12 +305,6 @@ body{
 .data{
     float: left;
     width: calc(80% - 21px);
-    
-    
-}
-
-.data div:nth-of-type(n+2){
-    margin-top: 10px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -344,6 +320,10 @@ body{
 
     #cdDisplay{
         font-size: 65px;
+    }
+
+    .label{
+        padding-left: 0px;
     }
 
     .socialBtn{
@@ -362,18 +342,28 @@ body{
     }
 
     #schedule h1{
-        width: 70%;
+        text-align: center;
     }
 
     .label{
         width: calc(100% - 20px*2);
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid rgb(55, 55, 55);
+        border-top: 2px solid white;
     }
 
+    .row{
+        text-align: center;
+        border-bottom: none;
+        padding: 0;
+    }
+        .row:first-of-type{
+            border-top: none;
+        }
+
     .data{
-        width: calc(100% - 10px*2);
+        width: 100%;
         border: none;
-        padding: 10px;
+        padding: 10px 0px;
     }
 }
 

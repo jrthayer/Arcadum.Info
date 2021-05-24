@@ -1,13 +1,21 @@
+// var utcTimes = [
+//     [[180,"The Clash(Fighting Games)"]],
+//     [[1140, "Scrolls of Not'Chek"]],
+//     [[60, "Lost At Sea"]],
+//     [[0, "Pride Of The Nightwolf"]], 
+//     [], 
+//     [],
+//     [[60, "Callous Row"], [1140, "Into The Mists"], [1380, "Shrine Of Sin"]]];
+    
+
 var utcTimes = [
-[[180,"The Clash(Fighting Games)"]],
+[],
 [[1140, "Scrolls of Not'Chek"]],
 [[60, "Lost At Sea"]],
 [[0, "Pride Of The Nightwolf"]], 
 [], 
 [],
 [[60, "Callous Row"], [1140, "Into The Mists"], [1380, "Shrine Of Sin"]]];
-
-//[0, "Lost At Sea"]
 
 var convertedTimes = [
 [],
@@ -121,7 +129,12 @@ function createDay(day, games){
     for(var x = 0; x < games.length; x++){
         var game = document.createElement('div');
         game.classList.add('gameInfo');
-        game.innerHTML = games[x][1]+" - "+convertToTime(games[x][0]);
+        let gameName = document.createElement('div');
+        gameName.innerHTML = games[x][1];
+        let gameTime = document.createElement('div');
+        gameTime.innerHTML = convertToTime(games[x][0]);
+        game.appendChild(gameName);
+        game.appendChild(gameTime);
         data.appendChild(game);
     }
 
