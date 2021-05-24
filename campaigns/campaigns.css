@@ -44,6 +44,27 @@ p{
    Layout
 ============== 
 */
+nav{
+    display: flex;
+    padding: .5em .5em;
+    color: white;
+
+    font-size: 25px;
+    letter-spacing: .15em;
+}
+.nav__link{
+    text-decoration: none;
+    color: inherit;
+    margin-left: 1em;
+    padding: .1em;
+}
+.nav__link:hover{
+    color: #000000;
+}
+.nav__link:first-child{
+    margin-left: 0;
+}
+
 body{    
     margin: 0;
 
@@ -61,7 +82,8 @@ body{
 
 .section{
     padding: .5rem;
-    margin: 4rem auto;
+    margin: 0 auto;
+    margin-top: 3em;
 
     background-color: white;
     color: black;
@@ -73,6 +95,9 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
 }
+    .section:first-child{
+        margin-top: 0;
+    }
 
 .show{
     --color700: #000000;

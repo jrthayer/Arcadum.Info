@@ -8,13 +8,13 @@
 //     [[60, "Callous Row"], [1140, "Into The Mists"], [1380, "Shrine Of Sin"]]]; 
 
 var utcTimes = [
-[],
-[[1140, "Scrolls Of Not'Chek"]],
-[[60, "Lost At Sea"]],
-[[0, "Pride Of The Nightwolf"]], 
-[], 
-[],
-[[60, "Callous Row"], [1140, "Into The Mists"], [1380, "Shrine Of Sin"]]];
+    [],
+    [[1140, "Scrolls of Not'Chek"]],
+    [[60, "Lost At Sea"]],
+    [[0, "Pride Of The Nightwolf"]], 
+    [], 
+    [],
+    [[60, "Callous Row"], [1140, "Into The Mists"], [1380, "Shrine Of Sin"]]]; 
 
 var convertedTimes = [
 [],
@@ -213,77 +213,151 @@ function convertToDay(index){
 }
 
 function nextShowInit(){
-    let minutesTill = 0;
-    let iterations = 0;
+    let showInfo = nextShow();
+
     window.setInterval(
         function(){
-            minutesTill = nextShow(minutesTill);
+            if(displayShow(showInfo) == "00:00:00"){
+                console.log("run next show");
+                showInfo = nextShow();
+            }
         } , 1000);
 }
 
-function nextShow(mintuesTill){
-    var time = new Date();
+function nextShow(){
     var found = false;
-    var countdown = document.getElementById('cdDisplay');
     var nextName = document.getElementById('showName');
     var showName;
+    var showInfo = [0,0];
 
-    if(mintuesTill === 0){
-        var day = time.getDay();
-        var minutes = time.getMinutes() + time.getHours() * 60;
+    var time = new Date();
+    var day = time.getDay();
+    var minutes = time.getMinutes() + time.getHours() * 60;
 
-        for(var x = 0; x < convertedTimes[day].length; x++){
-            if(minutes < convertedTimes[day][x][0]){
-                showName = convertedTimes[day][x][1];
+    //need to determine incase shows have already passed on this day
+    for(var x = 0; x < convertedTimes[day].length; x++){
+        //+1 ensures that next show runs at 0
+        if(minutes+1 < convertedTimes[day][x][0]){
+            showName = convertedTimes[day][x][1];
+            nextName.innerHTML = "Next Show: "+showName;
+            
+            let showNameFormatted = showName.replace(/\s/g, '');
+            showNameFormatted = showNameFormatted.replace('\'', '');
+            showNameFormatted = showNameFormatted[0].toLowerCase() + showNameFormatted.substring(1);
+            console.log(showNameFormatted);
+            changeBackground(showNameFormatted);
+
+            found = true;
+            showInfo[0] = day;
+            showInfo[1] = x;
+            break;
+        }
+    }
+
+    //next show is on a different day
+    if(found == false){
+        // mintuesTill = 1440 - minutes;
+
+        for(var x = 1; x < 7; x++){
+            //check next day
+            let curDay = day + x;
+            
+            if(curDay > 6){
+                curDay = curDay - 7;
+            }
+            
+            if(convertedTimes[curDay].length > 0){
+                showName = convertedTimes[curDay][0][1];
                 nextName.innerHTML = "Next Show: "+showName;
+
                 let showNameFormatted = showName.replace(/\s/g, '');
-                    showNameFormatted = showNameFormatted.replace('\'', '');
-                    showNameFormatted = showNameFormatted[0].toLowerCase() + showNameFormatted.substring(1);
-                
+                showNameFormatted = showNameFormatted.replace('\'', '');
+                showNameFormatted = showNameFormatted[0].toLowerCase() + showNameFormatted.substring(1);
                 changeBackground(showNameFormatted);
+
                 found = true;
-                mintuesTill = convertedTimes[day][x][0] - minutes;
+
+                showInfo[0] = curDay;
+                showInfo[1] = 0;
+            }
+
+            if(found){
                 break;
             }
         }
+    }
 
-        if(found == false){
-            mintuesTill = 1440 - minutes;
+    if(found === false){
+        showName = convertedTimes[day][0][1];
+        nextName.innerHTML = "Next Show: "+showName;
 
-            for(var x = 1; x < 7; x++){
-                var nextDay = day + x;
-                if(nextDay > 6){
-                    nextDay = nextDay - 7;
-                }
+        let showNameFormatted = showName.replace(/\s/g, '');
+        showNameFormatted = showNameFormatted.replace('\'', '');
+        showNameFormatted = showNameFormatted[0].toLowerCase() + showNameFormatted.substring(1);
+        changeBackground(showNameFormatted);
 
-                for(var y = 0; y < convertedTimes[nextDay].length; y++){
-                    showName = convertedTimes[nextDay][y][1];
-                    nextName.innerHTML = "Next Show: "+showName;
-                    let showNameFormatted = showName.replace(/\s/g, '');
-                    showNameFormatted = showNameFormatted.replace('\'', '');
-                    showNameFormatted = showNameFormatted[0].toLowerCase() + showNameFormatted.substring(1);
-
-
-
-                    changeBackground(showNameFormatted);
-                    found = true;
-                    mintuesTill = mintuesTill + convertedTimes[nextDay][y][0];
-                    break;
-                }
-
-                if(found){
-                    break;
-                }
-                else{
-                    mintuesTill = mintuesTill + 1440;
-                }
-            }
-        }
+        found = true;
+        showInfo[0] = day;
+        showInfo[1] = 0;
     }
     
-    var cdReturn = convertToCount(mintuesTill);
-    countdown.innerHTML = cdReturn[0];
-    return mintuesTill = cdReturn[1];
+    return showInfo;
+}
+
+function displayShow(showInfo){
+    let minutes = mintuesTill(showInfo);
+    var countdown = document.getElementById('cdDisplay');
+    let countdownMinutes = convertToCount(minutes);
+    countdown.innerHTML = countdownMinutes;
+    return countdownMinutes;
+}
+
+function mintuesTill(showInfo){
+    let mintuesTill = 0;
+    let showDay = showInfo[0];
+    let showInstance = showInfo[1];
+
+    var time = new Date();
+    var day = time.getDay();
+
+    //minutes in this day
+    var minutes = time.getMinutes() + time.getHours() * 60;
+
+    if(day == showInfo[0]){
+        //check if next show has already happened today
+        //edge case for only have one show in the schedule
+        if(minutes > convertedTimes[day][showInstance][0]){
+            //minutes remaining in day
+            mintuesTill = 1440 - minutes;
+
+            for(let x = 0; x < 7; x++){
+                mintuesTill = mintuesTill + 1440;
+            }
+
+            //minutes of day show airs
+            mintuesTill = mintuesTill + convertedTimes[showDay][showInstance][0];
+        }
+        else{
+            mintuesTill = convertedTimes[day][showInstance][0] - minutes;
+        }
+    }
+    else{
+        //minutes remaining in day
+        mintuesTill = 1440 - minutes;
+
+        //days between now and next show
+        let daysBetween = 0;
+        daysBetween = showDay - day - 1;
+        
+        for(let x = 0; x < daysBetween; x++){
+            mintuesTill = mintuesTill + 1440;
+        }
+
+        //minutes of day show airs
+        mintuesTill = mintuesTill + convertedTimes[showDay][showInstance][0];
+    }
+
+    return mintuesTill;
 }
 
 function convertToCount(minutes){
@@ -313,7 +387,7 @@ function convertToCount(minutes){
         }
     }
     var time = hours+":"+min+":"+sec;
-    return [time, minutes];
+    return time;
 }
 
 //Changes background image of the body element
