@@ -53,11 +53,20 @@
         {
             "airDate": "5/8/2021",
             "duration": "1:42:56",
-            "imgArtist": "",
-            "youtube": "",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/840683091840204821",
+            "youtube": "https://www.youtube.com/watch?v=r4OaGvhfc_Q&list=PLfASEnzB7i1Ydqqd5cl8-S-bTgQH_zGr2&index=5&ab_channel=ArcadumArcadum",
             "twitch": "https://www.twitch.tv/videos/1019234984?collection=RZRRoj2tdBZlgQ",
             "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/840663612741517312",
             "fanArtTwitch": ""
+        },
+        {
+            "airDate": "5/15/2021",
+            "duration": "3:10:24",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/843244318545936434",
+            "youtube": "https://www.youtube.com/watch?v=pfdiafmf1a0&list=PLfASEnzB7i1Ydqqd5cl8-S-bTgQH_zGr2&index=6&ab_channel=ArcadumArcadum",
+            "twitch": "https://www.twitch.tv/videos/1025654197?collection=RZRRoj2tdBZlgQ",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/843203348990525470",
+            "fanArtTwitch": "https://www.twitch.tv/videos/1025654197?collection=RZRRoj2tdBZlgQ&t=2h45m53s"
         }
     ]
 }
