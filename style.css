@@ -346,8 +346,7 @@ nav{
 
     .container{
         width: auto;
-        margin: 10px;
-        padding: 10px;
+        margin: 0 10px;
     }
 
     #cdDisplay{
