@@ -78,7 +78,6 @@ function generatePage(){
 }
 
 function createHeader(headerInfo){
-    console.log(headerInfo);
     let section = document.createElement('div');
     section.classList.add('section');
 
@@ -107,7 +106,6 @@ function createHeader(headerInfo){
 }
 
 function createEpisodeSection(episodeInfo){
-    console.log(episodeInfo);
     let section = document.createElement('div');
     section.classList.add('section');
 
@@ -149,7 +147,6 @@ function createEpisodeSection(episodeInfo){
 }
 
 function createEpisode(episodeInfo, episodeNum){
-    console.log(episodeInfo);
     let episode = document.createElement('div');
     episode.classList.add('episode');
 
@@ -231,7 +228,6 @@ function createEpisode(episodeInfo, episodeNum){
 }
 
 function createLink(aClasses, iClasses, link){
-    console.log(link);
     let a = document.createElement('a');
     a.classList.add(aClasses[0]);
     a.setAttribute('target', '_blank');

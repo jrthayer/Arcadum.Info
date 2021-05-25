@@ -218,7 +218,6 @@ function nextShowInit(){
     window.setInterval(
         function(){
             if(displayShow(showInfo) == "00:00:00"){
-                console.log("run next show");
                 showInfo = nextShow();
             }
         } , 1000);
@@ -244,7 +243,6 @@ function nextShow(){
             let showNameFormatted = showName.replace(/\s/g, '');
             showNameFormatted = showNameFormatted.replace('\'', '');
             showNameFormatted = showNameFormatted[0].toLowerCase() + showNameFormatted.substring(1);
-            console.log(showNameFormatted);
             changeBackground(showNameFormatted);
 
             found = true;
@@ -395,7 +393,6 @@ function convertToCount(minutes){
 //Parameters
 //+showName = name of show for the background
 function changeBackground(showName){
-    console.log(showName);
     var body = document.querySelector('body');
     var newBackground = "url(./assets/imgs/backgrounds/bg-"+showName+".png)"; 
     body.style.backgroundImage = newBackground;
