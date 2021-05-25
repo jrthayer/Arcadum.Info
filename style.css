@@ -40,7 +40,7 @@ nav{
     padding: .1em;
 }
 .nav__link:hover{
-    color: #000000;
+    font-weight: 700;
 }
 .nav__link:first-child{
     margin-left: 0;

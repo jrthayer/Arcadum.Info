@@ -197,7 +197,7 @@ function createChapter(chapterInfo){
     chapter.classList.add('section');
 
     let header = document.createElement('h1');
-    header.innerHTML = chapterInfo.name;
+    header.innerHTML = chapterInfo.name.charAt(0).toUpperCase() + chapterInfo.name.slice(1)
     chapter.appendChild(header);
 
     let descr = document.createElement('p');

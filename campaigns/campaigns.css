@@ -63,7 +63,7 @@ nav{
         padding: .1em;
     }
     .nav__link:hover{
-        color: #000000;
+        font-weight: 700;
     }
     .nav__link:first-child{
         margin-left: 0;
@@ -93,6 +93,7 @@ body{
                 0 0 0 7px #000; 
     font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
+    text-align: center;
 }
     header .section{
         border: none;
@@ -157,6 +158,7 @@ body{
         text-align: center;
         align-items: center;
 
+        min-height: 230px;
         padding: 1em;
         margin: 0;
         border-radius: .5rem;
