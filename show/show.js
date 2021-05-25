@@ -58,10 +58,11 @@ function testFiles(delay){
 }
 
 function generatePage(){
-    console.log(campaignInfo);
     let body = document.querySelector('body');
     body.style.backgroundImage = "url(../assets/imgs/backgrounds/bg-"+campaignInfo[0].name+".png)";
     
+    document.title = campaignInfo[1].name;
+
     let container = document.querySelector(".container");
     document.documentElement.style.setProperty('--color700', campaignInfo[0].color700);
     document.documentElement.style.setProperty('--color400', campaignInfo[0].color400);
