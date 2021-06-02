@@ -6,6 +6,15 @@
     "episodeImageFolder": "assets/imgs/episodeImgs/prologue/shrineOfSin",
     "episodeInfo": [
         {
+            "airDate": "",
+            "duration": "",
+            "imgArtist": "",
+            "youtube": "",
+            "twitch": "",
+            "fanArtDiscord": "",
+            "fanArtTwitch": ""
+        },
+        {
             "airDate": "4/3/2021",
             "duration": "~2:30:00",
             "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/828076654638530591",

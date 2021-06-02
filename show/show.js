@@ -71,10 +71,9 @@ function generatePage(){
     let header = createHeader(campaignInfo[0]);
     container.appendChild(header);
 
+    //create episodes section
     let episodeSection = createEpisodeSection(campaignInfo[1]);
     container.appendChild(episodeSection);
-    //create episodes section
-    //create individual episode
 }
 
 function createHeader(headerInfo){
@@ -138,8 +137,8 @@ function createEpisodeSection(episodeInfo){
     let a3 = createLink(['icon-mp4'], ['fas','fa-music','fa-2x'], episodeInfo.mp4Collection);
     subSection.appendChild(a3);
 
-    for(let x = 0; x < episodeInfo.episodeInfo.length; x++){
-        let episode = createEpisode(episodeInfo.episodeInfo[x], x);
+    for(let x = 1; x < episodeInfo.episodeInfo.length; x++){
+        let episode = createEpisode(episodeInfo.episodeInfo[x], x-1);
         section.appendChild(episode);
     }
 

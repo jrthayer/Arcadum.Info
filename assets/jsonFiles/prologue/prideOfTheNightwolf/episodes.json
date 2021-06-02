@@ -6,6 +6,15 @@
     "episodeImageFolder": "assets/imgs/episodeImgs/prologue/prideOfTheNightwolf",
     "episodeInfo": [
         {
+            "airDate": "",
+            "duration": "",
+            "imgArtist": "",
+            "youtube": "",
+            "twitch": "",
+            "fanArtDiscord": "",
+            "fanArtTwitch": ""
+        },
+        {
             "airDate": "3/31/2021",
             "duration": "~2:50:00",
             "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/829170928809803826",

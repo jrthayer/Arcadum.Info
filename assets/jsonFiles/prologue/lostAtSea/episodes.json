@@ -6,6 +6,15 @@
     "episodeImageFolder": "assets/imgs/episodeImgs/prologue/lostAtSea",
     "episodeInfo": [
         {
+            "airDate": "",
+            "duration": "",
+            "imgArtist": "",
+            "youtube": "",
+            "twitch": "",
+            "fanArtDiscord": "",
+            "fanArtTwitch": ""
+        },
+        {
             "airDate": "4/5/2021",
             "duration": "3:28:11",
             "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/828834974186733618",
