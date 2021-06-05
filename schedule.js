@@ -11,7 +11,7 @@ var utcTimes = [
     [],
     [[1140, "Scrolls of Not'Chek"]],
     [[60, "Lost At Sea"]],
-    [[0, "Pride Of The Nightwolf"],[1260, "Into The Mists"]], 
+    [[0, "Pride Of The Nightwolf"]], 
     [], 
     [],
     [[60, "Callous Row"], [1380, "Shrine Of Sin"]]]; 
