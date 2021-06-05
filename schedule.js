@@ -9,7 +9,7 @@
 
 var utcTimes = [
     [],
-    [[1140, "Scrolls of Not'Chek"]],
+    [[1140, "Scrolls Of Not'Chek"]],
     [[60, "Lost At Sea"]],
     [[0, "Pride Of The Nightwolf"]], 
     [], 
