@@ -352,7 +352,6 @@ nav{
 
     .gameInfo *:first-of-type{
         margin-right: .5em;
-        width: 75%;
     }
 
 
@@ -405,24 +404,26 @@ nav{
     }
 
     .label{
-        width: calc(100% - 20px*2);
+        width: 100%;
         border-bottom: 2px solid rgb(55, 55, 55);
-        border-top: 2px solid inherit;
+        border-top: 2px solid currentColor;
     }
 
     .row{
-        text-align: center;
         border-bottom: none;
         padding: 0;
     }
+        .row .label{
+            text-align: center;
+        }
         .row:first-of-type{
             border-top: none;
         }
 
     .data{
-        width: 100%;
+        width: calc(100% - .5em*2);
         border: none;
-        padding: 10px 0px;
+        padding: .5em .5em;
     }
 }
 
