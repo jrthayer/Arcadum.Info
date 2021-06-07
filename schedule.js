@@ -1,12 +1,11 @@
 // var utcTimes = [
 //     [[180,"The Clash(Fighting Games)"]],
-//     [[1140, "Scrolls of Not'Chek"]],
+//     [[1140, "Scrolls Of Not'Chek"]],
 //     [[60, "Lost At Sea"]],
 //     [[0, "Pride Of The Nightwolf"]], 
 //     [], 
 //     [],
 //     [[60, "Callous Row"], [1140, "Into The Mists"], [1380, "Shrine Of Sin"]]]; 
-
 var utcTimes = [
     [],
     [[1140, "Scrolls Of Not'Chek"]],
@@ -16,6 +15,7 @@ var utcTimes = [
     [],
     [[60, "Callous Row"], [1380, "Shrine Of Sin"]]]; 
 
+
 var convertedTimes = [
 [],
 [],
@@ -24,6 +24,14 @@ var convertedTimes = [
 [],
 [],
 []];
+
+var showColors = {
+    scrollsOfNotChek: "#cc6133",
+    lostAtSea: "#28383e",
+    prideOfTheNightwolf: "#673234",
+    shrineOfSin: "#1a1a1a",
+    callousRow: "#000"
+};
 
 for(var x = 0; x < utcTimes.length; x++){
     if(utcTimes[x].length >= 1){
@@ -60,6 +68,8 @@ for(var x = 0; x < utcTimes.length; x++){
 
 createSchedule();
 nextShowInit();
+
+
 // var intervalId = window.setInterval(function(){ nextShow();} , 1000);
 
 //Info: Converts shows into local timezone(in minutes)
@@ -243,7 +253,9 @@ function nextShow(){
             let showNameFormatted = showName.replace(/\s/g, '');
             showNameFormatted = showNameFormatted.replace('\'', '');
             showNameFormatted = showNameFormatted[0].toLowerCase() + showNameFormatted.substring(1);
+            
             changeBackground(showNameFormatted);
+            changeNavColor(showNameFormatted);
 
             found = true;
             showInfo[0] = day;
@@ -272,6 +284,7 @@ function nextShow(){
                 showNameFormatted = showNameFormatted.replace('\'', '');
                 showNameFormatted = showNameFormatted[0].toLowerCase() + showNameFormatted.substring(1);
                 changeBackground(showNameFormatted);
+                changeNavColor(showNameFormatted);
 
                 found = true;
 
@@ -396,4 +409,19 @@ function changeBackground(showName){
     var body = document.querySelector('body');
     var newBackground = "url(./assets/imgs/backgrounds/bg-"+showName+".png)"; 
     body.style.backgroundImage = newBackground;
+}
+
+//
+//======================================
+//Parameters
+//+color = 
+function changeNavColor(name){
+    var root = document.querySelector(":root");
+    root.style.setProperty('--color700', showColors[name]);
+    if(name === "callousRow"){
+        root.style.setProperty('--textColor', "#e416fb");
+    }
+    else{
+        root.style.setProperty('--textColor', "#fff");
+    }
 }

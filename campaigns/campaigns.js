@@ -79,6 +79,7 @@ function loadJsonFiles(path, parent, index){
 function testFiles(delay){
     if(files === 0){
         generatePage();
+        console.log(campaignInfo);
     }
     else{
         console.log("files remaining to load: " + files);
@@ -126,6 +127,7 @@ function checkBackground(scrollPosition){
             let selector = ".section:nth-of-type("+sectionNum+")"+"> .show:not(.hide)";
             let curShow = document.querySelector(selector);
             changeBackground(curShow.style.getPropertyValue('--name'));
+            changeNavColor(curShow.style.getPropertyValue('--color700'));
         }
          
     }//scrolled into previous section
@@ -137,6 +139,7 @@ function checkBackground(scrollPosition){
             let selector = ".section:nth-of-type("+sectionNum+")"+"> .show:not(.hide)";
             let curShow = document.querySelector(selector);
             changeBackground(curShow.style.getPropertyValue('--name'));
+            changeNavColor(curShow.style.getPropertyValue('--color700'));
         }
     }
 };
@@ -146,7 +149,7 @@ function checkBackground(scrollPosition){
 //creates the page
 function generatePage(){
     let body = document.querySelector('body');
-    let container = document.querySelectorAll('.container')[1];
+    let container = document.querySelectorAll('.container')[0];
     
     let chapters = campaignInfo[0].children;
     
@@ -285,7 +288,8 @@ function nextShow(showParent, curShow, curShowIndex){
         let nextShow = allShows[curShowIndex+1];
 
         hide(curShow);
-        changeBackground(nextShow.style.getPropertyValue('--name')); 
+        changeBackground(nextShow.style.getPropertyValue('--name'));
+        changeNavColor(nextShow.style.getPropertyValue('--color700')); 
         show(nextShow);
     }
 }
@@ -303,6 +307,7 @@ function prevShow(showParent, curShow, curShowIndex){
 
         hide(curShow);
         changeBackground(prevShow.style.getPropertyValue('--name'));
+        changeNavColor(prevShow.style.getPropertyValue('--color700'));
         show(prevShow);
     }
 }
@@ -333,5 +338,13 @@ function changeBackground(showName){
     body.style.backgroundImage = newBackground;
 }
 
+//
+//======================================
+//Parameters
+//+color = 
+function changeNavColor(color){
+    var root = document.querySelector(":root");
+    root.style.setProperty('--color700', color);
+}
 
 

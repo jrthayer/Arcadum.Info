@@ -6,7 +6,7 @@
 :root {
     --color700: #28273f;
     --color400: #4f4f7d;
-  }
+}
 
 img{
     max-width:100%;
@@ -23,11 +23,9 @@ a{
     display: block;
     text-decoration: none;
     color: white;
+    padding-bottom: 3px;
 }
-
-a:hover{
-    color: var(--color700);
-}
+    
 
 /* 
 ==============
@@ -43,6 +41,21 @@ h1{
    Layout
 ============== 
 */
+header{
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+
+    width: 100%;
+
+    background-color: var(--color700);
+    color: white;
+    
+    border-bottom: black solid 3px;
+    box-shadow: 0 0 0 4px white,
+                0 0 0 7px #000; 
+}
+
 body{    
     margin: 0;
 
@@ -81,8 +94,11 @@ body{
         font-size: 2em;
         text-align: center;
     }
-    .section:nth-of-type(2){
+    .section:nth-of-type(1){
         background-color: var(--color700);
+    }
+    .section:first-of-type{
+        margin-top: 7rem;
     }
     .section:last-of-type{
         margin-bottom: 2rem;
@@ -90,8 +106,8 @@ body{
 
 nav{
     display: flex;
-    padding: .5em .5em;
-    color: var(--color700);
+    padding: .4em;
+    color: white;
     justify-content: center;
 
     font-size: 25px;
@@ -102,9 +118,11 @@ nav{
     color: inherit;
     margin-left: 1em;
     padding: .1em;
+    padding-bottom: .3em;
+    border-bottom: solid 2px var(--color700);
 }
 .nav__link:hover{
-    font-weight: 700;
+    border-bottom: 2px solid white;
 }
 .nav__link:first-child{
     margin-left: 0;
@@ -187,6 +205,7 @@ nav{
         color: white;
         padding: .1em .2em;
         position: absolute;
+        z-index: 0;
         background-color: var(--color400);
         border-top-left-radius: 1rem;
         border-bottom-right-radius: 1rem;
@@ -258,6 +277,9 @@ nav{
         align-self: center;
         text-align: center;
         padding: .2em;
+    }
+    .subSection a:hover{
+        color: var(--color700);
     }
 
 .fullCollection{

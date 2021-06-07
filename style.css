@@ -3,12 +3,35 @@
     src: url(assets/fonts/TheDolbak-Brush.ttf);
 }
 
+/* 
+==============
+   Global Styles
+============== 
+*/
+:root {
+    --color700: black;
+    --color400: grey;
+    --textColor: white;
+}
+
+img{
+    max-width: 100%;
+}
+
+.disable-select {
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}
+
 html, body{
     margin: 0;
     min-height: 100% !important;
     min-width: 100%;
     overflow: auto;
-    font-family: dolbak; 
+    font-family: dolbak, sans-serif;
+    color: var(--textColor); 
 }
 
 html{
@@ -17,30 +40,43 @@ html{
     /* background-size: contain; */
 }
 
+header{
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+
+    background-color: var(--color700);
+    color: inherit;
+    
+    border-bottom: black solid 3px;
+    box-shadow: 0 0 0 4px currentColor,
+                0 0 0 7px #000; 
+}
+
 body{
     background-color: rgba(0,0,0,.2);
+    color: inherit;
 }
 
 nav{
     display: flex;
-    padding: .5em .5em;
-    color: black;
+    padding: .4em;
     justify-content: center;
 
     font-size: 25px;
     letter-spacing: .15em;
-
-    border: black solid 3px;
-    /* margin-bottom: 5px; */
 }
 .nav__link{
     text-decoration: none;
     color: inherit;
     margin-left: 1em;
     padding: .1em;
+    padding-bottom: .3em;
+    border-bottom: solid 2px var(--color700);
 }
 .nav__link:hover{
-    font-weight: 700;
+    border-bottom: solid 2px currentColor;
 }
 .nav__link:first-child{
     margin-left: 0;
@@ -56,16 +92,19 @@ nav{
 .section{
     margin-top: 2rem;
     background: rgb(255, 255, 255);
-    color: black;
+    color: inherit;
     border: black solid 3px;
-    box-shadow: 0 0 0 4px white,
-                0 0 0 7px #000; 
+    box-shadow: 0 0 0 4px currentColor,
+                0 0 0 7px #000;
 }
     header .section{
         border: none;
     }
     .section::nth-child(3), .section::nth-child(4){
         background: rgb(8, 8, 8);
+    }
+    .section:first-of-type{
+        margin-top: 7rem;
     }
     .section:last-of-type{
         margin-bottom: 2rem;
@@ -209,7 +248,6 @@ nav{
 #sbWorldAnvil img{
     width: 30px;
     padding: 0px 5px;
-    filter: brightness(0) invert(1);
 }
 
 #sbWorldAnvil:hover{
@@ -219,7 +257,7 @@ nav{
 }
 
 #sbWorldAnvil:hover img{
-    filter: invert(0);
+    content:url("assets/worldAnvil.png");
 }
 
 #sbMerch{
@@ -236,17 +274,6 @@ nav{
     background: #080808;
 }
 
-.endgame{
-    text-align: center;
-    padding: 10px;
-
-    border-radius: 15px;
-
-    background: rgb(8, 8, 8);
-    
-    color: white;
-}
-
 /*Countdown*/
 /*=============================*/
 #countdown{
@@ -255,7 +282,7 @@ nav{
 
     background: rgb(8, 8, 8);
 
-    color: white;
+    color: inherit;
     padding: 5px;
 }
 
@@ -284,34 +311,35 @@ nav{
     margin-top: 0px;
     padding: 10px;
 
-    color: white;
+    color: inherit;
 }
 
 .row{
     min-height: 50px;
     height: auto;
     overflow:auto;
-    margin: 0px 10px;
+    margin: 0px 0px;
     padding: .5em;
     
 
     font-size: 35px;
 
-    color: white;
+    color: inherit;
 
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid currentColor;
 }
     .row:first-of-type{
-        border-top: 2px solid white;
+        border-top: 2px solid currentColor;
     }
     .row:last-of-type{
         border-bottom: none;
     }
 
 .gameInfo{
-    padding: 10px;
+    padding: 10px 0px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
     .gameInfo:last-of-type{
         margin-bottom: 10px;
@@ -324,19 +352,19 @@ nav{
 
     .gameInfo *:first-of-type{
         margin-right: .5em;
-        width: 80%;
+        width: 75%;
     }
 
 
 .label{
     float: left;
-    width: calc(20% - 40px);
-    padding: 10px 20px;
+    width: 22%;
+    padding: 10px 0px;
 }
 
 .data{
     float: left;
-    width: calc(80% - 21px);
+    width: 78%;
 }
 
 @media only screen and (max-width: 700px) {
@@ -379,7 +407,7 @@ nav{
     .label{
         width: calc(100% - 20px*2);
         border-bottom: 2px solid rgb(55, 55, 55);
-        border-top: 2px solid white;
+        border-top: 2px solid inherit;
     }
 
     .row{

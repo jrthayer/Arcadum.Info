@@ -8,6 +8,11 @@
    Global Styles
 ============== 
 */
+:root {
+    --color700: #28273f;
+    --color400: #4f4f7d;
+}
+
 img{
     max-width: 100%;
 }
@@ -44,30 +49,42 @@ p{
    Layout
 ============== 
 */
+header{
+    position: fixed;
+    top: 0px;
+
+    width: 100%;
+
+    background-color: var(--color700);
+    color: white;
+    
+    border-bottom: black solid 3px;
+    box-shadow: 0 0 0 4px white,
+                0 0 0 7px #000; 
+}
+
 nav{
     display: flex;
-    padding: .5em .5em;
+    padding: .4em;
     justify-content: center;
-    color: black;
 
     font-size: 25px;
     letter-spacing: .15em;
-
-    border: black solid 3px;
-    /* margin-bottom: 5px; */
 }
-    .nav__link{
-        text-decoration: none;
-        color: inherit;
-        margin-left: 1em;
-        padding: .1em;
-    }
-    .nav__link:hover{
-        font-weight: 700;
-    }
-    .nav__link:first-child{
-        margin-left: 0;
-    }
+.nav__link{
+    text-decoration: none;
+    color: inherit;
+    margin-left: 1em;
+    padding: .1em;
+    padding-bottom: .3em;
+    border-bottom: solid 2px var(--color700);
+}
+.nav__link:hover{
+    border-bottom: solid 2px white;
+}
+.nav__link:first-child{
+    margin-left: 0;
+}
 
 body{    
     margin: 0;
@@ -77,6 +94,8 @@ body{
 
     transition: ease-in .5s background-image;  
 }
+
+
 
 .container{
     width: 90%;
@@ -97,6 +116,9 @@ body{
 }
     header .section{
         border: none;
+    }
+    .section:first-of-type{
+        margin-top: 7rem;
     }
     .section:last-of-type{
         margin-bottom: 2rem;
