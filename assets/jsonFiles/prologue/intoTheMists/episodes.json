@@ -90,10 +90,19 @@
             "airDate": "5/30/2021",
             "duration": "4:20:27",
             "imgArtist": "",
-            "youtube": "",
+            "youtube": "https://www.youtube.com/watch?v=KEnNsbrKX2o&list=PLfASEnzB7i1Ydqqd5cl8-S-bTgQH_zGr2&index=8",
             "twitch": "https://www.twitch.tv/videos/1041302935?collection=RZRRoj2tdBZlgQ",
             "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/848690755865280512",
             "fanArtTwitch": "https://www.twitch.tv/videos/1041302935?collection=RZRRoj2tdBZlgQ&t=4h7m3s"
+        },
+        {
+            "airDate": "6/02/2021",
+            "duration": "3:28:13",
+            "imgArtist": "",
+            "youtube": "https://www.youtube.com/watch?v=CUck2-KjeiI&list=PLfASEnzB7i1Ydqqd5cl8-S-bTgQH_zGr2&index=9",
+            "twitch": "https://www.twitch.tv/videos/1047424785?collection=RZRRoj2tdBZlgQ",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/849748253667098634",
+            "fanArtTwitch": "https://www.twitch.tv/videos/1047424785?collection=RZRRoj2tdBZlgQ&t=3h12m4s"
         }
     ]
 }
