@@ -8,11 +8,11 @@
 //     [[60, "Callous Row"], [1140, "Into The Mists"], [1380, "Shrine Of Sin"]]]; 
 var utcTimes = [
     [],
-    [[1140, "Scrolls Of Not'Chek"]],
-    [[60, "Lost At Sea"]],
-    [[0, "Pride Of The Nightwolf"]], 
-    [], 
     [],
+    [[0, "Pride Of The Nightwolf"]],
+    [], 
+    [], 
+    [[1080, "Lost At Sea"]],
     [[60, "Callous Row"], [1380, "Shrine Of Sin"]]]; 
 
 

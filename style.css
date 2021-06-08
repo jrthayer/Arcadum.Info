@@ -94,6 +94,21 @@ body{
         margin-bottom: 2rem;
     }
 
+.news{
+    background-color: black;
+    text-align: center;
+}
+    .news h1{
+        text-transform: uppercase;
+        margin: 0;
+        border-bottom: solid 2px currentColor;
+        font-size: 3rem;
+    }
+    .news p{
+        margin: 0;
+        padding: 1em;
+        font-size: 2rem;
+    }
 /* Components */
 /*==========================================================*/
 
