@@ -6,26 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games</title>
     <link rel="icon" href="../assets/tabIcon.png">
-    <link rel="stylesheet" href="campaigns.css?v=2.3">
+    <script src="https://kit.fontawesome.com/f46f49412e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="campaigns.css?v=2.31">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
     <link rel="preload" href="../assets/imgs/backgrounds/bg-intoTheMists.png" as="image">
     <link rel="preload" href="../assets/imgs/backgrounds/bg-lostAtSea.png" as="image">
     <link rel="preload" href="../assets/imgs/backgrounds/bg-prideOfTheNightwolf.png" as="image">
     <link rel="preload" href="../assets/imgs/backgrounds/bg-scrollsOfNotChek.png" as="image">
     <link rel="preload" href="../assets/imgs/backgrounds/bg-shrineOfSin.png" as="image">
-
+    
 </head>
 <body class="disable-select">
     
     <header>
         <div>
-            <nav>
-                <a href="../index.html" class="nav__link">Home</a>
-               <a href="" class="nav__link">Games</a>
+            <nav class="container">
+                <a href="../" class="nav_homeBtn nav__link">Home</a>
+    
+                <div class="links">
+                    <a href="" class="nav__link">Storyline</a>
+                    <div class="nav__dropdown">
+                        <a class="nav__dropdown-name">Games
+                            <i class="fas fa-chevron-down fa-xs"></i>
+                        </a>
+                        <div class="nav__dropdown-links">
+                            <div class="nav__dropdown-group">
+                                <a class="nav__dropdown-group-name">Prologue
+                                    <i class="fas fa-chevron-down fa-xs"></i>
+                                </a>
+                                <div class="nav__dropdown-group-links">
+                                    <a href="../show/show.html?chapter=prologue&campaign=intoTheMists" class="nav__link">Into The Mists</a>
+                                    <a href="../show/show.html?chapter=prologue&campaign=prideOfTheNightwolf" class="nav__link">Pride Of The Nightwolf</a>
+                                    <a href="../show/show.html?chapter=prologue&campaign=lostAtSea" class="nav__link">Lost At Sea</a>
+                                    <a href="../show/show.html?chapter=prologue&campaign=scrollsOfNotChek" class="nav__link">Scrolls Of Not'Chek</a>
+                                    <a href="../show/show.html?chapter=prologue&campaign=shrineOfSin" class="nav__link">Shrine Of Sin</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <i class="fas fa-bars navBtn"></i>
             </nav>
         </div>
     </header>
     <div class="container"></div>
 </body>
-<script src="campaigns.js?v=2.6"></script>
+<script src="campaigns.js?v=2.61"></script>
 </html>

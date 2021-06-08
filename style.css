@@ -18,6 +18,10 @@ img{
     max-width: 100%;
 }
 
+i{
+    transition: transform .3s, -webkit-transfrom .3s;
+}
+
 .disable-select {
     -webkit-user-select: none;  
     -moz-user-select: none;    
@@ -33,6 +37,7 @@ html, body{
     font-family: dolbak, sans-serif;
     color: var(--textColor); 
 }
+
 
 html{
     /* background: linear-gradient(to bottom, #00A300 0%, #002642 30% 50%, #FF9900 85%, #EEEE00 95%); */
@@ -59,34 +64,13 @@ body{
     color: inherit;
 }
 
-nav{
-    display: flex;
-    padding: .4em;
-    justify-content: center;
 
-    font-size: 25px;
-    letter-spacing: .15em;
-}
-.nav__link{
-    text-decoration: none;
-    color: inherit;
-    margin-left: 1em;
-    padding: .1em;
-    padding-bottom: .3em;
-    border-bottom: solid 2px var(--color700);
-}
-.nav__link:hover{
-    border-bottom: solid 2px currentColor;
-}
-.nav__link:first-child{
-    margin-left: 0;
-}
 
 .container{
     width: 600px;
 
     margin: 0 auto;
-    padding: 0 30px;
+    padding: .4em 2em;
 }
 
 .section{
@@ -109,6 +93,108 @@ nav{
     .section:last-of-type{
         margin-bottom: 2rem;
     }
+
+/* Components */
+/*==========================================================*/
+
+/*Navbar*/
+/*=============================*/
+nav{
+    display: flex;
+    flex-direction: column;
+    visibility: visible;
+    padding: .4em 0;
+    justify-content: center;
+
+    font-size: 25px;
+    letter-spacing: .15em;
+    cursor: pointer;
+}
+
+.nav__link, 
+.nav__dropdown, 
+.nav__dropdown-group{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: .1em;
+    padding-bottom: .3em;
+    border-bottom: solid 2px var(--color700);
+}
+
+.nav_homeBtn{
+    padding: .1em 0em;
+    padding-bottom: .3em;
+}
+
+.links{
+    display: none;
+}
+
+.navBtn{
+    position: fixed;
+    top: .6em;
+    right: 1.4em;
+}
+
+.nav__dropdown-group{
+    padding-bottom: .2em;
+}
+
+.nav .nav__link:first-child{
+    margin-left: 0;
+}
+
+/* dropdown */
+.nav__dropdown{
+    display: block;
+}
+.nav__dropdown-name, .nav__dropdown-group-name{
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav__dropdown-links{
+    visibility: hidden;
+    display: none;
+    
+    top: 2.49em;
+    margin-left: .5em;
+    padding: .5em;
+    background-color: var(--color700);
+}
+    .nav__dropdown-links .nav__link{
+        margin: 0;
+    }
+
+.nav__dropdown-group-links{
+    display: none;
+    padding-left: 1em;
+    padding-top: .5em;
+}
+    .nav__dropdown-group-links *{
+        padding: .5em 0;
+        border-bottom: solid 2px currentColor;
+    }
+
+.nav__active_visible + *{
+    visibility: visible;
+}
+
+.nav__active_block + *{
+    display: block;
+}
+
+.nav__active_visible i,
+.nav__active_block i{
+    transform: rotate(180deg);
+    
+}
+
+.nav__dropdown-group-name i,
+.nav__dropdown-name i{
+    margin-left: -7px;
+}
 
 /*BANNER*/
 /*=============================*/
@@ -366,6 +452,50 @@ nav{
     width: 78%;
 }
 
+@media only screen and (min-width: 550px){
+    nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navBtn{
+        display: none;
+    }
+
+    .links{
+        display: flex;
+        padding-left: 1.4em;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .links > *{
+        padding: 0 1em;
+    }
+
+    .nav__dropdown-group-links *{
+        padding: .5em 0;
+        border-bottom: none;
+    }
+
+    .nav__dropdown-links{
+        margin-left: -.5em;
+        position: absolute; 
+        border-left: black solid 3px;
+        border-right: black solid 3px;
+        border-bottom: black solid 3px;
+        box-shadow: 4px 4px currentColor,
+                    -4px 4px currentColor,
+                    7px 7px black,
+                    -7px 7px black;
+    }
+    
+    .nav__link:hover, 
+    .nav__dropdown:hover{
+        border-bottom: solid 2px currentColor;
+    }
+}
+
 @media only screen and (max-width: 700px) {
     body{
         background-color: rgba(0,0,0,0);
@@ -390,7 +520,6 @@ nav{
 }
 
 @media only screen and (max-width: 600px) {
-
     #sbWorldAnvil{
         flex: 100%;
     }
