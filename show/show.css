@@ -343,11 +343,25 @@ nav{
         margin-top: 0;
     }
 
+.detailsGroup{
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.detailsText{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .details{
     align-self: center;
     padding-top: .5em;
     padding-left: .5em;
     font-size: .9em;
+    text-align: left;
 }
     .details *{
         flex: 1;
@@ -357,6 +371,21 @@ nav{
         border-radius: .5em;
     }
 
+.tldwImg{
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 1em;
+    padding: .2em;
+    cursor: default;
+}
+
+.tldwGif{
+    cursor: pointer;
+}
+
+.tldwGif:hover{
+    content: url("../assets/imgs/icons/tldw\(solid\).gif");
+}
 
 .subSection{
     display: flex;
@@ -474,6 +503,12 @@ nav{
 
     .episodeBtns{
         padding-left: .5em;
+    }
+
+    
+    .detailsGroup{
+        align-items: flex-start;
+        justify-content: space-between;
     }
 
     .details{

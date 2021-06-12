@@ -186,15 +186,39 @@ function createEpisode(episodeInfo, episodeNum){
     episodeBtns.classList.add('episodeBtns');
     flexCol.appendChild(episodeBtns);
 
+    let detailsGroup = document.createElement('div');
+    detailsGroup.classList.add('detailsGroup');
+    episodeBtns.appendChild(detailsGroup);
+
+    let detailsText = document.createElement('div');
+    detailsText.classList.add('detailsText');
+    detailsGroup.appendChild(detailsText);
+
     let details1 = document.createElement('div');
     details1.classList.add('details');
     details1.innerHTML = "Air Date: " + episodeInfo.airDate;
-    episodeBtns.appendChild(details1);
+    detailsText.appendChild(details1);
 
     let details2 = document.createElement('div');
     details2.classList.add('details');
     details2.innerHTML = "Duration: " + episodeInfo.duration;
-    episodeBtns.appendChild(details2);
+    detailsText.appendChild(details2);
+
+    let tldwA = document.createElement('a');
+    
+    detailsGroup.appendChild(tldwA);
+
+    let tldwImg = document.createElement('img');
+    tldwImg.classList.add('tldwImg');
+    tldwImg.src = "../assets/imgs/icons/TLDW(sad2).png";
+    if(episodeInfo.summary !== ""){
+        tldwA.href = episodeInfo.summary;
+        tldwImg.classList.add('tldwGif');
+        tldwA.setAttribute('target', '_blank');
+        tldwA.setAttribute("rel", "noopener noreferrer");
+    }
+    tldwImg.href = episodeInfo.summary;
+    tldwA.appendChild(tldwImg);
 
     let episodeVids = document.createElement('div');
     episodeVids.classList.add('episodeVids', 'subSection');
