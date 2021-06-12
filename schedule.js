@@ -30,7 +30,8 @@ var showColors = {
     lostAtSea: "#28383e",
     prideOfTheNightwolf: "#673234",
     shrineOfSin: "#1a1a1a",
-    callousRow: "#000"
+    callousRow: "#000",
+    inkAndBlood: "#650000"
 };
 
 for(var x = 0; x < utcTimes.length; x++){

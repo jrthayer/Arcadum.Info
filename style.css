@@ -124,7 +124,7 @@ nav{
 
     font-size: 25px;
     letter-spacing: .15em;
-    cursor: pointer;
+    cursor: pointer; 
 }
 
 .nav__link, 

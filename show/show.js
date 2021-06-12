@@ -203,22 +203,21 @@ function createEpisode(episodeInfo, episodeNum){
     details2.classList.add('details');
     details2.innerHTML = "Duration: " + episodeInfo.duration;
     detailsText.appendChild(details2);
-
-    let tldwA = document.createElement('a');
     
-    detailsGroup.appendChild(tldwA);
-
-    let tldwImg = document.createElement('img');
-    tldwImg.classList.add('tldwImg');
-    tldwImg.src = "../assets/imgs/icons/TLDW(sad2).png";
     if(episodeInfo.summary !== ""){
+        let tldwA = document.createElement('a');
+        detailsGroup.appendChild(tldwA);
+
+        let tldwImg = document.createElement('img');
+        tldwImg.classList.add('tldwImg');
+        tldwImg.src = "../assets/imgs/icons/TLDW(sad2).png";
         tldwA.href = episodeInfo.summary;
         tldwImg.classList.add('tldwGif');
         tldwA.setAttribute('target', '_blank');
         tldwA.setAttribute("rel", "noopener noreferrer");
+        tldwA.appendChild(tldwImg);
     }
-    tldwImg.href = episodeInfo.summary;
-    tldwA.appendChild(tldwImg);
+   
 
     let episodeVids = document.createElement('div');
     episodeVids.classList.add('episodeVids', 'subSection');
