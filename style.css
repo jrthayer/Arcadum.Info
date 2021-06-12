@@ -381,7 +381,7 @@ nav{
     font-size: 50px;
     text-align: center;
 
-    background: rgb(8, 8, 8);
+    background: black;
 
     color: inherit;
     padding: 5px;
@@ -402,7 +402,7 @@ nav{
 /*SCHEDULE*/
 /*=============================*/
 #schedule{
-    background-color: rgb(8, 8, 8);
+    background-color: black;
 }
 
 #schedule h1{
