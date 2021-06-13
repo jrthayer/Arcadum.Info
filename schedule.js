@@ -342,7 +342,7 @@ function mintuesTill(showInfo){
             //minutes remaining in day
             mintuesTill = 1440 - minutes;
 
-            for(let x = 0; x < 7; x++){
+            for(let x = 0; x < 6; x++){
                 mintuesTill = mintuesTill + 1440;
             }
 
@@ -359,7 +359,12 @@ function mintuesTill(showInfo){
 
         //days between now and next show
         let daysBetween = 0;
-        daysBetween = showDay - day - 1;
+        if(day>showDay){
+            daysBetween = (7 - day) + showDay - 1; 
+        }
+        else{
+            daysBetween = showDay - day - 1;
+        }
         
         for(let x = 0; x < daysBetween; x++){
             mintuesTill = mintuesTill + 1440;
