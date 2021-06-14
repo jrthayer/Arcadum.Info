@@ -107,7 +107,7 @@ body{
     }
     .news p{
         margin: 0;
-        padding: 1em;
+        padding: .5em;
         font-size: 2rem;
     }
 /* Components */
@@ -230,10 +230,10 @@ nav{
 }
 
 .socialBtn{
-    flex: calc(33% - 7.5px * 2 - 5px * 2 - 3px * 2);
+    flex: calc(33% - 7.5px * 2 - 10px * 2 - 3px * 2);
 
     margin: 7.5px;
-    padding: 10px 5px;
+    padding: 10px;
     border-radius: 5px;
 
     font-size: 25px;
@@ -243,6 +243,12 @@ nav{
     background: white;
     color: black;
     border: 3px solid black;
+}
+
+.socialBtn:hover{
+    background-color: black;
+    color: white;
+    border: 3px solid white;
 }
 
 .socialBtn *{
@@ -317,7 +323,7 @@ nav{
 }
 
 #sbCallousRow{
-    flex: calc(50% - 5px*2 - 3px*2 - 7.5px*2);
+    flex: calc(50% - 10px*2 - 3px*2 - 7.5px*2);
 
     color: #e416fb;
     border-color: #e416fb;
@@ -340,7 +346,7 @@ nav{
 }
 
 #sbWorldAnvil{
-    flex: calc(50% - 5px*2 - 3px*2 - 7.5px*2);
+    flex: calc(50% - 10px*2 - 3px*2 - 7.5px*2);
 
     color: #FFFFFF;
     border-color: #FFFFFF;
@@ -510,6 +516,10 @@ nav{
     .nav__dropdown:hover{
         border-bottom: solid 2px currentColor;
     }
+
+    .news p{
+        padding: 1em;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -531,7 +541,7 @@ nav{
     }
 
     .socialBtn{
-        flex: calc(50% - 7.5px*2 - 5px*2 - 3px*2);
+        flex: calc(50% - 7.5px*2 - 10px*2 - 3px*2);
     }
 }
 
@@ -546,6 +556,10 @@ nav{
 
     #schedule h1{
         text-align: center;
+    }
+
+    .gameInfo{
+        padding: 20px 0px;
     }
 
     .label{
