@@ -31,7 +31,8 @@ var showColors = {
     prideOfTheNightwolf: "#673234",
     shrineOfSin: "#1a1a1a",
     callousRow: "#000",
-    inkAndBlood: "#650000"
+    inkAndBlood: "#650000",
+    amongTheReeds: "#38762c"
 };
 
 for(var x = 0; x < utcTimes.length; x++){
