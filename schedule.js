@@ -423,7 +423,16 @@ function changeBackground(showName){
 //+color = 
 function changeNavColor(name){
     var root = document.querySelector(":root");
-    root.style.setProperty('--color700', showColors[name]);
+    
+    //Check if showColors has a color or not. 
+    //Default to black if there it is undefined. 
+    if(typeof showColors[name] !== 'undefined'){
+        root.style.setProperty('--color700', showColors[name]);
+    }
+    else{
+        root.style.setProperty('--color700', '#000');
+    }
+    
     if(name === "callousRow"){
         root.style.setProperty('--textColor', "#e416fb");
     }
