@@ -8,8 +8,8 @@
 //     [[60, "Callous Row"], [1140, "Into The Mists"], [1380, "Shrine Of Sin"]]]; 
 var utcTimes = [
     [],
-    [[1020, "Ink And Blood"],[1260, "OTV Session 0(part 2)"]],
-    [[0, "Pride Of The Nightwolf"]],
+    [[1020, "Ink And Blood"]],
+    [],
     [[1380, "Among The Reeds"]], 
     [], 
     [[1260, "Otikata's Curse"]],
