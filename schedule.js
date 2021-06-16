@@ -8,8 +8,8 @@
 //     [[60, "Callous Row"], [1140, "Into The Mists"], [1380, "Shrine Of Sin"]]]; 
 var utcTimes = [
     [],
-    [[1020, "Ink And Blood"]],
-    [],
+    [[1020, "Ink And Blood"], [1320, "The Final Toll"]],
+    [[1260, "A Storm Approaches"]],
     [[1380, "Among The Reeds"]], 
     [], 
     [[1260, "Otikata's Curse"]],
