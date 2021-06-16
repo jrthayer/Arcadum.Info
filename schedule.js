@@ -15,7 +15,6 @@ var utcTimes = [
     [[1260, "Otikata's Curse"]],
     [[60, "Callous Row"]]]; 
 
-
 var convertedTimes = [
 [],
 [],
@@ -32,7 +31,8 @@ var showColors = {
     shrineOfSin: "#1a1a1a",
     callousRow: "#000",
     inkAndBlood: "#650000",
-    amongTheReeds: "#38762c"
+    amongTheReeds: "#38762c",
+    otikatasCurse: "#25265aff"
 };
 
 for(var x = 0; x < utcTimes.length; x++){
