@@ -71,6 +71,7 @@ body{
     font-weight: 100;
 
     transition: ease-in .5s background-image;  
+    color: white;
 }
 
 .container{

@@ -32,7 +32,8 @@ var showColors = {
     callousRow: "#000",
     inkAndBlood: "#650000",
     amongTheReeds: "#38762c",
-    otikatasCurse: "#25265aff"
+    otikatasCurse: "#25265aff",
+    aStormApproaches: "#46375b"
 };
 
 for(var x = 0; x < utcTimes.length; x++){

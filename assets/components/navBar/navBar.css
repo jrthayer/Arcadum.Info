@@ -10,7 +10,7 @@ header{
     overflow-y: auto;
 
     background-color: var(--color700);
-    color: white;
+    color: currentColor;
     
     border-bottom: black solid 3px;
     box-shadow: 0 0 0 4px currentColor,
