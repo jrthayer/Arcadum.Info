@@ -1,7 +1,7 @@
 {
     "name": "inkAndBlood",
     "description": "Ink And Blood!",
-    "showImage": "../assets/imgs/showBanners/default.png",
+    "showImage": "../assets/imgs/showBanners/InkAndBlood.png",
     "iconImage": "",
     "color700": "#650000",
     "color400": "#a73434"
