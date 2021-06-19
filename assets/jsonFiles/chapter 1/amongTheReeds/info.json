@@ -1,0 +1,8 @@
+{
+    "name": "amongTheReeds",
+    "description": "Among The Reeds!",
+    "showImage": "../assets/imgs/showBanners/default.png",
+    "iconImage": "",
+    "color700": "#38762c",
+    "color400": "#6fc35f"
+}

@@ -1,0 +1,39 @@
+{
+    "name": "",
+    "twitchCollection": "",
+    "youtubeCollection": "",
+    "mp4Collection": "",
+    "episodeImageFolder": "assets/imgs/episodeImgs/chapter%201/otikatasCurse",
+    "episodeInfo": [
+        {
+            "airDate": "",
+            "duration": "",
+            "imgArtist": "",
+            "youtube": "",
+            "twitch": "",
+            "fanArtDiscord": "",
+            "fanArtTwitch": "",
+            "summary": ""
+        },
+        {
+            "airDate": "4/07/2021",
+            "duration": "N/A",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/829525147131052083",
+            "youtube": "",
+            "twitch": "",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/829460469244493884",
+            "fanArtTwitch": "",
+            "summary": ""
+        },
+        {
+            "airDate": "6/18/2021",
+            "duration": "~3:00:00",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/855596270735589376",
+            "youtube": "",
+            "twitch": "https://www.twitch.tv/videos/1060379623?t=0h8m20s",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/855545369584205856",
+            "fanArtTwitch": "https://www.twitch.tv/videos/1060379623?t=3h1m17s",
+            "summary": ""
+        }
+    ]
+}

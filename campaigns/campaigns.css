@@ -165,10 +165,11 @@ body{
 }
     .infoCol > p{
         display: flex;
-        text-align: center;
+        place-content: center;
         align-items: center;
 
         min-height: 230px;
+        width: 100%;
         padding: 1em;
         margin: 0;
         border-radius: .5rem;
@@ -216,7 +217,7 @@ body{
 }
 
 .unavailable{
-    opacity: .9 !important;
+    opacity: .8 !important;
     pointer-events: none !important;
 }
 

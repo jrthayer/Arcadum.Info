@@ -1,0 +1,8 @@
+{
+    "name": "aStormApproaches",
+    "description": "A Storm Approaches!",
+    "showImage": "../assets/imgs/showBanners/default.png",
+    "iconImage": "",
+    "color700": "#46375b",
+    "color400": "#aa88c7"
+}

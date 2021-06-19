@@ -1,0 +1,39 @@
+{
+    "name": "",
+    "twitchCollection": "",
+    "youtubeCollection": "",
+    "mp4Collection": "",
+    "episodeImageFolder": "assets/imgs/episodeImgs/chapter%201/amongTheReeds",
+    "episodeInfo": [
+        {
+            "airDate": "",
+            "duration": "",
+            "imgArtist": "",
+            "youtube": "",
+            "twitch": "",
+            "fanArtDiscord": "",
+            "fanArtTwitch": "",
+            "summary": ""
+        },
+        {
+            "airDate": "5/19/2021",
+            "duration": "~2:00:00",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/844698085917851710",
+            "youtube": "",
+            "twitch": "https://www.twitch.tv/videos/1028218815?t=0h24m51s",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/844645109395881985",
+            "fanArtTwitch": "https://www.twitch.tv/videos/1028218815?t=3h49m12s",
+            "summary": ""
+        },
+        {
+            "airDate": "6/16/2021",
+            "duration": "~3:00:00",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/854912198387302401",
+            "youtube": "",
+            "twitch": "https://www.twitch.tv/videos/1058411745?t=1h45m12s",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/854851213622509599",
+            "fanArtTwitch": "https://www.twitch.tv/videos/1058411745?t=4h48m2s",
+            "summary": ""
+        }
+    ]
+}

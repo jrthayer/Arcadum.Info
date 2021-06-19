@@ -1,0 +1,39 @@
+{
+    "name": "inkAndBlood",
+    "twitchCollection": "",
+    "youtubeCollection": "",
+    "mp4Collection": "",
+    "episodeImageFolder": "assets/imgs/episodeImgs/chapter%201/inkAndBlood",
+    "episodeInfo": [
+        {
+            "airDate": "",
+            "duration": "",
+            "imgArtist": "",
+            "youtube": "",
+            "twitch": "",
+            "fanArtDiscord": "",
+            "fanArtTwitch": "",
+            "summary": ""
+        },
+        {
+            "airDate": "4/12/2021",
+            "duration": "N/A",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/831238026168238191",
+            "youtube": "",
+            "twitch": "",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/831201348225073162",
+            "fanArtTwitch": "",
+            "summary": ""
+        },
+        {
+            "airDate": "6/14/2021",
+            "duration": "~3:00:00",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/854081958556467251",
+            "youtube": "",
+            "twitch": "https://www.twitch.tv/videos/1056019781?t=0h54m1s",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/854037007012593694",
+            "fanArtTwitch": "https://www.twitch.tv/videos/1056019781?t=3h56m51s",
+            "summary": ""
+        }
+    ]
+}

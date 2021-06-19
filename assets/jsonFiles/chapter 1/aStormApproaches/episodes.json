@@ -3,7 +3,7 @@
     "twitchCollection": "",
     "youtubeCollection": "",
     "mp4Collection": "",
-    "episodeImageFolder": "",
+    "episodeImageFolder": "assets/imgs/episodeImgs/chapter%201/aStormApproaches",
     "episodeInfo": [
         {
             "airDate": "",
@@ -16,12 +16,12 @@
             "summary": ""
         },
         {
-            "airDate": "",
-            "duration": "",
-            "imgArtist": "",
+            "airDate": "4/29/2021",
+            "duration": "N/A",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/837514096614047785",
             "youtube": "",
             "twitch": "",
-            "fanArtDiscord": "",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/837494941483532339",
             "fanArtTwitch": "",
             "summary": ""
         }
