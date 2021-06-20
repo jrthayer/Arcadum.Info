@@ -121,106 +121,40 @@ body{
     font-size: 25px;
 
     text-decoration: none;
-
-    background: white;
-    color: black;
-    border: 3px solid black;
 }
-
-.socialBtn:hover{
-    background-color: black;
-    color: white;
-    border: 3px solid white;
-}
+    .socialBtn-color-one{
+        background: white;
+        color: var(--colorOne, black);
+        border: 3px solid var(--colorOne, black);
+    }
+    .socialBtn-color-one:hover{
+        background-color: var(--colorOne);
+        color: white;
+        border: 3px solid white;
+    }
+    .socialBtn-color-two{
+        background: var(--colorTwo, white);
+        color: var(--colorOne, black);
+        border: 3px solid var(--colorOne, black);
+    }
+    .socialBtn-color-two:hover{
+        background-color: var(--colorOne, black);
+        color: var(--colorTwo, white);
+        border: 3px solid var(--colorTwo, white);
+    }
 
 .socialBtn *{
     padding: 5px;
     
 }
 
-#sbTwitter{
-    border-color: rgb(29, 161, 242);
-    color: rgb(29, 161, 242);
-}
-
-#sbTwitter:hover{
-    border-color: rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
-    background: rgb(29, 161, 242);
-}
-
-#sbYouTube{
-    color: #c4302b;
-    border-color: #c4302b;
-}
-
-#sbYouTube:hover{
-    border-color: rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
-    background: #c4302b;
-}
-
-#sbTwitch{
-    color: #6441a5;
-    border-color: #6441a5;
-}
-
-#sbTwitch:hover{
-    border-color: rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
-    background: #6441a5;
-}
-
-#sbReddit{
-    border-color: #FF5700;
-    color: #FF5700;
-}
-
-#sbReddit:hover{
-    border-color: rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
-    background: #FF5700;
-}
-
-#sbPatreon{
-    color: #f96854;
-    border-color: #f96854;
-}
-
-#sbPatreon:hover{
-    border-color: rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
-    background: #f96854;
-}
-
-#sbDiscord{
-    color: #7289da;
-    border-color: #7289da;
-}
-
-#sbDiscord:hover{
-    border-color: rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
-    background: #7289da;
-}
-
 #sbCallousRow{
     flex: calc(50% - 10px*2 - 3px*2 - 7.5px*2);
-
-    color: #e416fb;
-    border-color: #e416fb;
-    background: #080808;
 }
 
 #sbCallousRow img{
     width: 35px;
     padding: 0px 5px;
-}
-
-#sbCallousRow:hover{
-    border-color: #080808;
-    color: #080808;
-    background: #e416fb;
 }
 
 #sbCallousRow:hover img{
@@ -229,10 +163,6 @@ body{
 
 #sbWorldAnvil{
     flex: calc(50% - 10px*2 - 3px*2 - 7.5px*2);
-
-    color: #FFFFFF;
-    border-color: #FFFFFF;
-    background: #c4302b;
 }
 
 #sbWorldAnvil img{
@@ -240,28 +170,8 @@ body{
     padding: 0px 5px;
 }
 
-#sbWorldAnvil:hover{
-    border-color: #c4302b;
-    color: #c4302b;
-    background: #FFFFFF;
-}
-
 #sbWorldAnvil:hover img{
     content:url("assets/worldAnvil.png");
-}
-
-#sbMerch{
-    flex: 100%;
-
-    color: #080808;
-    border-color: #080808;
-    background: #FFFFFF;
-}
-
-#sbMerch:hover{
-    border-color: #FFFFFF;
-    color: #FFFFFF;
-    background: #080808;
 }
 
 /*Countdown*/
