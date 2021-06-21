@@ -46,7 +46,7 @@ i{
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
     text-align: center;
 
@@ -219,6 +219,9 @@ html, body{
     border: none;
     font-size: 1.2rem;
 }
+    #schedule h1{
+        border: none;
+    }
 
 .row{
     display: flex;
@@ -282,6 +285,10 @@ html, body{
 /* Media Queries */
 /* ====================================== */
 @media(min-width: 30rem) {
+    h1{
+        font-size: 3rem;
+    }
+
     #sbCallousRow,
     #sbWorldAnvil{
         flex: calc(50% - .5rem*2 - .3rem*2 - 3px*2);
