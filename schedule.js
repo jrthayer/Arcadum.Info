@@ -8,7 +8,7 @@
 //     [[60, "Callous Row"], [1140, "Into The Mists"], [1380, "Shrine Of Sin"]]]; 
 var utcTimes = [
     [],
-    [[1020, "Ink And Blood"]],
+    [[1020, "Ink And Blood"],[1320, "The Final Toll"]],
     [[1260, "A Storm Approaches"]],
     [[1380, "Among The Reeds"]], 
     [[1080, "The Divine Wind"]], 
@@ -30,10 +30,11 @@ var showColors = {
     prideOfTheNightwolf: "#673234",
     shrineOfSin: "#1a1a1a",
     callousRow: "#000",
-    inkAndBlood: "#650000",
+    inkAndBlood: "#670000",
     amongTheReeds: "#38762c",
     otikatasCurse: "#25265aff",
-    aStormApproaches: "#46375b"
+    aStormApproaches: "#46375b",
+    theFinalToll: "#3c595c"
 };
 
 for(var x = 0; x < utcTimes.length; x++){
