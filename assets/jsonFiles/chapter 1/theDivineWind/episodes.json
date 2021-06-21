@@ -1,9 +1,9 @@
 {
-    "name": "aStormApproaches",
+    "name": "theDivineWind",
     "twitchCollection": "",
     "youtubeCollection": "",
     "mp4Collection": "",
-    "episodeImageFolder": "assets/imgs/episodeImgs/chapter%201/aStormApproaches",
+    "episodeImageFolder": "assets/imgs/episodeImgs/chapter%201/theDivineWind",
     "episodeInfo": [
         {
             "airDate": "",
@@ -16,12 +16,12 @@
             "summary": ""
         },
         {
-            "airDate": "4/29/2021",
-            "duration": "N/A",
-            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/837514096614047785",
+            "airDate": "",
+            "duration": "",
+            "imgArtist": "",
             "youtube": "",
             "twitch": "",
-            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/837494941483532339",
+            "fanArtDiscord": "",
             "fanArtTwitch": "",
             "summary": ""
         }

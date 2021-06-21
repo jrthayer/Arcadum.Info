@@ -42,6 +42,7 @@ nav{
     padding: .1em;
     padding-bottom: .3em;
     border-bottom: solid 2px var(--color700);
+    text-shadow: 1px 1px 0px black;
 }
 
 .nav_homeBtn{
