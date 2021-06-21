@@ -227,7 +227,7 @@ body{
    Media Queries
 ============== 
 */
-@media (min-width: 65.5rem) {
+@media (min-width: 65.5rem){
     .container{
         max-width: 60rem;
     }

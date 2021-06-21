@@ -111,7 +111,7 @@ function localConvert(utcTime){
 function createSchedule(){
     var container = document.getElementById("schedule");
     var header = document.createElement('h1');
-    header.innerHTML = 'SCHEDULE';
+    header.innerHTML = 'Schedule';
     container.appendChild(header);
 
     for(var x = 0; x < convertedTimes.length; x++){
@@ -253,7 +253,7 @@ function nextShow(){
         //+1 ensures that next show runs at 0
         if(minutes+1 < convertedTimes[day][x][0]){
             showName = convertedTimes[day][x][1];
-            nextName.innerHTML = "Next Show: "+showName;
+            nextName.innerHTML = showName;
             
             let showNameFormatted = showName.replace(/\s/g, '');
             showNameFormatted = showNameFormatted.replace('\'', '');
@@ -283,7 +283,7 @@ function nextShow(){
             
             if(convertedTimes[curDay].length > 0){
                 showName = convertedTimes[curDay][0][1];
-                nextName.innerHTML = "Next Show: "+showName;
+                nextName.innerHTML = showName;
 
                 let showNameFormatted = showName.replace(/\s/g, '');
                 showNameFormatted = showNameFormatted.replace('\'', '');
@@ -305,7 +305,7 @@ function nextShow(){
 
     if(found === false){
         showName = convertedTimes[day][0][1];
-        nextName.innerHTML = "Next Show: "+showName;
+        nextName.innerHTML = showName;
 
         let showNameFormatted = showName.replace(/\s/g, '');
         showNameFormatted = showNameFormatted.replace('\'', '');
@@ -386,8 +386,8 @@ function convertToCount(minutes){
     var hours = Math.floor(minutes/60);
     var min = minutes - hours*60;
 
-    if(hours < 10){
-        hours = "0"+hours;
+    if(hours < 1){
+        hours = "0";
     }
 
     min = min - 1;
@@ -398,7 +398,9 @@ function convertToCount(minutes){
     var sec = 59 - time.getSeconds();
 
     if(min<10){
-        min = "0"+min;
+        if(hours != "0"){
+            min = "0"+min;
+        }
     }
 
     if(sec<10){
@@ -407,7 +409,18 @@ function convertToCount(minutes){
             minutes--;
         }
     }
-    var time = hours+":"+min+":"+sec;
+    var time;
+    if(hours == "0"){
+        if(min == "00"){
+            time = sec+"s";
+        }
+        else{
+            time = min+":"+sec;
+        }
+    }
+    else{
+        time = hours+":"+min+":"+sec;
+    }
     return time;
 }
 
@@ -448,7 +461,6 @@ function changeNavColor(name){
 
 
 function setupNavbar(){
-    console.log("setup navbar");
     //dropdown-name
     //dropdown-group-name
     let navbarDropdowns = document.querySelectorAll(".nav__dropdown-name");

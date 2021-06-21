@@ -2,6 +2,21 @@
     font-family: dolbak;
     src: url(assets/fonts/TheDolbak-Brush.ttf);
 }
+/* 
+    Quick-Hacks/Temporary
+*/
+.news p .socialBtn{
+    font-size: 1em;
+
+    padding: .5rem;
+    margin: 0 auto;
+
+    max-width: 150px;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
 
 /* 
 ==============
@@ -18,6 +33,7 @@ img{
     max-width: 100%;
 }
 
+/* Currently used for nav dropdown animation */
 i{
     transition: transform .3s, -webkit-transfrom .3s;
 }
@@ -29,318 +45,274 @@ i{
     user-select: none;
 }
 
-html, body{
+h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+
+    padding: 1rem;
+    border-bottom: 4px solid currentColor;
     margin: 0;
-    min-height: 100% !important;
-    min-width: 100%;
-    overflow: auto;
-    font-family: dolbak, sans-serif;
-    color: var(--textColor); 
 }
 
-
+/* Typography */
+/* ====================================== */
 html{
-    background-image: url(assets/25pxSpace_blue.png);
+    font-family: dolbak, sans-serif;
+
+    color: var(--textColor);
+
+    background-image: url(assets/25pxSpace_blue.png); 
 }
 
-body{
-    background-color: rgba(0,0,0,.2);
+body,
+.section{
     color: inherit;
 }
 
-.container{
-    width: 600px;
+/* Layout */
+/* ====================================== */
+html, body{
+    margin: 0;
 
+    min-height: 100% !important;
+    min-width: 100%;    
+
+    overflow: auto;
+}
+
+.container{
     margin: 0 auto;
-    padding: .4em 2em;
+    padding: .5rem 1.5rem;
+
+    max-width: 600px;
 }
 
 .section{
     margin-top: 2rem;
-    background: rgb(255, 255, 255);
-    color: inherit;
+
     border: black solid 3px;
     box-shadow: 0 0 0 4px currentColor,
                 0 0 0 7px #000;
+
+    background: rgb(255, 255, 255);
 }
-    header .section{
+    .section:not(:first-child){
+        background: black;
         border: none;
     }
-    .section::nth-child(3), .section::nth-child(4){
-        background: rgb(8, 8, 8);
-    }
     .section:first-of-type{
-        margin-top: 7rem;
+        margin-top: 5.5rem;
     }
     .section:last-of-type{
         margin-bottom: 2rem;
     }
 
-.news{
-    background-color: black;
-    text-align: center;
-}
-    .news h1{
-        text-transform: uppercase;
-        margin: 0;
-        border-bottom: solid 2px currentColor;
-        font-size: 3rem;
-    }
-    .news p{
-        margin: 0;
-        padding: .5em;
-        font-size: 2rem;
-    }
 /* Components */
-/*==========================================================*/
+/* ====================================== */
 
-/*BANNER*/
-/*=============================*/
+/* Top of Page Banner */
 #banner{
-    max-width: 100%;
-    height: auto;
     border-bottom: black solid 3px;
-    display: block;
 }
 
-/*SOCIAL BUTTONS*/
-/*=============================*/
+
+/* Social Buttons */
 #socialBtns{
     display: flex;
     flex-wrap: wrap;
+
     padding: 10px;
 }
 
 .socialBtn{
-    flex: calc(33% - 7.5px * 2 - 10px * 2 - 3px * 2);
-
-    margin: 7.5px;
-    padding: 10px;
-    border-radius: 5px;
+    display: flex;
+    place-items: center;
 
     font-size: 25px;
+
+    margin: .3rem;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: .5rem;
+
+    flex: 1;
+    align-self: center;
+    white-space: nowrap;
 
     text-decoration: none;
 }
     .socialBtn-color-one{
-        background: white;
-        color: var(--colorOne, black);
         border: 3px solid var(--colorOne, black);
+
+        color: var(--colorOne, black);
+        background-color: white;
     }
     .socialBtn-color-one:hover{
-        background-color: var(--colorOne);
-        color: white;
         border: 3px solid white;
+
+        color: white;
+        background-color: var(--colorOne); 
     }
     .socialBtn-color-two{
-        background: var(--colorTwo, white);
-        color: var(--colorOne, black);
         border: 3px solid var(--colorOne, black);
+
+        color: var(--colorOne, black);
+        background: var(--colorTwo, white);
     }
     .socialBtn-color-two:hover{
-        background-color: var(--colorOne, black);
-        color: var(--colorTwo, white);
         border: 3px solid var(--colorTwo, white);
+
+        color: var(--colorTwo, white);
+        background-color: var(--colorOne, black);
+    }
+    .socialBtn > *{
+        padding: .5rem;
+        padding-right: 1rem; 
+    }
+    /* Merch Store special padding */
+    .socialBtn:last-of-type{
+        padding-left: .2rem;
     }
 
-.socialBtn *{
-    padding: 5px;
-    
-}
-
-#sbCallousRow{
-    flex: calc(50% - 10px*2 - 3px*2 - 7.5px*2);
-}
+#sbCallousRow,
+#sbWorldAnvil{
+    flex: 100%;
+} 
 
 #sbCallousRow img{
     width: 35px;
-    padding: 0px 5px;
 }
-
-#sbCallousRow:hover img{
-    filter: brightness(0);
-}
-
-#sbWorldAnvil{
-    flex: calc(50% - 10px*2 - 3px*2 - 7.5px*2);
-}
-
-#sbWorldAnvil img{
-    width: 30px;
-    padding: 0px 5px;
-}
+    #sbCallousRow:hover img{
+        filter: brightness(0);
+    }
 
 #sbWorldAnvil:hover img{
     content:url("assets/worldAnvil.png");
-}
+} 
 
-/*Countdown*/
-/*=============================*/
+/* Countdown */
 #countdown{
-    font-size: 50px;
+    font-size: 2rem;
+
     text-align: center;
 
-    background: black;
-
-    color: inherit;
-    padding: 5px;
+    color: inherit; 
 }
 
 #showName{
-    margin-top: 10px;
-    padding: 10px;
+    font-size: 1.5em;
+
+    padding: 0 1rem;
+    margin-top: 1rem;
 }
 
 #cdDisplay{
-    margin-top: 10px;
-    margin-bottom: 20px;
+    font-size: 2em;
 
-    font-size: 100px;
+    padding: 0 1rem;
+    padding-bottom: 1rem;
 }
 
-/*SCHEDULE*/
-/*=============================*/
+/* Schdeule */
 #schedule{
-    background-color: black;
-}
-
-#schedule h1{
-    font-size: 3em;
-
-    margin: 10px;
-    margin-top: 0px;
-    padding: 10px;
-
-    color: inherit;
+    border: none;
+    font-size: 1.2rem;
 }
 
 .row{
-    min-height: 50px;
-    height: auto;
-    overflow:auto;
-    margin: 0px 0px;
-    padding: .5em;
-    
-
-    font-size: 35px;
-
-    color: inherit;
-
-    border-bottom: 2px solid currentColor;
-}
-    .row:first-of-type{
-        border-top: 2px solid currentColor;
-    }
-    .row:last-of-type{
-        border-bottom: none;
-    }
-
-.gameInfo{
-    padding: 10px 0px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+
+    border-bottom: none;
+    padding: .5rem 0;
 }
-    .gameInfo:last-of-type{
-        margin-bottom: 10px;
-        border-bottom: none;
-    }
-
-    .gameInfo *{
-        display: inline-block;
-    }
-
-    .gameInfo *:first-of-type{
-        margin-right: .5em;
+    .row .label{
+        text-align: center;
     }
 
 
 .label{
-    float: left;
-    width: 22%;
-    padding: 10px 0px;
+    font-size: 1.3em;
+
+    width: 100%;
+
+    border-bottom: 2px solid currentColor;
+    border-top: 4px solid currentColor;
 }
 
 .data{
-    float: left;
-    width: 78%;
+    font-size: 1.2em;
 }
 
-@media only screen and (max-width: 700px) {
-    body{
-        background-color: rgba(0,0,0,0);
-    }
-
-    .container{
-        width: auto;
-        margin: 0 10px;
-    }
-
-    #cdDisplay{
-        font-size: 65px;
-    }
-
-    .label{
-        padding-left: 0px;
-    }
-
-    .socialBtn{
-        flex: calc(50% - 7.5px*2 - 10px*2 - 3px*2);
-    }
+.gameInfo{
+    padding: .5rem 0px;
+    
+    text-align: center;
 }
+    .gameInfo *{
+        display: inline-block;
+        
+    }
+    .gameInfo *:first-child{
+        margin-right: 1rem;
+    }
+    .gameInfo:not(:last-of-type){
+        border-bottom: 1px solid currentColor;
+    }
 
-@media only screen and (max-width: 600px) {
+/* news section */
+.news{
+    font-size: 1rem;
+
+    text-align: center;
+}
+    .news p{
+        font-size: 1em;
+
+        margin: 0;
+        padding: .5rem 1rem;
+    }
+        .news p:not(:last-of-type){
+            border-bottom: 1px solid currentColor;
+        }
+
+
+/* ====================================== */
+/* Media Queries */
+/* ====================================== */
+@media(min-width: 30rem) {
+    #sbCallousRow,
     #sbWorldAnvil{
-        flex: 100%;
+        flex: calc(50% - .5rem*2 - .3rem*2 - 3px*2);
     }
 
-    #sbCallousRow{
-        flex: 100%;
+    #countdown{
+        font-size: 3rem;
     }
 
-    #schedule h1{
-        text-align: center;
-    }
-
-    .gameInfo{
-        padding: 20px 0px;
-    }
-
-    .label{
-        width: 100%;
-        border-bottom: 2px solid rgb(55, 55, 55);
-        border-top: 2px solid currentColor;
+    #schedule{
+        font-size: 1.5rem;
     }
 
     .row{
-        border-bottom: none;
-        padding: 0;
+        flex-direction: row;
+        border-top: 4px solid currentColor;
     }
         .row .label{
-            text-align: center;
+            flex: 1;
+            border: none;
+            align-self: center;
         }
-        .row:first-of-type{
-            border-top: none;
+        .row .data{
+            flex: 3;
+            border-left: solid 2px currentColor;
         }
-
-    .data{
-        width: calc(100% - .5em*2);
-        border: none;
-        padding: .5em .5em;
-    }
-}
-
-@media only screen and (max-width: 450px) {
-    #showName{
-        font-size: 25px;
-    }
-
-    #schedule h1{
-        width: 90%;
-        
-    }
-
-    .socialBtn{
-        flex: 100%;
-    }
+    
+        .news{
+            font-size: 2rem;
+        }
+            .news p{
+                padding: 1rem 2rem;
+            }
 }

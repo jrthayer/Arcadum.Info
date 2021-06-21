@@ -173,8 +173,4 @@ nav{
     .nav__dropdown:hover{
         border-bottom: solid 2px currentColor;
     }
-
-    .news p{
-        padding: 1em;
-    }
 }
