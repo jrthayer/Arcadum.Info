@@ -1,7 +1,7 @@
 {
     "name": "otikatasCurse",
     "description": "Otikata's Curse!",
-    "showImage": "../assets/imgs/showBanners/default.png",
+    "showImage": "../assets/imgs/showBanners/OtikatasCurse.png",
     "iconImage": "",
     "color700": "#28273f",
     "color400": "#4f4f7d"
