@@ -14,7 +14,7 @@ var utcTimes = [
     [[1080, "The Divine Wind"]], 
     [[1260, "Otikata's Curse"]],
     [[60, "Callous Row"]]];  
-
+    
 var convertedTimes = [
 [],
 [],
@@ -232,7 +232,7 @@ function nextShowInit(){
 
     window.setInterval(
         function(){
-            if(displayShow(showInfo) == "00:00:00"){
+            if(displayShow(showInfo) == "00s"){
                 showInfo = nextShow();
             }
         } , 1000);
@@ -405,10 +405,12 @@ function convertToCount(minutes){
 
     if(sec<10){
         sec = "0"+sec;
-        if(sec === "00"){
+
+        if(sec ==="00"){
             minutes--;
         }
     }
+
     var time;
     if(hours == "0"){
         if(min == "00"){
