@@ -1,7 +1,25 @@
+/*
+======================================
+    TABLE OF CONTENTS
+======================================
+    0. Quick-Hacks/Temporary
+    1. Global Styles 
+    2. Typography
+    3. Layout
+    4. Components
+        4.1 Top Img/Details Section
+        4.2 Episodes Section
+            4.21 Full Collections Group
+            4.22 Individual Episodes 
+    5. Media Queries
+        5.1 Tablet
+        5.2 Desktop
+*/
+
 /* 
-===============
-   Global Styles
-===============
+======================================
+   1. Global Styles
+====================================== 
 */
 :root {
     --color700: #28273f;
@@ -23,42 +41,26 @@ a{
     display: block;
     text-decoration: none;
     color: white;
-    padding-bottom: 3px;
 }
 
-i{
-    transition: transform .3s, -webkit-transfrom .3s;
-}
-
-/* 
-==============
-   Typography
-============== 
+/*
+====================================== 
+    2. Typography 
+======================================
 */
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
 h1{
     margin: 0;
 }
 
-/* 
-==============
-   Layout
-============== 
+/*
+======================================
+    3.Layout 
+======================================
 */
-header{
-    position: fixed;
-    z-index: 1;
-    top: 0px;
-
-    width: 100%;
-
-    background-color: var(--color700);
-    color: white;
-    
-    border-bottom: black solid 3px;
-    box-shadow: 0 0 0 4px white,
-                0 0 0 7px #000; 
-}
-
 body{    
     margin: 0;
 
@@ -78,24 +80,24 @@ body{
 }
 
 .section{
+    font-size: 1.5em;
+
     margin-top: 2rem;
     background: rgb(255, 255, 255);
     color: white;
     border: black solid 3px;
     box-shadow: 0 0 0 4px white,
-                0 0 0 7px #000; 
-
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
+                0 0 0 7px #000;  
 }
-    .section h1{ 
+    .section h1{
+        font-size: 2em;
+        
         padding-top: .5em;
         padding-bottom: 0;
 
         text-shadow: 1px 1px 3px rgb(22, 22, 22);
+        
         color: var(--color400);
-
-        font-size: 2em;
         text-align: center;
     }
     .section:nth-of-type(1){
@@ -111,8 +113,7 @@ body{
 .flexColToRow{
     display: flex;
     flex-direction: column;
-    /* align-items: stretch; */
-    /* justify-content: stretch; */
+
     width: 100%;
 
     letter-spacing: .08em;
@@ -122,12 +123,12 @@ body{
     }
     
 /* 
-==============
-   Components
-============== 
+======================================
+    4. Components 
+======================================
 */
 
-/* Top Img/Details Seciton */
+/*===== 4.1 Top Img/Details Section =====*/
 .showCard{
     display: flex;
     flex-direction: column;
@@ -179,9 +180,9 @@ body{
     }
 
 
-/* Episodes Section */
+/*===== 4.2 Episodes Section =====*/
 
-/* Collection Group */
+/*==  4.21 Full Collections Group ==*/
 .fullCollection{
     display: flex;
     flex-direction: column;
@@ -212,7 +213,8 @@ body{
         font-size: 1em;
     }
 
-/* Individual Episodes */
+/*== 4.22 Individual Episodes ==*/
+/* Episode Container */
 .episode{
     display: flex;
     flex-direction: row;
@@ -234,11 +236,12 @@ body{
         border-bottom-right-radius: 1rem;
     }
 
+/* Episode Image */
 .episodeImg{
     display: flex;
     border-radius: 1rem;
     width: calc(100% - 2px * 2);
-    justify-content: flex-start;
+    justify-content: center;
 }
     .episodeImg a{
         margin-bottom: 0;
@@ -248,11 +251,13 @@ body{
         border: 2px solid var(--color400);
     }
 
+/* Episode Information Container */
 .episodeBtns{
     display: flex;
-    text-align: center;
     flex-direction: column;
     justify-content: center;
+
+    text-align: center;
 }
     .episodeBtns > *{
         padding: .5em;
@@ -261,44 +266,50 @@ body{
         margin-top: 0;
     }
 
+/* Episode Text Information Container */
+/* (Used for Air Date: & Duration: ROWS) */
 .detailsGroup{
     padding: 0;
+
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.detailsText{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+/* This div is needed to place the text and Gif side by side */
+/* .detailsText{} */
 
+/* Indvidual Text Lines */
 .details{
-    align-self: center;
+    font-size: .9em;
+
     padding-top: .5em;
     padding-left: .5em;
-    font-size: .9em;
+
+    align-self: center;
     text-align: left;
     
 }
     .details *{
         flex: 1;
-        text-align: center;
-        background-color: var(--color400);
+
         margin: .5em;
         border-radius: .5em;
+        
+        background-color: var(--color400);
+
+        text-align: center;
     }
 
+/* TLDW Icon */
+/* (Icon w/ giff next to air date/duration) */
 .tldwImg{
+    padding: 0 .2em;
+    border-radius: 1em;
+
     max-width: 100px;
     max-height: 100px;
-    border-radius: 1em;
-    padding: .2em;
-    cursor: default;
-}
-
-.tldwGif{
+    
     cursor: pointer;
 }
 
@@ -306,18 +317,20 @@ body{
     content: url("../assets/imgs/icons/tldw\(solid\).gif");
 }
 
+/* Button Containers */
 .subSection{
-    display: flex;
+    font-size: 1rem;
+
     padding: .5em;
     margin-top: .5em;
     border-radius: 1rem;
 
-    background-color: var(--color400);
-    font-size: 1rem;
-   
+    display: flex;
     align-items: center;
 
     text-shadow: 1px 1px 1px black;
+
+    background-color: var(--color400);    
 }
     .subSection *{
         margin: 0;
@@ -329,9 +342,11 @@ body{
     }
     .subSection a{
         font-size: 1.5rem;
+
+        padding: .2em;
+
         align-self: center;
         text-align: center;
-        padding: .2em;
     }
     .subSection a:hover{
         color: var(--color700);
@@ -342,22 +357,23 @@ body{
     color: var(--color700);
     text-shadow: none;
 }
+
 /* 
-==============
-   Media Queries
-============== 
+======================================
+   5. Media Queries
+====================================== 
 */
+
+/* 5.1 Tablet */
 @media (min-width: 25rem) {
     .section .flexColToRow h1{
         font-size: 3em;
     }
-
-    .details{
-        font-size: 1em;
-    }
 }
 
+/* 5.2 Desktop */
 @media (min-width: 60rem) {
+    /*===== Layout =====*/
     .container{
         max-width: 60rem;
     }
@@ -373,12 +389,17 @@ body{
         flex-direction: row;
     }
 
+    /*===== Components =====*/
+    /* Episodes Section */
+
+    /* Full Collections Section */
     .fullCollection{
         flex-direction: column;
         flex: .5;
         margin: 1em 1em 0;
     }
 
+    /* Individual Episodes */
     .episodeImg img{
         max-height: 300px;
     }

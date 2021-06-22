@@ -31,6 +31,7 @@
     align-content: center;
     justify-content: center;
 }
+
 /* 
 ======================================
    1. Global Styles
@@ -77,7 +78,7 @@ html{
     font-family: dolbak, sans-serif;
 
     color: var(--textColor);
-
+    /* legacy bg used when next show doesn't have custom bg */
     background-image: url(assets/25pxSpace_blue.png); 
 }
 
