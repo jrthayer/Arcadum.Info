@@ -1,11 +1,4 @@
-// var utcTimes = [
-//     [[180,"The Clash(Fighting Games)"]],
-//     [[1140, "Scrolls Of Not'Chek"]],
-//     [[60, "Lost At Sea"]],
-//     [[0, "Pride Of The Nightwolf"]], 
-//     [], 
-//     [],
-//     [[60, "Callous Row"], [1140, "Into The Mists"], [1380, "Shrine Of Sin"]]]; 
+// Global Data Structures
 var utcTimes = [
     [[1380, "Update Stream!!"]],
     [[1020, "Ink And Blood"],[1320, "The Final Toll"]],
@@ -38,6 +31,7 @@ var showColors = {
     theDivineWind: "#cc6133"
 };
 
+//Initialization Functions 
 for(var x = 0; x < utcTimes.length; x++){
     if(utcTimes[x].length >= 1){
         for(var y = 0; y < utcTimes[x].length; y++){
@@ -75,7 +69,7 @@ createSchedule();
 nextShowInit();
 setupNavbar();
 
-// var intervalId = window.setInterval(function(){ nextShow();} , 1000);
+
 
 //Info: Converts shows into local timezone(in minutes)
 //Parameters:
@@ -436,10 +430,7 @@ function changeBackground(showName){
     body.style.backgroundImage = newBackground;
 }
 
-//
-//======================================
-//Parameters
-//+color = 
+// NavBar Functions
 function changeNavColor(name){
     var root = document.querySelector(":root");
     
@@ -459,8 +450,6 @@ function changeNavColor(name){
         root.style.setProperty('--textColor', "#fff");
     }
 }
-
-
 
 function setupNavbar(){
     //dropdown-name

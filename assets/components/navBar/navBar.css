@@ -32,6 +32,11 @@ nav{
     letter-spacing: .15em;
     cursor: pointer; 
 }
+    nav i{
+        /* Currently used for nav dropdown animation */
+        transition: transform .3s, -webkit-transfrom .3s;
+
+    }
 
 .nav__link, 
 .nav__dropdown, 

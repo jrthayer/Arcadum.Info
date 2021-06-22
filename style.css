@@ -1,15 +1,29 @@
-@font-face {
-    font-family: dolbak;
-    src: url(assets/fonts/TheDolbak-Brush.ttf);
-}
+/*
+======================================
+    TABLE OF CONTENTS
+======================================
+    0. Quick-Hacks/Temporary
+    1. Global Styles 
+    2. Typography
+    3. Layout
+    4. Components
+        4.1 Top of Page Banner
+        4.2 Social Buttons
+        4.3 Countdown
+        4.4 Schedule
+        4.5 News
+    5. Media Queries
+        5.1 Tablet/Desktop
+*/
+
 /* 
-    Quick-Hacks/Temporary
+    0. Quick-Hacks/Temporary
 */
 .news p .socialBtn{
     font-size: 1em;
 
     padding: .5rem;
-    margin: 0 auto;
+    margin: 1rem auto;
 
     max-width: 150px;
 
@@ -17,12 +31,16 @@
     align-content: center;
     justify-content: center;
 }
-
 /* 
-==============
-   Global Styles
-============== 
+======================================
+   1. Global Styles
+====================================== 
 */
+@font-face {
+    font-family: dolbak;
+    src: url(assets/fonts/TheDolbak-Brush.ttf);
+}
+
 :root {
     --color700: black;
     --color400: grey;
@@ -31,11 +49,6 @@
 
 img{
     max-width: 100%;
-}
-
-/* Currently used for nav dropdown animation */
-i{
-    transition: transform .3s, -webkit-transfrom .3s;
 }
 
 .disable-select {
@@ -55,8 +68,11 @@ h1{
     margin: 0;
 }
 
-/* Typography */
-/* ====================================== */
+/*
+====================================== 
+    2. Typography 
+======================================
+*/
 html{
     font-family: dolbak, sans-serif;
 
@@ -70,8 +86,15 @@ body,
     color: inherit;
 }
 
-/* Layout */
-/* ====================================== */
+p{
+    line-height: 1.3em;
+}
+
+/*
+======================================
+    3.Layout 
+======================================
+*/
 html, body{
     margin: 0;
 
@@ -108,16 +131,22 @@ html, body{
         margin-bottom: 2rem;
     }
 
-/* Components */
-/* ====================================== */
+/* 
+======================================
+    4. Components 
+======================================
+*/
 
-/* Top of Page Banner */
+/* 
+===== 4.1 Top of Page Banner =====
+*/
 #banner{
     border-bottom: black solid 3px;
 }
 
-
-/* Social Buttons */
+/* 
+===== 4.2 Social Buttons =====
+*/
 #socialBtns{
     display: flex;
     flex-wrap: wrap;
@@ -191,7 +220,9 @@ html, body{
     content:url("assets/worldAnvil.png");
 } 
 
-/* Countdown */
+/* 
+===== 4.3 Countdown =====
+*/
 #countdown{
     font-size: 2rem;
 
@@ -214,7 +245,9 @@ html, body{
     padding-bottom: 1rem;
 }
 
-/* Schdeule */
+/* 
+===== 4.4 Schedule =====
+*/
 #schedule{
     border: none;
     font-size: 1.2rem;
@@ -264,9 +297,11 @@ html, body{
         border-bottom: 1px solid currentColor;
     }
 
-/* news section */
+/* 
+===== 4.5 News ===== 
+*/
 .news{
-    font-size: 1rem;
+    font-size: 1.5rem;
 
     text-align: center;
 }
@@ -281,23 +316,32 @@ html, body{
         }
 
 
-/* ====================================== */
-/* Media Queries */
-/* ====================================== */
+/* 
+======================================
+   5. Media Queries
+====================================== 
+*/
+
+/* 
+===== 5.1 Tablet/Desktop ===== 
+*/
 @media(min-width: 30rem) {
+    /*===== Global Styles =====*/
     h1{
         font-size: 3rem;
     }
-
+    /*===== Social Buttons =====*/
     #sbCallousRow,
     #sbWorldAnvil{
         flex: calc(50% - .5rem*2 - .3rem*2 - 3px*2);
     }
 
+    /*===== Countdown =====*/
     #countdown{
         font-size: 3rem;
     }
 
+    /*===== Schedule =====*/
     #schedule{
         font-size: 1.5rem;
     }
@@ -316,7 +360,8 @@ html, body{
             border-left: solid 2px currentColor;
         }
     
-        .news{
+    /*===== News =====*/  
+    .news{
             font-size: 2rem;
         }
             .news p{
