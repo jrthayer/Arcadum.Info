@@ -24,6 +24,7 @@
 :root {
     --color700: #28273f;
     --color400: #4f4f7d;
+    --textColor: white;
 }
 
 img{
