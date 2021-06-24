@@ -35,8 +35,8 @@ nav{
     nav i{
         /* Currently used for nav dropdown animation */
         transition: transform .3s, -webkit-transfrom .3s;
-
     }
+    
 
 .nav__link, 
 .nav__dropdown, 
@@ -65,10 +65,6 @@ nav{
     right: 1.4em;
 }
 
-.nav__dropdown-group{
-    padding-bottom: .2em;
-}
-
 .nav .nav__link:first-child{
     margin-left: 0;
 }
@@ -76,6 +72,7 @@ nav{
 /* dropdown */
 .nav__dropdown{
     display: block;
+    position: relative;
 }
 .nav__dropdown-name, .nav__dropdown-group-name{
     text-decoration: none;
@@ -87,29 +84,43 @@ nav{
     display: none;
 
     height: auto;
-    max-height: calc(100vh - 64px - 50px);
+    max-height: calc(100vh - 62px - 20px);
     overflow-y: auto;
-    
-    top: 2.49em;
+
     margin-left: .5em;
-    padding: .5em;
+
+    white-space: nowrap;
+
     background-color: var(--color700);
 }
     .nav__dropdown-links::-webkit-scrollbar{
         display: none;
     }
-    .nav__dropdown-links .nav__link{
-        margin: 0;
+    .nav__dropdown-links > *{
+        border-top: solid 1px var(--textColor);
+    }
+    .nav__dropdown-links > *:first-child{
+        border: none;
+    }
+
+
+.nav__dropdown-group{
+    padding: .5em;
+    background-color: var(--color700);
+}
+    .nav__dropdown-group:last-child{
+        margin-bottom: 0;
     }
 
 .nav__dropdown-group-links{
     display: none;
-    padding-left: 1em;
     padding-top: .5em;
 }
     .nav__dropdown-group-links *{
-        padding: .5em 0;
-        border-bottom: solid 2px currentColor;
+        padding: .5em 1em;
+    }
+    .nav__dropdown-group-links *:not(:first-child){
+        border-top: solid 1px currentColor;
     }
 
 .nav__active_visible + *{
@@ -157,14 +168,14 @@ nav{
         padding: 0 1em;
     }
 
-    .nav__dropdown-group-links *{
-        padding: .5em 0;
+    /* .nav__dropdown-group-links *{
         border-bottom: none;
-    }
+    } */
 
     .nav__dropdown-links{
         margin-left: -.5em;
-        position: absolute; 
+        position: absolute;
+        top: calc(100% + .4em + 3px); 
         border-left: black solid 3px;
         border-right: black solid 3px;
         border-bottom: black solid 3px;
