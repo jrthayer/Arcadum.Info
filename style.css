@@ -79,7 +79,7 @@ html{
 
     color: var(--textColor);
     /* legacy bg used when next show doesn't have custom bg */
-    background-image: url(assets/imgs/backgrounds/default.png); 
+    background: linear-gradient(0deg, #f925fe, 5%,  #1d072d);
 }
 
 body,

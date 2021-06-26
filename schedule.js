@@ -440,7 +440,7 @@ function changeNavColor(name){
         root.style.setProperty('--color700', showColors[name]);
     }
     else{
-        root.style.setProperty('--color700', '#000');
+        root.style.setProperty('--color700', '#0b0211');
     }
     
     if(name === "callousRow"){
