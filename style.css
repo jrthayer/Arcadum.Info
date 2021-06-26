@@ -79,7 +79,7 @@ html{
 
     color: var(--textColor);
     /* legacy bg used when next show doesn't have custom bg */
-    background-image: url(assets/25pxSpace_blue.png); 
+    background-image: url(assets/imgs/backgrounds/default.png); 
 }
 
 body,
