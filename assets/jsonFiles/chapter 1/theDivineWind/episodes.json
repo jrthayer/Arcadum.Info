@@ -1,7 +1,7 @@
 {
     "name": "The Divine Wind",
-    "twitchCollection": "",
-    "youtubeCollection": "",
+    "twitchCollection": "https://www.twitch.tv/videos/1068803626?collection=KWtuVOpIjBbB0A",
+    "youtubeCollection": "https://www.youtube.com/playlist?list=PLfASEnzB7i1bTTNrSKnOSZESF2R7_sty4",
     "mp4Collection": "",
     "episodeImageFolder": "assets/imgs/episodeImgs/chapter%201/theDivineWind",
     "episodeInfo": [
@@ -23,6 +23,16 @@
             "twitch": "",
             "fanArtDiscord": "",
             "fanArtTwitch": "",
+            "summary": ""
+        },
+        {
+            "airDate": "6/24/2021",
+            "duration": "3:16:08",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/857685249596325938",
+            "youtube": "https://www.youtube.com/watch?v=hlJBRed2AR0&list=PLfASEnzB7i1bTTNrSKnOSZESF2R7_sty4&index=1&ab_channel=Arcadum",
+            "twitch": "https://www.twitch.tv/videos/1068803626?collection=KWtuVOpIjBbB0A",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/857679830594224179",
+            "fanArtTwitch": "https://www.twitch.tv/videos/1068803626?collection=KWtuVOpIjBbB0A&t=2h45m43s",
             "summary": ""
         }
     ]

@@ -1,7 +1,7 @@
 {
     "name": "Ink And Blood",
-    "twitchCollection": "",
-    "youtubeCollection": "",
+    "twitchCollection": "https://www.twitch.tv/videos/1060951404?collection=9X5H9mjziRbRKg",
+    "youtubeCollection": "https://www.youtube.com/playlist?list=PLfASEnzB7i1ZgXhsttfqrvRKcM3rTqwm1",
     "mp4Collection": "",
     "episodeImageFolder": "assets/imgs/episodeImgs/chapter%201/inkAndBlood",
     "episodeInfo": [
@@ -29,11 +29,21 @@
             "airDate": "6/14/2021",
             "duration": "3:03:11",
             "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/854081958556467251",
-            "youtube": "",
+            "youtube": "https://www.youtube.com/watch?v=CGLewojglsc&list=PLfASEnzB7i1ZgXhsttfqrvRKcM3rTqwm1&index=1",
             "twitch": "https://www.twitch.tv/videos/1060951404?collection=9X5H9mjziRbRKg",
             "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/854037007012593694",
             "fanArtTwitch": "https://www.twitch.tv/videos/1060951404?collection=9X5H9mjziRbRKg&t=2h48m53s",
             "summary": "https://www.reddit.com/r/cadum/comments/o4vpvw/verum_weekly_summaries_of_the_streamed_games_of/"
+        },
+        {
+            "airDate": "6/21/2021",
+            "duration": "2:50:36",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/856618879505661983",
+            "youtube": "https://www.youtube.com/watch?v=hLpIX7Rkxpo&list=PLfASEnzB7i1ZgXhsttfqrvRKcM3rTqwm1&index=2",
+            "twitch": "https://www.twitch.tv/videos/1068797360?collection=9X5H9mjziRbRKg",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/856571370112286720",
+            "fanArtTwitch": "",
+            "summary": ""
         }
     ]
 }

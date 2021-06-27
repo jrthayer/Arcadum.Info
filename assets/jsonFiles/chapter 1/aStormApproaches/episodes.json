@@ -1,7 +1,7 @@
 {
     "name": "A Storm Approaches",
-    "twitchCollection": "",
-    "youtubeCollection": "",
+    "twitchCollection": "https://www.twitch.tv/videos/1068800502?collection=Qpgs8ONIjBYpvA",
+    "youtubeCollection": "https://www.youtube.com/playlist?list=PLfASEnzB7i1Y3u9kuzc3dvmmJHbe7ppTZ",
     "mp4Collection": "",
     "episodeImageFolder": "assets/imgs/episodeImgs/chapter%201/aStormApproaches",
     "episodeInfo": [
@@ -23,6 +23,16 @@
             "twitch": "",
             "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/837494941483532339",
             "fanArtTwitch": "",
+            "summary": ""
+        },
+        {
+            "airDate": "6/22/2021",
+            "duration": "2:50:36",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/857038019537797141",
+            "youtube": "https://www.youtube.com/watch?v=RUAlJEafs70&list=PLfASEnzB7i1Y3u9kuzc3dvmmJHbe7ppTZ&index=1",
+            "twitch": "https://www.twitch.tv/videos/1068800502?collection=Qpgs8ONIjBYpvA",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/856993721648021574",
+            "fanArtTwitch": "https://www.twitch.tv/videos/1068800502?collection=Qpgs8ONIjBYpvA&t=2h33m17s",
             "summary": ""
         }
     ]

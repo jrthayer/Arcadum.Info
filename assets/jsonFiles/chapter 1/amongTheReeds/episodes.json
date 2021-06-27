@@ -1,7 +1,7 @@
 {
     "name": "Among The Reeds",
-    "twitchCollection": "",
-    "youtubeCollection": "",
+    "twitchCollection": "https://www.twitch.tv/videos/1060953031?collection=xX3ZjHDziRZsTw",
+    "youtubeCollection": "https://www.youtube.com/playlist?list=PLfASEnzB7i1a5FZ2YvkjxN71E8J_lz5Fh",
     "mp4Collection": "",
     "episodeImageFolder": "assets/imgs/episodeImgs/chapter%201/amongTheReeds",
     "episodeInfo": [
@@ -34,6 +34,16 @@
             "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/854851213622509599",
             "fanArtTwitch": "https://www.twitch.tv/videos/1060953031?collection=xX3ZjHDziRZsTw&t=4h8m4s",
             "summary": "https://www.reddit.com/r/cadum/comments/o4vpvw/verum_weekly_summaries_of_the_streamed_games_of/"
+        },
+        {
+            "airDate": "6/23/2021",
+            "duration": "2:40:34",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/857432103142555648",
+            "youtube": "",
+            "twitch": "https://www.twitch.tv/videos/1068802759?collection=xX3ZjHDziRZsTw",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/857389063199522826",
+            "fanArtTwitch": "https://www.twitch.tv/videos/1068802759?collection=xX3ZjHDziRZsTw&t=2h22m41s",
+            "summary": ""
         }
     ]
 }
