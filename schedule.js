@@ -8,6 +8,7 @@
 //     [[60, "Callous Row"]]];  
 
 // Global Data Structures
+//================================
 var utcTimes = [
     [[1380, "Update Stream!!"]],
     [[1020, "Ink And Blood"],[1320, "The Final Toll"]],
@@ -40,45 +41,65 @@ var showColors = {
     theDivineWind: "#cc6133"
 };
 
-//Initialization Functions 
+//Initialization Functions
+//================================
+
+//Convert utcTimes to local times 
+//for loop for each day
 for(var x = 0; x < utcTimes.length; x++){
-    if(utcTimes[x].length >= 1){
-        for(var y = 0; y < utcTimes[x].length; y++){
-            var timeArray = localConvert(utcTimes[x][y][0]);
-            var time = timeArray[0];
-            var name = utcTimes[x][y][1];
-            var day = timeArray[1] + x;
+    let utcDay = utcTimes[x];
 
-            if(day > 6){
-                day = 0;
-            }
-            else if(day < 0){
-                day = 6;
-            }
+    //for loop for each show of day x
+    for(var y = 0; y < utcDay.length; y++){
+        let utcShow = utcDay[y];
+
+        //show name
+        var showName = utcShow[1];
+
+        //local show time and day difference
+        var timeArray = localConvert(utcShow[0]);
+        var showTime = timeArray[0];
+        var showDay = timeArray[1] + x;
+
+        //accounts for timezones day before or after utc
+        if(showDay > 6){
+            showDay = 0;
+        }
+        else if(showDay < 0){
+            showDay = 6;
+        }
+        
+        //go through the shows already placed on this day and determines if
+        //the show being added is before or after
+        var inserted = false;
+        for(var z = 0; z < convertedTimes[showDay].length; z++){
+            let arrayElementShowTime = convertedTimes[showDay][z][0];
             
-            var inserted = false;
-            for(var z = 0; z < convertedTimes[day].length; z++){
-                var curTime = convertedTimes[day][z][0];
-
-                if(time<curTime){
-                    convertedTimes[day].splice(z, 0, [time, name]);
-                    var inserted = true;
-                    break;   
-                }
+            // Checks if currentShow being inserted is before existing show time
+            if(showTime < arrayElementShowTime){
+                convertedTimes[showDay].splice(z, 0, [showTime, showName]);
+                inserted = true;
+                break;   
             }
+        }
 
-            if(inserted == false){
-                convertedTimes[day].push([time, name]);
-            }
+        //check if show is last show of the day
+        if(inserted == false){
+            convertedTimes[showDay].push([showTime, showName]);
         }
     }
 }
 
+//create show schedule with local times
 createSchedule();
+//start countdown till next show
 nextShowInit();
+//create navbar
 setupNavbar();
 
 
+// Functions
+//================================
 
 //Info: Converts shows into local timezone(in minutes)
 //Parameters:
@@ -87,7 +108,7 @@ setupNavbar();
 //Return:
 //  +an array with:
 //      +index 0: local time in minutes;
-//      +index 1: day of converted time;
+//      +index 1: day offset of converted time;
 function localConvert(utcTime){
     var date = new Date();
     var offset = date.getTimezoneOffset();
@@ -95,18 +116,18 @@ function localConvert(utcTime){
 
     var localTime = utcTime + offset;
 
-    var day = 0;
+    var dayOffset = 0;
     
     if(localTime < 0){
         localTime = 60*24 + localTime;
-        day = -1;
+        dayOffset = -1;
     }
     else if(localTime > 1440){
         localTime = localTime - 1440;
-        day = 1;
+        dayOffset = 1;
     }
 
-    var convertedTime = [localTime, day];
+    var convertedTime = [localTime, dayOffset];
     return convertedTime;
 }
 
