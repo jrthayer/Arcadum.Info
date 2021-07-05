@@ -11,7 +11,8 @@
         4.2 Social Buttons
         4.3 Countdown
         4.4 Schedule
-        4.5 News
+        4.5 Sponsor
+        4.6 News
     5. Media Queries
         5.1 Tablet/Desktop
 */
@@ -299,7 +300,22 @@ html, body{
     }
 
 /* 
-===== 4.5 News ===== 
+===== 4.5 Sponsor ===== 
+*/
+.sponsor{
+    text-align: center;
+    font-size: 1.5rem;
+}
+    .sponsor img{
+        padding: 1rem;
+    }
+    .sponsor p{
+        margin-top: 0;
+        padding: 1rem;
+    }
+
+/* 
+===== 4.6 News ===== 
 */
 .news{
     font-size: 1.5rem;
