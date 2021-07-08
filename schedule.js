@@ -11,7 +11,7 @@
 //================================
 var utcTimes = [
     [[1380, "Update Stream!!"]],
-    [[1320, "The Final Toll"]],
+    [[1020, "Ink And Blood"],[1320, "The Final Toll"]],
     [[1260, "A Storm Approaches"]],
     [[1380, "Among The Reeds"]], 
     [[1080, "The Divine Wind"]], 
