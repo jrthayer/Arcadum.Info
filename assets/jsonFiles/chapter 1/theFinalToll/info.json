@@ -1,7 +1,7 @@
 {
     "name": "theFinalToll",
     "description": "The Final Toll!",
-    "showImage": "../assets/imgs/showBanners/default.png",
+    "showImage": "../assets/imgs/showBanners/TheFinalToll.png",
     "iconImage": "",
     "color700": "#213133",
     "color400": "#9edddf"
