@@ -2,7 +2,6 @@
 ======================================
     TABLE OF CONTENTS
 ======================================
-    0. Quick-Hacks/Temporary
     1. Global Styles 
     2. Typography
     3. Layout
@@ -15,12 +14,13 @@
         4.6 News
     5. Media Queries
         5.1 Tablet/Desktop
+    0. Quick-Hacks/Temporary
 */
 
 /* 
     0. Quick-Hacks/Temporary
 */
-.news p .socialBtn{
+.miscLinks p .socialBtn{
     font-size: 1em;
 
     padding: .5rem;
@@ -32,6 +32,18 @@
     align-content: center;
     justify-content: center;
 }
+
+.miscLinks div{
+    padding: .5rem;
+}
+    .miscLinks div a{
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+    .webToon{
+        content: url("assets/imgs/webToonIcon.png");
+        max-width: 50px;
+    }
 
 /* 
 ======================================
@@ -169,7 +181,6 @@ html, body{
 
     flex: 1;
     align-self: center;
-    white-space: nowrap;
 
     text-decoration: none;
 }
@@ -184,6 +195,18 @@ html, body{
 
         color: white;
         background-color: var(--colorOne); 
+    }
+    .socialBtn-color-one-inverse{
+        border: 3px solid white;
+
+        color: white;
+        background-color: var(--colorOne); 
+    }
+    .socialBtn-color-one-inverse:hover{
+        border: 3px solid var(--colorOne, black);
+
+        color: var(--colorOne, black);
+        background-color: white;
     }
     .socialBtn-color-two{
         border: 3px solid var(--colorOne, black);
@@ -308,6 +331,7 @@ html, body{
 }
     .sponsor img{
         padding: 1rem;
+        max-width: calc(100% - 2 * 1rem);
     }
     .sponsor p{
         margin-top: 0;
