@@ -1,7 +1,7 @@
 {
     "name": "The Final Toll",
     "twitchCollection": "",
-    "youtubeCollection": "",
+    "youtubeCollection": "https://www.youtube.com/playlist?list=PLfASEnzB7i1ZY5RVyeVm4p0X0OCug7a2m",
     "mp4Collection": "",
     "episodeImageFolder": "assets/imgs/episodeImgs/chapter%201/theFinalToll",
     "episodeInfo": [
@@ -29,7 +29,7 @@
             "airDate": "7/5/2021",
             "duration": "3:00:15",
             "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/861739286843228181",
-            "youtube": "",
+            "youtube": "https://www.youtube.com/watch?v=X8jM4B5R4e8&list=PLfASEnzB7i1ZY5RVyeVm4p0X0OCug7a2m&index=1",
             "twitch": "https://www.twitch.tv/videos/1077722959",
             "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/861720984364777474",
             "fanArtTwitch": "",
