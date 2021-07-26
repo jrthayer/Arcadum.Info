@@ -11,7 +11,7 @@
 //================================
 var utcTimes = [
     [],
-    [[1020, "Ink And Blood"]],
+    [],
     [[1260, "A Storm Approaches"]],
     [[1380, "Among The Reeds"]], 
     [], 
