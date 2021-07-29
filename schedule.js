@@ -15,7 +15,7 @@ var utcTimes = [
     [[1260, "A Storm Approaches"]],
     [[1380, "Among The Reeds"]], 
     [[1080, "The Divine Wind"]], 
-    [[1260, "Otikata's Curse"]],
+    [[1020, "River Styx Bonus Session"],[1260, "Otikata's Curse"]],
     []];  
 
 var convertedTimes = [
@@ -38,7 +38,7 @@ var showColors = {
     otikatasCurse: "#28273f",
     aStormApproaches: "#46375b",
     theFinalToll: "#3c595c",
-    theDivineWind: "#cc6133"
+    theDivineWind: "#cc6133",
 };
 
 //Initialization Functions
