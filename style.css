@@ -229,10 +229,13 @@ html, body{
         padding-left: .2rem;
     }
 
-#sbCallousRow,
-#sbWorldAnvil{
-    flex: 100%;
-} 
+    .socialBtn-half{
+        flex: 100%;
+    }
+    .socialBtn-icon i{
+        margin: 0 auto;
+        padding: .5rem;
+    } 
 
 #sbCallousRow img{
     width: 35px;
@@ -243,7 +246,12 @@ html, body{
 
 #sbWorldAnvil:hover img{
     content:url("assets/worldAnvil.png");
-} 
+}
+
+#officialSite img{
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
 /* 
 ===== 4.3 Countdown =====
@@ -372,10 +380,21 @@ html, body{
         font-size: 3rem;
     }
     /*===== Social Buttons =====*/
-    #sbCallousRow,
-    #sbWorldAnvil{
+    .socialBtn-half{
         flex: calc(50% - .5rem*2 - .3rem*2 - 3px*2);
     }
+
+    .socialBtn-icon i{
+        margin: 0;
+        padding-right: 1rem;
+    } 
+
+    .socialBtn:nth-of-type(1)::after{ content: "Twitter";}
+    .socialBtn:nth-of-type(2)::after{ content: "YouTube";}
+    .socialBtn:nth-of-type(3)::after{ content: "Twitch";}
+    .socialBtn:nth-of-type(4)::after{ content: "r/cadum";}
+    .socialBtn:nth-of-type(5)::after{ content: "Patreon";}
+    .socialBtn:nth-of-type(6)::after{ content: "Discord";}
 
     /*===== Countdown =====*/
     #countdown{
