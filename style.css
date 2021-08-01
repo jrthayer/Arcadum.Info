@@ -389,12 +389,12 @@ html, body{
         padding-right: 1rem;
     } 
 
-    .socialBtn:nth-of-type(1)::after{ content: "Twitter";}
-    .socialBtn:nth-of-type(2)::after{ content: "YouTube";}
-    .socialBtn:nth-of-type(3)::after{ content: "Twitch";}
-    .socialBtn:nth-of-type(4)::after{ content: "r/cadum";}
-    .socialBtn:nth-of-type(5)::after{ content: "Patreon";}
-    .socialBtn:nth-of-type(6)::after{ content: "Discord";}
+    #socialBtns .socialBtn:nth-of-type(1)::after{ content: "Twitter";}
+    #socialBtns .socialBtn:nth-of-type(2)::after{ content: "YouTube";}
+    #socialBtns .socialBtn:nth-of-type(3)::after{ content: "Twitch";}
+    #socialBtns .socialBtn:nth-of-type(4)::after{ content: "r/cadum";}
+    #socialBtns .socialBtn:nth-of-type(5)::after{ content: "Patreon";}
+    #socialBtns .socialBtn:nth-of-type(6)::after{ content: "Discord";}
 
     /*===== Countdown =====*/
     #countdown{
