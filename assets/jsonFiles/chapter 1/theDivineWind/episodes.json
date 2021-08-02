@@ -57,12 +57,22 @@
         },
         {
             "airDate": "7/15/2021",
-            "duration": "~3:00:00",
-            "imgArtist": "",
+            "duration": "2:56:44",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/865297827134439454",
             "youtube": "https://www.youtube.com/watch?v=I52ZeQqflfA&list=PLfASEnzB7i1bTTNrSKnOSZESF2R7_sty4&index=4",
-            "twitch": "https://www.twitch.tv/videos/1087656779",
-            "fanArtDiscord": "",
-            "fanArtTwitch": "",
+            "twitch": "https://www.twitch.tv/videos/1091330863?collection=KWtuVOpIjBbB0A",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/865295930851721216",
+            "fanArtTwitch": "https://www.twitch.tv/videos/1091330863?collection=KWtuVOpIjBbB0A&t=2h10m37s",
+            "summary": "https://www.reddit.com/r/cadum/comments/ondonv/verum_weekly_summaries_of_streamed_games_of_the/"
+        },
+        {
+            "airDate": "7/29/2021",
+            "duration": "4:04:22",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/870384547970285598",
+            "youtube": "",
+            "twitch": "https://www.twitch.tv/videos/1105282611?collection=KWtuVOpIjBbB0A",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/870357410269769728",
+            "fanArtTwitch": "https://www.twitch.tv/videos/1105282611?collection=KWtuVOpIjBbB0A&t=3h15m54s",
             "summary": ""
         }
     ]

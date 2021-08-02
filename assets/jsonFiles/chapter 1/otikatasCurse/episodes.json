@@ -63,16 +63,36 @@
             "twitch": "https://www.twitch.tv/videos/1084134722?collection=_ByVuHjziRYKOQ",
             "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/863159116205654076",
             "fanArtTwitch": "https://www.twitch.tv/videos/1084134722?collection=_ByVuHjziRYKOQ&t=2h44m24s",
-            "summary": ""
+            "summary": "https://www.reddit.com/r/cadum/comments/ondonv/verum_weekly_summaries_of_streamed_games_of_the/"
         },
         {
             "airDate": "7/16/2021",
-            "duration": "~3:00:00",
+            "duration": "3:52:18",
             "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/865706137293553735",
             "youtube": "https://www.youtube.com/watch?v=67g8wDUcv0A&list=PLfASEnzB7i1bp0u-AK8Wzs1PtFNuBddFA&index=5",
-            "twitch": "https://www.twitch.tv/videos/1088853175",
+            "twitch": "https://www.twitch.tv/videos/1091331334?collection=_ByVuHjziRYKOQ",
             "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/865698957849002015",
             "fanArtTwitch": "",
+            "summary": "https://www.reddit.com/r/cadum/comments/os4fq2/verum_weekly_summaries_of_streamed_games_of_the/"
+        },
+        {
+            "airDate": "7/30/2021",
+            "duration": "1:18:42",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/870727840050589736",
+            "youtube": "https://www.youtube.com/watch?v=BGV0VN-oekQ&list=PLfASEnzB7i1bp0u-AK8Wzs1PtFNuBddFA&index=6",
+            "twitch": "https://www.twitch.tv/videos/1105284325?collection=_ByVuHjziRYKOQ",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/870707525299888158",
+            "fanArtTwitch": "",
+            "summary": ""
+        },
+        {
+            "airDate": "7/30/2021",
+            "duration": "4:41:26",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/870773096221663282",
+            "youtube": "",
+            "twitch": "https://www.twitch.tv/videos/1105285147?collection=_ByVuHjziRYKOQ",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/870772361400573953",
+            "fanArtTwitch": "https://www.twitch.tv/videos/1105285147?collection=_ByVuHjziRYKOQ&t=3h25m28s",
             "summary": ""
         }
     ]

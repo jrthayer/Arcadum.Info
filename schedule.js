@@ -15,7 +15,7 @@ var utcTimes = [
     [[1260, "A Storm Approaches"]],
     [[1380, "Among The Reeds"]], 
     [[1080, "The Divine Wind"]], 
-    [[1020, "River Styx Bonus Session"],[1260, "Otikata's Curse"]],
+    [[1260, "Otikata's Curse"]],
     []];  
 
 var convertedTimes = [
