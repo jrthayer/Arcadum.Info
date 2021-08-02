@@ -96,7 +96,7 @@ createSchedule();
 nextShowInit();
 //create navbar
 setupNavbar();
-window.addEventListener('focus', () => nextShow());
+window.addEventListener('focus', () => displayShow(nextShow()));
 
 // Functions
 //================================
