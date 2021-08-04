@@ -72,6 +72,11 @@ img{
     user-select: none;
 }
 
+/*
+====================================== 
+    2. Typography 
+======================================
+*/
 h1{
     font-size: 2.5rem;
     text-transform: uppercase;
@@ -82,11 +87,6 @@ h1{
     margin: 0;
 }
 
-/*
-====================================== 
-    2. Typography 
-======================================
-*/
 html{
     font-family: dolbak, sans-serif;
 

@@ -10,11 +10,11 @@
 // Global Data Structures
 //================================
 var utcTimes = [
-    [[1380, "Update Stream!!"]],
+    [],
     [[1020, "Ink And Blood"],[1320, "The Final Toll"]],
     [],
-    [[1380, "Among The Reeds"]], 
-    [[1080, "The Divine Wind"]], 
+    [], 
+    [], 
     [],
     []];  
 
