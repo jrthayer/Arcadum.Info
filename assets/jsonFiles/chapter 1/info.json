@@ -1,5 +1,5 @@
 {
     "name": "chapter 1",
-    "description": "Descriptions Coming Soon!",
+    "description": "The pale emperor has conquered the kingdoms of the east and seeks to do the same for all of Glies. His conquest has upset the political and mystical balance, spreading chaos and corruption across the lands. However hope remains for the natural balance to be restored as a Divine Wind blows!",
     "children": ["otikatasCurse","theDivineWind", "aStormApproaches", "inkAndBlood",  "amongTheReeds", "theFinalToll"]
 }
