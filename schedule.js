@@ -5,17 +5,17 @@
 //     [[1380, "Among The Reeds"]], 
 //     [[1080, "The Divine Wind"]], 
 //     [[1260, "Otikata's Curse"]],
-//     [[60, "Callous Row"]]];  
+//     []];  
 
 // Global Data Structures
 //================================
 var utcTimes = [
     [],
-    [[1020, "Ink And Blood"],[1320, "The Final Toll"]],
     [],
-    [], 
-    [], 
-    [],
+    [[1260, "A Storm Approaches"]],
+    [[1380, "Among The Reeds"]], 
+    [[1080, "The Divine Wind"]], 
+    [[1260, "Otikata's Curse"]],
     []];  
 
 var convertedTimes = [
