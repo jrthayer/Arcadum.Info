@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://kit.fontawesome.com/f46f49412e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="style.css?v=2.79">
-    <link rel="stylesheet" type="text/css" href="assets/components/navBar/navBar.css?v=1.03">
+    <link rel="stylesheet" type="text/css" href="style.css?v=3.0">
+    <link rel="stylesheet" type="text/css" href="assets/components/navBar/navBar.css?v=2.0">
 </head>
 <body class="disable-select">
     <header>
-        <nav class="container">
+        <nav>
             <a href="" class="nav_homeBtn nav__link">Home</a>
 
             <div class="links">
@@ -47,6 +47,16 @@
                                 <a href="./show/show.html?chapter=chapter%201&campaign=theFinalToll" class="nav__link">The Final Toll</a>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="nav__dropdown">
+                    <a class="nav__dropdown-name">Maps
+                        <i class="fas fa-chevron-down fa-xs"></i>
+                    </a>
+                    <div class="nav__dropdown-links">
+                        <a href="./maps/?map=kalkatesh" class="nav__link">Kalkatesh</a>
+                        <a href="./maps/?map=glies" class="nav__link">Glies</a>
                     </div>
                 </div>
                 
@@ -178,5 +188,6 @@
         return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
         }(document, "script", "twitter-wjs"));
 </script> 
-<script src="schedule.js?v=2.96"></script>
+<script src="schedule.js?v=3.0"></script>
+<script src="../assets/components/navBar/navBar.js"></script>
 </html>

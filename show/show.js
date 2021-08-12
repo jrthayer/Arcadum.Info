@@ -48,7 +48,6 @@ function loadJsonInfo(url, campaignInfo, index){
 function testFiles(delay){
     if(files === 0){
         generatePage();
-        setupNavbar();
     }
     else{
         console.log("files remaining to load: " + files);
@@ -64,7 +63,7 @@ function generatePage(){
     
     document.title = campaignInfo[1].name;
 
-    let container = document.querySelectorAll(".container")[1];
+    let container = document.querySelector(".container");
     document.documentElement.style.setProperty('--color700', campaignInfo[0].color700);
     document.documentElement.style.setProperty('--color400', campaignInfo[0].color400);
     
@@ -272,45 +271,4 @@ function createLink(aClasses, iClasses, link){
     a.appendChild(i);
 
     return a;
-}
-
-
-// NAVBAR FUNCTIONS
-function setupNavbar(){
-    console.log("setup navbar");
-    //dropdown-name
-    //dropdown-group-name
-    let navbarDropdowns = document.querySelectorAll(".nav__dropdown-name");
-    for(let x = 0; x < navbarDropdowns.length; x++){
-        navbarDropdowns[x].addEventListener('click', event => {
-            toggleClass(navbarDropdowns[x],"nav__active_visible");
-            toggleClass(navbarDropdowns[x],"nav__active_block");
-          }
-        );
-    }
-
-    let navbarGroups = document.querySelectorAll(".nav__dropdown-group-name");
-    for(let x = 0; x < navbarGroups.length; x++){
-        navbarGroups[x].addEventListener('click', event => {
-            toggleClass(navbarGroups[x],"nav__active_block");
-          }
-        );
-    }
-
-    let navbarBtn = document.querySelector(".navBtn");
-    let home = document.querySelector(".nav_homeBtn");
-    navbarBtn.addEventListener('click', event => {
-        toggleClass(home,"nav__active_block");
-        }
-    );
-    
-}
-
-function toggleClass(object, className){
-    if(object.classList.contains(className)){
-        object.classList.remove(className);
-    }
-    else{
-        object.classList.add(className);
-    }
 }

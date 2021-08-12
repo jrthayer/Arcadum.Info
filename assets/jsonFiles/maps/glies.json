@@ -1,0 +1,980 @@
+{
+    "name": "Glies",
+    "mapSrc": "../assets/imgs/maps/glies_1200.png",
+    "wiki": "https://verum.fandom.com/wiki/Glies",
+    "minHeight": 600,
+    "maxHeight": 1200,
+    "scaleIncrement": 1,
+    "pointTypes":{
+            "":{
+                "color700": "#CCFF00",
+                "color400": "black",
+                "scale": 0.8
+            },
+            "landmark":{
+                "color700": "#000000",
+                "color400": "#424242",
+                "scale": 0.5
+            },
+            "village":{
+                "color700": "#0e0101",
+                "color400": "#ad2525",
+                "scale": 0.5
+            },
+            "city":{
+                "color700": "#0e0101",
+                "color400": "#630808",
+                "scale": 0.8
+            },
+            "clan":{
+                "color700": "#01080e",
+                "color400": "#3182d3",
+                "scale": 0.5
+            },
+            "kingdom":{
+                "color700": "#01080e",
+                "color400": "#063665",
+                "scale": 1.1
+            },
+            "region":{
+                "color700": "#040b04",
+                "color400": "#2a6f25",
+                "scale": 1.1
+            },
+            "event":{
+                "color700": "#0a020d",
+                "color400": "#490f62",
+                "scale": 0.8
+            },
+            "continent":{
+                "color700": "#100b19",
+                "color400": "#573c86",
+                "scale": 1.5
+            }      
+    },
+    "points": [
+        {
+            "name": "Glies",
+            "motto": "",
+            "type": "continent",
+            "coordinates": {"top": "15%", "left": "20%"},
+            "desc": "A continent to the east of Kalkatesh on the planet Verum. It's based on different asian cultures and is the main continent for the Phase 4 of Verum games.\n\nIt is home to several native races that live organized in feudal states and clans separated into four groupings: the Northern Kingdoms, the Southern Kingdoms, the Western Kingdoms, and the Eclipse.",
+            "categories": [
+                {
+                    "title": "History",
+                    "info": "Some years before the Battle in the Sky, the Great Calamity of the Violet, a group of adventurers crossed the Abyssal Sea from Kalkatesh as part of the First Glies Expedition. Among those in the group were Alexander, a righteous paladin; and Lord Azolon, a powerful wizard from Kalkatesh's Mages Guild.\n\nDuring the Expedition they founded the western port city of Alexandria, named for Alexander after he died to the Stranger. The city is currently governed by Lord Azolon, who serves as the Archmage of the Mages Guild he established in Glies.\n\nIn the 50 years after the Calamity, Glies experienced two important historical events. The first one is the strange behavior of the Mists, a strange and dangerous phenomena that used to be limited to the surrounding environment of the Titan’s Eye, with its movement Westward. The second is the unification of the Eastern Kingdoms into the Eclipse, by warlord Otami Kurosai."
+                },
+                {
+                    "title": "Technology",
+                    "info": "Glies is one tech level below Kalkatesh, that means it doesn't have access to Alchemical Engines nor Renaissance-style technology.\n\nEven though Kalkateshian Airships are not common to Glies, the winds in Glies are so reliable that the main method of transportation is by Kite, both for personal use and for the creation of complete establishments sustained by Kites.\n\nEven with the lower technological level, Glies applies magic and relies on the Yokai for most of the comforts associated with higher levels. For example, even with a lack of electricity, cities and villages can be illuminated at night using magical means."
+                },
+                {
+                    "title": "Religion",
+                    "info": "Glien religion is more polytheistic and nature-oriented than Kalkatesh. In Glies, spirituality revolves around the Yokai, spirits that wander the land as any other mortal would. Dragons also exist in Glies, but are more spiritual and serpent-like."
+                },
+                {
+                    "title": "Yokai",
+                    "info": "Yokai are the spirits of Glies. They are spiritual representations of natural laws and forces.\n\nThere are several different types of Yokai, and only the most important/powerful ones can ascend to the rank of Kami."
+                },
+                {
+                    "title": "Akuma",
+                    "info": "The Akuma are the corrupted Yokai found on Glies. They are essentially the same as the demons from the West. Akuma naturally form from the negative emotions of mortal-kind."
+                },
+                {
+                    "title": "Tribes, Clans & Races",
+                    "info": "Even though it was disclosed that some Races have a specific homeland, like Geckoi with the Laughing Swamp, and there still are what it seem as Geckoi-only tribes, it's also important to highlight the fact that Northern and Southern Clans are not Race-based.\n\nEven though any Race can be part of any Clan, there seem to still exist some smaller tribes of specific Races dispersed without complete or full clan affiliation. It is not clear at this point if one political structure preceded the other, or the relationship between both forms of social organization."
+                },
+                {
+                    "title": "Elves",
+                    "info": "Elves in Glies are more attuned with nature than their Kalkateshian equivalents, to the point of having their skin infused with different types of wood. There are three types of Glien elves: Whitewood, Greenwood and Reedwood."
+                },
+                {
+                    "title": "Geckoi",
+                    "info": "The Geckoi are an androgynous race of lizard-looking people. Males have spikes on their backs and tails, while females have feathers. They tend to favor the life of merchants and their relationship culture is polygamous."
+                },
+                {
+                    "title": "Tearn",
+                    "info": "The Tearn are a race of people with bat characteristics, including bat-like ears and wings attached to their arms. Even though the wings don’t provide a reliable way of flying, they can take advantage of the reliable winds of Glies to do so, even if they lack a kite.\n\nTearn value intelligence highly."
+                },
+                {
+                    "title": "Yozai",
+                    "info": "The Yozai are the offspring of a mortal and a Yokai. The Yozai are always half-human and half-yokai, independently of the race of the mortal parent. They also have spectral arms that reflect characteristics of their Yokai parent."
+                },
+                {
+                    "title": "Ho'ask",
+                    "info": "The Ho’ask are a race of people with marked yak-styled characteristics, including distinctive horns, ears, and a bulky build. The general treatment, adorning, and even cutting, of the horns has a prominent place in their culture.\n\nLying is also considered a mortal sin in their culture. Ho'ask represent about 20% of the Glien population."
+                }
+            ]
+        },
+        {
+            "name": "The Flowing Lands",
+            "motto": "",
+            "type": "region",
+            "coordinates": {"top": "45%", "left": "14%"},
+            "desc": "Fertile lands marked by terrains of various elevations, with several rivers, waterfalls, and villages dispersed in it.",
+            "categories": [
+                {
+                    "title": "History",
+                    "info": "It is said that the flowing lands were created by the Father of the Yozai. When the mortal Mother of the Yozai died of old age, he became consumed by grief and transformed into an Akuma.\n\nRather then lash out at others, he instead became consumed by sadness and let his tears flow out endlessly. His tears formed the lakes and rivers of the Flowing Lands causing much destruction until he was killed by the first Onimetsu."
+                }
+            ],
+            "points": [
+                {
+                    "name": "Alexandria",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "56%", "left": "13.2%"},
+                    "desc": "A city in the Flowing Lands of the continent of Glies. It is a port city on the western side of the continent which was founded by immigrants from Kalkatesh who sailed to Glies as part of the First Glies Expedition. The city is a memoriam to Alexander Glenn, a cocksure Aasimar Paladin who was killed during the immigrants' expedition.\n\nThis is the only place within Glies where Kalkateshians have been allowed to colonize.\n\nThe only time Kalkateshians are able to travel to Glies is during the Festival of the Seven, when the leviathans in the abyssal ocean sleep.",
+                    "categories": []
+                },
+                {
+                    "name": "The Maw",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "58%", "left": "7%"},
+                    "desc": "Is where many those who seek the sailing life operate in rivers and in the sea itself. The islands islands surrounding this sea resemble teeth.",
+                    "categories": []
+                },
+                {
+                    "name": "Greenbramble",
+                    "motto": "",
+                    "type": "village",
+                    "coordinates": {"top": "52%", "left": "15%"},
+                    "desc": "Greenbramble is a geckoi village located in a forest on Glies. The villages is built within the tall trees of the forest as the geckoi can easily climb.\n\nIt is normally protected by the Yokai baboon Whitefury.",
+                    "features": ["smallTitle"],
+                    "categories": []
+                },
+                {
+                    "name": "Uzu",
+                    "motto": "",
+                    "type": "village",
+                    "coordinates": {"top": "54%", "left": "17%"},
+                    "desc": "Uzu is one of the many small villages that dot the Flowing Lands, it is located on the border of the Wailing Sears.\n\nThe village is home to a nearby shrine which appears to have had its former occupants mysteriously massacred.",
+                    "categories": []
+                },
+                {
+                    "name": "Okogi",
+                    "motto": "",
+                    "type": "village",
+                    "coordinates": {"top": "60%", "left": "16%"},
+                    "desc": "Okogi is a village located in the Flowing Lands of Glies. It has an abandoned fortress near it leftover from the last clashing of the clans of the Northern Kingdoms.",
+                    "categories": []
+                }
+            ]
+        },
+        {
+            "name": "Wailing Scars",
+            "motto": "",
+            "type": "region",
+            "coordinates": {"top": "53%", "left": "19%"},
+            "desc": "An enormous bamboo shoot forest.\n\nPrized for the privacy it can offer, entire estates can be hidden among its maze-like reeds from those who travel on the roads. It’s also the most western region where the Mists have been seen by adventurers.",
+            "categories": [
+            ],
+            "points":[]
+        },
+        {
+            "name": "Laughing Swamp",
+            "motto": "",
+            "type": "region",
+            "coordinates": {"top": "45%", "left": "24%"},
+            "desc": "A swamp region that contains various herbs, fungus, fruits and other flora with special and medicinal qualities.\n\nThe water is relatively shallow, reaching up to 6-feet deep. The trees are of considerable height, with straight trunks and a tangle of roots that are visible outside of the soil.\n\nIt is the homeland of the Geckoi and their capital of Black Hollow is in the north.",
+            "categories": [
+            ],
+            "points":[
+                {
+                    "name": "Black Hollow",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "42%", "left": "25.75%"},
+                    "desc": "Capital city of the Geckoi, as the Geckoi generally don't like staying in one place for too long, Black Hollow is akin to an enormous inn.",
+                    "categories": [
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Wandering Weal",
+            "motto": "",
+            "type": "region",
+            "coordinates": {"top": "56%", "left": "25%"},
+            "desc": "A large open field that is the homeland of the Ho'ask and their capital city of Haven Rock.",
+            "categories": [
+            ],
+            "points":[
+                {
+                    "name": "Haven Rock",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "66%", "left": "26.5%"},
+                    "desc": "Capital city of the Ho'ask.",
+                    "features": ["centered"],
+                    "categories": [
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "The Titan’s Eye",
+            "motto": "",
+            "type": "region",
+            "coordinates": {"top": "46%", "left": "32%"},
+            "desc": "Appears as a big lake surrounded by mountain ranges.\n\nHistorically the mountain ranges are said to contain the dangerous Mists found in western Glies, with traders and travelers having been able to avoid it by virtue of its seasonal qualities.\n\nHowever, in the 50 years leading to the beginning of Phase 4 the Mists have become more prevalent, reaching far into the west, effectively cutting the Western section of Glies from the more Eastern section.",
+            "categories": [
+            ],
+            "points":[
+                {
+                    "name": "Kuzu",
+                    "motto": "",
+                    "type": "village",
+                    "coordinates": {"top": "45%", "left": "37%"},
+                    "desc": "A small village on the eastern border of the Titan's Eye.",
+                    "categories": []
+                }
+            ]
+        },
+        {
+            "name": "Northern Province",
+            "motto": "",
+            "type": "region",
+            "coordinates": {"top": "34%", "left": "45%"},
+            "desc": "The north is characterized by the prevalence of Yokai, making the people living in the northern clans more spiritual, accepting, and less xenophobic. The north is also characterized by its temperature, which gets lower further to the north, and by its mountainous terrain.\n\nWithin the northern province reside the northern kingdoms which are more directly connected with the Yokai that rule them and are very spiritual.",
+            "categories": [
+            ],
+            "points":[
+                {
+                    "name": "Northern Kingdoms",
+                    "motto": "",
+                    "type": "kingdom",
+                    "coordinates": {"top": "24%", "left": "52.25%"},
+                    "desc": "Within the northern province reside the northern kingdoms which are more directly connected with the Yokai that rule them and are very spiritual. They are separated into clans representing different elements: fire, water, wind, wood, metal, light, shadow, and blood.",
+                    "categories": [
+
+                    ],
+                    "points":[
+                        {
+                            "name": "Huǒ Clan (火)",
+                            "motto": "Fire Clan",
+                            "type": "clan",
+                            "coordinates": {"top": "28%", "left": "51%"},
+                            "desc": "",
+                            "features": ["centered"],
+                            "categories": [
+                                {
+                                    "title": "Governing Yokai",
+                                    "info": "Salamander"
+                                },
+                                {
+                                    "title": "Clan Weapon",
+                                    "info": "Glaive"
+                                },
+                                {
+                                    "title": "Symbol",
+                                    "info": "Salamander"
+                                },
+                                {
+                                    "title": "Ethics & Beliefs",
+                                    "info": "Everyone pulls their weight"
+                                },
+                                {
+                                    "title": "Main Activity",
+                                    "info": "Smithing, Crafting, Foraging (Very military focused)"
+                                },
+                                {
+                                    "title": "Unique Trait",
+                                    "info": "Fire & Steel: +3 to all fire damage sources, if from a weapon +6."
+                                },
+                                {
+                                    "title": "Notable Members",
+                                    "info": "Sunder\nZhan Ren"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Shuǐ Clan (水)",
+                            "motto": "Water Clan",
+                            "type": "clan",
+                            "coordinates": {"top": "28%", "left": "52.25%"},
+                            "desc": "",
+                            "features": ["centered"],
+                            "categories": [
+                                {
+                                    "title": "Governing Yokai",
+                                    "info": "Turtle (Solomon)"
+                                },
+                                {
+                                    "title": "Clan Weapon",
+                                    "info": "Three-section staff"
+                                },
+                                {
+                                    "title": "Symbol",
+                                    "info": "Rain on a Stone / Turtle"
+                                },
+                                {
+                                    "title": "Ethics & Beliefs",
+                                    "info": "Water is sacred"
+                                },
+                                {
+                                    "title": "Main Activity",
+                                    "info": "Fishermen, weavers, sailors"
+                                },
+                                {
+                                    "title": "Unique Trait",
+                                    "info": "Icy Veins: Immunity to non-magical cold damage and resistance to magical cold damage."
+                                },
+                                {
+                                    "title": "Notable Members",
+                                    "info": "The Goker\nLucine Lavendel"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Fēng Clan\n(风 / 風)",
+                            "motto": "Wind Clan",
+                            "type": "clan",
+                            "coordinates": {"top": "28%", "left": "53.5%"},
+                            "desc": "",
+                            "features": ["centered"],
+                            "categories": [
+                                {
+                                    "title": "Governing Yokai",
+                                    "info": "Kun (Large Bird)"
+                                },
+                                {
+                                    "title": "Clan Weapon",
+                                    "info": "Tonfas"
+                                },
+                                {
+                                    "title": "Symbol",
+                                    "info": "Bonsai"
+                                },
+                                {
+                                    "title": "Ethics & Beliefs",
+                                    "info": "Don't use bladed weapons\n\nAvoid killing if possible\n\nBelieve in Joy & Meditation\n\nMost open to incorporating new members and letting them leave"
+                                },
+                                {
+                                    "title": "Main Activity",
+                                    "info": "Maintain the skyways of Glies"
+                                },
+                                {
+                                    "title": "Unique Trait",
+                                    "info": "Above the Clouds: Proficiency with battle kites."
+                                },
+                                {
+                                    "title": "Notable Members",
+                                    "info": "River Styx"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Mùtou Clan (木材)",
+                            "motto": "Wood Clan",
+                            "type": "clan",
+                            "coordinates": {"top": "31%", "left": "51%"},
+                            "desc": "",
+                            "features": ["centered"],
+                            "categories": [
+                                {
+                                    "title": "Governing Yokai",
+                                    "info": "Fox"
+                                },
+                                {
+                                    "title": "Clan Weapon",
+                                    "info": "Longbow"
+                                },
+                                {
+                                    "title": "Symbol",
+                                    "info": "3 white trees in tri cross pattern"
+                                },
+                                {
+                                    "title": "Main Activity",
+                                    "info": "Woodworking. Hunters, Guides, Rangers"
+                                },
+                                {
+                                    "title": "Unique Trait",
+                                    "info": "Fleetest of Foot: +15 to base movement speed."
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Jīnshǔ Clan\n(金属 / 金屬)",
+                            "motto": "Metal Clan",
+                            "type": "clan",
+                            "coordinates": {"top": "31%", "left": "52.25%"},
+                            "desc": "",
+                            "features": ["centered"],
+                            "categories": [
+                                {
+                                    "title": "Governing Yokai",
+                                    "info": "Golden Owlbear"
+                                },
+                                {
+                                    "title": "Clan Weapon",
+                                    "info": "Great maul, Hammer"
+                                },
+                                {
+                                    "title": "Symbol",
+                                    "info": "A flipping coin"
+                                },
+                                {
+                                    "title": "Ethics & Beliefs",
+                                    "info": "It is common custom to keep the first \"coin earned\" as a memento"
+                                },
+                                {
+                                    "title": "Main Activity",
+                                    "info": "Commerce and Currency"
+                                },
+                                {
+                                    "title": "Unique Trait",
+                                    "info": "Gold Standard: Increase wealth rewards by 20% from completed missions."
+                                },
+                                {
+                                    "title": "Notable Members",
+                                    "info": "Mamo Socko"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Yang Clan\n(阳 / 陽 or 光)",
+                            "motto": "Light Clan",
+                            "type": "clan",
+                            "coordinates": {"top": "31%", "left": "53.5%"},
+                            "desc": "",
+                            "features": ["centered"],
+                            "categories": [
+                                {
+                                    "title": "Governing Yokai",
+                                    "info": "Dove"
+                                },
+                                {
+                                    "title": "Clan Weapon",
+                                    "info": "Open hand, Close Quarters Combat"
+                                },
+                                {
+                                    "title": "Symbol",
+                                    "info": "A Sun"
+                                },
+                                {
+                                    "title": "Ethics & Beliefs",
+                                    "info": "Beauty as a measure of a person's value"
+                                },
+                                {
+                                    "title": "Main Activity",
+                                    "info": "Politicians and Mediators"
+                                },
+                                {
+                                    "title": "Unique Trait",
+                                    "info": "Serene Beauty: You may use Charisma as your ability modifier when making a weapon attack."
+                                },
+                                {
+                                    "title": "Notable Members",
+                                    "info": "Kouki Subeuroko\nRal'Sazesh\nSus'ke"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Yin Clan\n(阴 / 陰)",
+                            "motto": "Shadow Clan",
+                            "type": "clan",
+                            "coordinates": {"top": "34%", "left": "51%"},
+                            "desc": "",
+                            "features": ["centered"],
+                            "categories": [
+                                {
+                                    "title": "Governing Yokai",
+                                    "info": "Spider"
+                                },
+                                {
+                                    "title": "Clan Weapon",
+                                    "info": "Shortsword, Wakizashi"
+                                },
+                                {
+                                    "title": "Symbol",
+                                    "info": "Moon with clouds"
+                                },
+                                {
+                                    "title": "Ethics & Beliefs",
+                                    "info": "Matriarchal"
+                                },
+                                {
+                                    "title": "Main Activity",
+                                    "info": "Shinobis and Ninjutsu"
+                                },
+                                {
+                                    "title": "Unique Trait",
+                                    "info": "In The Shadow: While in darkness, advantages on stealth check and ignore disadvantage on stealth checks from wearing armor."
+                                },
+                                {
+                                    "title": "Notable Members",
+                                    "info": "Mei"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Xuè Clan (血)",
+                            "motto": "Blood Clan",
+                            "type": "clan",
+                            "coordinates": {"top": "34%", "left": "52.25%"},
+                            "desc": "",
+                            "features": ["centered"],
+                            "categories": [
+                                {
+                                    "title": "Governing Yokai",
+                                    "info": "Shark"
+                                },
+                                {
+                                    "title": "Clan Weapon",
+                                    "info": "Greatsword, Nodachi"
+                                },
+                                {
+                                    "title": "Symbol",
+                                    "info": "Cut with blood"
+                                },
+                                {
+                                    "title": "Ethics & Beliefs",
+                                    "info": "Uses blood of enemies to paint themselves"
+                                },
+                                {
+                                    "title": "Main Activity",
+                                    "info": "Battle hungry warriors"
+                                },
+                                {
+                                    "title": "Unique Trait",
+                                    "info": "Blood In The Water: Heal character level in hitpoints whenever you kill a worth opponent in combat."
+                                },
+                                {
+                                    "title": "Notable Members",
+                                    "info": "Akakai\nAisu Kurimu"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Southern Province",
+            "motto": "",
+            "type": "region",
+            "coordinates": {"top": "58%", "left": "63%"},
+            "desc": "Within the southern province reside the southern kingdoms whose leaders are based off real-world leaders from Asia.",
+            "categories": [
+            ],
+            "points":[
+                {
+                    "name": "Southern Kingdoms",
+                    "motto": "",
+                    "type": "kingdom",
+                    "coordinates": {"top": "66%", "left": "63%"},
+                    "desc": "Southern Kingdoms are known for their political focus and military might, with much less spirituality and Yokai presence.",
+                    "categories": [],
+                    "points": [
+                        {
+                            "name": "Tsu Clan",
+                            "motto": "",
+                            "type": "clan",
+                            "coordinates": {"top": "70%", "left": "60%"},
+                            "desc": "",
+                            "features": ["centered"],
+                            "categories": [
+                                {
+                                    "title": "Clan Weapon",
+                                    "info": "Sunbladed Morning Star"
+                                },
+                                {
+                                    "title": "Symbol",
+                                    "info": "Sun"
+                                },
+                                {
+                                    "title": "Ethics & Beliefs",
+                                    "info": "Winning a battle before fighting it"
+                                },
+                                {
+                                    "title": "Unique Trait",
+                                    "info": "Supreme Excellence: You may use Intelligence as your ability modifier when making a weapon attack."
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Qi Clan",
+                            "motto": "",
+                            "type": "clan",
+                            "coordinates": {"top": "70%", "left": "61.5%"},
+                            "desc": "",
+                            "features": ["centered"],
+                            "categories": [
+                                {
+                                    "title": "Clan Weapon",
+                                    "info": "War Fan"
+                                },
+                                {
+                                    "title": "Symbol",
+                                    "info": "Dark Red & Brown colors"
+                                },
+                                {
+                                    "title": "Ethics & Beliefs",
+                                    "info": "Avoid the need for war in the first place. Far more accepting of individuality and personal rights than other clans"
+                                },
+                                {
+                                    "title": "Main Activity",
+                                    "info": "Diplomacy. Building Infrastructure. Clans Relations."
+                                },
+                                {
+                                    "title": "Unique Trait",
+                                    "info": "Reformation and Poise: Advantage on Persuasion against hostile creatures. +2 AC against all creatures that share an initiative if used in combat."
+                                },
+                                {
+                                    "title": "Notable Members",
+                                    "info": "Tomoe"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Cao Clan",
+                            "motto": "",
+                            "type": "clan",
+                            "coordinates": {"top": "70%", "left": "63%"},
+                            "desc": "",
+                            "features": ["centered"],
+                            "categories": [
+                                {
+                                    "title": "Clan Weapon",
+                                    "info": "Hidden-Brush Weapons"
+                                },
+                                {
+                                    "title": "Symbol",
+                                    "info": "Yellow and Grey colors"
+                                },
+                                {
+                                    "title": "Main Activity",
+                                    "info": "Calligraphy and Drawing"
+                                },
+                                {
+                                    "title": "Unique Trait",
+                                    "info": "Tireless Cunning: When successfully deceiving a creature, detect it's next attempt at deceiving you and gain 2d6 untyped damage against it."
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Hideyoshi Clan",
+                            "motto": "",
+                            "type": "clan",
+                            "coordinates": {"top": "70%", "left": "64.5%"},
+                            "desc": "",
+                            "features": ["centered"],
+                            "categories": [
+                                {
+                                    "title": "Clan Weapon",
+                                    "info": "Glaive"
+                                },
+                                {
+                                    "title": "Symbol",
+                                    "info": "Mustard, Dark Red and Black colors."
+                                },
+                                {
+                                    "title": "Ethics & Beliefs",
+                                    "info": "Ideals of Meritocracy\n\nA capable individual can come from any place\n\nHeavy use of Basket Helmets, symbol of equality"
+                                },
+                                {
+                                    "title": "Unique Trait",
+                                    "info": "From Any Place: Stacking bonus on successful attack roll/saving throw, resets on fail."
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Ieyasu Clan",
+                            "motto": "",
+                            "type": "clan",
+                            "coordinates": {"top": "70%", "left": "66%"},
+                            "desc": "",
+                            "features": ["centered"],
+                            "categories": [
+                                {
+                                    "title": "Clan Weapon",
+                                    "info": "Reversed-Blade Katana"
+                                },
+                                {
+                                    "title": "Symbol",
+                                    "info": "Open Helping Hand. Dark Yellow and Green colors."
+                                },
+                                {
+                                    "title": "Ethics & Beliefs",
+                                    "info": "Not wanting to kill"
+                                },
+                                {
+                                    "title": "Main Activity",
+                                    "info": "Scholars"
+                                },
+                                {
+                                    "title": "Unique Trait",
+                                    "info": "Peace Endures: Can use non-lethal damage with any source. Regain level hitpoints when non-lethally defeats an opponent."
+                                },
+                                {
+                                    "title": "Notable Members",
+                                    "info": "Mori Suzuki\nMungus"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Masamune Clan",
+                            "motto": "",
+                            "type": "clan",
+                            "coordinates": {"top": "73%", "left": "60%"},
+                            "desc": "",
+                            "features": ["centered"],
+                            "categories": [
+                                {
+                                    "title": "Clan Weapon",
+                                    "info": "Katana"
+                                },
+                                {
+                                    "title": "Symbol",
+                                    "info": "Golden and Dark Blue colors"
+                                },
+                                {
+                                    "title": "Ethics & Beliefs",
+                                    "info": "Challenge head-on"
+                                },
+                                {
+                                    "title": "Unique Trait",
+                                    "info": "In The Dragon's Eye: Immune to death effects and resistant to necrotic damage."
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Sejong Clan",
+                            "motto": "",
+                            "type": "clan",
+                            "coordinates": {"top": "73%", "left": "61.5%"},
+                            "desc": "",
+                            "features": ["centered"],
+                            "categories": [
+                                {
+                                    "title": "Clan Weapon",
+                                    "info": "Repeating Crossbow"
+                                },
+                                {
+                                    "title": "Symbol",
+                                    "info": "Mask / Scroll and Spyglass crossed\n\nColors White & Blue"
+                                },
+                                {
+                                    "title": "Ethics & Beliefs",
+                                    "info": "Wear masks to hide the deception of the personal Charisma, focus on \"objective\" truths."
+                                },
+                                {
+                                    "title": "Main Activity",
+                                    "info": "Scientific Advancement, the most technologically advanced clan in Glies, closer to Kalkatesh\n\nAble to create Full Plate Mail armor."
+                                },
+                                {
+                                    "title": "Unique Trait",
+                                    "info": "Thirst for Knowledge: Any 2 skills proficiency, Expertise in one proficient skill."
+                                },
+                                {
+                                    "title": "Notable Members",
+                                    "info": "Scribbles\nAnaalius Penetratius\nRinzai"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Haka Clan",
+                            "motto": "",
+                            "type": "clan",
+                            "coordinates": {"top": "73%", "left": "63%"},
+                            "desc": "",
+                            "features": ["centered"],
+                            "categories": [
+                                {
+                                    "title": "Clan Weapon",
+                                    "info": "Macuahuitl"
+                                },
+                                {
+                                    "title": "Symbol",
+                                    "info": "Terrifying masks\n\nRed & Black colors"
+                                },
+                                {
+                                    "title": "Unique Trait",
+                                    "info": "The Haka: When initiative is rolled, may use battle cry with save DC (10+level) to frighten enemies for 1 minute, they damage you, or you are defeated."
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Cheng Clan",
+                            "motto": "",
+                            "type": "clan",
+                            "coordinates": {"top": "73%", "left": "64.5%"},
+                            "desc": "",
+                            "features": ["centered"],
+                            "categories": [
+                                {
+                                    "title": "Clan Weapon",
+                                    "info": "Hook/Kunai with Chain"
+                                },
+                                {
+                                    "title": "Symbol",
+                                    "info": "A Fish Head and a Hook"
+                                },
+                                {
+                                    "title": "Main Activity",
+                                    "info": "Piracy"
+                                },
+                                {
+                                    "title": "Unique Trait",
+                                    "info": "Well Salted: Swim 30 ft, hold breath 4x longer than normal. No disadvantage when fighting in water or unbalanced terrain."
+                                },
+                                {
+                                    "title": "Notable Members",
+                                    "info": "Buroken\nDivine Emperor"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Hao Clan",
+                            "motto": "",
+                            "type": "clan",
+                            "coordinates": {"top": "73%", "left": "66%"},
+                            "desc": "",
+                            "features": ["centered"],
+                            "categories": [
+                                {
+                                    "title": "Clan Weapon",
+                                    "info": "Hand Axe"
+                                },
+                                {
+                                    "title": "Symbol",
+                                    "info": "Lotus flower\n\nGolden & Jade colors"
+                                },
+                                {
+                                    "title": "Unique Trait",
+                                    "info": "Thorned Flower: When attacking with melee weapon or ranged weapon within 30ft, one ally adjacent to the target can spend his reaction to attack that target. Can be used up to proficiency times per short rest."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Path of Prosperity",
+            "motto": "",
+            "type": "region",
+            "coordinates": {"top": "46%", "left": "60%"},
+            "desc": "An enormous network of roads and paths that contorts itself like a serpent between the Northern and Southern Kingdoms of Glies. It is the trade route that connects the west to the east.\n\nIn the past the various clans have fought over it yet the Path of Prosperity has remained without a ruler.",
+            "categories": [
+            ],
+            "points":[
+                {
+                    "name": "Shol'Heer",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "53%", "left": "62%"},
+                    "desc": "An enormous free city regarded as the home of the Yozai.",
+                    "categories": [
+                    ]
+                },
+                {
+                    "name": "Bal'Lok",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "62%", "left": "43.5%"},
+                    "desc": "Capital city of the Tearn.",
+                    "features": ["centered"],
+                    "categories": [
+                    ]
+                },
+                {
+                    "name": "Chimeveld",
+                    "motto": "",
+                    "type": "village",
+                    "coordinates": {"top": "59%", "left": "43%"},
+                    "desc": "Chimeveld is a small village near Bal'Lok. It is often described as a sleepy traveler's town. Most of the gold/jade generated in this town comes from travelers looking for lodging, food, and information while on their way to the city.\n\nRecently a wave of nightmares hit the villagers overnight, causing many of them to act aggressively and attack anything on sight. As a result, Chimeveld is now burning and cursed.",
+                    "categories": []
+                },
+                {
+                    "name": "Boof n' Brew",
+                    "motto": "",
+                    "type": "village",
+                    "coordinates": {"top": "52%", "left": "48%"},
+                    "desc": "Homestead of the Divine Wind.\n\nThis is where The Divine Wind group has settled down to raise the ho'ask child destined to be the next emperor of Glies.",
+                    "features": ["centered"],
+                    "categories": []
+                },
+                {
+                    "name": "Uyo",
+                    "motto": "",
+                    "type": "village",
+                    "coordinates": {"top": "49%", "left": "50%"},
+                    "desc": "Uyo is a small village along the Path of Prosperity near where a group of adventurers settled down to raise the infant Divine Emperor.",
+                    "features": ["centered"],
+                    "categories": []
+                },
+                {
+                    "name": "Dozo",
+                    "motto": "",
+                    "type": "village",
+                    "coordinates": {"top": "51%", "left": "53%"},
+                    "desc": "A small village led by the Dozo family located along the Path of Prosperity.\n\nRecently young women have been going missing in this area, rumors say that the local Daimyo is involved.",
+                    "features": ["centered"],
+                    "categories": []
+                }
+            ]
+        },
+        {
+            "name": "Seat of the Elements",
+            "motto": "",
+            "type": "region",
+            "coordinates": {"top": "15%", "left": "62.5%"},
+            "desc": "This is where the Kami, the greatest of the Yokai, manifest themselves in the mortal realm.",
+            "categories": [
+            ],
+            "points":[]
+        },
+        {
+            "name": "The Crashing Coast",
+            "motto": "",
+            "type": "landmark",
+            "coordinates": {"top": "28%", "left": "75%"},
+            "desc": "An area in the center-north-east that is constantly berated by storms.",
+            "categories": [
+            ]
+        },
+        {
+            "name": "Joka Vall",
+            "motto": "",
+            "type": "city",
+            "coordinates": {"top": "33.5%", "left": "71.5%"},
+            "desc": "A city built atop the ruins of the former capital of a race known as the Ominax. An adventuring hub where people go to seek artifacts in the thousands of ruins there.",
+            "categories": [
+            ],
+            "points":[]
+        },
+        {
+            "name": "Eclipse",
+            "motto": "",
+            "type": "kingdom",
+            "coordinates": {"top": "49%", "left": "86%"},
+            "desc": "Formerly known as the Eastern Kingdoms, is now the country and geographical region that resulted from the unification of the eastern kingdoms by the warlord Otami Kurosai.\n\nIt is believed that the name of \"Eclipse\" signifies many different things. Some believe it is the eclipsing of the sun from Glies as the warriors of the night take their hold. Some believe it is simply a reference to a woman that was once loved by the Pale Emperor. Nobody really knows. There are many many stories as to what the name is.\n\n As of recently it appears as if the Eclipse wants to expand further into the rest of Glies.",
+            "categories": [
+            ],
+            "points":[
+                {
+                    "name": "Da-Shi-Shi",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "60.25%", "left": "85.25%"},
+                    "desc": "The city where the imperial throne resides.",
+                    "features": ["centered"],
+                    "categories": [
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Depthar Outbreak",
+            "motto": "",
+            "type": "event",
+            "coordinates": {"top": "44%", "left": "54%"},
+            "desc": "In an effort to save Dik'Cok from his captors, Eli Bloodbane and Machio Manis devised a plan to summon the favor of Crowley to aid with the rescue. After piling up corpses from a ruined village they were in, they created a shrine of corpses and blood.\n\nThrough their actions they inadvertently provided Crowley with enough divine sway in Glies to start a Dephtar infection event, infecting the Black Silver bandits raiding the village, turning them into fleshcrimes.",
+            "categories": [
+            ]
+        }
+    ]
+}

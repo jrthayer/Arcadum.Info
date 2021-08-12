@@ -3,28 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Games</title>
-    <link rel="icon" href="../assets/tabIcon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://kit.fontawesome.com/f46f49412e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="campaigns.css?v=3.0">
     <link rel="stylesheet" href="../assets/components/navBar/navBar.css?v=2.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
-    <link rel="preload" href="../assets/imgs/backgrounds/bg-intoTheMists.png" as="image">
-    <link rel="preload" href="../assets/imgs/backgrounds/bg-lostAtSea.png" as="image">
-    <link rel="preload" href="../assets/imgs/backgrounds/bg-prideOfTheNightwolf.png" as="image">
-    <link rel="preload" href="../assets/imgs/backgrounds/bg-scrollsOfNotChek.png" as="image">
-    <link rel="preload" href="../assets/imgs/backgrounds/bg-shrineOfSin.png" as="image">
-
-    <link rel="preload" href="../assets/imgs/backgrounds/bg-otikatasCurse.png" as="image">
-    <link rel="preload" href="../assets/imgs/backgrounds/bg-theDivineWind.png" as="image">
-    <link rel="preload" href="../assets/imgs/backgrounds/bg-aStormApproaches.png" as="image">
-    <link rel="preload" href="../assets/imgs/backgrounds/bg-inkAndBlood.png" as="image">
-    <link rel="preload" href="../assets/imgs/backgrounds/bg-amongTheReeds.png" as="image">
-    <link rel="preload" href="../assets/imgs/backgrounds/bg-theFinalToll.png" as="image">
+    <link rel="stylesheet" href="style.css?v=1.0">
+    <title>Document</title>
 </head>
-<body class="disable-select">
-    
+<body>
     <header>
         <div>
             <nav>
@@ -76,15 +62,39 @@
                         </div>
                     </div>
 
-                    <a href="" class="nav__link">Timeline</a>
+                    <a href="../campaigns/campaigns.html" class="nav__link">Timeline</a>
                 </div>
                 
                 <i class="fas fa-bars navBtn"></i>
             </nav>
         </div>
     </header>
-    <div class="container"></div>
+    
+    <div class="mapContainer">
+        <div class="map">
+            <img src="" alt="">
+        </div>
+
+        
+        <div id="sidePanel">
+            <button id="sidePanelBtn"></button>
+            <div id="panelInfo"></div>
+            <button id="bottomBtn"></button>
+        </div>
+
+        <div id="settingsBar">
+            <button id="legend" style="--color700: hsl(0, 0%, 90%); --color400: hsl(0, 0%, 30%);">
+                <div class="point"></div>
+            </button>
+            <button id="nightModeBtn">
+                <div class="icon"></div>
+            </button>
+            <button>+</button>
+            <button>-</button>
+        </div>
+    </div>
+    
+    <script src="map.js?v=1.0" id="mapScript" mapJSON="../assets/jsonFiles/maps/kalkatesh.json?v=0.00"></script>
+    <script src="../assets/components/navBar/navBar.js?v=2.0"></script>
 </body>
-<script src="campaigns.js?v=3.0"></script>
-<script src="../assets/components/navBar/navBar.js?v=2.0"></script>
 </html>

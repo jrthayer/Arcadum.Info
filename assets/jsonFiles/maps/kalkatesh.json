@@ -1,0 +1,1704 @@
+{
+    "name": "Kalkatesh",
+    "mapSrc": "../assets/imgs/maps/kalkatesh_2200.png",
+    "wiki": "https://verum.fandom.com/wiki/Kalkatesh",
+    "minHeight": 400,
+    "maxHeight": 1200,
+    "scaleIncrement": 1,
+    "pointTypes":{
+            "":{
+                "color700": "#CCFF00",
+                "color400": "black",
+                "scale": 0.8
+            },
+            "landmark":{
+                "color700": "#000000",
+                "color400": "#424242",
+                "scale": 0.5
+            },
+            "city":{
+                "color700": "#0e0101",
+                "color400": "#630808",
+                "scale": 0.8
+            },
+            "country":{
+                "color700": "#01080e",
+                "color400": "#063665",
+                "scale": 1.1
+            },
+            "region":{
+                "color700": "#040b04",
+                "color400": "#2a6f25",
+                "scale": 1.1
+            },
+            "continent":{
+                "color700": "#100b19",
+                "color400": "#573c86",
+                "scale": 1.5
+            }      
+    },
+    "points": [
+        {
+            "name": "Kalkatesh",
+            "motto": "",
+            "type": "continent",
+            "coordinates": {"top": "75%", "left": "75%"},
+            "desc": "The third largest continent of the planet Verum. It is a land that is steeped in a history of war and catastrophe, the greatest of which, The Reckoning, nearly destroyed all of creation, before the intervention of the Seven. A band of mortals that rose up and put a stop to the greatest threat creation had ever known.\n\nSixty-four years later, the land left behind struggles to recover from its wounds and old secrets begin to bubble to the surface, new struggles emerge and old threats return.\n\nKalkatesh has a population of 42,375,316.",
+            "categories": []
+        },
+        {
+            "name": "Khao",
+            "motto": "",
+            "type": "country",
+            "coordinates": {"top": "15%", "left": "64.5%"},
+            "desc": "Khao is a twin existence, one being the great jungle below called The T'zar, the other being the great floating city of Khao.\n\nThe jungle below is comprised of rivers, mountains, and lush green flora. The city is comprised of heavily regulated districts, each with its own various mark.",
+            "categories": [
+                {
+                    "title": "History",
+                    "info": "560 years ago, Khao was simply a jungle filled with tribes that warred with one another, that was until one day when ancient ruins were discovered by the Khaons. Fueled by the knowledge and magical enhancements found within the ruins, Khoan society developed and advanced quickly, soon capable of magical flight.\n\nSeeking security from a great war that ravaged Kalkatesh, the Khaons decided that they would take up an isolation policy enforced by a truly lofty project, the floating city of Khao. For within the clouds they would be unchallenged and unmolested —but what to do with all the population— for the great city could not fit them all.\n\nThe elders believed the fairest way was pure chance and so a series of random allotments were decided, these people would be those that would ascend to the heavens while the rest would stay below. Much to the surprise of those in power, not a single soul attempted to cheat, the allotments were made and the people that were once unified in knowledge would now be separated by distance.\n\nThe people of Khao are stronger knit than most so it was agreed by those in the sky that they would always care for those below; that as their fleet grew larger, they would land and gather the tribes. The eventual goal of the Khaons is to ascend all of their people and they have kept to that promise for these 500 years."
+                }
+            ],
+            "points": [
+                {
+                    "name": "The Underforest",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "17%", "left": "57%"},
+                    "desc": "The name given to the surface floor of the T'zar and the winding root caverns below.",
+                    "categories": []
+                },
+                {
+                    "name": "The Misty Canopy",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "20%", "left": "67%"},
+                    "desc": "The name given to the region within and atop the trees, with walk-able branches of enormous trees, these verdant highways lead to all manner of vistas.",
+                    "categories": []
+                },
+                {
+                    "name": "The Twin Fangs",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "25%", "left": "67%"},
+                    "desc": "Two great rivers meet in the near center of the forest, these great monoliths, are the central meeting place of nearly all the freshwater and the waters there are said to be a primal place.",
+                    "categories": []
+                },
+                {
+                    "name": "The Wild Coast",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "10%", "left": "58%"},
+                    "desc": "The western coast of the T'zar is a fearsome place, full of beasts attuned to life on land and sea.",
+                    "categories": []
+                },
+                {
+                    "name": "Lake Tauren",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "23%", "left": "62%"},
+                    "desc": "Lake Tauren gets its name from the ox shape as seen by the Khaoan city dwellers.",
+                    "categories": []
+                },
+                {
+                    "name": "The Rose Citadel",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "27%", "left": "61%"},
+                    "desc": "The tip of the spear of the Coin Lords land grab into the Badlands. This fortress marks the edge of civilization.",
+                    "categories": []
+                },
+                {
+                    "name": "The Great Floating City",
+                    "motto": "of Khao",
+                    "type": "city",
+                    "coordinates": {"top": "15%", "left": "70%"},
+                    "desc": "Khao is a twin existence, one being the great jungle below called The T'zar, the other being the great floating city of Khao.\n\nThe jungle below is comprised of rivers, mountains and lush green flora. The city is comprised of heavily regulated districts, each with its own various mark.",
+                    "categories": [
+                        {
+                            "title": "Demographic",
+                            "info": "Khao is truly diverse compared with the rest of the world. Some would consider them morally corrupt—the corruption not based on race, gender, nor religion, but rather wealth. There is a slight surplus of humans and lizardfolk."
+                        },
+                        {
+                            "title": "Government",
+                            "info": "Khao in both its forms is ruled by the Coin Lords; however, there is also a council of elders which governs the tribes below. The city of Khao uses it's considerable wealth to provide food, shelter and security to their ground walking brethren. With this odd exception Khao is ruled as an oligarchy."
+                        },
+                        {
+                            "title": "Religion",
+                            "info": "All religions are welcome within Khao as long as they pay their taxes and do not cause undo destruction or misery."
+                        },
+                        {
+                            "title": "Military",
+                            "info": "The Khaon military is composed of their native brethren when needed; however, it is mostly reliant on the glorious airship armada that not only protects the city but is also part of the city.\n\nWithin the city are guards employed by the Coin Lord called the Sky Knights, who use gliding and mounts to traverse the city quickly for the sake of rescuing any denizen that may accidentally go over the many edges and gaps of the floating city."
+                        },
+                        {
+                            "title": "Trade",
+                            "info": "The Economy of Khao is a multi-varied web of intricacy. It is comprised of several treaties which deal with the various countries of the world.\n\nThe Great Bazaar sells pretty much anything one can think of, including: transportation, slavery, and angelic boons. As such, Khao is a world power in which nearly all wealth can be traced back to in some fashion."
+                        },
+                        {
+                            "title": "Technology",
+                            "info": "Khao is a shining example of technological advancement, specifically in the field of flight and in the general application of alchemical engines. With the possible exception of Bleak, no other city or country has come close to the advancement of Khao.\n\nTheir advancements include alchemical lighting, food preservation, beverage cooling and various other minor conveniences."
+                        }
+                    ]
+                },
+                {
+                    "name": "Chrysalisk",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "15%", "left": "58%"},
+                    "desc": "Within the giant crystalline corpse of an insect lies a large village in the jungles of Western Khao.\n\nThe surrounding flora has overgrown the area, and it is not until one passes through the painstakingly maintained tunnel into the village that one can see the abundant wealth lying within.",
+                    "categories": [
+                        {
+                            "title": "History",
+                            "info": "When the Ii’tanas collapsed, some of their splendour and extravagance escaped from their lands and made its way to Khao.\n\nThe crystalline insect was once a symbol of wealth and prosperity, so when the lizardfolk of Khao discovered it’s corpse they settled within and  began to mine its bones for gems.\n\nDue to raids from outsiders wanting to take the wealth of Chrysalisk for themselves, the village of Chrysalisk is insular and distrustful of outsiders."
+                        },
+                        {
+                            "title": "Demographic",
+                            "info": "Chrysalisk is a bustling village with a population of approximately 4,000. The population consists almost entirely of saurians and kobolds.\n\nDue to the remote nature of the village and the hostile environment of the surrounding jungle, there is very little immigration or emigration in the insular society of the city. The wealth of the mines is closely guarded by its residents, and outsiders are not usually welcomed within."
+                        },
+                        {
+                            "title": "Government",
+                            "info": "Society in Chrysalisk is tribal in nature, and the oldest and most venerable of its residents rise to the top of the tribal hierarchy and rule the village."
+                        },
+                        {
+                            "title": "Religion",
+                            "info": "While there is no organized religion present in the city, many of the residents worship Lorn and make devotions in the private of their own homes.\n\nIn the kobold district of the village, there is a hidden shrine to The Seven, where many of the diminutive lizardfolk go to worship one of their own."
+                        },
+                        {
+                            "title": "Military",
+                            "info": "Tribal warriors amongst the residents of Chrysalisk protect the village from the hostile fauna of the Khaon jungle and the occasional bandit raid.\n\nChrysalisk is relatively peaceful; it is rare that the warriors are called upon to defend the village, and most of their time—when they are called— it is to go hunting to provide for the village, as well as protecting the occasional convoy."
+                        },
+                        {
+                            "title": "Agriculture",
+                            "info": ""
+                        },
+                        {
+                            "title": "Trade",
+                            "info": "The wealth of Chrysalisk lies in the gems that can be mined from its insectoid foundation. Traces of residual Ii’tanas magic still linger in the gems, and they fetch a pretty price in the city of Khao.\n\nAs the village itself is very secretive and insular, monthly trading convoys will make their way out of the village and travel for weeks to the nearest trading post, where their prearranged contact with the Great Bazaar will exchange the gems for gold and luxurious supplies that are not easily procured within the village."
+                        },
+                        {
+                            "title": "Technology",
+                            "info": "The gems of Chrysalisk still contain latent magic from the age of the Ii’tanas, sought after by researchers and collectors alike.\n\nThere are a few residents of the village that are more versed in the arcane and study the crystals themselves, but the majority of magics in Chrysalisk are druidic in nature—used by tribal shamans to run the day-to-day affairs of the village."
+                        }
+                    ]
+                },
+                {
+                    "name": "Thornscorn",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "29%", "left": "64%"},
+                    "desc": "Deep within the heart of the jungles of Khao, there is a large, twisting bramble. Paths have been carved into this bramble in a strange labyrinth, and within the center of this twisting grove of life, is the town of Thornscorn.",
+                    "categories": [
+                        {
+                            "title": "History",
+                            "info": "At first, the town of Thornscorn was nothing but a small field of thorns—easy to move through, and generally just another part of the vast jungle. This changed when the first leader of Thornscorn, Titalla, found his way to this section of the jungle.\n\nTitalla was an exile from another lizardfolk tribe, he wandered the jungles in search of a place of refuge for his family. The only home he could find was among the plants, so he started to grow intune with the nature around him. When he saw the small field of brambles, he saw something greater that could lie within—a true home.\n\nHe spent years using druidic magic to grow the brambles into a large shelter. In time his family grew, and he needed to expand the brambles around him. The thorns that protected him kept growing and growing until it could house a small town. With a home finally made, he could step down as leader and let someone else lead.\n\nHe had to be sure that the leader of the tribe would be someone he could trust, and someone who could defend themselves in this savage home. He proposed solutions to this: Firstly, the leader must be of Titalla’s blood—a relative of some sort. And secondly, they must win in a trial by combat against the previous leader. With these rules in place, Thornscorn blossomed into the town it is now."
+                        },
+                        {
+                            "title": "Demographic",
+                            "info": "Thornscorn is considered a small town with a population of around 2,200 citizens. Almost the entirety of Thornscorn is lizardfolk, but those who can brave the labyrinth are welcome to trade and offer their services to the lizardfolk there. "
+                        },
+                        {
+                            "title": "Government",
+                            "info": "The leader of Thornscorn is decided by trials by combat from those who are of the correct bloodline. Only the strong may lead in this endless labyrinth.\n\nThe leader of Thornscorn is often accompanied by a council of druids that help advise the leader of Thornscorn"
+                        },
+                        {
+                            "title": "Religion",
+                            "info": "The citizens of Thornscorn often worship gods of the Green Pantheon, but it is common that the lizardfolk there worship natural spirits and other powerful creatures that aren’t exactly gods—but are powerful in their own rights.\n\nThe most common god to worship in Thornscorn is Inca, as respecting the plants around them respects their homeland."
+                        },
+                        {
+                            "title": "Military",
+                            "info": "The military of Thornscorn is small but fierce. The druids of Thornscorn often make the lands into sharp thickets; the lizardfolk warriors simply walk through the thorns, as the small pricks can only scratch at their scales.\n\nThe warriors are trained to move through the plants with ease, and keep silent while doing so, often ambushing unwanted creatures within the bramble labyrinth that surrounds their home."
+                        },
+                        {
+                            "title": "Trade",
+                            "info": "The greatest thing Thornscorn can offer in the economy is its services, as their druids and warriors are adapted to fighting in the nearby jungles. They also export a lot of berries that grow within the town's center itself.\n\nMerchant lords often use Thornscorn druids to help out their more natural exports. This is enough to keep the town thriving and alive."
+                        },
+                        {
+                            "title": "Magic",
+                            "info": "Most of the magic of Thornscorn is druidic. It is common for the druids of Thornscorn to know how to change plants to their advantage.\n\nIt is rumored that the druids there know how to bring the bramble around them to life; having the very terrain around their enemies start to contort and entangle creatures, or pull them deep into the labyrinth to be lost until they become plant food."
+                        }
+                    ]
+                },
+                {
+                    "name": "Vaden Falls",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "31%", "left": "68%"},
+                    "desc": "Vaden Falls is a village at the headwaters of The Vaden, a river in the Eastern center Land of Khao. Here, a broad network of waterfalls drain from the great lake high above. The Vaden itself becomes an estuary as fresh water from the Falls mix with the brackish water of the Sickened Sea.                    ",
+                    "categories": [
+                        {
+                            "title": "History",
+                            "info": "Vaden Falls formed as land masses shifted during The Reckoning. The village formed thereafter as a means of transferring goods to and from the plateau. Vassilius Drake is the third overseer the Coin Lords have put in place since the formation."
+                        },
+                        {
+                            "title": "Demographic",
+                            "info": "Vaden Falls has a population of 1,300. The majority of the population is human or orc with some lizard folk, tabaxi, elves, gnomes,  kuo-toan, and goblins."
+                        },
+                        {
+                            "title": "Government",
+                            "info": "Vassilius Drake is the tyrannical overseer and representative of the Diamond Duke. Drake’s job is to make sure goods flow properly to and from the upper plateau down to seafaring ships at the docks in Vaden Falls. Drake has a dozen underlings to manage the day to day operations as well as a squad of 12 bodyguards/tax collectors."
+                        },
+                        {
+                            "title": "Religion",
+                            "info": "Familial groups typically have their own small shrines to whatever god they choose, but Drake runs his official business through a full fledged church of Babylon."
+                        },
+                        {
+                            "title": "Military",
+                            "info": "Drake has his personal retinue of 12 bodyguards. Additionally, a ragtag militia of about 200 scouts, thugs and caravan guards can be mustered together in a couple days. Merchant marines are also available but they generally only protect their own ships. If needed, Drake can call for help from the Great Bazaar, but that is an expensive proposition."
+                        },
+                        {
+                            "title": "Trade",
+                            "info": "Vaden Falls economy is focused almost entirely around supporting trade on and off the upper plateau. There are ship repairing docks, restocking docks, crate fabrication, cloth, cages, etc.\n\nBasic labor is also available for portaging cargo up and down the cliffs around the Falls. There are lodgings available, particularly for crews waiting for the delivery of cargo. Lastly a small cottage industry has also sprung up fabricating ‘authentic’ Khao carvings, typically from some exotic woods."
+                        },
+                        {
+                            "title": "Technology",
+                            "info": "Several small research stations have sprung into existence periodically in the pursuit of studying flora and fauna from the upper plateau in the relative safety of the village.\n\nThese are very seasonal and usually dry up once the research is done. So long as the fees are paid, the research station can stay open."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Daborak",
+            "motto": "Duty. Discipline. Death.",
+            "type": "country",
+            "coordinates": {"top": "52%", "left": "75%"},
+            "desc": "A land of lush wheat fields, flat plains, and wild rivers.\n\nLush for farming which provides Kalakatesh with a large portion of its food.",
+            "categories": [
+                {
+                    "title": "History",
+                    "info": "Daborak was once a collection of city-states, constantly fighting over control of various resources within the fertile fields. This constant competition is believed to be what led to the development of their tactics and general knowledge.\n\nEventually the city-states combined their efforts to face a much greater threat, a contingent of lizardfolk set on conquering the lands of Daborak. The loss of life numbered in the tens of thousands, before finally, the lizardfolk returned to their jungle homes empty-handed.\n\nIn their weakened state, the Daborakian's feared a counter attack and immediately banded together in one nation to supply a centralized army. When no counterattack came, the people decided to continue with their government; the security and prosperity it provided was preferred to the constant turmoil of war."
+                },
+                {
+                    "title": "Demographic",
+                    "info":"Daborak is dominantly human, although half-elves and half-orcs are the most common among the remainder of the races."
+                },
+                {
+                    "title": "Government",
+                    "info":"Daborak is ruled by martial law, through a totalitarian military government, that awards rank based on merit. This means that social advancement is quite common in Daborak. Although only on the merits of one's ability to perform in combat."
+                },
+                {
+                    "title": "Religion",
+                    "info":"Glory is the most common deity worshipped within Daborak. Other commonly worshipped are Iass, Astaroth, and Tilt. The Seven are prominent as always."
+                },
+                {
+                    "title": "Military",
+                    "info":"The Daborakian military is one of the most prominent in Kalkatesh and its cavalry is undoubtedly the deadliest. There are few things more terrifying than a Daborakian cavalry charge.\n\nBesides that, they are an extremely well-organized military, challenged in their soldiering skill perhaps only by Krazax. Daborakian warhorses are so valued that they are granted the ability to own property and hold titles of nobility."
+                },
+                {
+                    "title": "Agriculture",
+                    "info":"Daborak is heavily developed in siege engines, but by far, their greatest advancements are in those of its animal husbandry.\n\nUsing proper breeding and magic infusions, the horses of Dabnorak were granted intelligence giving them the ability to understand spoken language and communicate through a language called Cantor by stomping their hooves.\n\nThe longer a Daborakian warhorse lives the more intelligent it becomes, some of their paragons possess the ability to actually speak."
+                }
+            ],
+            "points": [
+                {
+                    "name": "The Rolling Wastes",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "48%", "left": "73%"},
+                    "desc": "The northern section of Daborak is a place of boulder strewn fields where the desperate hide out justice for their crimes. Civility is found in short supply here.",
+                    "categories": []
+                },
+                {
+                    "name": "Thunderlands",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "53%", "left": "77%"},
+                    "desc": "The center of the great plains is marred by the thundering of storms and hooves of Daborak.",
+                    "categories": []
+                },
+                {
+                    "name": "The Razor Cliffs",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "56%", "left": "82%"},
+                    "desc": "The eastern most cliffs of Daborak are home to a set of razor sharp rocks that stand as a challenge to the ocean waves.",
+                    "categories": []
+                },
+                {
+                    "name": "Shadowfields",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "70%", "left": "72%"},
+                    "desc": "The southern peninsula of Daborak is shrouded in blackened fields and whispered rumor.",
+                    "categories": []
+                },
+                {
+                    "name": "The Exiled",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "77%", "left": "68%"},
+                    "desc": "The twin isles of the southern tip of Daborak was once a place prisoners were sent, the practice has been discontinued since, but there is yet still a misery that remains on the abandoned place.",
+                    "categories": []
+                },
+                {
+                    "name": "Ragehoof",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "51%", "left": "79%"},
+                    "desc": "The last of the cities of Daborak to have some minor form of independence. As such many of those that disagree with the laws of the land meet there to be amongst those of similar minds.",
+                    "categories": []
+                },
+                {
+                    "name": "Graver's Coast",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "49.5%", "left": "82.5%"},
+                    "desc": "A lonely town on the razor cliffs, with a strange ritual of tossing the dead into the sea.",
+                    "categories": []
+                },
+                {
+                    "name": "Ramon's Roost",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "53%", "left": "83%"},
+                    "desc": "A simple town, with simple practices. It is not a place you would go for developments of the scientific or magical nature; though there is speculation that magic is used in the creation of the various beverages that are served at the taverns for which the city is well known.",
+                    "categories": [
+                        {
+                            "title": "History",
+                            "info": "Ramon’s Roost came from humble beginnings; a tavern that had been built during the time just after Daborak’s city states had driven back the invading Lizardfolk. It was a place of rest for travellers, soldiers, and adventurers alike.\n\nSince then the town has sprung up around it, with the main road leading through it still passing by this tavern. The problem, however, lies in that there are three taverns in the city—each vying for supremacy with their beverages. And each of them claim that they are the original tavern, which only adds to the confusion and to the rivalry. These taverns have become so well known that there is a yearly national festival dedicated to the drinks that they serve, and the population of the city during this time swells from the 3,000 regular residents to a staggering 20,000.\n\nThe taverns are Janicki's Jack, Crosseyed Mule, and Poppys Port in the Storm Pop. Each tavern serves their own unique and distinct alcohol and beverage.\n\nOne of the more well known—though not necessarily enough to claim without a shadow of a doubt that it is superior—is Uncle Poppy’s Elixir of Everything, served at Poppys Port in the Storm Pop. It is supposedly so potent and delectable that a single drink is enough to cause the drinker to become addicted to it. This is rumored to be because of the rare ingredients used to create the drink, and one of those is whispered to be the tears of an angel.\n\nOf course there has never been any definitive proof of this brought forth, and Poppy, the owner of the tavern would be the first to deny that rumor. Though it has not stopped it from festering."
+                        },
+                        {
+                            "title": "Demographic",
+                            "info": "Most of the three-thousand (3,000) people living within the city are human, with a smaller percentage of half-orc and half-elf citizenry. Other races living within the area have a much smaller percentage."
+                        },
+                        {
+                            "title": "Government",
+                            "info": "Like the rest of Daborak, Ramon’s Roost is under the control of the military and they have a noticeable presence within. Other than that the people with the most power in the city are the owners of the three taverns that vye for superiority."
+                        },
+                        {
+                            "title": "Religion",
+                            "info": "As with the rest of the country, the city is primarily made up of worshipers of Glory and the Grey Pantheon, Iass being the most common of the group. The city does however have a noticeable presence of Green Pantheon worshippers, specifically those that worship Vinsc in the hope that Lord Autumn would aid in their harvests."
+                        },
+                        {
+                            "title": "Military",
+                            "info": "The military presence in Ramon’s Roost is noticeable, but not inherently pronounced. It is a common stop for many travellers in the area, and as such has enough military personnel that it can adequately keep the city safe—that number swells to almost 8 times its size when the need arises."
+                        },
+                        {
+                            "title": "Trade",
+                            "info": "Most of the income in the city comes from the three taverns residing in it. They generate gold which is then spent in the markets and used to pay their workers.\n\nThere are various stores within the city. This includes a small marketplace where one can buy clothes, food, materials, and other such items; however, they pale in comparison to the taverns that demand the spotlight.\n\nDuring the festival every person living in the city sees a sudden growth of the money flowing in and out of both their own pockets, and those of visitors."
+                        }
+                    ]
+                },
+                {
+                    "name": "Stalker's Eye",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "47%", "left": "75%"},
+                    "desc": "A small town centered around an immense military academy.\n\nThe Academy, literally called “Stalkers Eye” is Daborak’s lead academy for spies, assassins, thief's, and hitmen. Many finals involve stealing, apprehending, or acquiring papers from other students, who have to stay behind.",
+                    "categories": [
+                        {
+                            "title": "History",
+                            "info": "Stalkers Eye was originally just the small town it makes up. Full of twisted and evil bandits fighting for mob rule. Many cutthroats and assassins plagued the constantly shifting political sphere.\n\nHowever, their superior scouting and reconnaissance abilities always gave their military an advantage. Compared to the other city-states in Daborak, they had the smallest force."
+                        },
+                        {
+                            "title": "Demographic",
+                            "info": "The town-part of Stalkers Eye can find races of all kinds, with a minor population of Tieflings. Most of the citizens are farmers and indentured servants working for others. The Academy is often barren of the more stout and brawnier races, and instead filled with Humans, Tabaxi, Halfings, Aarakocra, Kenku, goblins, and Elves."
+                        },
+                        {
+                            "title": "Government",
+                            "info": "Stalkers Eye is entirely ran by Unano “Mourning Rivers” an old Tabaxi, who despite his age, still benefits from his heightened reflexes. He reports directly to the Daborakian Military, and controls most of the town along with a few other ex-military personnel. He was once a student at the academy in Stalkers Eye, Through their training, he has since then turned into a decorated and mysteriously unknown agent for the military."
+                        },
+                        {
+                            "title": "Religion",
+                            "info": "There are ancient temples dedicated to Sekelcuse that are still operated today. Many of the students at the academy go here for worship, as well as a handful of farmers and craftsmen.\n\nThe most prominent worship are the temples to the green pantheon, due to the largest population of the town making up farmers who are hoping for green pastures and good weather."
+                        },
+                        {
+                            "title": "Military",
+                            "info": "Everyone who graduates from Stalkers Eye will be pulled into the Daborakian Forces. Depending on their job can lead them to many different paths and branches. Almost all of Daborak’s spies and assassins attended Stalkers Eye."
+                        },
+                        {
+                            "title": "Trade",
+                            "info": "Many caravans and couriers head to Stalkers Eye just to buy their masterwork locks and scroll cases. Due to the occasional traffic, and safe roads, buying common supplies is easy."
+                        },
+                        {
+                            "title": "Technology",
+                            "info": "Stalkers Eye is home to many complex and arithmetic locks. Many chests, handlocks, and scroll carriers originate from Stalkers Eye. Many craftsmen compete for having the most “Unbreakable lock” and there are competitions held every other year to put their locks to the test. There’s also a decent supply of spy gear at the academy, however there is limited knowledge of such devices, and it is only given to those agents."
+                        }
+                    ]
+                },
+                {
+                    "name": "Blackwheel",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "46%", "left": "71.5%"},
+                    "desc": "As an experiment and proof of concept, the building of the water wheel was authorized and the settlement grew around the construction. It became a food production center for northern Daborak.",
+                    "categories": [
+                        {
+                            "title": "Demographic",
+                            "info": "The population of Blackwheel consists mostly of humans with some halflings, elves, and dwarves."
+                        },
+                        {
+                            "title": "Government",
+                            "info": "Blackwheel uses the typical feudal lord government structure with additional oversight by a Daborak military commissar.\n\nIn the wake of the undead uprising and Kingvale’s defeat, the treasonous Lord Malfous was replaced by the war hero Branwyn. Branwyn’s rulings and actions are closely overseen and authorized by the commissar Lt. Johan Wilderburg of the Daborak Cavalry. Malfous loyalists may still be involved in lesser aspects of the government and some suggest that Branwyn is a sacrificial lamb put in place to draw out would be assassins."
+                        },
+                        {
+                            "title": "Religion",
+                            "info": "Most of the surrounding population follows the Green Pantheon, seasonally as appropriate. Green holidays and festivals occur at a small park where the aqueduct drains what is left from the system. The bias towards Silloway only exists because farmers can more readily participate when they bring their crops to market.\n\nThe Knights defending Blackwheel have their own Chapel to Glory in a confiscated manor of a treasonous lord. The goodwill of the people stems from their defense during the Undead Uprising. However, familiarity breeds contempt and the opinions have been moving more towards “What have you done for us lately?”\n\nIass is worshipped more openly by the rank and file of the military as well as Branwyn himself. They hold services when they can and in response to small victories. Services are held at a tavern which some claim is more of a pit fighting ring."
+                        },
+                        {
+                            "title": "Military",
+                            "info": "Branwyn is no slouch when it comes to combat, and definitely not one to let honor come between himself and victory. He leads about a hundred battle hardened veterans from the Uprising. The Commissar is in charge of a detail of 12 knights and their retinue as well."
+                        },
+                        {
+                            "title": "Trade",
+                            "info": "Foodstuffs, grain, farming, and cattle are all big industries of Blackwheel. It acts as a central processing location and shipping hub for the region."
+                        },
+                        {
+                            "title": "Technology",
+                            "info": "Blackwheel has some more advanced engineering regarding the use of the river as power and irrigation. This is largely taking advantage of the eponymous black water wheel built after the Reckoning and in conjunction with Ordean engineers.\n\nThe 60’ diameter water wheel drives the main shaft, which in turn powers the primary mill as well as several other small industries nearby as well. The wheel also raises water high to an Ordean style aqueduct.\n\nAlthough the aqueduct was originally intended to feed the surrounding farms, once it got to the lord’s manor, the project was deemed not financially feasible and construction stopped. The lord’s manor and buildings closer to the wheel do have indoor plumbing though.\n\nA secondary industry, formed after the Undead Uprising, has developed in spy craft. The commissar uses Blackwheel as a practical training ground for Daborakian military intelligence, primarily for sniffing out insurrectionists."
+                        }
+                    ]
+                },
+                {
+                    "name": "Steelfield",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "52%", "left": "71%"},
+                    "desc": "A military academy for all manners of martial training, a prominent facility in which a small town has been constructed to support it.",
+                    "categories": [
+                        {
+                            "title": "History",
+                            "info": "Steelfield used to be a very minor power in the city-state era. While they still had the most feared cavalry, their numbers were their largest downfall. Many believe they would have been subjugated and forced into protectionism if it wasn’t for the horses barely shoving off threats.\n\nMany city-states eventually focused efforts on horse-raids and purposefully trying to preserve horses in battle, so they may have an efficient Calvary on their own. Little did they know that all the horses were signaled differently than other horses around the world. This made it nearly impossible for those trained otherwise to control the horses movements.\n\nDuring the later years, when the lizard folk were conquering lands, most of Steelfield was left in shambles, and almost non-existent. With no choice but to band together with other city-states, they were able to train a few others to use what little horses were left.\n\nWhen the lizard folk did not come back, there was a massive effort in funding Steelfield back to its former state. The government built a Calvary Academy, and for a while was funding the town constructed around it. It wasn’t long before they were able to breed their horses back to fruition."
+                        },
+                        {
+                            "title": "Demographic",
+                            "info": "Steelfield in the old days was largely Dwarves and Humans. However the largest standing population is currently Half-orcs, who make up roughly 30% of the population. Followed by Dragonborn and Dwarves."
+                        },
+                        {
+                            "title": "Government",
+                            "info": "Steelfield still makes many of it’s decisions in the old ways the previous tribes oversaw the settlement. Legislation can be put into review upon approval of 3 clans. At this stage, every clan will have to discuss internally if they are for or against the implementation. How each clan determines this has slight quirks and variances, but a general 60% agreement within a clans members will assure the clans yay or nay in the matter. "
+                        },
+                        {
+                            "title": "Religion",
+                            "info": "Glory is the most popular deity and there are two small temples to him in Steelfield, one on the Academy grounds and one in the town around it. There is additionally one temple to Iass, The Seven, and a man-made channel devoted entirely to Astaroth."
+                        },
+                        {
+                            "title": "Military",
+                            "info": "Most of Daborak’s best horses come from Steelfield. Their Dragoons are the most respected Verum-wide, and most say there’s no better horse than one from Daborak. Their horses have been bred for years, and many Dragoons are trained in the old Steelfield ways of riding horses."
+                        },
+                        {
+                            "title": "Trade",
+                            "info": "While Horses make up the largest export in Steelfield, barley and cattle food supplies are still a massive export(about 40% of export earnings), also making up nearly 20% of the labor force. The economy has been under a massive boost for quite some time and it is expected that the animal husbandry market is going to continue growing in the future.\n\nDuring the pre-unification of all city-states. Horse-trading was illegal in Steelfield, and normal punishment resulted in confiscation of your cattle and/or horses, however this rule has since then been repealed.\n\nDespite the existence of horse trading, around 45% of the population are opposed to allowing trade of Steelfield-bred horses. There have been some locals who avoid businesses of those who trade with outsiders, but it’s unknown how much business is deterred."
+                        },
+                        {
+                            "title": "Technology",
+                            "info": "Steelfield has some of the fastest horses in Kalkatesh. The large tracts of grasslands and open fields have allowed for not only natural breeding grounds for stray horses, but also the most suited environment for training them as well.\n\nYou can find many different breeds and famous trainers locally in Steelfield. Some of the highest-quality saddles and mounted armor also originate from Steelfield and are primarily only sourced here too. Though it should be noted all mounted equipment is primarily for Equine and Equine-like animals."
+                        }
+                    ]
+                },
+                {
+                    "name": "Gordand",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "58%", "left": "74%"},
+                    "desc": "The settlement Gordand is within a large open grassy plain found in the center of Daborak, with many large dirt roads leading in and out of the city.",
+                    "categories": [
+                        {
+                            "title": "History",
+                            "info": "The history of Gordand can be expressed with the representation, respect, and celebration of centaurs within the settlement. It is said that at the creation of Gordand, the founder met with centaurs of Khao during which they both decided to form the town."
+                        },
+                        {
+                            "title": "Demographic",
+                            "info": "The demographics of Gordand are mostly even with all beings, but has the largest number of centaurs within Kalkatesh. The total population of the settlement of Gordand is 8,000."
+                        },
+                        {
+                            "title": "Government",
+                            "info": "The Government of Gordand is split into multiple divisions. These divisions are: protection, economy, architecture, agriculture, professions, politics and festivals. Each of these divisions overlook and help guide the different functions of Gordand.\n\nThe Government of Gordand organizes festivals every month within the settlement. The festivals are filled with people who have worked very hard in their respective professions to help with each festival.\n\nActivities within the festivals showcase feats, the celebration of centaurs, and arts/crafts presentations. These festivals are events with which many people within Kalkatesh can join and have a nice time."
+                        },
+                        {
+                            "title": "Religion",
+                            "info": "There is mostly an even amount of representation of each pantheon with the settlement of Gordand, with the Green Pantheon specifically having a lot of recognition."
+                        },
+                        {
+                            "title": "Military",
+                            "info": "The Military of Gordand uses defensive positions and tactics. Placing archers/watchtowers on the nearby cliff side to overlook the settlement and making use of scouts to look for potential future dangers. In terms of magic defenses, the settlement of Gordand has hidden magic traps which specifically deal with distractions, misdirection, stealth, and illusions. "
+                        },
+                        {
+                            "title": "Trade",
+                            "info": "The settlement of Gordand has a decently wealthy economy within the settlement. Most resources and gold come from the festivals held within the settlement of Gordand."
+                        }
+                    ]
+                },
+                {
+                    "name": "Dark Gate",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "59%", "left": "71%"},
+                    "desc": "A massive fortress sitting atop the flat lands of Daborak right before the enigmatic forests of Dolten. Some artificial changing of the landscape has been done to allow it to be as self-sustaining as possible.",
+                    "categories": [
+                        {
+                            "title": "History",
+                            "info": "Daborak and Dolten have engaged in a number of wars in their time, though they haven't had an actual skirmish in quite some time. More rivals than anything else, the two play a delicate game.\n\nThe forces of the Dark Gate take extra care in their role of customs officers for Daborak/Dolten exchanges—giving extra scrutiny towards those they suspect capable of witchcraft, may be transporting dangerous items, or might secretly be some creature from the Abhoreal trying to sneak past their defenses. In response, the council of witches consistently rotate sleeper agents to keep tabs on their neighbors to the east.\n\nAfter all, if Daborak is that worried about what Dolten is going to do, Dolten needs to be planning SOMETHING—right? Some of the leadership see this as a tense cold war, but others—well—it's just a fun way of keeping tradition alive."
+                        },
+                        {
+                            "title": "Demographic",
+                            "info": "Dark Gate has an estimated 4,000 residents. Consisting of mostly humans, with some half-elfs, half-orcs, and dwarfs."
+                        },
+                        {
+                            "title": "Government",
+                            "info": "The Dark Gate observes the laws and edicts of the country of Daborak, as it is first and foremost a military outpost. It also has some additional laws that function more like emergency protocols, in the event of attacks from the creatures (or witches) of Dolten. All who live at the Dark Gate, military or civilian, must know these to claim residence there."
+                        },
+                        {
+                            "title": "Religion",
+                            "info": "Dark Gate follows the usual deities of Daborak—Glory, Iass, Astaroth, Tilt, and the Seven. However, some of the spellcasters, secret plants sent by the council of witches—just in case—worship Wondox."
+                        },
+                        {
+                            "title": "Technology",
+                            "info": "The Dark Gate focuses much of its magical development on ferreting out the dark influences and travelers from Dolten before they step foot into Daborak. They specialize in detecting hexes and evil magic, as well as neutralizing and containing such things. There are also minor mages, fortune tellers, exorcists and charlatans that claim to be able to produce charms and trinkets to ward away foul sorcery.\n\nScientific development is much like base Daborak—focused heavily on warfare, siege weaponry, and animal husbandry. In regards to Dark Gate, these are focused towards these things that can—if needed—hold the line against Dolten—in both cases of war with the country or the forces of the land itself."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Dolten",
+            "motto": "",
+            "type": "country",
+            "coordinates": {"top": "60%", "left": "63%"},
+            "desc": "A temperate region, heavily forested with a swamp and a few large scattered rivers.\n\nThe southern tip is a barren land of shale rock and alchemical industry.",
+            "categories": [
+                {
+                    "title": "History",
+                    "info": "Dolten is a place rife with peril and mystery, it has always been so.\n\nLong ago in the first era when the forests of what would be called Dolten were formed, mighty Linnorms(great primordial dragons) fought over territory and hunted the animals in the old ways. It was during this time that the dragons from Dragonstar attacked, sweeping over the sky and bringing war to Verum for the first time. \n\nThe Linnorms fought these invaders but most were slain resulting in the dragons being weakened; as such, both races spent centuries to recover while the elves began to spread their dominion. Dolten itself was forever changed by the blood of Linnorms spilling into the earth. The forest grew more primal, its beasts began to warp and change. \n\nThe white Linnorm Woe'tanclast, wife of Crovux(father of Linnorms), was perhaps the most impactful. For from her blood a single spider was changed forever and reborn as one of Dolten's most notorious threats, The Creeping Death.\n\nThe lands of Dolten continued to be a place of danger and death all throughout the eras. That was until finally a group of desperate settlers paid the price to live there, in blood and will. It was from these first settlers and the witches that aided them, that the land was somewhat tamed allowing for civilization to thrive against all odds."
+                },
+                {
+                    "title": "Demographic",
+                    "info":"The population of Dolten is relatively diverse with a focus on humans, gnomes and elves.\n\nIn addition to these Dolten is the primary home of skinwalkers and any race of which is difficult to look upon."
+                },
+                {
+                    "title": "Structure",
+                    "info":"Dolten's government is separated into two pieces, a council of nobles which run the day to day operations and  a shadow government of Great Coven witches that are the true heart of the Doltenian government.\n\nAlthough this is supposedly a secret, it's a fact everyone knows but never speaks aloud."
+                },
+                {
+                    "title": "Religion",
+                    "info":"The primary religions of Dolten are nearly entirely dominated by the Patrons(beings with little form or dogma, leading to a pseudo-spiritualism).\n\nOf the dominant religions of the world the Green Pantheon is the most common."
+                },
+                {
+                    "title": "Military",
+                    "info":"The military branch of Dolten is controlled and manned nearly entirely by the Night Guard, they patrol the perimeter of the country and keep a constant look out from their fortress, the Crimson Citadel. The World Wanderers assist them intimately via the world roads through the deadly forests of Dolten."
+                },
+                {
+                    "title": "Technology",
+                    "info":"Dolten is a sporadically advancing nation in terms of scientific advancement.\n\nParts still cling to the old tribal methods that they have practiced for centuries; this is especially true amongst the skinwalkers, some take to the full development of marble and stone and hope it will stand against the wrath of the forest.\n\nIn Bleak the advancements rival that of even Khao, while their advances in planar binding rival that of even the old mages guild."
+                }
+            ],
+            "points": [
+                {
+                    "name": "Abhorrent Arboreal",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "66%", "left": "63%"},
+                    "desc": "The great dark forest that is the home of all Doltenians and their doom.",
+                    "categories": []
+                },
+                {
+                    "name": "Fanged Hills",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "65%", "left": "69%"},
+                    "desc": "These dark hills are host to the vampires of Kalkatesh, an asylum from the sun and the closest thing to a home such creatures have.",
+                    "categories": []
+                },
+                {
+                    "name": "Grasping Thicket",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "55%", "left": "56%"},
+                    "desc": "The northwestern forest is infected with undead and their presence has tainted much of the land.",
+                    "categories": []
+                },
+                {
+                    "name": "Bleak Reaches",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "79%", "left": "63%"},
+                    "desc": "The southern tip of Dolten is a grey waste of shale and cold wind.",
+                    "categories": []
+                },
+                {
+                    "name": "Coin Copse",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "69%", "left": "65%"},
+                    "desc": "These woods are notorious for banditry and has hosted more than one army of beggars, thieves, and villains.",
+                    "categories": []
+                },
+                {
+                    "name": "Howling Hills",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "69%", "left": "60%"},
+                    "desc": "The werewolves have carved out in these hills a home for all skinwalkers, no matter what their affliction, here such creatures would find welcome.",
+                    "categories": []
+                },
+                {
+                    "name": "Feywood",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "49%", "left": "60%"},
+                    "desc": "The Fey have a few ways into Kalkatesh, the Feywood is one such place.",
+                    "categories": []
+                },
+                {
+                    "name": "Webwood",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "60%", "left": "61%"},
+                    "desc": "The center of the Abhorrent Arboreal is home to Dolten's most feared host, the Creeping Death.",
+                    "categories": []
+                },
+                {
+                    "name": "Pale Fields",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "60%", "left": "57%"},
+                    "desc": "Pale white grass that shines in the moonlight bejewels western Dolten, surrounding the Black River.",
+                    "categories": []
+                },
+                {
+                    "name": "The Mire",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "60%", "left": "67%"},
+                    "desc": "The great swamp found in the east of Dolten.",
+                    "categories": []
+                }
+            ]
+        },
+        {
+            "name": "Steton",
+            "motto": "",
+            "type": "country",
+            "coordinates": {"top": "58%", "left": "48%"},
+            "desc": "The southern tip of Steton is known to be an untamed wilderness, even to the wild people of Steton. The Floating Peaks, located there, are home to the more nomadic clans of Steton.",
+            "categories": [
+                {
+                    "title": "History",
+                    "info": "Steton is a nation whose history has been bathed in turmoil and civil war.\n\nOver the last hundred years or so, the current bloodline of kings that sit upon the Throne of Giants, has ruled successfully and fairly. The Highfall bloodline has led to the prosperity of the wild lands of Steton and the citizens that live therein."
+                },
+                {
+                    "title": "Military",
+                    "info": "Stetonians are a hardy people, whose main occupation is hunting and gathering from the monsters that cover the land. As such Steton is home to some of the best monster hunters and warriors Verum have ever seen.\n\nRivaled only by Daborak's discipline, Stetonian fury on the battlefield is a sight to be feared."
+                },
+                {
+                    "title": "Trade",
+                    "info": "Leatherworking is a national pastime of Steton.\n\nSo much so that the title of Hide Flayer is given to those that commit themselves to the art and craft so fully that they may be mistaken for the insane."
+                },
+                {
+                    "title": "Giants",
+                    "info": "Giants are a commonplace occurrence in Steton, in fact many of them are citizens.\n\nThe giants that instead roam the lands are hunted for their skin and the large hoards they tend to collect.\n\nMost are fought by the few Stetonians that wish to test themselves against the might of such cunning and organized creatures."
+                }
+            ],
+            "points":[
+                {
+                    "name": "Brutal Coast",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "73%", "left": "48%"},
+                    "desc": "Getting it's name from it's western edge with Bloodwave Bay this are is a host to free trade and a bit of lawlessness.",
+                    "categories": []
+                },
+                {
+                    "name": "Highriver",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "65%", "left": "51%"},
+                    "desc": "Named after the great river that crosses Steton, it is home to many different kinds of people.",
+                    "categories": []
+                },
+                {
+                    "name": "Windlance Valley",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "49%", "left": "51%"},
+                    "desc": "A land once named for the great weapons of those that would hunt dragon-kind, it is now a bustling trading area.",
+                    "categories": []
+                },
+                {
+                    "name": "King's Crest",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "53%", "left": "40%"},
+                    "desc": "The land surrounding the capitol city of Steton.",
+                    "categories": []
+                }
+            ]
+        },
+        {
+            "name": "Majital",
+            "motto": "Always Forward",
+            "type": "country",
+            "coordinates": {"top": "67%", "left": "23%"},
+            "desc": "A land comprised of desert and scattered oases.",
+            "categories": [
+                {
+                    "title": "History",
+                    "info": "Majital is abundant in two things. Sand and Magic. This desert country although lacking in natural resources, makes up for this by being the home of the wizards guild.\n\nMajitalians are a people who value knowledge, ambition, and privacy. Their cunning nature is matched only by the beauty of their darkened skin."
+                },
+                {
+                    "title": "Demographic",
+                    "info": "Majital is populated mostly by humans, with some elves, gnomes, and other races."
+                },
+                {
+                    "title": "Government",
+                    "info": "Majital uses a magocracy to define its government, using the ranks of the The Mages Guild for its highest political offices. The natives of Majital follow a simple democratic Khanate system."
+                },
+                {
+                    "title": "Religion",
+                    "info": "Majital has no official religion.\n\nRuntheras, Cassius, Falaael, and Raquel are commonly worshiped by the populace."
+                },
+                {
+                    "title": "Military",
+                    "info": "Majital's power has always been in its mages and the knowledge they collected over centuries."
+                },
+                {
+                    "title": "Trade",
+                    "info": "Majital has a few large salt mines that provide a productive economy and the Mage's Guild provides quite a bit of wealth with it's magical services.\n\nThe Gold Road stretches to connect the other world roads all throughout Majital and with it the trade of salt, magic, and mages spreads to the rest of Kalkatesh."
+                },
+                {
+                    "title": "Technology",
+                    "info": "Technology is by no means stunted in Majital, but due to the presence of an abundance of arcane knowledge any technology serves to enhance magic."
+                },
+                {
+                    "title": "Foreign Relations",
+                    "info": "Majital has a shaky standing with most of the countries in Kalkatesh. The tyranny of The Mages Guild of the 5th era is still fresh in the minds of the people.\n\nAlthough there is not open disdain there is certainly watchful caution and in some cases cold war."
+                },
+                {
+                    "title": "Education",
+                    "info": "Majital boasts the highest rate of literacy and education level of Kalkatesh.\n\nThe Mages Guild has always treated the natives of the Scour with respect to maintain the peace. Making sure that they are educated and benefit from the bounties that arcane knowledge has provided."
+                }
+            ],
+            "points": [
+                {
+                    "name": "White Sands",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "84%", "left": "24%"},
+                    "desc": "The southern coast of Majital is a desert with a high salt content, leading to wealth, productivity and the color that gives the area it's name. Some have described the view as thousands of pearls glistening against the sea.",
+                    "categories": []
+                },
+                {
+                    "name": "The Bay of Sages",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "81%", "left": "22%"},
+                    "desc": "The Bay of Sages can be found on the mid southern tip of Majital and is surrounded by the three cities of Mirage, Baghla'tash and Salegesh.",
+                    "categories": []
+                },
+                {
+                    "name": "Mirage",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "77%", "left": "22%"},
+                    "desc": "The capital of Majital and the seat of power for the Mages Guild. It is a shining beacon of understanding, built atop the ruins of the Spiral Council.",
+                    "categories": [
+                        {
+                            "title": "Demographic",
+                            "info": "The demographics of Mirage are similar to the rest of Majital, with the distinct difference of the Shar'kai. The ash elves claim Mirage to be their sanctuary and refuge."
+                        },
+                        {
+                            "title": "Government",
+                            "info": "Mirage is ruled by a mageocracy which is lead by the Mages Guild."
+                        },
+                        {
+                            "title": "Military",
+                            "info": "Mirage, as the seat of power to the Mages Guild is protected by the mighty Taltaken, autonomous servants to the Mages Guild."
+                        },
+                        {
+                            "title": "Trade",
+                            "info": "Mirage depends on trade for food and labor, in which it trades arcane services and knowledge."
+                        }
+                    ]
+                },
+                {
+                    "name": "Baghla'tash",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "79%", "left": "20%"},
+                    "desc": "Baghla'tash is found on a peninsula to the southwest of of Mirage and is one of the three cities that border Bay of Sages. It is directly across from Salegesh, its rival city.",
+                    "categories": [
+                        {
+                            "title": "Trade",
+                            "info": "Many of the inhabitants of Baghla'tash make their living as an artist, trading thier services and wares to Mirage in exchange for food and labor."
+                        },
+                        {
+                            "title": "Culture",
+                            "info": "Although the beaches of Baghla'tash are unable to sustain a full port, there are several galleries and open air museums dedicated to the arts."
+                        }
+                    ]
+                },
+                {
+                    "name": "Voton",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "82%", "left": "27%"},
+                    "desc": "A city found in a oasis in the middle of the White Sands. Voton is quite a wealthy city, despite it's size. It trades Salt to most of Majital and in exchange receives the products needed to allow the city to live comfortably.",
+                    "categories": []
+                },
+                {
+                    "name": "Salegesh",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "81%", "left": "24%"},
+                    "desc": "Salegesh is one of the three cities located on the Sages Bay. Directly across from it's rival city of Baghla'tash.",
+                    "categories": []
+                },
+                {
+                    "name": "The Mage Coast",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "71%", "left": "32.5%"} ,
+                    "desc": "The Mage Coast is the eastern coast of Majital and is a center of trade for the country.",
+                    "categories": []
+                },
+                {
+                    "name": "Scriven Port",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "76%", "left": "29%"},
+                    "desc": "Scriven Port is a place of learning on the edge of the wilderness, trade consists of jewels and gold in exchange for scrolls and books and some of the wealthiest book shops can be found there.",
+                    "categories": []
+                },
+                {
+                    "name": "Kazakala",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "72%", "left": "31%"},
+                    "desc": "Kazakala was once an adventuring camp, specialized in searching the ruins of the elven spires, which due to the discovery of a tomb city beneath it, caused the camp to evolve into a full blown town. People still adventure in the hopes of unlocking what secrets lie in the tomb city below.",
+                    "categories": []
+                },
+                {
+                    "name": "The Scour Sand",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "70%", "left": "26.5%"},
+                    "desc": "The great desert of the southwest most corner of Kalkatesh is a harsh and unforgiving place. But in the aftermath of the Skarab Lord wars, the people of Majital have found a way to live among the bones of an ancient empire and the shifting sands.",
+                    "categories": []
+                },
+                {
+                    "name": "Greater Scour",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "75%", "left": "21%"},
+                    "desc": "The Greater Scour is the most dry and dangerous part of the desert, where the sun is blazing, the nights are freezing and the mind plays tricks on the shifting sands.",
+                    "categories": []
+                },
+                {
+                    "name": "Fade",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "74%", "left": "24%"},
+                    "desc": "A city founded on the largest oasis in the Great Scour, it is a rest stop and lifeline through the desert, as such it is filled with dozens of competing inns and taverns for the business of those that travel through.",
+                    "categories": []
+                },
+                {
+                    "name": "Sala",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "72%", "left": "17%"},
+                    "desc": "Sala is less of a town and more of great estate of one of the last of the elven nobles yet to retain a small piece of their land.",
+                    "categories": []
+                },
+                {
+                    "name": "Lesser Scour",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "63%", "left": "23%"},
+                    "desc": "The lesser scour is the scrub land on the border of Krazax and contains more water and more vegetation than its harsher counterpart.",
+                    "categories": []
+                },
+                {
+                    "name": "Uil'ta",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "63%", "left": "20%"},
+                    "desc": "Uil'ta is a large town on the sun serpent river, a place of trade and access to the Golden Maw, a bay covered with natural resources, such as gold veins, pearls and coral.",
+                    "categories": []
+                },
+                {
+                    "name": "Sandstone",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "65%", "left": "27%"},
+                    "desc": "The small city of Sandstone is perhaps the most Krazax influenced city in Majital, not only are there a larger concentration of dwarves there, but it is where many of the soldiers of the Khans come to receive their training.",
+                    "categories": []
+                }
+            ]
+        },
+        {
+            "name": "Krazax",
+            "motto": "Undeterred",
+            "type": "country",
+            "coordinates": {"top": "59%", "left": "29%"},
+            "desc": "Comprised mostly of a mountainous region called the Iron Highlands, where most cities are located, and plains called the Lowlands. The western-most region of the Iron Highlands is an icy landscape called the Western Reaches.",
+            "categories": [
+                {
+                    "title": "History",
+                    "info": "The kingdom of Krazax has stood since the Second Era, outlasting even the elven imperial empire.\n\nThe dwarves have carved a sturdy home out of the rock and stone of the Spine of Crovux where they have opened their borders to other races that wish to live in law and peace."
+                },
+                {
+                    "title": "Demographic",
+                    "info": "Krazax is populated mostly by dwarves, especially near the capital,  with the population increasing in diversity the closer it is to the border."
+                },
+                {
+                    "title": "Government",
+                    "info": "Krazax has a hereditary monarchy as its government system, with their current king being King Kalar Highfall."
+                },
+                {
+                    "title": "Religion",
+                    "info": "Krazax’s official state religion is the Grey Pantheon."
+                },
+                {
+                    "title": "Trade",
+                    "info": "Krazax produces silver, gold, and gems, along with providing Masters of Craft and Military expertise to other countries."
+                }
+            ],
+            "points": [
+                {
+                    "name": "Iron Highlands",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "44%", "left": "25%"},
+                    "desc": "This mountainous region, nestled in the western center of Kalkatesh, is home to the dwarves and the Kingdom of Krazax.",
+                    "categories": []
+                },
+                {
+                    "name": "The Western Reaches",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "41%", "left": "16%"},
+                    "desc": "The western most region of the Iron Highlands, is composed of glaciers, frozen fjords and a thick sheet of permafrost.",
+                    "categories": []
+                },
+                {
+                    "name": "Westwatch",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "46%", "left": "19%"},
+                    "desc": "The western most settlement of Krazax is more a fortress than a city, the entirety of which is walled in with great spiked protrusions for protection.",
+                    "categories": []
+                },
+                {
+                    "name": "Rhymeridge",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "35%", "left": "20%"},
+                    "desc": "Rhymeridge is a port city just on the edge of the Thawing Bay and the Spine of Crovux.",
+                    "categories": []
+                },
+                {
+                    "name": "Spine of Crovux",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "52%", "left": "28.5%"},
+                    "desc": "The great mountain range of Krazax, named for the father of linnorms, Crovux.",
+                    "categories": []
+                },
+                {
+                    "name": "Firstcliff",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "50%", "left": "29.5%"},
+                    "desc": "The capital city of Krazax, home of the dwarves and their king.",
+                    "categories": []
+                },
+                {
+                    "name": "Goldfalls",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "47%", "left": "26%"},
+                    "desc": "A town nestled in a series of waterfalls that once ran with gold, now it is a haven for those of the greenskin races to live in peace.",
+                    "categories": []
+                },
+                {
+                    "name": "Green Spring",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "48%", "left": "28%"},
+                    "desc": "A city high atop the Spines of Crovux, heated with a constant steam from geothermic geysers.",
+                    "categories": []
+                },
+                {
+                    "name": "Lodrag's Rest",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "55%", "left": "28%"},
+                    "desc": "A center of trade within the Spine of Crovux, specializing in gems.",
+                    "categories": []
+                },
+                {
+                    "name": "Solemn",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "51%", "left": "27%"},
+                    "desc": "A graveyard city in which the dwarves bury their dead in sacred cliffs.",
+                    "categories": []
+                },
+                {
+                    "name": "Lowlands",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "48%", "left": "33%"},
+                    "desc": "The lands in the eastern region of Krazax, are home to many of the other races, given to them to live by the kings of old.",
+                    "categories": []
+                },
+                {
+                    "name": "Siltsore",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "54%", "left": "35.5%"},
+                    "desc": "Nestled within the bordering river of Steton and Krazax, a town dwells, supported above the silt on stilted homes.",
+                    "categories": []
+                },
+                {
+                    "name": "Silver Field",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "46%", "left": "31%"},
+                    "desc": "A large town, named after the silver mines hidden beneath it's grassy plains.",
+                    "categories": []
+                },
+                {
+                    "name": "Sonja's Hook",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "56%", "left": "32%"},
+                    "desc": "A town dedicated to the hero Sonja and her stand against the greenskin horde.",
+                    "categories": []
+                },
+                {
+                    "name": "Twin Shields",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "45%", "left": "35%"},
+                    "desc": "A coastal city, located on the edge of the sickened sea, is split into two parts, the mainland and the island district.",
+                    "categories": []
+                },
+                {
+                    "name": "Lonely Coast",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "50%", "left": "23.5%"},
+                    "desc": "A lonely stretch of coastal land, which is rumored to be cursed for ships to cross.",
+                    "categories": []
+                },
+                {
+                    "name": "Pike",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "59%", "left": "20%"},
+                    "desc": "A moderately sized town, famous for the pearls found alongside it's shore.",
+                    "categories": []
+                },
+                {
+                    "name": "Songport",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "53%", "left": "23%"},
+                    "desc": "A city still under construction, founded by the first explorers of Ryne and a place for travelers of those lands to gather.",
+                    "categories": []
+                },
+                {
+                    "name": "Khaz-Awe",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "59%", "left": "24%"},
+                    "desc": "A city founded at the base of the Moaning Mountain. This city was once an adventurer's camp and continuously grows as more and more seek thier fortune in the depths of the great mountain.",
+                    "categories": []
+                }
+            ]
+        },
+        {
+            "name": "Orde",
+            "motto": "Faith Above Flesh",
+            "type": "country",
+            "coordinates": {"top": "26%", "left": "28%"},
+            "desc": "A supposed utopia of wealth and plenty.\n\nThe citizens of which live under the constant supervision of The White Pantheon and its organized religions.",
+            "categories": [
+                {
+                    "title": "History",
+                    "info": "Orde was a country formed slowly from those that fled the fall of the Elven Empire. They quickly formed a country based on religious freedom, that believed that the cruelties and dark magics the Elven Empire used were the cause of their misfortune and misery.\n\nAs time went on religious freedom was eventually replaced with the standard moral goods; this invoked a sense of order and good will, in exchange for a sharp prejudice.\n\nEvery 20 years or so the White Council replaces its various parts, allowing new ideas to spread and change to become possible. However, Orde's mistrust of the darker things have led to many unfortunate events, including war and the rise of the Inquisition.\n\nThe Reckoning shattered the belief system of Orde to its very core. Not only did they have to use the power of evil to assist in defending the Seven against a great threat, but they lost many of their deities of the past in this time of trouble.\n\nModern day Orde attempts to follow the Seven's doctrine of hope, but old habits die hard and there is a stirring of mistrust and a quiet desperation because this peace can only be maintained for so long and the scales are imbalanced."
+                },
+                {
+                    "title": "Demographic",
+                    "info": "The population of Orde is quite diverse, featuring races from all corners of Kalkatesh.\n\nHumans do come out slightly ahead in numbers, with tieflings coming in at the lowest. The tieflings, although the country itself holds no official prejudice against them, do not feel comfortable in the country.\n\nOther races that share difficult to understand powers or forms usually stay within the outlier settlements."
+                },
+                {
+                    "title": "Religion",
+                    "info": "The White Pantheon is unquestionably the most represented in Orde, most of the deities within it, have their main churches within the country.\n\nOther religions, save for those that serve evil are welcome within Orde."
+                },
+                {
+                    "title": "Military",
+                    "info": "Orde's military force is mostly composed of the Order of the White Council, a contingent of paladins from The White Pantheon. There are also a few militia contracts with mercenaries in the outlier towns, which is comprised of religiously inclined warriors. The Justicars keep order as the main policing force for the cities."
+                },
+                {
+                    "title": "Technology",
+                    "info": "Orde is perhaps the most well developed in terms of infrastructure out of all the countries. Instead of only a few cities with paved roads, nearly all of the cities in Orde benefit from paved roads and fully operational aqueducts."
+                }
+            ],
+            "points": [
+                {
+                    "name": "The Heartlands",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "23%", "left": "33%"},
+                    "desc": "The north-western corner of Kalkatesh is a land of fertile fields and temperate weather. A perfect place to grow the most populous nation in Kalkatesh.",
+                    "categories": []
+                },
+                {
+                    "name": "The Eastern Heartlands",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "18%", "left": "42%"},
+                    "desc": "The eastern half of the heartlands and the border with the Badlands.",
+                    "categories": []
+                },
+                {
+                    "name": "The Western Heartlands",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "21%", "left": "22%"},
+                    "desc": "The western half of the Heartlands, bordered with the Abyssal Ocean.",
+                    "categories": []
+                },
+                {
+                    "name": "The Veil",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "13%", "left": "21%"},
+                    "desc": "",
+                    "categories": []
+                },
+                {
+                    "name": "Crestfall",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "15.5%", "left": "35%"},
+                    "desc": "The jewel of Orde, a glittering white marble city, with massive aqueducts that provide a power source as well as a water source for the shimmering city.\n\nConstantly maintained divine blessings, has all but eliminated sickness and the White Pantheon has blessed many aspects of life for those that live within Crestfall, as such, many of citizens are pious—to differing degrees.",
+                    "categories": [
+                        {
+                            "title": "Demographic",
+                            "info": "Humans and half-elves number slightly more than the other goodly races, with the monstrous ones, being all but absent within this holy city.\n\nThe city's vanity has led to many of the less 'pretty' races to feel a slight social prejudice, enough that they choose to live elsewhere most of the time."
+                        },
+                        {
+                            "title": "Government",
+                            "info": "Crestfall is the seat of government for all of Orde and it is where the White Council can be found.\n\nAlthough the White Council is the ruling body of all of Orde, Crestfall has its day to day operations overseen by bishops of the various religions that dominate the city. This has led to some, albeit minor disagreements among the faithful of the White Pantheon but regardless the city lives in a reasonable peace and gratuitous prosperity."
+                        },
+                        {
+                            "title": "Military",
+                            "info": "The military arm of Crestfall is the same as all of Orde, it is protected by the Order of the White Council.\n\nThe honor guard of this force, The Alabaster Knights, guard Crestfall itself."
+                        },
+                        {
+                            "title": "Trade",
+                            "info": "Crestfall depends much of its economy on the taxes and tithes it receives throughout the country.\n\nThe city itself has a trade market but it is not sufficient to sustain the city; therefore, The White Council makes great strides to maintain good relations with the other cities in Orde."
+                        }
+                    ]
+                },
+                {
+                    "name": "Wallwatch",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "24%", "left": "42%"},
+                    "desc": "Wallwatch is a city of welcoming arms which stands as a testament to the resistance against the tyranny of the past.",
+                    "categories": [
+                        {
+                            "title": "History",
+                            "info": "Wallwatch is the oldest city in Orde primarily because it predates Orde itself. As refugees marched westwards from the fall of the elven empire, some had found stay at the first stop outside of what one day will be known as the Badlands.\n\nKnown only as \"the first settlers\" these men and women joined together with what was at the time a small but welcoming elven hamlet to build the great fortifications that would eventually grow to become the hallmark of the city. The elven contribution to this, like most non-human contributions, was quickly forgotten by the Ordeans.\n\nIn time the standard Ordean marble flooring began to cover the streets and traces of elven architecture slowly disappeared. What elven architecture does still exist was simply attributed to \"the first settlers\". Even the stolen great Jade Fortress within the Inner Sanctum of Wallwatch, which rightfully bears the markings of Elven Craftsmanship as the statues within are grown from the Jade rather than carved, is commonly believed by the locals to be the construction of \"the first settlers\"."
+                        },
+                        {
+                            "title": "Demographic",
+                            "info": "Due to its proximity to the Badlands, Watchwall is the most culturally tolerant and accepting of all of Orde's cities. As many tribes of orks, tieflings, goblinoids, and others would be 'undesirables' by Ordean standards flee here to hide from the horrors of the Badlands or from the oppressive prejudice of Orde.\n\nThat is not to say that they find welcome here, merely that they are more tolerated than elsewhere in Orde. As it pertains to religion The White Pantheon and all the deities find Wallwatch home for their various churches. Many deities from the gray pantheon also find home here, yet rumors of less sanctioned churches and cults constantly draw the eye of the Inquisition."
+                        },
+                        {
+                            "title": "Government",
+                            "info": "Although on paper Wallwatch is ruled by the appointed Bishop Peyo Le Bail, the truth of the matter is quite apparent to anyone who steps foot within the walled city. The Wall Watch is the true power here, and the Watch Wall commander is the final authority within Wallwatch.\n\nA small city council handles mundane day-to-day affairs that concern the lives of the citizens, only involving the Commander when a threat to the city arises which happens more often than anyone would like."
+                        },
+                        {
+                            "title": "Military",
+                            "info": "Wallwatch has an extremely strong military presence consisting almost entirely of the Wall Watch. In addition to being extremely well armed, trained, and numerous. They also have various watchtowers, forward outposts, and strongholds scattered throughout the nearby area; thus making an organized assault on the wall costly at best, suicidal at best."
+                        },
+                        {
+                            "title": "Trade",
+                            "info": "Wallwatch's economic foundation is production and tourism based. Although Wallwatch has little in natural resources, the amount of quality weaponry and armor produced at its forges are exported and sold all over Orde.\n\nAdditionally, due to its close proximity to the Badlands. Wallwatch is the first and last destination of any expedition to the Badlands. As such many adventurers not only spend their hard earned coin to what may be their last night in civilization, but also the first place they will attempt to pawn off and exchange any treasures recovered.\n\nAlthough Wallwatch is for the most part self-sustaining due to the farms on the fertile soil on its fringes, the yield is not great enough that a famine is without risk and therefore relies on the rest of Orde to keep them supplied should any disasters strike the farms."
+                        },
+                        {
+                            "title": "Technology",
+                            "info": "Wallwatch is at the forefront of Ordean military technology development. Being the first and greatest front against the horrors of the Badlands. Constant alchemical research is conducted within the various academies to find oils to combat their foes and remedies to combat their maladies.\n\nThree great forges constructed into the wall roar and blaze with glorious fires as hammers and sweat drops in equal measure to construct mastercrafted gear to arm the soldiers of the Watch Wall."
+                        }
+                    ]
+                },
+                {
+                    "name": "Pallors Fog",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "20%", "left": "40%"},
+                    "desc": "Pallors Fog is built atop a plateau overlooking the Watch Wall. The whole town is surrounded by a forest enchanted with magic mist. The mist will form just before sunrise and slowly dissipate after several hours.\n\nAny who try to travel during this time will invariably end up lost in the woods until the mists subside. This combined with the town being up on a plateau makes it an excellent defensive position in times of conflict.",
+                    "categories": [
+                        {
+                            "title": "History",
+                            "info": "Pallors Fog is an old town, older than the Watch Wall. It was settled upon the plateau in hopes of the position being defensible enough to deal with any threats from the badlands. The town was able to hold and grow for a time but eventually it became too big a target and the threats only got bigger.\n\nEventually after failing to defend against several raids from the badlands it is said that a powerful cleric of an unknown god prayed for several days straight for the power to defend the town.\n\nThe god supposedly granted the wish in the form of the mists. Back then the mists were said to be almost constant, only dispersing for a couple hours when the sun was at its peak. Any, including the towns folk it was meant to protect, who entered the mists would end up lost—never able to find the town until the mists dispersed.\n\nThe cleric’s name was Pallor and even though it made day to day life harder for the people of the town, the mists did very well at protecting the town and so to honor him they named the town after him.\n\nThe mist's powers have weakened over time, whether this is due to the magic fading or it being made obsolete by the building of the Watch Wall no one knows for sure. Now the mists are only out during the early hours of sunrise. The people of Pallor’s Fog have grown accustomed to starting their days later than most to avoid the mists, the town only really waking up once it is clear out. Despite all the years of study, none know the mist's true nature."
+                        },
+                        {
+                            "title": "Demographic",
+                            "info": "Like most of Orde, Pallors Fog is made of mostly humans though you are still able to find plenty of elves, halflings, and gnomes around. Tieflings and the feathered races are rarer but not absent."
+                        },
+                        {
+                            "title": "Government",
+                            "info": "Being so close to the wall gives the White Council almost direct control of the town though a locally elected mayor is selected in order to handle the town's day to day governing."
+                        },
+                        {
+                            "title": "Religion",
+                            "info": "The White Pantheon has the biggest presence in Pallors Fog with at least one minor church dedicated to each of its gods.\n\nThe Green Pantheon also has a significant number of followers within the town though they are not as common, Inca in particular is loved for many think it is the spirit tree which brought about the mists."
+                        },
+                        {
+                            "title": "Military",
+                            "info": "With both the nearby Watch Wall and fog to protect them the town itself does not have a major military presence of its own. It does however have a local policing force to deal with troublemakers but in times of need they call upon the wall for help."
+                        },
+                        {
+                            "title": "Trade",
+                            "info": "Pallors Fog’s economy has grown and changed over time with its biggest influence being the building of the Watch Wall. The city's few farms grow food for the many men that man the wall, and its many taverns are a good place for any weary wall watcher to spend their time relaxing.\n\nThe city has a prominent blacksmithing guild—which is almost completely dedicated to making and repairing equipment for the wall. Pallors Fog also has a small tourist scene as many are fascinated by the Fog, and many have come to study it over the years."
+                        },
+                        {
+                            "title": "Technology",
+                            "info": "Magic is a major part of Pallors Fog given their intimacy with the mists. Divine magic is particularly encouraged and any discoveries pertaining to the mists themselves are especially valued.\n\nWhile some in the city wish for the mists to be dispelled—as to allow easier travel—most of the town's citizens see it as a sort of holy protector that should only be studied and never altered in any way."
+                        }
+                    ]
+                },
+                {
+                    "name": "Jordans Rest",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "14%", "left": "39%"},
+                    "desc": "A testament to a saint of the past, Jordan's Rest is a quiet place, welcome to all.",
+                    "categories": [
+                        {
+                            "title": "History",
+                            "info": "One simply can't walk into Jordans Rest without being enveloped in the history of the settlement. All around the settlement are ghosts of the past, abandoned camps from darker times when orphans came in the thousands.\n\nTimes like The Reckoning made the population explode for all the wrong reasons but this area was chosen specifically to allow this. The population decided to leave the camps up for both efficiency reasons and to remind everyone of their purpose.\n\nMany of the adventurers who come from Jordans Rest tear up a piece of cloth from the abandoned camps and proudly tie it on a piece of armor or on their clothing to show appartenance."
+                        },
+                        {
+                            "title": "Demographic",
+                            "info": "The racial spread in this settlement is almost everchanging. It is still reflective of the general demographic of Orde, but it however somehow displays an even greater spread of races.\n\nThe average age is much lower than almost anywhere else in Orde, specifically since the leadership there is most commonly formed of young adventurers who came back here to settle down. There is not a single race who is seen poorly in Jordans Rest as all of them are together in hardship. Most of the older residents are religiously inclined."
+                        },
+                        {
+                            "title": "Government",
+                            "info": "The leadership of this settlement is diplomatic. More often than not, orphans who grew up in Jordans Rest come back later in life in order to give back and help others just like they have been helped. The leadership is usually filled with people trusted and admired by those who got to know them during the time they spent as orphans."
+                        },
+                        {
+                            "title": "Religion",
+                            "info": "Jodans Rest is dedicated to the patron saint of orphans: Jordan. This man is almost as praised as the gods themselves, as he embodies everything that the residents of this settlement uphold. On top of this, it is quite the religious place since many orphans find hope through faith. Many followers of multiple deities travel to Jordans Rest in order to provide support and hope to the orphans."
+                        },
+                        {
+                            "title": "Military",
+                            "info": "The militia of Jordans Rest is strong and fierce. It is mostly made of battle tested adventurers who came from Jordans Rest and came back to protect what it stands for now that they were ready to settle. This place means everything to them, as every townsman is family.\n\nThere are also many clerics and paladins who are more martially inclined that decided to dedicate their life for the protection of orphans. The strength of this militia added to the fact that the population of the settlement is usually low means that they rarely need help from Orde's military."
+                        },
+                        {
+                            "title": "Trade",
+                            "info": "Jordans Rest is an interesting area in terms of economy. On paper it is a net negative for the region of Orde. However, it provides something that is invaluable: adventurers.\n\nThe ratio of adventurer to population is the highest of anywhere else in Orde as it is often the path that orphans choose to take. This is a place where young talent blooms and is cultivated instead of being lost and forgotten. It is a place where hope and faith gets deeply ingrained in future generations.\n\nThere are no amount of gold pieces in the world that could replace such a thing, and this is why the settlement remains even if it relies on external funds and supplies."
+                        },
+                        {
+                            "title": "Technology",
+                            "info": "Jordans Rest is surprisingly a good area for development in both magic and science. The orphans who are sent there are greatly encouraged to find a calling in life in order to find a place of their own in this world. Because of this, their aptitude is tested and monitored.\n\nWhen there is a big spike of magically or scientifically gifted orphans, special schools open their doors. It is not rare for the settlement to house a prodigy or two who may advance their specific field."
+                        }
+                    ]
+                },
+                {
+                    "name": "Kallone",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "32%", "left": "27%"},
+                    "desc": "A city of wine and food, Kallone is a place of relaxation and reflection.",
+                    "categories": [
+                        {
+                            "title": "History",
+                            "info": "Kallone was founded by the noble family of the Vandrans, who moved away from Crestfall to found their own settlement after becoming annoyed with the heavy morals of the settlement and land. The Vandrans gathered people in the town who felt the same; which consisted of a lot of drunks, party-goers, ladies of the night, and other such people.\n\nOnce together, they traveled for a long while, living nomadically while moving southward towards Krazax. When the mountain range was in sight, the Vandrans decided to hold a party to celebrate their travels. Not just a simple party, however.\n\nThe Vandrans missed the masquerade parties they had enjoyed so much, so they decided to work with a craftsman named Kallone to create masks for all of the family's there. Kallone made many masks before the festival, and due to a lack of materials, each family's mask was stuck to a single color and simple style. That didn't stop people from wearing them and having fun, for the day of the party was a success, and it became known as the Masquerade of Indulging.\n\nDuring the masquerade, many past farmers came to the Vandrans and remarked on how the fertile soil and calm climate would be great for growing all sorts of crops, and the morning after the party—using the laziness of those who were hungover—the Vandrans announced that they were staying in the land near the border—which would be named after Kallone, the master craftsmen. Most of those who followed the Vandrans—especially the farmers—agreed with this decision; as such farmland of all sorts, most specifically vineyards, started to develop around the settlement.\n\nMany luxury wines have come from Kallone, and it is that and the Masquerade of Indulging that attracted many more to the settlement. In order to continue distinguishing families during the masquerade, Kallone and his family continued to craft masks, creating masks to distinguish the age of families.\n\nDuring the masquerade, older families can be seen with simple—single-colored masks—while newer families wear masks with multiple colors and different styles. The masquerade is celebrated once per year, and is followed by a day off for all in the settlement to recover."
+                        },
+                        {
+                            "title": "Demographic",
+                            "info": "Kallone contains a diverse population of races, mainly those that are more chaotic, as Kallone is less focused on law and morals than most other settlements. However, races associated with evil such as goblins, kobolds, lizardfolk, etc. are discriminated against because of their savage and hostile stereotypes."
+                        },
+                        {
+                            "title": "Government",
+                            "info": "The noble family who founded this city, the Vandrans, rule Kallone with laws only pertaining to safety and fairness and try to rule as separate from the White Council as legally possible. Currently the Vandrans are headed by Theodore Vandran, eldest son of the founding Vandran generation."
+                        },
+                        {
+                            "title": "Religion",
+                            "info": "There is relatively less religious activity in Kallone compared to the rest of Orde, though there is still a notable amount, especially of worship in the White Pantheon. Since there is a large population of farmers, there is some worship towards the Green Pantheon as well. Churches for both pantheons can be found in the settlement."
+                        },
+                        {
+                            "title": "Military",
+                            "info": "Kallone's military consists of paid guards who patrol the settlement and its surrounding farmland on horseback as well as a volunteer citizen militia who take arms whenever the need arises."
+                        },
+                        {
+                            "title": "Trade",
+                            "info": "The economy in Kallone is self-sustaining, with the settlement rarely bringing any goods in from the outside.\n\nDespite this, there are a large amount of exports, including a lot of high quality luxury wines. There is also a lot of focus on tourism when it comes close to the Masquerade of Indulging, with many trying to grab overpriced sales off of the visitors."
+                        },
+                        {
+                            "title": "Technology",
+                            "info": "Kallone has functioning aqueducts, paved roads both inside the settlement and outside for a few miles; they also have a small cobblestone wall which is the height of a fence which surrounds the settlement. There is also extra schooling for children which is partially funded by the government."
+                        }
+                    ]
+                },
+                {
+                    "name": "Fioras Mirror",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "27%", "left": "33.5%"},
+                    "desc": "A floating settlement atop a hallowed lake.\n\nThe town's architecture has been made specifically to float atop the lake; utilizing magical air to fill dense cloth balloons strapped to the sides of the platforms the buildings reside on.\n\nA large shipping dock can easily be seen protruding from the island settlement, ships venturing the lake seem to skim across the liquid rather than tear the water apart.",
+                    "categories": [
+                        {
+                            "title": "History",
+                            "info": "Upon the exploration of Orde it is rumored a crew of sailors braved the Abyssal Sea but were met with a ravenous storm that tore their ship apart flinging them into the water. Many crew members were lost but those that Kaheeli touched were carried down the rivers of Orde.\n\nThe crew's captain woke on the shore of Fioras, dazed and grateful that he and some of his crew survived. After he and the crew came to, they started to notice each one of them bore shimmering scales upon some part of their body.\n\nWhat happened beyond that is all rumors and folklore but it is said that the crew turned to the lake to see a woman descending into the water with a smile on her lips…"
+                        },
+                        {
+                            "title": "Demographic",
+                            "info": "The census of Fioras consists mostly of humans, elves, aarakocra, and even triton due to migrations from the sea."
+                        },
+                        {
+                            "title": "Government",
+                            "info": "The White Council rules the land and makes most decisions based on the collective of holy documents from the faiths of the White Pantheon and a procedure of voting."
+                        },
+                        {
+                            "title": "Religion",
+                            "info": "Runethisians are prominent within the city, seeking knowledge to ever improve their ways of life upon the mirror lake. The Church of Runethares is one of the largest buildings in Fioras Mirror."
+                        },
+                        {
+                            "title": "Military",
+                            "info": "While paladins are the main source of strategic power within Orde, Fioras must rely on their naval forces. The shipyards, while small, always seem to be readying military ships.\n\nWhile the ships are not big—due to being confined to a lake—they make up for in size with speed; easily transporting troops across the water, be it for boarding an enemy ship or bringing them to land to join the fight."
+                        },
+                        {
+                            "title": "Trade",
+                            "info": "While Radiance is prominent in marble and jewels Fioras Mirror is mostly recognized for its expensive and top quality seafood due to being close to the Sickened Sea and itself being a city lain on the water."
+                        }
+                    ]
+                },
+                {
+                    "name": "Keller",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "35%", "left": "36%"},
+                    "desc": "A coastal city and port to the Sickened Sea.",
+                    "categories": [
+                        {
+                            "title": "History",
+                            "info": "Originally founded as a staging point for the Ordean navy into the Sickened Sea by Justicar Anthony Keller of the Ordean inquisition during the original crusade again Dolten; Keller came into existence as a military outpost for the purposes of facilitating the naval transport of troops into Southern Kalkatesh.\n\nFollowing the disastrous end to the Doltenian Crusade however, the settlement of Keller fell into obscurity once the need for a strong naval presence on the Sickened Sea diminished. In the years following Orde’s defeat, the sea port city became a lonely harbor town where mostly retired soldiers and fishermen chose to spend their days quietly.\n\nThat is, until the destruction created by the Reckoning caused artifacts of the lost Sickened Sea civilization to wash up on Keller’s shores and brought life back to the once forgotten settlement.\n\nUpon news of lost artifacts from a bygone age being found in the waters near Keller, both the Verumese Archeologist’s Guild and the Church of Runethares would begin to take interest in the once forgotten settlement. At first only sending scouting parties to confirm the authenticity of the items that had been found.\n\nThese scouting parties would then be followed by research teams, until at last both organizations saw fit to officially use Keller as a staging point for a full-blown expedition—which continues to this day as the “Sickened Sea Excavation”.\n\nWith an influx of people, money, and resources as a result of this expedition. Keller would be gradually transformed from a forgotten—sleepy fishing hamlet to Orde’s primary point of access to the Sickened Sea—and a respectable hub of naval trade, commerce, and archaeology."
+                        },
+                        {
+                            "title": "Demographic",
+                            "info": "Boasting a consistent population of roughly 4,800, Keller is one of the larger minor settlements in Orde; owing its numbers largely in part due to its existence as one of Orde’s primary centers of naval trade as well as the Sickened Sea excavation.\n\nAs a result, though humans still edge out the other races in terms of numbers as per is the norm in Orde, there is more even spread of racial diversity due to the Excavation being a cultural melting pot where scholars and archaeologists of all creeds gather to decipher the mysteries of the Sickened Sea."
+                        },
+                        {
+                            "title": "Government",
+                            "info": "The Council of Light’s rule still applies, but local officials are appointed based on their archaeological contributions to the Sickened Sea excavation."
+                        },
+                        {
+                            "title": "Religion",
+                            "info": "As is typical with an Ordean City, the White Pantheon is the dominant religious presence in the city of Keller.\n\nHowever, due to Keller’s archaeological focus, the church of Runethares notably has a larger following than normal even compared to the other White Pantheon churches. It is not uncommon for the local leaders of Keller to be servants of the Horned Sage."
+                        },
+                        {
+                            "title": "Military",
+                            "info": "While primarily reliant on the Order of the White Council for its security, Keller serves as one of the primary naval ports with regard to the Sickened Sea for Orde.\n\nThe city also employs its fair share of mercenaries for the defense of its nautical pursuits. This includes multi-nation privateers that are commissioned by the churches of the White Pantheon to protect voyages from pirates or enemy ships in times of war."
+                        },
+                        {
+                            "title": "Trade",
+                            "info": "From military outposts, to small fishing settlements, and even an archaeologist city Keller has had an interesting curve with regard to the shape of its economics.\n\nIn modern times, the once forgotten coastal town has become one of Orde’s primary gateways to maritime trade with the countries of Southern Kalkatesh. As a result of this, as well as the continued investments into the Sickened Sea Excavation, Keller has become quite prosperous of late—and has drawn the attention of merchant families from both Orde and elsewhere.\n\nThough it has yet to reach the heights of Orde’s larger settlements—in terms of wealth and population—it is projected that within the next fifty years, Keller will become one of the major cities of note in Orde; provided maritime trade isn’t devalued again by an event such as the restoration of the Mages Guild’s teleportation circle networks, or diminished interest in the Sickened Sea Excavation."
+                        },
+                        {
+                            "title": "Technology",
+                            "info": "As per most of the cities in Orde Keller features paved roads, aqueducts, and a healthy level of divine magic used in day to day life.\n\nHowever, due to its close proximity to the Sickened Sea and the presence of the Sickened Sea excavation, the town features occasional oddities from the remnants of the lost civilization that once existed on the Sickened Sea as well as arcane-based imports from Southern Kalkatesh."
+                        }
+                    ]
+                },
+                {
+                    "name": "Morlavene",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "13%", "left": "30%"},
+                    "desc": "A city of artists and performers where many a festival is held and a party nearly every night.\n\nBuilt in proximity to a number of quarries, the city is well-known for its fantastical architecture. Statues and busts of all sizes and proportions can be found all over the settlement—be it in fountains, plazas, parks, or even as parts of buildings. Artists from all over Kalkatesh can be found gathered in this city, seeking inspiration for their own work.",
+                    "categories": [
+                        {
+                            "title": "History",
+                            "info": "Originally founded as a retreat for sculptors in Crestfall, Morlavene has its roots as a cooperative experiment between artists. The three nearby quarries provided cheap and readily available material for sculpting, and the artists of the settlement quickly began churning out works. Many sculptures were left unfinished or deemed failures as the artists moved on to other projects.\n\nEventually word spread about the sculptors of Morlavene, and wealthy patrons began to make the journey from Crestfall in order to commission sculptures from the artists of the city. This brisk trade allowed the city to flourish for many decades; eventually the quarries of Morlavene ran dry and the settlement quietly dissolved, with the original founders moving elsewhere to seek better opportunities.\n\nThe city of Morlavene sat as an abandoned relic for many years until a group of wealthy and eccentric patrons and artists embarked on a project to restore the city. The scope of the project was incredibly ambitious—these self-styled Founders sought to recreate the original function of Morlavene as a haven for artists on a grander scale, despite the fact that the quarries had run dry.\n\nThe Founders believed that the site of the original settlement had a place of cultural significance, so over the course of a decade the group poured their wealth into the city to turn it into a beacon of inspiration to the artists of Kalkatesh—leaving the original sculptures of the city as an homage to the original founders of the town.\n\nIn present times Morlavene is a bustling—albeit small settlement—in the heartlands of Orde. As a center of culture, the city attracts both artists, as well as connoisseurs of their works. The scope of the art produced by the city has expanded far beyond just sculpture found in the form of musicians, painters, performers, and others now also reside in the city. Despite this, the city continues to pay homage to its roots.\n\nIt is tradition for every artist in Morlavene to create a sculpture and leave it somewhere in the city, and it is common belief among Ordeans that the only successful artists are those that leave their mark in the city."
+                        },
+                        {
+                            "title": "Demographic",
+                            "info": "Due to its nature as a haven for artists from all over Kalkatesh, Morlavene is one of the most diverse settlements on the continent.\n\nAlmost every single race can be found in this city, practicing their art in some form. Morlavene has a core population of roughly 2,000 permanent residents, but it has the facilities to house up to 5,000 additional seasonal residents that come for annual fairs and expositions."
+                        },
+                        {
+                            "title": "Government",
+                            "info": "Morlavene is governed by a council of aldermen; which are mostly high-ranking figures in the local artistic scene, as well as various wealthy patrons who also reside in the city. The White Council does not have much of a presence in Morlavene despite its relative closeness to Crestfall—due to its lack of strategic importance."
+                        },
+                        {
+                            "title": "Religion",
+                            "info": "Morlavene pays lip service to the White Pantheon, and a number of temples devoted to them can be found all over the city.\n\nHowever, owing to its diversity, there are sects devoted to the other pantheons of Verum that can be found scattered around Morlavene. While most artists in the city seek divine inspiration from their deities, there is a growing sect of secularists in the city that seek to divorce their work from the trappings of the divine—seeking inspiration from only the corporeal."
+                        },
+                        {
+                            "title": "Military",
+                            "info": "Morlavene is a peaceful settlement that sits at the heartland of Orde, and as such employs only a small contingent of guards to keep the peace. During seasonal events, the council of aldermen hires mercenary guards to bolster their ranks and keep order to accomodate for the influx of people."
+                        },
+                        {
+                            "title": "Trade",
+                            "info": "As a city of wealth, Morlavene enjoys trade from all over Kalkatesh, with daily deliveries of supplies coming in from Crestfall. The upper echelons of society, the patrons and the most successful artists, enjoy every modern amenity the city has to offer—and at night Morlavene comes alive with all manners of social functions.\n\nThe wealth of the city does not exclude the less fortunate, as aspiring artists are provided free room and board for up to one year until they find themselves a patron to sponsor them. Despite its long history of patronage, independent artists in Morlavene are fairly common—as work is easy to find—and many of these independent artists look down upon those with patrons.\n\nMorlavene plays host to a number of art festivals all throughout the year, and the people of Orde flock to the city to gawk at the pieces on display and scratch their heads at the more esoteric works. These festivals bring in a great deal of wealth to the city, as they promote a brisk art trade; as well as provide a brilliant spectacle that keeps the city in the memories of the masses who attend."
+                        },
+                        {
+                            "title": "Technology",
+                            "info": "Morlavene enjoys all the trappings of Ordean wealth—parks, plazas, clean water, etc. While divine magic is used commonly throughout the city, some more magically-inclined artists dabble in the arcane and druidic schools of magic and a fledgling magic trade has been established in the city."
+                        }
+                    ]
+                },
+                {
+                    "name": "Cliffgate",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "31%", "left": "24%"},
+                    "desc": "The border city between Krazax and Orde.\n\nCliffgate is perched on the Orde side of a canyon between Orde and Krazax. An arched stone bridge connects both sides of the canyon while the eponymous gate rests on the Orde side. Aqueducts, integrated into the bridge, bring water from the Krazax mountains into the town and the Ordean plains beyond.",
+                    "categories": [
+                        {
+                            "title": "Demographic",
+                            "info": "The year round permanent residents number about 400, about a third dwarves a third humans and the rest a motley group of other races. During trading seasons, this population expands to almost a 1,000 transients waiting for customs assessments."
+                        },
+                        {
+                            "title": "Government",
+                            "info": "Cliffgate has three layers of government. At the highest level, their ambassadors from Orde and Krazax, including the Church and representatives from the King of Krazax as well as the lowland tribes. This committee goes by several names given by the general populace, but the official name is The Cliffgate Commerce and Trade Authority.\n\nThese ambassadors are assigned by their respective governments. While the committee can wield a lot of power, the representatives never manage to agree long enough to put any changes into place.\n\nThe High Administrator runs the day to day operations and civil law within Cliffgate. He has a bureaucracy beneath him including deputies and scribes. The High Administrator is elected by the Merchants Council.\n\nThe Merchants Council represents the oremongers of Krazax and the traders of Orde. Between them they set the trade rates, enforce contracts and deal with infractions within their own memberships."
+                        },
+                        {
+                            "title": "Religion",
+                            "info": "The White Pantheon has public shrines. The church of Astaroth is also publicly worshipped.\n\nAlthough relegated to the back rooms, there is a strong following of Babylon to help enforce contracts."
+                        },
+                        {
+                            "title": "Military",
+                            "info": "The High Administrator’s office only has a dozen law enforcement officers. However, the ambassadors all have their own bodyguards and retinue. Additionally, the Merchants often hire mercenaries to act as guards."
+                        },
+                        {
+                            "title": "Trade",
+                            "info": "High tariffs on raw goods. Lower taxes on products manufactured in town. Orde requires a level of purity in silver to be used in coinage, that level is sufficient to damage a werewolf.\n\nTo that end, refined silver is tested by striking a bound and muzzled werewolf. This verification process is taxed at 10%.\n\nTypically raw materials enter the town from both sides, while refined goods proceed to their destinations."
+                        },
+                        {
+                            "title": "Technology",
+                            "info": "Due to the tariffs in place, finished products are taxed lower than raw materials. As such, Cliffgate has many fabrication and refining shops. Additionally, since dunnage (crates and shipping components) is not taxed there is a thriving industry that makes containers and such out of raw materials that can be broken down for use in the country.\n\nThe Trade Authority is too slow and out of touch with the situation to fix the tariff issue so this continues unabated. Most of these processes are water assisted through the aqueducts.\n\nThe Morning Gate is operated by huge chains operated by water wheels, fed by the aqueducts as well. While there is fair trade of largely foodstuffs for ores, there is also a transfer of water to Orde from the Krazax mountains. The water can be cut off, but this would also seal the gates. Thus, a careful balance is played out of value for value."
+                        }
+                    ]
+                },
+                {
+                    "name": "Radiance",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates": {"top": "20%", "left": "25%"},
+                    "desc": "A city settled on a pristine river.\n\nRadiance is mostly flatlands that edge into large mines and quarries. Due to its location at the tip of the White-Gold River, it also has access to running water and the benefits that come with it.",
+                    "categories": [
+                        {
+                            "title": "History",
+                            "info": "Radiance is one of the oldest cities in Orde, founded shortly after the capital. In their search for strong iron and stone to make arms and shelter, the early Ordeans instead found massive amounts of silver and incredible marble.\n\nThe founding of Radiance has shaped the growth of Orde drastically, as it is both a provider of economic capital and raw resources."
+                        },
+                        {
+                            "title": "Demographic",
+                            "info": "The population consists of mostly humans with a mix of other races."
+                        },
+                        {
+                            "title": "Government",
+                            "info": "The local government is run by the Council of Marble, which is a 9 person council with an equal vote on all legal matters.\n\nMajority votes on major settlement issues, along with legal cases raised to their judgment from the basic courts of Radiance.\n\nSmaller civil matters are handled by an array of judges, juries and barristers. Business matters tend to be managed by the myriad of trade guilds which are loosely affiliated with The Great Bazaar."
+                        },
+                        {
+                            "title": "Religion",
+                            "info": "Radiance primarily follows the White Pantheon as well as the Grey Pantheon. The only Grey Pantheon member not given some measure of respect is Sekelkuse. They do not primarily worship the Green Pantheon, but have nothing against it's worship."
+                        },
+                        {
+                            "title": "Military",
+                            "info": "Radiance has a city guard which also serves as a standing militia (reinforced by a citizen reserve) called the Silver Sentinels, which provides basic day to day security. In the event of an actual war they would rely on the Order of the White Council, which would have the Silver Sentinels folded into it."
+                        },
+                        {
+                            "title": "Trade",
+                            "info": "Radiance is known commonly as the 'rich part' of Orde, and this oversimplification is not without merit. Radiance produces an abundance of silver and jewels from its mines, and the marble from their quarries is second to none.\n\nTheir smiths focus less on weapons and armor but more on fine jewelry and artwork. It is known, particularly by the holy men and women of Kalkatesh, that Radiance is one of the few places actually capable of producing diamond dust. Naturally, this makes it a critical location for The Council of Light—Orde would do much to make sure it is secured."
+                        },
+                        {
+                            "title": "Technology",
+                            "info": "The city does not place a large degree of focus on magical development except when it applies to mining, quarrying, and metallurgy. Magic is regularly employed to make sure trade is fair.\n\nThe science of Radiance is primarily focused on improving technologies for mining silver and precious gems, better refinement of these raw materials, and securing the physical safety of those who mine and quarry."
+                        }
+                    ]
+                },
+                {
+                    "name": "Fireport",
+                    "motto": "",
+                    "type": "city",
+                    "coordinates":  {"top": "36%", "left": "28%"},
+                    "desc": "The largest port city in Orde.\n\nFireport sits atop a great and cavernous Undercity, remnants of an old Fireport. Here a thriving culture of both villains and vigilantes can be found.\n\nVillains, hiding out from the authorities of Orde as best as they can, as well as those who bring justice in a way the Council of Light would never approve.\n\nIt is rumored that somewhere in this Undercity lives the Ledgerdomain, guildmaster of the fabled and nearly ruined Theive's Guild. Still working to bend things to his end even as he digs himself and his people out of the rubble.",
+                    "categories": [
+                        {
+                            "title": "History",
+                            "info": "Fireport's history is long and convoluted, and little formally exists. Fireport has been torn apart by war, trade disputes, crime and the Reckoning.\n\nRumors fly about wildly, some even claiming that a God died within Fireport. Still, the citizens of this city put little stock in these tales. After all, they are sailors always looking towards the horizon. Fireport stood yesterday, it stands today, and will stand tomorrow."
+                        },
+                        {
+                            "title": "Demographic",
+                            "info": "Fireport has an estimated 15,000 residents.\n\nThe majority of the residents are human or dwarf with a good number of elves and orcs."
+                        },
+                        {
+                            "title": "Government",
+                            "info": "The local government is known as the Ships Court, This high court of Fireport includes the (currently 7) largest ship captains (or their appointed) representatives and 3 bishops of the white or grey faiths appointed by the Council of Light. One of these bishops is always a priest of Khaeeli, though her worship does not usually go in lock-step with normal beliefs of Orde.\n\nEach of the captains gets a vote on all Fireport-wide affecting measures, with the 3 bishops as support. If there is ever a tie, the tie is always broken by the bishops.\n\nThe bishop of Khaleeli can choose to enact a super-vote in the tie breaking scenario; if they choose to do so it is tradition that they step down. The Ships Court usually follows the wisdom of the Khaleeli bishop, so this is a truly rare occurrence. Smaller civil matters handled by an array of judges, juries and barristers. Business matters tend to be managed by the myriad of trade guilds which are loosely affiliated with The Great Bazaar."
+                        },
+                        {
+                            "title": "Religion",
+                            "info": "Radiance primarily follows the White Pantheon as well as the Grey Pantheon. There are more worshippers of the Green Pantheon here due to the life of a sailor, and this is the rare place in Orde where Khaleeli worship is openly displayed and praised.\n\nOf note, the largest church to Glory sits within Fireport; though it is not the main church of Glory it is considered a pillar of the faith.\n\nPretty much all faiths can be found in the Undercity. However, in the most hidden parts of the Undercity, the Thieves Guild raises glad prayers and cups to Sekelkuse as they defiantly continue his noble and merciful work."
+                        },
+                        {
+                            "title": "Military",
+                            "info": "Fireport is protected by the Naval Guard, a force commanded by some senior officials of the Army of Light combined with full time citizen soldier-guards, mercenaries, citizen reserves—and in times of true danger—the sailors residing in the city who wish to defend their ships against danger.\n\nIt is rumored that, in times of true crisis, the Undercity could deploy quite the formidable army of mercenaries and killers to defend itself. However, such an event has yet to occur. But when vigilante murders and assassinations happen, suspicious eyes always turn to the Undercity."
+                        },
+                        {
+                            "title": "Trade",
+                            "info": "Fireport is not considered wealthy in the traditional sense. It is a practical port town, and little is afforded towards the luxuries of wealth. Some luxury lodgings and restaurants exist—as close as possible to the most peaceful parts of the sea—where the nobility and the upper-class can be pampered with delicious food, delicate massages and comfortable beds.\n\nOf course, some merchandise can be found here of a luxury nature—being a port town. However, for the most part, it's a shipping town. Most goods are not meant for here, and most who work and travel here are honest enough folk doing business.\n\n​However, a booming black market exists in the Undercity of Fireport for those clever and resilient enough to find it. Goods nicked from the surface above or taken from other places, little is off-limits here—though all sales are costly. \n\nThough the Undercity is dank, shadowy, and crumbling, those in good with the right people live merrily off of skimmed riches and possibly even the slightest bit of noble bearing. A dark and mocking mirror of the glinting silver light of Orde."
+                        },
+                        {
+                            "title": "Technology",
+                            "info": "The city does not place a large degree of focus on magical or scientific development except when it applies to maritime affairs and ensuring that trade is fair and honest.\n\nGreat efforts are made in these areas in order to root out and detect those of the Undercity that plot nefarious futures for Fireport and Orde.\n\nSince Fireport is the recipient and/or owner of the largest maritime vessels on the continent, a great deal of time, manpower, magic and money is invested in perfecting the maritime arts and ensuring that Orde can continue to dominate the seas."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bloodwave Bay",
+            "motto": "",
+            "type": "region",
+            "coordinates": {"top": "67%", "left": "39%"},
+            "desc": "Bloodwave Bay is a body of inland sea, said to hold many unexplored treasures. The sea is harsh and constantly moving.",
+            "categories": [
+                {
+                    "title": "Demographic",
+                    "info": "Not much is known about the people that populate and possibly govern the region, but it is known that many pirates and Baymen call Bloodwave Bay their home."
+                },
+                {
+                    "title": "Trade",
+                    "info": "The Copper Cove is the central hub for many of Bloodwave Bay to talk sales and make a profit, no matter how shady the deal may seem. Gold is described to be the lifeblood of Copper Cove."
+                }
+            ],
+            "points": [
+                {
+                    "name": "Connatorga",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "82%", "left": "33%"},
+                    "desc": "The ruins of a once great city from the past. Rumored to be apart of Eassemere the City of Wonders, it now lies as a dangerous ruins.",
+                    "categories": []
+                },
+                {
+                    "name": "The Freelands",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "83%", "left": "36%"},
+                    "desc": "There are few places that the Freemen can call their own, this ramshackle band of islands are just that, home.",
+                    "categories": []
+                },
+                {
+                    "name": "Cliffs Of Dane",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "84%", "left": "44%"},
+                    "desc": "The great white cliff's of Dane, overlook Bloodwave Bay and is a place many a would be Priate Lord has attempted to tame, as well as those from Steton, as of now, none have tamed them.",
+                    "categories": []
+                },
+                {
+                    "name": "Maelstorm Mountains",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "80%", "left": "51%"},
+                    "desc": "",
+                    "categories": []
+                }
+            ]
+        },
+        {
+            "name": "The Badlands",
+            "motto": "",
+            "type": "region",
+            "coordinates": {"top": "22%", "left": "50%"},
+            "desc": "The Badlands is a vast wasteland. Clean water is scarce, and food is found mostly in places where those few people—who remain—were able to survive.\n\nThese locations are what still remains of the farmable land, despite this they still often have to hunt the dangerous creatures or commit acts of cannibalism to survive.",
+            "categories": [
+                {
+                    "title": "History",
+                    "info": "Once, the badlands was a nearly utopian landscape, filled with plenty and majesty. That all changed when Synonine Twelvestar VII, was betrayed by his son. This one act ended the family line not only in it's governance, but also transformed the son into the first dark elf.\n\nThe blight from that action spread into the earth, poisoning it and transforming the Badlands into what it is today. Thousands died within the first few days, from sickness and desperation. Thousands more from famine and neglect. The elves lost the seat of power and the struggle for what scraps remained fueled a war in Majital that would cost the elves their last home.\n\nThere was however a spark of hope. 60 years after the reckoning, there began an expedition from the elves that followed the old ways. They took the last of the imperial line, to attempt to take back their homeland. Their success is yet to be seen."
+                },
+                {
+                    "title": "Demographic",
+                    "info": "Creatures like gnolls, orcs and desperate dark elves are the most common of these tribes but there are many forms of misery within this place."
+                },
+                {
+                    "title": "Government",
+                    "info": "The Badlands have no established large government, just the various tribes that roam its wastes."
+                },
+                {
+                    "title": "Religion",
+                    "info": "For those that still cling to religion within this hopeless place, it should be noted that the gods vary wildly. There are those that pray to the light and those that embrace the dark. In this land of famine and peril, all are welcome."
+                },
+                {
+                    "title": "Military",
+                    "info": "While war is no stranger to the Badlands, there are very few that could consider themselves to possess anything resembling a military. Most combat is tribal skirmishes that come to swift, brutal ends."
+                },
+                {
+                    "title": "Trade",
+                    "info": "The only real economy of the Badlands is the excavation and selling of ancient elven artifacts and corpses."
+                },
+                {
+                    "title": "Technology",
+                    "info": "The Badlands was previously a thriving empire of bio-magical engineering. Now the Badlands have been reduced to nothing but ash, dust, and death."
+                }
+            ],
+            "points": [
+                {
+                    "name": "Rotten Wound",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "27%", "left": "59%"},
+                    "desc": "",
+                    "categories": []
+                },
+                {
+                    "name": "The Scream",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "21%", "left": "56%"},
+                    "desc": "",
+                    "categories": []
+                },
+                {
+                    "name": "Nightlands",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "29%", "left": "51%"},
+                    "desc": "",
+                    "categories": []
+                },
+                {
+                    "name": "Eyes Of Sorrow",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "29%", "left": "45%"},
+                    "desc": "",
+                    "categories": []
+                },
+                {
+                    "name": "The Tame",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "22%", "left": "45%"},
+                    "desc": "",
+                    "categories": []
+                },
+                {
+                    "name": "The Culn",
+                    "motto": "",
+                    "type": "landmark",
+                    "coordinates": {"top": "34%", "left": "40%"},
+                    "desc": "",
+                    "categories": []
+                }
+            ]
+        },
+        {
+            "name": "The Rift",
+            "motto": "",
+            "type": "region",
+            "coordinates": {"top": "40%", "left": "79%"},
+            "desc": "The Rift was once a swirling mass of wild magic, spells given sentience and a bestial hunger for magic. However, as the seals have been restored and stability returned to the inner planes. The Rift has begun to stabilize, revealing ruins long since thought abandoned.\n\nThose that have tried to live on its edge have found new lands to inhabit and the rampant magic has caused several changes within them during the process. The volatile and unstable nature of The Rift is seen etched onto their very flesh and burned into their minds.",
+            "categories": []
+        }
+    ]
+}

@@ -1,0 +1,814 @@
+/* 
+//------------//------------//------------//------------
+    Table Of Contents
+//------------//------------//------------//------------
+    1. Global Styles 
+    2. Typography
+    3. Layout
+    4. Components
+        4.1 Side Panel
+            4.11 Info Panel
+                4.11a Category
+                4.11b Divider
+            4.12 Toggle Button
+            4.13 Legend Panel
+        4.2 Map
+        4.3 Point
+            4.3a Point Types
+        4.4 Tooltip
+        4.5 Settings Bar
+    5. State Classes
+        5.1 Dark Mode
+        5.2 Zoom Stages
+    6. Media Queries
+        6.1 Phones > 350px
+        6.2 Tablet/Desktop
+    0. Quick-Hacks/Temporary
+*/
+
+/* 
+//------------//------------//------------
+    1. Global Styles
+//------------//------------//------------
+*/
+:root {
+    --navHeight: 50px;
+    --textColor700: hsl(37, 9%, 80%);
+    --textColor400: hsl(37, 19%, 97%);
+    --color700: #01080e;
+    --color400: hsl(210, 88%, 13%);
+    --colorDarkMode: #000;
+    --buttonPrimary: hsl(0, 0%, 90%);
+    --buttonSecondary: hsl(0, 0%, 80%);
+    --buttonText: hsl(0, 0%, 30%);
+    --pointScale: 1;
+    --mapScale: 1;
+    --pointHeight: 1;
+}
+
+h2::selection,
+h3::selection{
+    background: var(--color700);
+}
+
+::selection{
+    background: var(--color400);
+}
+
+.point,
+button{
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}
+
+button{
+    border: none;
+    background: none;
+    color: var(--textColor700);
+    outline: none;
+    box-shadow: none;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+
+    background-color: var(--buttonPrimary);
+    border: solid 2px var(--buttonSecondary);
+    color: var(--buttonText);
+}
+/* 
+//------------//------------//------------
+    2. Typography
+//------------//------------//------------
+*/
+html{
+    font-family: "Spiegel", Helvetica, sans-serif;
+    user-select: none;
+    color: white;
+}
+
+h2{
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+h3{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+h4{
+    font-size: .8rem;
+}
+
+#sidePanel{
+    user-select: text;
+}
+
+/* 
+//------------//------------//------------
+    3. Layout
+//------------//------------//------------
+*/
+html,
+body{
+    overflow: hidden;
+
+    background-color: rgb(25,25,25);
+
+    touch-action: none;
+    /* this is needed to prevent url collapse */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.mapContainer{
+    position: absolute;
+    top: var(--navHeight);
+    
+    height: calc(100% - var(--navHeight));
+    width: calc(100vw);
+
+    background-color: white;
+}
+
+/* 
+//------------//------------//------------
+    4. Components    
+//------------//------------//------------
+*/
+
+/* 
+//------------//------------
+    4.1 Side Panel
+//------------//------------
+*/
+#sidePanel{
+    z-index: 3;
+    position: absolute;
+    
+    /* 3rem is for mobile bottom button */
+    height: calc(100% - 3rem);
+    width: 100%;
+
+    background-color: var(--color700);
+    color: var(--textColor400);
+    
+    transition: 1s top;
+    touch-action: auto;
+    cursor: default;
+
+    white-space: pre-wrap;
+
+    top: 100%;
+    left: 0;
+}
+
+/* 
+//------------
+    4.11 Info Panel
+//------------
+*/
+#panelInfo{
+    position: absolute;
+    top: 0;
+
+    height: calc(100%);
+    width: calc(100% - 2 * 1rem);
+    padding: 0 1rem;
+
+    overflow: auto;
+}
+    #panelInfo::-webkit-scrollbar{
+        background-color: var(--color700);
+    }
+    #panelInfo::-webkit-scrollbar-track{
+        background-color: var(--textColor400);
+    }
+    #panelInfo::-webkit-scrollbar-thumb{
+        background-color: var(--color400);
+        border: 1px solid var(--textColor700);
+        border-radius: 25px;
+    }
+    #pointPanel .category:first-of-type{
+        background: linear-gradient(180deg, var(--color400),rgba(220,9,20,0));
+        margin: 0 -1rem;
+        padding: 1rem;
+    }
+
+/* 
+    4.11a Category
+*/
+.category{
+    padding: 2rem 0;
+    display: block;
+}
+    .category h2{
+        text-transform: uppercase;
+        text-shadow: -1px -1px 2px var(--color700), 1px -1px 2px var(--color700), -1px 1px 0px var(--color700), 1px 1px 0px var(--color700);
+        color: var(--textColor400);
+        text-align: center;
+
+        margin-bottom: .5rem;
+    }
+    .category h3{
+        background: linear-gradient(270deg, var(--color700), 20%, var(--color400), 80%, var(--color700));
+        margin: 0 -1rem;
+        padding: .5rem;
+        text-align: center;
+        
+        text-transform: uppercase;
+    }
+    .category h4{
+        color: var(--color400);
+        text-align: center;
+        padding: .2rem .6rem;
+        width: fit-content;
+        margin: 0 auto;
+
+        letter-spacing: 1px;
+
+        margin-bottom: 1.5rem;
+        background-color: var(--textColor400);
+        border-radius: .5rem;
+    }
+
+    .category p{
+        color: var(--textColor700);
+        line-height: 1.5rem;
+    }
+
+/* 
+    4.11b Divider
+*/
+.divider{
+    position: relative;
+    margin: 0 -1rem;
+}
+    .divider div:nth-of-type(1),
+    .divider div:nth-of-type(2)
+    {
+        width: 12px;
+        height: 12px;
+        border: solid 1px var(--color400);
+        background-color: var(--color700);
+        position: absolute;
+        transform: rotate(45deg);
+        top: -6px;
+    }
+    .divider div:nth-of-type(1){
+        left: 3rem;
+    }
+    .divider div:nth-of-type(2){
+        right: 1rem;
+    }
+    .divider div:nth-of-type(3){
+        border-top: solid 1px var(--color400);
+    }
+
+/* 
+//------------
+    4.12 Toggle Button
+//------------
+*/
+#sidePanelBtn{
+    z-index: 4;
+    position: absolute;
+
+    top: calc(-3rem);
+    left: calc(50% - 2.5rem);
+
+    width: 5rem;
+    height: 3rem;
+
+    border: none;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+
+    color: var(--textColor400);
+    background-color: var(--color400);
+
+    font-weight: 700;
+    font-size: 2rem;
+    cursor: pointer;
+}
+    #sidePanelBtn::before{
+        position: absolute;
+
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+
+        font-family: 'Font Awesome\ 5 Free';
+        content: "\f077";
+        
+        display: block;
+    }
+
+
+#bottomBtn{
+    height: 3rem;
+    width: 100%;
+    position: absolute;
+    bottom: -3rem;
+    left: 0;
+    
+    /* button */
+    background-color: var(--color400);
+    border: 2px solid var(--color700);
+    color: var(--textColor400);
+}
+    #bottomBtn::before{
+        font-size: 3rem;
+        position: absolute;
+
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+
+        font-family: 'FontAwesome';
+        content: "\f078";
+        
+        display: block;
+    }
+
+/* 
+//------------
+    4.13 Legend Panel
+//------------
+*/
+#legendPanel{
+    min-height: 100%;
+}
+    #legendPanel>div:first-of-type{
+        background: none;
+        border: none;
+        width: auto;
+        padding: .5rem;
+        text-align: center;
+        display: block;
+        margin-bottom: .5rem;
+    }
+    #legendPanel .category{
+        display: flex;
+
+        width: 100%;
+        padding: .5rem;
+        padding-left: 1rem;
+        border: var(--buttonText) 3px solid;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+        
+        background-color: var(--buttonSecondary);
+        color: black;
+    
+        text-align: left;
+    }
+    #legendPanel h2{
+
+        padding-top: 1rem;
+        margin-bottom: 0rem;
+
+        color: black;
+
+        font-weight: 900;
+        text-shadow: -1px -1px 2px white, 1px -1px 2px white, -1px 1px 0px white, 1px 1px 0px white;
+    }
+    #legendPanel h3{
+        flex: 100;
+
+        margin: 0 1rem;
+        padding: .5rem;
+
+        background: none;
+        
+        text-align: left;
+        font-weight: 700;
+    }
+    #legendPanel h4{
+        margin-bottom: 0;
+    }
+    #legendPanel .point{
+        position: relative;
+        
+        width: 35px;
+        height: 35px;
+        cursor: auto;
+
+        transform: scale(1) rotate(-45deg) translate(0, 0);
+    }
+
+/* 
+//------------//------------
+    4.2 Map
+//------------//------------
+*/
+.map{
+    z-index: 1;
+    position: absolute;
+
+    width: fit-content;
+
+    cursor: grab;
+}
+    .map img{
+        display: block;
+
+        height: 100%;
+        object-fit: cover;
+        transform: scale(var(--mapScale));
+
+        pointer-events: none;
+        -webkit-user-drag: none;
+    }
+
+/* 
+//------------//------------
+    4.3 Point
+//------------//------------
+*/
+#pointsContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(var(--mapScale));
+    height: 100%;
+    width: 100%;
+
+    --pointHeight: 1;
+}
+
+.point{
+    position: absolute;
+    /* --pointHeight is set by js, --scale is overridden by css classes */
+    height: calc(var(--pointHeight) * var(--pointScale) * 1px);
+    width: calc(var(--pointHeight) * var(--pointScale) * 1px);
+    
+    /* Makes it look like a pin */
+    border-radius: 50% 50% 50% 0;
+    background-color: var(--color400);
+    transform:  translate(-50%, -50%) rotate(-45deg);
+    z-index: 2;
+}   
+    /* circle in middle of point */
+    .point::after{
+        content: "";
+        position: absolute;
+        
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 50%;
+        width: 50%;
+        border-radius: 50%;
+        background: var(--color700);
+    }
+
+    .point::before{
+        content: "";
+    background-color: var(--color400);
+    opacity: .3;
+    width: 50%;
+    height: 50%;
+    border-radius: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    transform: translate(-50%, -50%) rotate(-45deg) scaleX(0.5);
+    }
+
+    .point:hover{
+        cursor: pointer;
+        z-index: 3;
+    }
+
+
+/* 
+//------------//------------
+    4.4 Tooltip
+//------------//------------
+*/
+.tooltip{
+    font-size: 2vh;
+    position : relative;
+
+    left: 100%;
+    top: 0;
+    transform-origin: 50% 100%;
+    /*scale because space between point and tooltip is based on height of point*/
+    /*scale is defined in parent .point div*/
+    transform: translate(calc(-50% - var(--pointScale)*.14vh), calc(-100% + var(--pointScale)*.14vh)) rotate(45deg) scale(calc( 1/(var(--mapScale)) + 1/(var(--mapScale)) ));
+    
+    white-space: nowrap;
+    width: fit-content;
+    padding: .2rem;
+    border-radius: .2rem;
+
+    background-color: var(--color700);
+    color: var(--textColor400);
+
+    visibility: hidden;
+    pointer-events: none;
+}
+    .point:hover .tooltip{
+        visibility: visible;
+    }
+
+
+
+/* 
+//------------//------------
+    4.5 Settings Bar
+//------------//------------
+*/
+#settingsBar{
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    height: calc(100% - .5rem *2);
+    
+    
+    margin: .5rem;
+    border-radius: .5rem;
+
+    pointer-events: none; 
+}
+    #settingsBar button{
+        height: 50px;
+        width: 50px;
+        font-size: 1.5rem;
+
+        padding: .5rem;
+        pointer-events: auto; 
+    }
+    #settingsBar button:active{
+        background-color: hsl(0, 0%, 70%);
+    }
+    #settingsBar button:nth-last-child(1){
+        border-bottom-left-radius: 0rem;
+        border-bottom-right-radius: 0rem;
+        border-top: solid 1px var(--buttonSecondary);
+    }
+    #settingsBar button:nth-last-child(2){
+        border-top-left-radius: 0rem;
+        border-top-right-radius: 0rem;
+        border-bottom: solid 1px var(--buttonSecondary);
+    }
+    
+    #nightModeBtn{
+        height: 50px;
+        width: 50px;
+        border-top: solid 1px var(--buttonSecondary);
+
+        margin-bottom: 1rem;
+
+        background-color: var(--buttonText);
+        color: hsl(0, 0%, 50%);
+    }
+        #nightModeBtn::before{
+            font-family: 'Font Awesome\ 5 Free';
+            content: "\f0eb";
+            position: absolute;
+            transform: translate(-50%, -50%);
+            display: inline-block;
+        }
+
+    #legend{
+        padding-left: 1rem;
+        border-bottom: solid 1px var(--buttonSecondary);
+    }
+        #legend .point{
+            position: unset;
+            width: 25px;
+            height: 25px;
+            
+            margin-left: 2.5px;
+            margin-top: -5px;
+
+            background-color: var(--buttonText);
+            /*Needed because of hidden points*/
+            transform: scale(1) rotate(-45deg);
+        }
+
+/* 
+//------------//------------//------------
+    5. State Classes
+//------------//------------//------------
+*/
+.grabbing{
+    cursor: grabbing;
+}
+
+.active{
+    top: 0 !important;
+}
+
+.transition{
+    transition: transform .5s;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+/* used in the legend when turning points on/off */
+.disabled h3{
+    position: relative;
+}
+   .disabled h3::before{
+        content: "";
+        position: absolute;
+        border: 3px solid #2c2c2c;
+        top: calc(50% - 3px);
+        margin-left: -10px;
+        width: 100%;
+    }
+
+/* Panel features */
+.panel-centered{
+    text-align: center;
+}
+.panel-smallTitle h2{
+    font-size: 1.5em;
+}
+/* 
+//------------//------------
+    5.1 Dark Mode
+//------------//------------
+*/
+.darkMode{
+    background-color: var(--colorDarkMode) !important;
+}
+    .darkMode img{
+        filter: brightness(1) invert(1);
+    }
+    .darkMode #pointsContainer{
+        filter: brightness(1) contrast(.9);
+    }
+    .darkMode #nightModeBtn{
+        border-color: var(--buttonSecondary);
+        background-color: var(--buttonPrimary);
+        color: hsl(0, 0%, 50%);
+    }
+        .darkMode #nightModeBtn::before{
+            font-weight: 900;
+        }
+    .darkMode .tooltip{
+        background-color: var(--buttonSecondary);
+        color: var(--color700);
+    }
+
+
+
+/* 
+//------------//------------//------------
+    6. Media Queries 
+//------------//------------//------------
+*/
+
+/* 
+===== 6.1 Phones > 350px ===== 
+*/
+@media(min-width: 22rem) {
+    h2{
+        font-size: 2.5rem;
+    }
+    
+    h3{
+        font-size: 1.5rem;
+    }
+
+    #panelInfo{
+        width: calc(100% - 2 * 2rem);
+        padding: 0 2rem;
+    }
+        #pointPanel .category:first-of-type{
+            margin: 0 -2rem;
+            padding: 2rem;
+        }
+    
+    .category h3{
+        margin: 0 -2rem;
+    }
+
+    .divider{
+        position: relative;
+        margin: 0 -2rem;
+    }
+}
+
+
+/* 
+===== 6.2 Tablet/Desktop ===== 
+*/
+@media(min-width: 33rem) {
+    h2{
+        font-size: 3rem;
+    }
+
+    h3{
+        font-size: 1.8rem;
+    }
+
+    #sidePanel{
+        top: 0;
+        left: 100%;
+
+        width: 30rem;
+        height: 100%;
+        
+        border-left: solid 3px var(--color400);
+
+        transition: 1s left;
+    }
+
+    #sidePanelBtn{
+        top: calc(50% - 2.5rem);
+        left: -3rem;
+
+        width: 3rem;
+        height: 5rem;
+
+        border-radius: 0;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+        #sidePanelBtn::before{
+            content: "\f053";
+        }
+
+    .active{
+        left: calc(100% - 30rem) !important;
+    }
+        .active #sidePanelBtn::before{
+            content: "\f054";
+        }
+
+    #bottomBtn{
+        display: none;
+    }
+
+    /* Rotate Settings Bar if it overlaps sidepanel tab*/
+    @media(max-height: 40rem) {
+        #settingsBar{
+            z-index: 2;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+        
+            height: calc(100% - .5rem *2);
+            
+        }
+        #nightModeBtn{
+            height: 50px;
+            width: 50px;
+    
+            margin-bottom: 0rem;
+            margin-right: 1rem;
+    
+            background-color: var(--buttonText);
+            color: hsl(0, 0%, 50%);
+
+            border: solid 2px var(--buttonSecondary);
+            border-left: solid 1px var(--buttonSecondary);
+        }
+
+        #settingsBar button:nth-last-child(1){
+            border: solid 2px var(--buttonSecondary);
+            border-left: solid 1px var(--buttonSecondary);
+        }
+        #settingsBar button:nth-last-child(2){
+            border: solid 2px var(--buttonSecondary);
+            border-right: solid 1px var(--buttonSecondary);
+        }
+        
+        #legend{
+            padding-left: 1rem;
+            border: solid 2px var(--buttonSecondary);
+            border-left: solid 1px var(--buttonSecondary);
+        }
+    }
+}
+
+
+/* 
+    0. Quick-Hacks/Temporary
+*/
+
