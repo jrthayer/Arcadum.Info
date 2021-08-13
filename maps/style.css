@@ -231,6 +231,7 @@ body{
         text-align: center;
         padding: .2rem .6rem;
         width: fit-content;
+        width: -moz-fit-content;
         margin: 0 auto;
 
         letter-spacing: 1px;
@@ -415,6 +416,7 @@ body{
     position: absolute;
 
     width: fit-content;
+    width: -moz-fit-content;
 
     cursor: grab;
 }
@@ -508,6 +510,7 @@ body{
     
     white-space: nowrap;
     width: fit-content;
+    width: -moz-fit-content;
     padding: .2rem;
     border-radius: .2rem;
 
