@@ -1,0 +1,10 @@
+{
+    "name": "lostAtSea",
+    "description": "This story follows a ship traveling from Kalkatesh to the eastern continent of Glies during the short window of safe passage while the leviathans slumber. What adventure awaits in Glies for these would-be heroes?",
+    "showImage": "../assets/imgs/showBanners/LostAtSea.png",
+    "iconImage": "../assets/imgs/icons/lostAtSeaIcon.png",
+    "color700": "#28383e",
+    "color400": "#51717b",
+    "twitchCollection": "https://www.twitch.tv/videos/985769593?collection=thNtHcdYdRajYg",
+    "youtubeCollection": "https://www.youtube.com/playlist?list=PLfASEnzB7i1YWMCoomudxDc9jQT3bOR2G"
+}

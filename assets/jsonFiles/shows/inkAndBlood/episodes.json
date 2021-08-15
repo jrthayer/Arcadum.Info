@@ -1,0 +1,76 @@
+{
+    "name": "Ink And Blood",
+    "episodeImageFolder": "assets/imgs/episodeImgs/chapter%201/inkAndBlood",
+    "episodeInfo": [
+        {
+            "airDate": "",
+            "duration": "",
+            "imgArtist": "",
+            "youtube": "",
+            "twitch": "",
+            "fanArtDiscord": "",
+            "fanArtTwitch": "",
+            "summary": ""
+        },
+        {
+            "airDate": "4/12/2021",
+            "duration": "N/A",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/831238026168238191",
+            "youtube": "",
+            "twitch": "",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/831201348225073162",
+            "fanArtTwitch": "",
+            "summary": ""
+        },
+        {
+            "airDate": "6/14/2021",
+            "duration": "3:03:11",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/854081958556467251",
+            "youtube": "https://www.youtube.com/watch?v=CGLewojglsc&list=PLfASEnzB7i1ZgXhsttfqrvRKcM3rTqwm1&index=1",
+            "twitch": "https://www.twitch.tv/videos/1060951404?collection=9X5H9mjziRbRKg",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/854037007012593694",
+            "fanArtTwitch": "https://www.twitch.tv/videos/1060951404?collection=9X5H9mjziRbRKg&t=2h48m53s",
+            "summary": "https://www.reddit.com/r/cadum/comments/o4vpvw/verum_weekly_summaries_of_the_streamed_games_of/"
+        },
+        {
+            "airDate": "6/21/2021",
+            "duration": "2:50:36",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/856618879505661983",
+            "youtube": "https://www.youtube.com/watch?v=hLpIX7Rkxpo&list=PLfASEnzB7i1ZgXhsttfqrvRKcM3rTqwm1&index=2",
+            "twitch": "https://www.twitch.tv/videos/1068797360?collection=9X5H9mjziRbRKg",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/856571370112286720",
+            "fanArtTwitch": "",
+            "summary": "https://www.reddit.com/r/cadum/comments/o9piwm/verum_weekly_summary_of_streamed_games_of_the/"
+        },
+        {
+            "airDate": "6/28/2021",
+            "duration": "2:58:23",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/859131524968349737",
+            "youtube": "https://www.youtube.com/watch?v=LEHRuIROuHs&list=PLfASEnzB7i1ZgXhsttfqrvRKcM3rTqwm1&index=3",
+            "twitch": "https://www.twitch.tv/videos/1077126145?collection=9X5H9mjziRbRKg",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/859104771507617793",
+            "fanArtTwitch": "https://www.twitch.tv/videos/1077126145?collection=9X5H9mjziRbRKg&t=2h35m17s",
+            "summary": "https://www.reddit.com/r/cadum/comments/oe7cmx/verum_weekly_summaries_of_streamed_games_of_the/"
+        },
+        {
+            "airDate": "7/19/2021",
+            "duration": "3:25:14",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/866750890076930078",
+            "youtube": "https://www.youtube.com/watch?v=mG_127_rYzE&list=PLfASEnzB7i1ZgXhsttfqrvRKcM3rTqwm1&index=4&ab_channel=Arcadum",
+            "twitch": "https://www.twitch.tv/videos/1099556096?collection=9X5H9mjziRbRKg",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/866722844821946419",
+            "fanArtTwitch": "https://www.twitch.tv/videos/1099556096?collection=9X5H9mjziRbRKg&t=2h58m25s",
+            "summary": "https://www.reddit.com/r/cadum/comments/os4fq2/verum_weekly_summaries_of_streamed_games_of_the/"
+        },
+        {
+            "airDate": "8/2/2021",
+            "duration": "2:51:50",
+            "imgArtist": "",
+            "youtube": "https://www.youtube.com/watch?v=BLyr4yjFlxk&list=PLfASEnzB7i1ZgXhsttfqrvRKcM3rTqwm1&index=5&ab_channel=Arcadum",
+            "twitch": "",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/871795765306089502",
+            "fanArtTwitch": "",
+            "summary": ""
+        }
+    ]
+}

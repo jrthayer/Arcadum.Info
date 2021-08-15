@@ -1,0 +1,10 @@
+{
+    "name": "aStormApproaches",
+    "description": "A call is sent out by a member of the TOPS for adventurers to aid him in recording a bardic adventurer's tale. Tasked with investigating the fortress of Soma and finding out who the Storm Warriors are, what awaits our would-be heroes?",
+    "showImage": "../assets/imgs/showBanners/AStormApproaches.png",
+    "iconImage": "",
+    "color700": "#46375b",
+    "color400": "#aa88c7",
+    "twitchCollection": "https://www.twitch.tv/videos/1068800502?collection=Qpgs8ONIjBYpvA",
+    "youtubeCollection": "https://www.youtube.com/playlist?list=PLfASEnzB7i1Y3u9kuzc3dvmmJHbe7ppTZ"
+}

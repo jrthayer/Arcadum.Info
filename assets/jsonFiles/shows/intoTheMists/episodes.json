@@ -1,0 +1,116 @@
+{
+    "name": "Into The Mists",
+    "episodeImageFolder": "assets/imgs/episodeImgs/prologue/intoTheMists",
+    "episodeInfo": [
+        {
+            "airDate": "",
+            "duration": "",
+            "imgArtist": "",
+            "youtube": "",
+            "twitch": "",
+            "fanArtDiscord": "",
+            "fanArtTwitch": "",
+            "summary": "" 
+        },
+        {
+            "airDate": "",
+            "duration": "",
+            "imgArtist": "",
+            "youtube": "",
+            "twitch": "",
+            "fanArtDiscord": "",
+            "fanArtTwitch": "",
+            "summary": ""
+        },
+        {
+            "airDate": "4/10/2021",
+            "duration": "3:10:04",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/830555637665890314",
+            "youtube": "https://www.youtube.com/watch?v=ZAHSAMvsK1w&list=PLfASEnzB7i1Ydqqd5cl8-S-bTgQH_zGr2&index=1&ab_channel=ArcadumArcadum",
+            "twitch": "https://www.twitch.tv/videos/983277093?collection=RZRRoj2tdBZlgQ",
+            "fanArtDiscord": "https://discordapp.com/channels/164927564354289665/716723358682710118/830516077229375510",
+            "fanArtTwitch": "https://www.twitch.tv/videos/983277093?collection=RZRRoj2tdBZlgQ&t=2h49m48s"
+            ,"summary": "https://www.reddit.com/r/cadum/comments/mtghp8/verum_weekly_summary_of_streamed_games_of_the/"
+        },
+        {
+            "airDate": "4/17/2021",
+            "duration": "2:29:15",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/833090239740379256",
+            "youtube": "https://www.youtube.com/watch?v=rbwE94-VJeY&list=PLfASEnzB7i1Ydqqd5cl8-S-bTgQH_zGr2&index=2&ab_channel=ArcadumArcadum",
+            "twitch": "https://www.twitch.tv/videos/991847100?collection=RZRRoj2tdBZlgQ",
+            "fanArtDiscord": "https://discordapp.com/channels/164927564354289665/716723358682710118/833046643019350057",
+            "fanArtTwitch": "https://www.twitch.tv/videos/991847100?collection=RZRRoj2tdBZlgQ&t=2h10m15s"
+            ,"summary": "https://www.reddit.com/r/cadum/comments/myb38z/verum_weekly_summary_of_streamed_games_of_the/"
+        },
+        {
+            "airDate": "4/24/2021",
+            "duration": "2:57:54",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/835624897367244820",
+            "youtube": "https://www.youtube.com/watch?v=U9w7xoYWFEI&list=PLfASEnzB7i1Ydqqd5cl8-S-bTgQH_zGr2&index=3&ab_channel=ArcadumArcadum",
+            "twitch": "https://www.twitch.tv/videos/1000184006?collection=RZRRoj2tdBZlgQ",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/835583471120023623",
+            "fanArtTwitch": "https://www.twitch.tv/videos/1000184006?collection=RZRRoj2tdBZlgQ&t=2h42m10s"
+            ,"summary": "https://www.reddit.com/r/cadum/comments/n39b20/verum_weekly_summaries_of_streamed_games_of_the/"
+        },
+        {
+            "airDate": "5/1/2021",
+            "duration": "2:54:52",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/838161646903230504",
+            "youtube": "https://www.youtube.com/watch?v=aL_VbSPjtwU&list=PLfASEnzB7i1Ydqqd5cl8-S-bTgQH_zGr2&index=4",
+            "twitch": "https://www.twitch.tv/videos/1008447693?collection=RZRRoj2tdBZlgQ",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/838125238356803586",
+            "fanArtTwitch": "https://www.twitch.tv/videos/1008447693?collection=RZRRoj2tdBZlgQ&t=2h36m54s"
+            ,"summary": "https://www.reddit.com/r/cadum/comments/n8ihmr/verum_weekly_summaries_of_the_streamed_games_of/"
+        },
+        {
+            "airDate": "5/8/2021",
+            "duration": "1:42:56",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/840683091840204821",
+            "youtube": "https://www.youtube.com/watch?v=r4OaGvhfc_Q&list=PLfASEnzB7i1Ydqqd5cl8-S-bTgQH_zGr2&index=5&ab_channel=ArcadumArcadum",
+            "twitch": "https://www.twitch.tv/videos/1019234984?collection=RZRRoj2tdBZlgQ",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/840663612741517312",
+            "fanArtTwitch": ""
+            ,"summary": "https://www.reddit.com/r/cadum/comments/ndrz0b/verum_weekly_summary_of_streamed_games_of_the/"
+        },
+        {
+            "airDate": "5/15/2021",
+            "duration": "3:10:24",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/843244318545936434",
+            "youtube": "https://www.youtube.com/watch?v=pfdiafmf1a0&list=PLfASEnzB7i1Ydqqd5cl8-S-bTgQH_zGr2&index=6&ab_channel=ArcadumArcadum",
+            "twitch": "https://www.twitch.tv/videos/1025654197?collection=RZRRoj2tdBZlgQ",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/843203348990525470",
+            "fanArtTwitch": "https://www.twitch.tv/videos/1025654197?collection=RZRRoj2tdBZlgQ&t=2h45m53s"
+            ,"summary": "https://www.reddit.com/r/cadum/comments/nj9wqw/verum_weekly_summary_of_streamed_games_of_the/"
+        },
+        {
+            "airDate": "5/29/2021",
+            "duration": "4:36:49",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/848312508346531841",
+            "youtube": "https://www.youtube.com/watch?v=98jPRYCzxNI&list=PLfASEnzB7i1Ydqqd5cl8-S-bTgQH_zGr2&index=7&ab_channel=ArcadumArcadum",
+            "twitch": "https://www.twitch.tv/videos/1041302373?collection=RZRRoj2tdBZlgQ",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/848254819150987275",
+            "fanArtTwitch": "https://www.twitch.tv/videos/1041302373?collection=RZRRoj2tdBZlgQ&t=4h12m20s"
+            ,"summary": "https://www.reddit.com/r/cadum/comments/nuckmo/verum_weekly_summary_of_streamed_games_of_the/"
+        },
+        {
+            "airDate": "5/30/2021",
+            "duration": "4:20:27",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/849751723550834739",
+            "youtube": "https://www.youtube.com/watch?v=KEnNsbrKX2o&list=PLfASEnzB7i1Ydqqd5cl8-S-bTgQH_zGr2&index=8",
+            "twitch": "https://www.twitch.tv/videos/1041302935?collection=RZRRoj2tdBZlgQ",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/848690755865280512",
+            "fanArtTwitch": "https://www.twitch.tv/videos/1041302935?collection=RZRRoj2tdBZlgQ&t=4h7m3s"
+            ,"summary": "https://www.reddit.com/r/cadum/comments/nuckmo/verum_weekly_summary_of_streamed_games_of_the/"
+        },
+        {
+            "airDate": "6/02/2021",
+            "duration": "3:28:13",
+            "imgArtist": "https://discord.com/channels/164927564354289665/716723358682710118/849789021575970826",
+            "youtube": "https://www.youtube.com/watch?v=CUck2-KjeiI&list=PLfASEnzB7i1Ydqqd5cl8-S-bTgQH_zGr2&index=9",
+            "twitch": "https://www.twitch.tv/videos/1047424785?collection=RZRRoj2tdBZlgQ",
+            "fanArtDiscord": "https://discord.com/channels/164927564354289665/716723358682710118/849748253667098634",
+            "fanArtTwitch": "https://www.twitch.tv/videos/1047424785?collection=RZRRoj2tdBZlgQ&t=3h12m4s"
+            ,"summary": "https://www.reddit.com/r/cadum/comments/nuckmo/verum_weekly_summary_of_streamed_games_of_the/"
+        }
+    ]
+}
