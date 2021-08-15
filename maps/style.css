@@ -32,7 +32,8 @@
 //------------//------------//------------
 */
 :root {
-    --navHeight: 50px;
+    --navHeight: 0px;
+    --textColor: hsl(37, 19%, 97%);
     --textColor700: hsl(37, 9%, 80%);
     --textColor400: hsl(37, 19%, 97%);
     --color700: #01080e;

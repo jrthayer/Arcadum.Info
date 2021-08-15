@@ -1,3 +1,27 @@
+//------------//------------//------------//------------//------------
+//      TABLE OF CONTENTS
+//------------//------------//------------//------------//------------
+//      1. Initialization
+//          1.1 Global Data Structures
+//          1.2 Intialize Components
+//      2. Features
+//          2.1 Time Conversion
+//          2.2 Type Conversion
+//          2.3 Next Show
+//          2.4 Dynamic Styling
+//      3. Html Generators
+//      4. Helper Functions
+//------------//------------//------------//------------//------------
+
+
+//------------//------------//------------//------------
+//      1. Initialization
+//------------//------------//------------//------------
+
+
+//------------//------------//------------ 
+//  1.1 Global Data Structures 
+//------------//------------//------------
 // var utcTimes = [
 //     [[1380, "Update Stream!!"]],
 //     [[1020, "Ink And Blood"],[1320, "The Final Toll"]],
@@ -16,7 +40,7 @@ var utcTimes = [
     [[1440, "Servants Of The Spire"]], 
     [[1080, "The Divine Wind"]], 
     [[1260, "Otikata's Curse"]],
-    []];  
+    []];   
 
 var convertedTimes = [
 [],
@@ -42,25 +66,27 @@ var showColors = {
     servantsOfTheSpire: "#1a1a1a"
 };
 
-//Initialization Functions
-//================================
+//------------//------------//------------
+//  1.2 Intialize Components
+//------------//------------//------------
+
 
 //Convert utcTimes to local times 
 //for loop for each day
-for(var x = 0; x < utcTimes.length; x++){
+for(let x = 0; x < utcTimes.length; x++){
     let utcDay = utcTimes[x];
 
     //for loop for each show of day x
-    for(var y = 0; y < utcDay.length; y++){
+    for(let y = 0; y < utcDay.length; y++){
         let utcShow = utcDay[y];
 
         //show name
-        var showName = utcShow[1];
+        let showName = utcShow[1];
 
         //local show time and day difference
-        var timeArray = localConvert(utcShow[0]);
-        var showTime = timeArray[0];
-        var showDay = timeArray[1] + x;
+        let timeArray = localConvert(utcShow[0]);
+        let showTime = timeArray[0];
+        let showDay = timeArray[1] + x;
 
         //accounts for timezones day before or after utc
         if(showDay > 6){
@@ -72,8 +98,8 @@ for(var x = 0; x < utcTimes.length; x++){
         
         //go through the shows already placed on this day and determines if
         //the show being added is before or after
-        var inserted = false;
-        for(var z = 0; z < convertedTimes[showDay].length; z++){
+        let inserted = false;
+        for(let z = 0; z < convertedTimes[showDay].length; z++){
             let arrayElementShowTime = convertedTimes[showDay][z][0];
             
             // Checks if currentShow being inserted is before existing show time
@@ -85,7 +111,7 @@ for(var x = 0; x < utcTimes.length; x++){
         }
 
         //check if show is last show of the day
-        if(inserted == false){
+        if(inserted === false){
             convertedTimes[showDay].push([showTime, showName]);
         }
     }
@@ -93,14 +119,31 @@ for(var x = 0; x < utcTimes.length; x++){
 
 //create show schedule with local times
 createSchedule();
+
 //start countdown till next show
-nextShowInit();
-window.addEventListener('focus', () => displayShow(nextShow()));
+let countdownData = nextShow();
+window.setInterval(
+    function(){
+        if(displayShow(countdownData) == "00s"){
+            countdownData = nextShow();
+        }
+    } , 1000);
+
+window.addEventListener('focus', () => countdownData = nextShow());
+
+//------------//------------//------------//------------
+//      2. Features
+//------------//------------//------------//------------
+
+//------------//------------//------------
+//  2.1 Time Conversion
+//------------//------------//------------
 
 // Functions
 //================================
 
 //Info: Converts shows into local timezone(in minutes)
+//------------
 //Parameters:
 //  +index = represents day of show 
 //  +utcTime = utc time in minutes being converted
@@ -130,55 +173,12 @@ function localConvert(utcTime){
     return convertedTime;
 }
 
-//Info: Dynamically creates html for the show schedule
-function createSchedule(){
-    var container = document.getElementById("schedule");
-    var header = document.createElement('h1');
-    header.innerHTML = 'Schedule';
-    container.appendChild(header);
-
-    for(var x = 0; x < convertedTimes.length; x++){
-        if(convertedTimes[x].length>=1){
-            var dayHTML = createDay(x, convertedTimes[x]);
-            container.appendChild(dayHTML);
-        }
-    }
-}
-
-//Info: Creates html element of individual day
-//Parameters:
-//  +day = int representing day created
-//  +games = array of games for that day
-//Return:
-//  +html element of day created
-function createDay(day, games){
-    var row = document.createElement('div');
-    row.classList.add("row");
-    var label = document.createElement('div');
-    label.classList.add("label");
-    label.innerHTML = convertToDay(day);
-    var data = document.createElement('div');
-    data.classList.add("data");
-    row.appendChild(label);
-    row.appendChild(data);
-
-    
-    for(var x = 0; x < games.length; x++){
-        var game = document.createElement('div');
-        game.classList.add('gameInfo');
-        let gameName = document.createElement('div');
-        gameName.innerHTML = games[x][1];
-        let gameTime = document.createElement('div');
-        gameTime.innerHTML = convertToTime(games[x][0]);
-        game.appendChild(gameName);
-        game.appendChild(gameTime);
-        data.appendChild(game);
-    }
-
-    return row;
-}
+//------------//------------//------------
+//  2.2 Type Conversion
+//------------//------------//------------
 
 //Info: Converts minutes into am/pm format
+//------------
 //Parameters:
 //  +minutes = int representing minutes
 //Return:
@@ -215,8 +215,10 @@ function convertToTime(minutes){
 }
 
 //Info: Converts int of day into string
+//------------//------------
 //Parameters:
 //  +index = int representing day
+//------------
 //Return:
 //  +day in string format
 function convertToDay(index){
@@ -250,107 +252,153 @@ function convertToDay(index){
     return day; 
 }
 
-function nextShowInit(){
-    let showInfo = nextShow();
+//Info: Converts minutes into countdown display
+//------------//------------
+//Parameters:
+//  +minutes = int representing minutes
+//------------
+//Return:
+//  +display as a string value
+function convertToCount(minutes){
+    let curSec = new Date().getSeconds();
+    let hours = Math.floor(minutes/60);
+    let min = minutes - hours*60;
+    min = min - 1;
 
-    window.setInterval(
-        function(){
-            if(displayShow(showInfo) == "00s"){
-                showInfo = nextShow();
-            }
-        } , 1000);
-}
+    if(min == -1){
+        hours = hours -1;
+        min = 59;
+    }
+    
+    let sec = 59 - curSec;
 
-function nextShow(){
-    var found = false;
-    var nextName = document.getElementById('showName');
-    var showName;
-    var showInfo = [0,0];
-
-    var time = new Date();
-    var day = time.getDay();
-    var minutes = time.getMinutes() + time.getHours() * 60;
-
-    //need to determine incase shows have already passed on this day
-    for(var x = 0; x < convertedTimes[day].length; x++){
-        //+1 ensures that next show runs at 0
-        if(minutes+1 < convertedTimes[day][x][0]){
-            showName = convertedTimes[day][x][1];
-            nextName.innerHTML = showName;
-            
-            let showNameFormatted = showName.replace(/\s/g, '');
-            showNameFormatted = showNameFormatted.replace('\'', '');
-            showNameFormatted = showNameFormatted[0].toLowerCase() + showNameFormatted.substring(1);
-            
-            changeBackground(showNameFormatted);
-            changeNavColor(showNameFormatted);
-
-            found = true;
-            showInfo[0] = day;
-            showInfo[1] = x;
-            break;
+    //format hours, min, and sec values
+    if(min<10){
+        if(hours != "0"){
+            min = "0"+min;
         }
     }
 
-    //next show is on a different day
-    if(found == false){
-        // mintuesTill = 1440 - minutes;
+    if(sec<10){
+        sec = "0"+sec;
+    }
 
-        for(var x = 1; x < 7; x++){
-            //check next day
-            let curDay = day + x;
-            
-            if(curDay > 6){
-                curDay = curDay - 7;
+    //create display string
+    let display;
+    if(hours < 1){
+        if(min == "00"){
+            display = sec+"s";
+        }
+        else{
+            display = min+":"+sec;
+        }
+    }
+    else{
+        display = hours+":"+min+":"+sec;
+    }
+    return display;
+}
+
+//------------//------------//------------
+//  2.3 Next Show
+//------------//------------//------------
+
+//Info: determines the next show on the schedule
+//------------
+//Return:
+//  +an array with:
+//      +index 0: int value of the day of the show;
+//      +index 1: index of show that day;
+function nextShow(){
+    let found = false;
+    let nextName = document.getElementById('showName');
+    let showName;
+    let showInfo = [0,0];
+
+    let time = new Date();
+    let day = time.getDay();
+    let minutes = time.getMinutes() + time.getHours() * 60;
+
+    let loopNum = 0;
+    while(found !== true){
+        let curDay = day + loopNum;
+        
+        //accounts for being greater than sun === 6
+        if(curDay > 6) curDay = curDay - 7;
+        
+        //have to check all shows of current day
+        if(loopNum === 0){
+            for(let x = 0; x < convertedTimes[curDay].length; x++){
+                //+1 ensures that next show runs at 0
+                if(minutes + 1 < convertedTimes[curDay][x][0]){
+                    showName = convertedTimes[curDay][x][1];
+                    showInfo[0] = curDay;
+                    showInfo[1] = x;
+
+                    found = true;
+                    break;
+                }
             }
-            
+        }
+        else{
+            //if next show is on another day it will be the first show of that day
             if(convertedTimes[curDay].length > 0){
                 showName = convertedTimes[curDay][0][1];
-                nextName.innerHTML = showName;
-
-                let showNameFormatted = showName.replace(/\s/g, '');
-                showNameFormatted = showNameFormatted.replace('\'', '');
-                showNameFormatted = showNameFormatted[0].toLowerCase() + showNameFormatted.substring(1);
-                changeBackground(showNameFormatted);
-                changeNavColor(showNameFormatted);
-
-                found = true;
-
                 showInfo[0] = curDay;
                 showInfo[1] = 0;
-            }
 
-            if(found){
+                found = true;
                 break;
             }
         }
+
+        loopNum++;
+        if(loopNum >= 7) break;
     }
 
+    //found no shows, only happens when there is only one show and it already occured today
     if(found === false){
-        showName = convertedTimes[day][0][1];
-        nextName.innerHTML = showName;
-
-        let showNameFormatted = showName.replace(/\s/g, '');
-        showNameFormatted = showNameFormatted.replace('\'', '');
-        showNameFormatted = showNameFormatted[0].toLowerCase() + showNameFormatted.substring(1);
-        changeBackground(showNameFormatted);
-
-        found = true;
-        showInfo[0] = day;
-        showInfo[1] = 0;
+        
     }
+    
+    //adjust html values and styling
+    //this should probably not be in this function
+    nextName.innerHTML = showName;
+    let showNameFormatted = showName.replace(/\s/g, '');
+    showNameFormatted = showNameFormatted.replace('\'', '');
+    showNameFormatted = showNameFormatted[0].toLowerCase() + showNameFormatted.substring(1);
+    changeBackground(showNameFormatted);
+    changeNavColor(showNameFormatted);
     
     return showInfo;
 }
 
+//Info: Determines the number of minutes till next show
+//------------//------------
+//Parameters:
+//  +an array with:
+//      +index 0: int value of the day of the show;
+//      +index 1: index of show that day;
+//------------
+//Return:
+//  +display value that countdown has been set to
 function displayShow(showInfo){
     let minutes = mintuesTill(showInfo);
-    var countdown = document.getElementById('cdDisplay');
+    let countdown = document.getElementById('cdDisplay');
     let countdownMinutes = convertToCount(minutes);
     countdown.innerHTML = countdownMinutes;
     return countdownMinutes;
 }
 
+//Info: Determines the number of minutes till next show
+//------------//------------
+//Parameters:
+//  +an array with:
+//      +index 0: int value of the day of the show;
+//      +index 1: index of show that day;
+//------------
+//Return:
+//  +minutes till show on schedule as an int
 function mintuesTill(showInfo){
     let mintuesTill = 0;
     let showDay = showInfo[0];
@@ -362,7 +410,7 @@ function mintuesTill(showInfo){
     //minutes in this day
     var minutes = time.getMinutes() + time.getHours() * 60;
 
-    if(day == showInfo[0]){
+    if(day === showInfo[0]){
         //check if next show has already happened today
         //edge case for only have one show in the schedule
         if(minutes > convertedTimes[day][showInstance][0]){
@@ -377,6 +425,7 @@ function mintuesTill(showInfo){
             mintuesTill = mintuesTill + convertedTimes[showDay][showInstance][0];
         }
         else{
+            console.log(`minutes: ${minutes}, showInMins: ${convertedTimes[day][showInstance][0]}`);
             mintuesTill = convertedTimes[day][showInstance][0] - minutes;
         }
     }
@@ -404,78 +453,95 @@ function mintuesTill(showInfo){
     return mintuesTill;
 }
 
-function convertToCount(minutes){
-    var time = new Date();
-    var hours = Math.floor(minutes/60);
-    var min = minutes - hours*60;
 
-    if(hours < 1){
-        hours = "0";
-    }
+//------------//------------//------------
+//  2.4 Dynamic Styling
+//------------//------------//------------
 
-    min = min - 1;
-    if(min == -1){
-        hours = hours -1;
-        min = 59;
-    }
-    var sec = 59 - time.getSeconds();
-
-    if(min<10){
-        if(hours != "0"){
-            min = "0"+min;
-        }
-    }
-
-    if(sec<10){
-        sec = "0"+sec;
-
-        if(sec ==="00"){
-            minutes--;
-        }
-    }
-
-    var time;
-    if(hours == "0"){
-        if(min == "00"){
-            time = sec+"s";
-        }
-        else{
-            time = min+":"+sec;
-        }
-    }
-    else{
-        time = hours+":"+min+":"+sec;
-    }
-    return time;
-}
-
-//Changes background image of the body element
-//======================================
-//Parameters
-//+showName = name of show for the background
+//Info: Changes background image of the body element
+//------------
+//Parameters:
+//  +showName = name of show for the background
 function changeBackground(showName){
-    var body = document.querySelector('body');
-    var newBackground = "url(./assets/imgs/backgrounds/bg-"+showName+".png)"; 
+    let body = document.querySelector('body');
+    let newBackground = "url(./assets/imgs/backgrounds/bg-"+showName+".png)"; 
     body.style.backgroundImage = newBackground;
 }
 
-// NavBar Functions
-function changeNavColor(name){
+//Info: Changes navbar styling values
+//------------
+//Parameters:
+//  +showName = name of show for the background
+function changeNavColor(showName){
     var root = document.querySelector(":root");
     
     //Check if showColors has a color or not. 
     //Default to black if there it is undefined. 
-    if(typeof showColors[name] !== 'undefined'){
-        root.style.setProperty('--color700', showColors[name]);
+    if(typeof showColors[showName] !== 'undefined'){
+        root.style.setProperty('--color700', showColors[showName]);
     }
     else{
         root.style.setProperty('--color700', '#0b0211');
     }
     
-    if(name === "callousRow"){
+    if(showName === "callousRow"){
         root.style.setProperty('--textColor', "#e416fb");
     }
     else{
         root.style.setProperty('--textColor', "#fff");
     }
+}
+
+// ======================================
+//     3. Html Generators
+// ======================================
+
+//Info: Dynamically creates html for the show schedule
+function createSchedule(){
+    var container = document.getElementById("schedule");
+    var header = document.createElement('h1');
+    header.innerHTML = 'Schedule';
+    container.appendChild(header);
+
+    for(var x = 0; x < convertedTimes.length; x++){
+        if(convertedTimes[x].length>=1){
+            var dayHTML = createDay(x, convertedTimes[x]);
+            container.appendChild(dayHTML);
+        }
+    }
+}
+
+//Info: Creates html element of individual day
+//------------//------------
+//Parameters:
+//  +day = int representing day created
+//  +games = array of games for that day
+//------------
+//Return:
+//  +html element of day created
+function createDay(day, games){
+    var row = document.createElement('div');
+    row.classList.add("row");
+    var label = document.createElement('div');
+    label.classList.add("label");
+    label.innerHTML = convertToDay(day);
+    var data = document.createElement('div');
+    data.classList.add("data");
+    row.appendChild(label);
+    row.appendChild(data);
+
+    
+    for(var x = 0; x < games.length; x++){
+        var game = document.createElement('div');
+        game.classList.add('gameInfo');
+        let gameName = document.createElement('div');
+        gameName.innerHTML = games[x][1];
+        let gameTime = document.createElement('div');
+        gameTime.innerHTML = convertToTime(games[x][0]);
+        game.appendChild(gameName);
+        game.appendChild(gameTime);
+        data.appendChild(game);
+    }
+
+    return row;
 }
