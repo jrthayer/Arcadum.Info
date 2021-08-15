@@ -320,6 +320,8 @@ function nextShow(){
     let minutes = time.getMinutes() + time.getHours() * 60;
 
     let loopNum = 0;
+    let showDay = 0;
+    let showInstance = 0;
     while(found !== true){
         let curDay = day + loopNum;
         
@@ -331,9 +333,8 @@ function nextShow(){
             for(let x = 0; x < convertedTimes[curDay].length; x++){
                 //+1 ensures that next show runs at 0
                 if(minutes + 1 < convertedTimes[curDay][x][0]){
-                    showName = convertedTimes[curDay][x][1];
-                    showInfo[0] = curDay;
-                    showInfo[1] = x;
+                    showDay = curDay;
+                    showInstance = x;
 
                     found = true;
                     break;
@@ -343,9 +344,8 @@ function nextShow(){
         else{
             //if next show is on another day it will be the first show of that day
             if(convertedTimes[curDay].length > 0){
-                showName = convertedTimes[curDay][0][1];
-                showInfo[0] = curDay;
-                showInfo[1] = 0;
+                showDay = curDay;
+                showInstance = 0;
 
                 found = true;
                 break;
@@ -358,12 +358,18 @@ function nextShow(){
 
     //found no shows, only happens when there is only one show and it already occured today
     if(found === false){
-        
+        showDay = day;
+        showInstance = 0;
     }
     
     //adjust html values and styling
     //this should probably not be in this function
+    showInfo[0] = showDay;
+    showInfo[1] = showInstance;
+    showName = convertedTimes[showDay][showInstance][1];
     nextName.innerHTML = showName;
+
+
     let showNameFormatted = showName.replace(/\s/g, '');
     showNameFormatted = showNameFormatted.replace('\'', '');
     showNameFormatted = showNameFormatted[0].toLowerCase() + showNameFormatted.substring(1);
