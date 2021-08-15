@@ -431,11 +431,15 @@ body{
         flex: 1;
     }
     .subSection a{
+        display: flex;
         font-size: 1rem;
         align-self: center;
         text-align: center;
         padding: .5em;
     }
+        .subSection a::after{
+            align-self: center;
+        }
 
     .icon-youtube:after{
         content: "YouTube";

@@ -3,7 +3,7 @@
 //index of current show in each section
 var showIndex = [];
 //url of json structure
-let url = "../assets/jsonFiles/";
+let url = "../assets/jsonFiles/shows/";
 // let baseInfoURL = "../assets/jsonFiles/prologue/shrineOfSin/info.json";
 // let episodesURL = "../assets/jsonFiles/prologue/shrineOfSin/episodes.json";
 let baseInfoURL;
@@ -18,8 +18,8 @@ let campaignInfo = new Array(files);
 window.onload = function(){
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-    baseInfoURL = url+urlParams.get('chapter')+"/"+urlParams.get('campaign')+"/info.json"
-    episodesURL = url+urlParams.get('chapter')+"/"+urlParams.get('campaign')+"/episodes.json"
+    baseInfoURL = url+urlParams.get('name')+"/info.json";
+    episodesURL = url+urlParams.get('name')+"/episodes.json";
 
     loadJsonInfo(baseInfoURL, campaignInfo, 0);
     loadJsonInfo(episodesURL, campaignInfo, 1);
@@ -72,7 +72,7 @@ function generatePage(){
     container.appendChild(header);
 
     //create episodes section
-    let episodeSection = createEpisodeSection(campaignInfo[1]);
+    let episodeSection = createEpisodeSection(campaignInfo[0], campaignInfo[1]);
     container.appendChild(episodeSection);
 }
 
@@ -104,7 +104,7 @@ function createHeader(headerInfo){
     return section;
 }
 
-function createEpisodeSection(episodeInfo){
+function createEpisodeSection(showInfo, episodeInfo){
     let section = document.createElement('div');
     section.classList.add('section');
 
@@ -128,14 +128,11 @@ function createEpisodeSection(episodeInfo){
     subSection.classList.add('subSection');
     fullCollection.appendChild(subSection);
 
-    let a1 = createLink(['icon-youtube'], ['fab','fa-youtube','fa-2x'], episodeInfo.youtubeCollection);
+    let a1 = createLink(['icon-youtube'], ['fab','fa-youtube','fa-2x'], showInfo.youtubeCollection);
     subSection.appendChild(a1);
 
-    let a2 = createLink(['icon-twitch'], ['fab','fa-twitch','fa-2x'], episodeInfo.twitchCollection);
+    let a2 = createLink(['icon-twitch'], ['fab','fa-twitch','fa-2x'], showInfo.twitchCollection);
     subSection.appendChild(a2);
-
-    let a3 = createLink(['icon-mp4'], ['fas','fa-music','fa-2x'], episodeInfo.mp4Collection);
-    subSection.appendChild(a3);
 
     for(let x = 1; x < episodeInfo.episodeInfo.length; x++){
         let episode = createEpisode(episodeInfo.episodeInfo[x], x-1);
