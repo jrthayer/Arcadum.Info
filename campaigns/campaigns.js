@@ -2,8 +2,8 @@
 //================================
 //index of current show in each section
 var showIndex = [];
-//url of json structure
-let requestURL = "../assets/jsonFiles/";
+// urlParams.get('startDir')
+let requestURL = "../assets/jsonFiles/"+"timeline/";
 //container of all info for the campaigns 
 let campaignInfo = [];
 //json files that need to be loaded
