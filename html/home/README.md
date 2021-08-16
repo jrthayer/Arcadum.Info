@@ -1,9 +1,17 @@
 # Hompage 
 The homepage of Arcadum.info
 
+## Features
+1. Lists all of Arcadum's various social media links.
+2. Provides schedule of upcoming DnD that is converted to your local timezone.
+3. Countdown till the next show.
+4. Dynamic background and navBar color based on next show.
+5. Sponsor, news, and misc links sections. 
+6. Embedded twitter feed.
+
 ## Components
 1. NavBar
-    - Description: contains files for the site's NavBar
+    - Description: The site's NavBar files found in dir below.
     - Dir: [html/components/navBar](/html/components/navBar)
 2. Social Media Buttons
     - Set of buttons that go to the various links related to Arcadum
