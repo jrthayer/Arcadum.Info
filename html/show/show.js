@@ -3,9 +3,7 @@
 //index of current show in each section
 var showIndex = [];
 //url of json structure
-let url = "../assets/jsonFiles/shows/";
-// let baseInfoURL = "../assets/jsonFiles/prologue/shrineOfSin/info.json";
-// let episodesURL = "../assets/jsonFiles/prologue/shrineOfSin/episodes.json";
+let url = "../../assets/jsonFiles/shows/";
 let baseInfoURL;
 let episodesURL;
 
@@ -50,7 +48,6 @@ function testFiles(delay){
         generatePage();
     }
     else{
-        console.log("files remaining to load: " + files);
         setTimeout(() =>{
             testFiles();
         }, delay);
@@ -59,7 +56,7 @@ function testFiles(delay){
 
 function generatePage(){
     let body = document.querySelector('body');
-    body.style.backgroundImage = "url(../assets/imgs/backgrounds/bg-"+campaignInfo[0].name+".png)";
+    body.style.backgroundImage = "url(../../assets/imgs/backgrounds/bg-"+campaignInfo[0].name+".png)";
     
     document.title = campaignInfo[1].name;
 
@@ -206,7 +203,7 @@ function createEpisode(episodeInfo, episodeNum){
 
         let tldwImg = document.createElement('img');
         tldwImg.classList.add('tldwImg');
-        tldwImg.src = "../assets/imgs/icons/TLDW(sad2).png";
+        tldwImg.src = "../../assets/imgs/icons/TLDW(sad2).png";
         tldwA.href = episodeInfo.summary;
         tldwImg.classList.add('tldwGif');
         tldwA.setAttribute('target', '_blank');

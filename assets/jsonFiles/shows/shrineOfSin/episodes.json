@@ -1,6 +1,6 @@
 {
     "name": "Shrine Of Sin",
-    "episodeImageFolder": "assets/imgs/episodeImgs/prologue/shrineOfSin",
+    "episodeImageFolder": "../assets/imgs/episodeImgs/prologue/shrineOfSin",
     "episodeInfo": [
         {
             "airDate": "",

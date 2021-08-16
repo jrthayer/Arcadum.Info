@@ -470,7 +470,7 @@ function mintuesTill(showInfo){
 //  +showName = name of show for the background
 function changeBackground(showName){
     let body = document.querySelector('body');
-    let newBackground = "url(./assets/imgs/backgrounds/bg-"+showName+".png)"; 
+    let newBackground = "url(../../assets/imgs/backgrounds/bg-"+showName+".png)"; 
     body.style.backgroundImage = newBackground;
 }
 

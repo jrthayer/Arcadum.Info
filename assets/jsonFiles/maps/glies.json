@@ -1,6 +1,6 @@
 {
     "name": "Glies",
-    "mapSrc": "../assets/imgs/maps/glies_1200.png",
+    "mapSrc": "../../assets/imgs/maps/glies_1200.png",
     "wiki": "https://verum.fandom.com/wiki/Glies",
     "minHeight": 600,
     "maxHeight": 1200,

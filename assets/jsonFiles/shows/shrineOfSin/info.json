@@ -1,8 +1,8 @@
 {
     "name": "shrineOfSin",
     "description": "Akuma are corrupted spiritual beings of Glies(much like the demons of the west). This story follows a group of would-be heroes responding to a local shrine maiden’s request for aid against an Akuma threat.",
-    "showImage": "../assets/imgs/showBanners/ShrineOfSin.png",
-    "iconImage": "../assets/imgs/icons/ShrineOfSinIcon.png",
+    "showImage": "../../assets/imgs/showBanners/ShrineOfSin.png",
+    "iconImage": "../../assets/imgs/icons/ShrineOfSinIcon.png",
     "color700": "#1a1a1a",
     "color400": "#4d4d4d",
     "twitchCollection": "https://www.twitch.tv/videos/983281732?collection=NiziV3itdBYBPw",

@@ -1,6 +1,6 @@
 {
     "name": "The Divine Wind",
-    "episodeImageFolder": "assets/imgs/episodeImgs/chapter%201/theDivineWind",
+    "episodeImageFolder": "../assets/imgs/episodeImgs/chapter%201/theDivineWind",
     "episodeInfo": [
         {
             "airDate": "",

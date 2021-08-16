@@ -1,6 +1,6 @@
 {
     "name": "Among The Reeds",
-    "episodeImageFolder": "assets/imgs/episodeImgs/chapter%201/amongTheReeds",
+    "episodeImageFolder": "../assets/imgs/episodeImgs/chapter%201/amongTheReeds",
     "episodeInfo": [
         {
             "airDate": "",

@@ -21,7 +21,7 @@ if(mapName === null){
 }
 
 //retrieve json file directory from html script
-let path = '../assets/jsonFiles/maps/';
+let path = '../../assets/jsonFiles/maps/';
 let jsonFile = `${path + mapName}.json`;
 console.log(jsonFile);
 

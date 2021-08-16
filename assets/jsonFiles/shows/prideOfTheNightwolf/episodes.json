@@ -1,6 +1,6 @@
 {
     "name": "Pride Of The Nightwolf",
-    "episodeImageFolder": "assets/imgs/episodeImgs/prologue/prideOfTheNightwolf",
+    "episodeImageFolder": "../assets/imgs/episodeImgs/prologue/prideOfTheNightwolf",
     "episodeInfo": [
         {
             "airDate": "",

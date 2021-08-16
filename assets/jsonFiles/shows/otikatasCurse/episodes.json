@@ -1,6 +1,6 @@
 {
     "name": "Otikata's Curse",
-    "episodeImageFolder": "assets/imgs/episodeImgs/chapter%201/otikatasCurse",
+    "episodeImageFolder": "../assets/imgs/episodeImgs/chapter%201/otikatasCurse",
     "episodeInfo": [
         {
             "airDate": "",

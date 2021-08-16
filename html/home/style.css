@@ -41,7 +41,7 @@
         overflow-wrap: break-word;
     }
     .webToon{
-        content: url("assets/imgs/webToonIcon.png");
+        content: url("../../assets/imgs/webToonIcon.png"));
         max-width: 50px;
     }
 
@@ -52,13 +52,14 @@
 */
 @font-face {
     font-family: dolbak;
-    src: url(assets/fonts/TheDolbak-Brush.ttf);
+    src: url(../../assets/fonts/TheDolbak-Brush.ttf);
 }
 
 :root {
     --color700: black;
     --color400: grey;
     --textColor: white;
+    --rootDirectory: "../.."
 }
 
 img{
@@ -245,7 +246,7 @@ html, body{
     }
 
 #sbWorldAnvil:hover img{
-    content:url("assets/imgs/worldAnvil.png");
+    content:url("../../assets/imgs/worldAnvil.png");
 }
 
 #officialSite img{

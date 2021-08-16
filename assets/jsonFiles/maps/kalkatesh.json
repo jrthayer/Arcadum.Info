@@ -1,6 +1,6 @@
 {
     "name": "Kalkatesh",
-    "mapSrc": "../assets/imgs/maps/kalkatesh_2200.png",
+    "mapSrc": "../../assets/imgs/maps/kalkatesh_2200.png",
     "wiki": "https://verum.fandom.com/wiki/Kalkatesh",
     "minHeight": 400,
     "maxHeight": 1200,

@@ -1,6 +1,6 @@
 {
     "name": "Scrolls Of Not'Chek",
-    "episodeImageFolder": "assets/imgs/episodeImgs/prologue/scrollsOfNotChek",
+    "episodeImageFolder": "../assets/imgs/episodeImgs/prologue/scrollsOfNotChek",
     "episodeInfo": [
         {
             "airDate": "",

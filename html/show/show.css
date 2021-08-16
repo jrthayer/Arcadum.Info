@@ -157,7 +157,7 @@ body{
 
     min-height: 220px;
     
-    background-image: url("../assets/imgs/icons/intoTheMistsIcon.png");
+    background-image: url("../../assets/imgs/icons/intoTheMistsIcon.png");
     background-repeat: no-repeat;
     background-position: center;
     
@@ -313,7 +313,7 @@ body{
 }
 
 .tldwGif:hover{
-    content: url("../assets/imgs/icons/tldw\(solid\).gif");
+    content: url("../../assets/imgs/icons/tldw\(solid\).gif");
 }
 
 /* Button Containers */

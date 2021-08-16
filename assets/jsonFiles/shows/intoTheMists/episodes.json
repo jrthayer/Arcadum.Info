@@ -1,6 +1,6 @@
 {
     "name": "Into The Mists",
-    "episodeImageFolder": "assets/imgs/episodeImgs/prologue/intoTheMists",
+    "episodeImageFolder": "../assets/imgs/episodeImgs/prologue/intoTheMists",
     "episodeInfo": [
         {
             "airDate": "",

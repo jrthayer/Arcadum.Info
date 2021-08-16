@@ -1,6 +1,6 @@
 {
     "name": "The Final Toll",
-    "episodeImageFolder": "assets/imgs/episodeImgs/chapter%201/theFinalToll",
+    "episodeImageFolder": "../assets/imgs/episodeImgs/chapter%201/theFinalToll",
     "episodeInfo": [
         {
             "airDate": "",

@@ -1,6 +1,6 @@
 {
     "name": "Ink And Blood",
-    "episodeImageFolder": "assets/imgs/episodeImgs/chapter%201/inkAndBlood",
+    "episodeImageFolder": "../assets/imgs/episodeImgs/chapter%201/inkAndBlood",
     "episodeInfo": [
         {
             "airDate": "",

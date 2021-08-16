@@ -1,6 +1,6 @@
 {
     "name": "Lost At Sea",
-    "episodeImageFolder": "assets/imgs/episodeImgs/prologue/lostAtSea",
+    "episodeImageFolder": "../assets/imgs/episodeImgs/prologue/lostAtSea",
     "episodeInfo": [
         {
             "airDate": "",

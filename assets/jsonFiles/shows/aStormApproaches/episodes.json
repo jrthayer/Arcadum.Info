@@ -1,6 +1,6 @@
 {
     "name": "A Storm Approaches",
-    "episodeImageFolder": "assets/imgs/episodeImgs/chapter%201/aStormApproaches",
+    "episodeImageFolder": "../assets/imgs/episodeImgs/chapter%201/aStormApproaches",
     "episodeInfo": [
         {
             "airDate": "",
