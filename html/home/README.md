@@ -1,11 +1,11 @@
-# Hompage 
+# Homepage 
 The homepage of Arcadum.info
 
 ## Features
 1. Lists all of Arcadum's various social media links.
-2. Provides schedule of upcoming DnD that is converted to your local timezone.
+2. Provides a schedule of upcoming DnD shows that is converted to your local timezone.
 3. Countdown till the next show.
-4. Dynamic background and navBar color based on next show.
+4. Dynamic background and navBar color based on the next show.
 5. Sponsor, news, and misc links sections. 
 6. Embedded twitter feed.
 
@@ -29,7 +29,7 @@ The homepage of Arcadum.info
     - Description: Sets a countdown till the next show.
     - Dir: [html/home/schedule.js](/html/home/schedule.js)
     - Expected Input:
-      - Currently uses global variable convertedTimes array populated above. Starts at nextShow().
+      - Currently uses the global variable convertedTimes array populated above. Starts at nextShow().
     - Returns:
       - Array with two elements
         - [0] = day of the week as an int(0 = monday)
@@ -47,9 +47,9 @@ The homepage of Arcadum.info
     - Section that contains an embedded twitter feed, copied from twitter
 
 ## Potential Improvements
-- [ ] Get navBar colors from the show files, currently using redundant array with duplicate information. Was done due to limitation of previous data storage.
+- [ ] Get navBar colors from the show files, currently using a redundant array with duplicate information. Was done due to limitations of previous data storage.
 
-- [ ] Seperate countdown & schedule functionality so it can be reused, currently all the functions and meaningful variables are not orgazined to be reused despite being in a function.
+- [ ] Separate countdown & schedule functionality so it can be reused, currently all the functions and meaningful variables are not organized to be reused despite being in a function.
 
 - [ ] Add feature to allow shows to be skipped for the week, currently the show has to be removed from the schedule to not be used by the countdown
 
