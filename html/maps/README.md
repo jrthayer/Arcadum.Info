@@ -16,7 +16,7 @@ This directory generates each individual map page.
 
 ## Components
 1. NavBar
-    - Description: contains files for the site's NavBar.
+    - Description: The site's NavBar, files found in dir below.
     - Dir: [html/components/navBar](/html/components/navBar)
 2. Map
     - Holds the map image and points container.
