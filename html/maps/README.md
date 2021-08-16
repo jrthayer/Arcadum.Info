@@ -28,4 +28,4 @@ This directory generates each individual map page.
     - A set of buttons for the various features.
 
 ## Potential Improvements
-- [ ] Make use of database for map data storgae, currently all map data is in one JSON file.
+- [ ] Make use of database for map data storage, currently all map data is in one JSON file.
