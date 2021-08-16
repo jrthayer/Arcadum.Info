@@ -1,6 +1,12 @@
 # Show Page
 This directory generates each individual game page
 
+## Features
+1. Dynamically generates show page for individual show.
+2. Displays show banner and description.
+3. Has links for the YouTube and Twitch playlists.
+4. Has individual episode images and links.
+
 ## Input
 - This page expects a query string with the parameter "name"
   - Example: show/?name=prideOfTheNightwolf
