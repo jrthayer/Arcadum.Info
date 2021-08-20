@@ -82,7 +82,6 @@ function setNextShow(){
     document.querySelector('.section:nth-of-type(2)').appendChild(countdownHTML);
 
     let intervalID = window.setInterval(() => {
-        console.log(countdown.data.finished);
         if(countdown.data.finished){
             document.querySelector('#countdown').remove();
             countdown.data.finished = false;
