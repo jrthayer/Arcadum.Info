@@ -1,49 +1,48 @@
 /*
 ======================================
-    TABLE OF CONTENTS
+  TABLE OF CONTENTS
 ======================================
-    1. Global Styles 
-    2. Typography
-    3. Layout
-    4. Components
-        4.1 Top of Page Banner
-        4.2 Social Buttons
-        4.3 Countdown
-        4.4 Schedule
-        4.5 Sponsor
-        4.6 News
-    5. Media Queries
-        5.1 Tablet/Desktop
-    0. Quick-Hacks/Temporary
+  1. Global Styles 
+  2. Typography
+  3. Layout
+  4. Components
+      4.1 Top of Page Banner
+      4.2 Social Buttons
+      4.3 Countdown
+      4.4 Schedule
+      4.5 Sponsor
+      4.6 News
+  5. Media Queries
+      5.1 Tablet/Desktop
+  0. Quick-Hacks/Temporary
 */
 
 /* 
     0. Quick-Hacks/Temporary
 */
-.miscLinks p .socialBtn{
+.miscLinks p .socialBtn {
+    display: flex;
     font-size: 1em;
 
-    padding: .5rem;
+    padding: 0.5rem;
     margin: 1rem auto;
 
     max-width: 150px;
-
-    display: flex;
     align-content: center;
     justify-content: center;
 }
 
-.miscLinks div{
-    padding: .5rem;
+.miscLinks div {
+    padding: 0.5rem;
 }
-    .miscLinks div a{
-        text-align: center;
-        overflow-wrap: break-word;
-    }
-    .webToon{
-        content: url("../../assets/imgs/webToonIcon.png"));
-        max-width: 50px;
-    }
+.miscLinks div a {
+    text-align: center;
+    overflow-wrap: break-word;
+}
+.webToon {
+    content: url("../../assets/imgs/webToonIcon.png");
+    max-width: 50px;
+}
 
 /* 
 ======================================
@@ -59,17 +58,17 @@
     --color700: black;
     --color400: grey;
     --textColor: white;
-    --rootDirectory: "../.."
+    --rootDirectory: "../..";
 }
 
-img{
+img {
     max-width: 100%;
 }
 
 .disable-select {
-    -webkit-user-select: none;  
-    -moz-user-select: none;    
-    -ms-user-select: none;      
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
 }
 
@@ -78,7 +77,7 @@ img{
     2. Typography 
 ======================================
 */
-h1{
+h1 {
     font-size: 2.5rem;
     text-transform: uppercase;
     text-align: center;
@@ -88,20 +87,20 @@ h1{
     margin: 0;
 }
 
-html{
+html {
     font-family: dolbak, sans-serif;
 
     color: var(--textColor);
     /* legacy bg used when next show doesn't have custom bg */
-    background: linear-gradient(0deg, #f925fe, 5%,  #1d072d);
+    background: linear-gradient(0deg, #f925fe, 5%, #1d072d);
 }
 
 body,
-.section{
+.section {
     color: inherit;
 }
 
-p{
+p {
     line-height: 1.3em;
 }
 
@@ -110,41 +109,41 @@ p{
     3.Layout 
 ======================================
 */
-html, body{
+html,
+body {
     margin: 0;
 
     min-height: 100% !important;
-    min-width: 100%;    
+    min-width: 100%;
 
     overflow: auto;
 }
 
-.container{
+.container {
     margin: 0 auto;
 
     width: 90%;
     max-width: 600px;
 }
 
-.section{
+.section {
     margin-top: 2rem;
 
     border: black solid 3px;
-    box-shadow: 0 0 0 4px currentColor,
-                0 0 0 7px #000;
+    box-shadow: 0 0 0 4px currentColor, 0 0 0 7px #000;
 
     background: rgb(255, 255, 255);
 }
-    .section:not(:first-child){
-        background: black;
-        border: none;
-    }
-    .section:first-of-type{
-        margin-top: 5.5rem;
-    }
-    .section:last-of-type{
-        margin-bottom: 2rem;
-    }
+.section:not(:first-child) {
+    background: black;
+    border: none;
+}
+.section:first-of-type {
+    margin-top: 5.5rem;
+}
+.section:last-of-type {
+    margin-bottom: 2rem;
+}
 
 /* 
 ======================================
@@ -155,101 +154,101 @@ html, body{
 /* 
 ===== 4.1 Top of Page Banner =====
 */
-#banner{
+#banner {
     border-bottom: black solid 3px;
 }
 
 /* 
 ===== 4.2 Social Buttons =====
 */
-#socialBtns{
+#socialBtns {
     display: flex;
     flex-wrap: wrap;
 
     padding: 10px;
 }
 
-.socialBtn{
+.socialBtn {
     display: flex;
     place-items: center;
 
     font-size: 25px;
 
-    margin: .3rem;
+    margin: 0.3rem;
     border: 3px solid black;
     border-radius: 5px;
-    padding: .5rem;
+    padding: 0.5rem;
 
     flex: 1;
     align-self: center;
 
     text-decoration: none;
 }
-    .socialBtn-color-one{
-        border: 3px solid var(--colorOne, black);
+.socialBtn-color-one {
+    border: 3px solid var(--colorOne, black);
 
-        color: var(--colorOne, black);
-        background-color: white;
-    }
-    .socialBtn-color-one:hover{
-        border: 3px solid white;
+    color: var(--colorOne, black);
+    background-color: white;
+}
+.socialBtn-color-one:hover {
+    border: 3px solid white;
 
-        color: white;
-        background-color: var(--colorOne); 
-    }
-    .socialBtn-color-one-inverse{
-        border: 3px solid white;
+    color: white;
+    background-color: var(--colorOne);
+}
+.socialBtn-color-one-inverse {
+    border: 3px solid white;
 
-        color: white;
-        background-color: var(--colorOne); 
-    }
-    .socialBtn-color-one-inverse:hover{
-        border: 3px solid var(--colorOne, black);
+    color: white;
+    background-color: var(--colorOne);
+}
+.socialBtn-color-one-inverse:hover {
+    border: 3px solid var(--colorOne, black);
 
-        color: var(--colorOne, black);
-        background-color: white;
-    }
-    .socialBtn-color-two{
-        border: 3px solid var(--colorOne, black);
+    color: var(--colorOne, black);
+    background-color: white;
+}
+.socialBtn-color-two {
+    border: 3px solid var(--colorOne, black);
 
-        color: var(--colorOne, black);
-        background: var(--colorTwo, white);
-    }
-    .socialBtn-color-two:hover{
-        border: 3px solid var(--colorTwo, white);
+    color: var(--colorOne, black);
+    background: var(--colorTwo, white);
+}
+.socialBtn-color-two:hover {
+    border: 3px solid var(--colorTwo, white);
 
-        color: var(--colorTwo, white);
-        background-color: var(--colorOne, black);
-    }
-    .socialBtn > *{
-        padding: .5rem;
-        padding-right: 1rem; 
-    }
-    /* Merch Store special padding */
-    .socialBtn:last-of-type{
-        padding-left: .2rem;
-    }
+    color: var(--colorTwo, white);
+    background-color: var(--colorOne, black);
+}
+.socialBtn > * {
+    padding: 0.5rem;
+    padding-right: 1rem;
+}
+/* Merch Store special padding */
+.socialBtn:last-of-type {
+    padding-left: 0.2rem;
+}
 
-    .socialBtn-half{
-        flex: 100%;
-    }
-    .socialBtn-icon i{
-        margin: 0 auto;
-        padding: .5rem;
-    } 
+.socialBtn-half {
+    flex: 100%;
+}
+.socialBtn-icon i {
+    margin: 0 auto;
+    padding: 0.5rem;
+}
 
-#sbCallousRow img{
+#sbCallousRow img {
     width: 35px;
 }
-    #sbCallousRow:hover img{
-        filter: brightness(0);
-    }
-
-#sbWorldAnvil:hover img{
-    content:url("../../assets/imgs/worldAnvil.png");
+#sbCallousRow:hover img {
+    filter: brightness(0);
 }
 
-#officialSite img{
+#sbWorldAnvil:hover img {
+    content: url("../../assets/imgs/worldAnvil.png");
+}
+
+#officialSite img {
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -257,22 +256,22 @@ html, body{
 /* 
 ===== 4.3 Countdown =====
 */
-#countdown{
+#countdown {
     font-size: 2rem;
 
     text-align: center;
 
-    color: inherit; 
+    color: inherit;
 }
 
-#showName{
+#showName {
     font-size: 1.5em;
 
     padding: 0 1rem;
     margin-top: 1rem;
 }
 
-#cdDisplay{
+#cdDisplay {
     font-size: 2em;
 
     padding: 0 1rem;
@@ -282,27 +281,26 @@ html, body{
 /* 
 ===== 4.4 Schedule =====
 */
-#schedule{
+#schedule {
     border: none;
     font-size: 1.2rem;
 }
-    #schedule h1{
-        border: none;
-    }
+#schedule h1 {
+    border: none;
+}
 
-.row{
+.row {
     display: flex;
     flex-direction: column;
 
     border-bottom: none;
-    padding: .5rem 0;
+    padding: 0.5rem 0;
 }
-    .row .label{
-        text-align: center;
-    }
+.row .label {
+    text-align: center;
+}
 
-
-.label{
+.label {
     font-size: 1.3em;
 
     width: 100%;
@@ -311,60 +309,58 @@ html, body{
     border-top: 4px solid currentColor;
 }
 
-.data{
+.data {
     font-size: 1.2em;
 }
 
-.gameInfo{
-    padding: .5rem 0px;
-    
+.gameInfo {
+    padding: 0.5rem 0px;
+
     text-align: center;
 }
-    .gameInfo *{
-        display: inline-block;
-        
-    }
-    .gameInfo *:first-child{
-        margin-right: 1rem;
-    }
-    .gameInfo:not(:last-of-type){
-        border-bottom: 1px solid currentColor;
-    }
+.gameInfo * {
+    display: inline-block;
+}
+.gameInfo *:first-child {
+    margin-right: 1rem;
+}
+.gameInfo:not(:last-of-type) {
+    border-bottom: 1px solid currentColor;
+}
 
 /* 
 ===== 4.5 Sponsor ===== 
 */
-.sponsor{
+.sponsor {
     text-align: center;
     font-size: 1.5rem;
 }
-    .sponsor img{
-        padding: 1rem;
-        max-width: calc(100% - 2 * 1rem);
-    }
-    .sponsor p{
-        margin-top: 0;
-        padding: 1rem;
-    }
+.sponsor img {
+    padding: 1rem;
+    max-width: calc(100% - 2 * 1rem);
+}
+.sponsor p {
+    margin-top: 0;
+    padding: 1rem;
+}
 
 /* 
 ===== 4.6 News ===== 
 */
-.news{
+.news {
     font-size: 1.5rem;
 
     text-align: center;
 }
-    .news p{
-        font-size: 1em;
+.news p {
+    font-size: 1em;
 
-        margin: 0;
-        padding: .5rem 1rem;
-    }
-        .news p:not(:last-of-type){
-            border-bottom: 1px solid currentColor;
-        }
-
+    margin: 0;
+    padding: 0.5rem 1rem;
+}
+.news p:not(:last-of-type) {
+    border-bottom: 1px solid currentColor;
+}
 
 /* 
 ======================================
@@ -375,57 +371,69 @@ html, body{
 /* 
 ===== 5.1 Tablet/Desktop ===== 
 */
-@media(min-width: 30rem) {
+@media (min-width: 30rem) {
     /*===== Global Styles =====*/
-    h1{
+    h1 {
         font-size: 3rem;
     }
     /*===== Social Buttons =====*/
-    .socialBtn-half{
-        flex: calc(50% - .5rem*2 - .3rem*2 - 3px*2);
+    .socialBtn-half {
+        flex: calc(50% - 0.5rem * 2 - 0.3rem * 2 - 3px * 2);
     }
 
-    .socialBtn-icon i{
+    .socialBtn-icon i {
         margin: 0;
         padding-right: 1rem;
-    } 
+    }
 
-    #socialBtns .socialBtn:nth-of-type(1)::after{ content: "Twitter";}
-    #socialBtns .socialBtn:nth-of-type(2)::after{ content: "YouTube";}
-    #socialBtns .socialBtn:nth-of-type(3)::after{ content: "Twitch";}
-    #socialBtns .socialBtn:nth-of-type(4)::after{ content: "r/cadum";}
-    #socialBtns .socialBtn:nth-of-type(5)::after{ content: "Patreon";}
-    #socialBtns .socialBtn:nth-of-type(6)::after{ content: "Discord";}
+    #socialBtns .socialBtn:nth-of-type(1)::after {
+        content: "Twitter";
+    }
+    #socialBtns .socialBtn:nth-of-type(2)::after {
+        content: "YouTube";
+    }
+    #socialBtns .socialBtn:nth-of-type(3)::after {
+        content: "Twitch";
+    }
+    #socialBtns .socialBtn:nth-of-type(4)::after {
+        content: "r/cadum";
+    }
+    #socialBtns .socialBtn:nth-of-type(5)::after {
+        content: "Patreon";
+    }
+    #socialBtns .socialBtn:nth-of-type(6)::after {
+        content: "Discord";
+    }
 
     /*===== Countdown =====*/
-    #countdown{
+    #countdown {
         font-size: 3rem;
     }
 
     /*===== Schedule =====*/
-    #schedule{
+    #schedule {
         font-size: 1.5rem;
     }
 
-    .row{
+    .row {
         flex-direction: row;
         border-top: 4px solid currentColor;
     }
-        .row .label{
-            flex: 1;
-            border: none;
-            align-self: center;
-        }
-        .row .data{
-            flex: 3;
-            border-left: solid 2px currentColor;
-        }
-    
-    /*===== News =====*/  
-    .news{
-            font-size: 2rem;
-        }
-            .news p{
-                padding: 1rem 2rem;
-            }
+    .row .label {
+        flex: 1;
+        border: none;
+        align-self: center;
+    }
+    .row .data {
+        flex: 3;
+        border-left: solid 2px currentColor;
+    }
+
+    /*===== News =====*/
+    .news {
+        font-size: 2rem;
+    }
+    .news p {
+        padding: 1rem 2rem;
+    }
 }

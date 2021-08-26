@@ -3,7 +3,7 @@
 //------------//------------//------------//------------//------------
 //      1. Initialization
 //          1.1 Global Data Structures
-//          1.2 Intialize Components
+//          1.2 Initialize Components
 //      2. Features
 //          2.1 Map Scale
 //          2.2 Map Drag & Move
@@ -72,7 +72,7 @@ const htmlElements = {
  
 
 //------------//------------//------------
-//  1.2 Intialize Components
+//  1.2 Initialize Components
 //------------//------------//------------
 
 //after html page is loaded retrieve json file and generate page
@@ -353,7 +353,7 @@ function createPoint(info, types){
     return point;
 }
 
-//assemble side panel innner content and returns it
+//assemble side panel inner content and returns it
 //------------
 // info:
 function createPanel(info){
@@ -366,10 +366,10 @@ function createPanel(info){
             panel.classList.add(`panel-${info.features[key]}`);
         }
     }
-
+    
     let topCategory = document.createElement('div');
     topCategory.classList.add('category');
-
+    
     let header = document.createElement('h2');
     header.textContent = info.name;
     topCategory.appendChild(header);
@@ -427,7 +427,7 @@ function createLegend(info){
     topCategory.appendChild(note);
 
     legend.appendChild(topCategory);
-
+    
     for (let key in info) {
         if (info.hasOwnProperty(key) && key !== "") {
             let category = document.createElement('button');
@@ -471,7 +471,7 @@ function togglePoints(button, type){
 
 //update mapInfo values, presumably after width, height, or scale has changed
 function calcMapDimensions(){
-    //calculate img dimensions for moving boundries
+    //calculate img dimensions for moving boundaries
     mapInfo.map.width = mapInfo.map.baseWidth * mapInfo.scale;
     mapInfo.map.height = mapInfo.map.baseHeight * mapInfo.scale;
 

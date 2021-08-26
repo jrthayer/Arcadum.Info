@@ -27,18 +27,18 @@
     --textColor: white;
 }
 
-img{
-    max-width:100%;
+img {
+    max-width: 100%;
 }
 
 .disable-select {
-    -webkit-user-select: none;  
-    -moz-user-select: none;    
-    -ms-user-select: none;      
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
 }
 
-a{
+a {
     display: block;
     text-decoration: none;
     color: white;
@@ -49,11 +49,11 @@ a{
     2. Typography 
 ======================================
 */
-html{
-    font-family: 'Roboto', sans-serif;
+html {
+    font-family: "Roboto", sans-serif;
 }
 
-h1{
+h1 {
     margin: 0;
 }
 
@@ -62,65 +62,67 @@ h1{
     3.Layout 
 ======================================
 */
-body{    
+body {
     margin: 0;
 
     font-family: sans-serif;
     font-weight: 100;
-
-    transition: ease-in .5s background-image;  
     color: white;
+
+    transition: ease-in 0.5s background-image;
 }
 
-.container{
-    width: 90%;
+.container {
     max-width: 30rem;
+    width: 90%;
     margin: 0 auto;
 }
 
-.section{
-    font-size: 1.5em;
-
-    margin-top: 2rem;
-    background: rgb(255, 255, 255);
-    color: white;
+.section {
     border: black solid 3px;
-    box-shadow: 0 0 0 4px white,
-                0 0 0 7px #000;  
+    margin-top: 2rem;
+
+    font-size: 1.5em;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 0 4px white, 0 0 0 7px #000;
+    color: white;
 }
-    .section h1{
-        font-size: 2em;
-        
-        padding-top: .5em;
-        padding-bottom: 0;
+.section h1 {
+    padding-top: 0.5em;
+    padding-bottom: 0;
 
-        text-shadow: 1px 1px 3px rgb(22, 22, 22);
-        
-        color: var(--color400);
-        text-align: center;
-    }
-    .section:nth-of-type(1){
-        background-color: var(--color700);
-    }
-    .section:first-of-type{
-        margin-top: 7rem;
-    }
-    .section:last-of-type{
-        margin-bottom: 2rem;
-    }
+    text-align: center;
+    font-size: 2em;
 
-.flexColToRow{
+    color: var(--color400);
+
+    text-shadow: 1px 1px 3px rgb(22, 22, 22);
+}
+
+.section:nth-of-type(1) {
+    background-color: var(--color700);
+}
+
+.section:first-of-type {
+    margin-top: 7rem;
+}
+
+.section:last-of-type {
+    margin-bottom: 2rem;
+}
+
+.flexColToRow {
     display: flex;
     flex-direction: column;
 
     width: 100%;
 
-    letter-spacing: .08em;
+    letter-spacing: 0.08em;
 }
-    .flexColToRow > *{
-        flex: 1;
-    }
-    
+.flexColToRow > * {
+    flex: 1;
+}
+
 /* 
 ======================================
     4. Components 
@@ -128,231 +130,221 @@ body{
 */
 
 /*===== 4.1 Top Img/Details Section =====*/
-.showCard{
+.showCard {
     display: flex;
     flex-direction: column;
     align-items: stretch;
 
-    color: white;
-
-    letter-spacing: .08em;
-
-    transition: ease-in 5s display;
+    letter-spacing: 0.08em;
 
     background-color: hsl(241, 23%, 20%);
+
+    color: white;
+
+    transition: ease-in 5s display;
 }
-    .showCard > *{
-        flex: 1;
-    }
+.showCard > * {
+    flex: 1;
+}
 
-
-.imgCol{
+.imgCol {
     display: flex;
 }
 
-.infoCol{
+.infoCol {
     display: flex;
     justify-content: center;
     align-items: stretch;
 
     min-height: 220px;
-    
+
     background-image: url("../../assets/imgs/icons/intoTheMistsIcon.png");
-    background-repeat: no-repeat;
     background-position: center;
-    
+    background-repeat: no-repeat;
 }
-    .infoCol > p{
-        display: flex;
-        place-content: center;
-        align-items: center;
-        text-align: center;
 
-        width: 100%;
-        padding: 1em;
-        margin: 0;
+.infoCol > p {
+    display: flex;
+    align-items: center;
 
-        background: rgba(0, 0, 0, .2);
-        text-shadow: 1px 1px 1px black;
+    width: 100%;
+    padding: 1em;
+    margin: 0;
+    text-align: center;
 
-        font-size: 1rem;
-    }
+    font-size: 1rem;
 
+    background: rgba(0, 0, 0, 0.2);
+    place-content: center;
+    text-shadow: 1px 1px 1px black;
+}
 
 /*===== 4.2 Episodes Section =====*/
 
 /*==  4.21 Full Collections Group ==*/
-.fullCollection{
+.fullCollection {
     display: flex;
     flex-direction: column;
-    
-    padding: .5em;
-    margin: 1em 1.2em 0;
+
+    padding: 0.5em;
     border-radius: 2rem;
+    margin: 1em 1.2em 0;
 
     background-color: var(--color400);
     color: white;
-    
 }
-    .fullCollection h2{
-        margin: 0;
+.fullCollection h2 {
+    align-self: center;
+    flex: 1.5;
+    margin: 0;
+    text-align: center;
 
-        text-shadow: 1px 1px 3px var(--color700);
+    font-size: 1em;
 
-        font-size: 1em;
-        align-self: center;
-        text-align: center;
-        flex: 1.5;
-    }
-    .fullCollection .subSection{
-        padding: 0;
-        
-    }
-    .fullCollection a{
-        font-size: 1em;
-    }
+    text-shadow: 1px 1px 3px var(--color700);
+}
+.fullCollection .subSection {
+    padding: 0;
+}
+.fullCollection a {
+    font-size: 1em;
+}
 
 /*== 4.22 Individual Episodes ==*/
 /* Episode Container */
-.episode{
+.episode {
     display: flex;
     flex-direction: row;
-    padding: .5em;
-    background-color: var(--color700);
-    margin: 1em .5em;
-    border-radius: 2rem;
-    color: white;
+    padding: 0.5em;
     border: solid 5px var(--color400);
+    border-radius: 2rem;
+    margin: 1em 0.5em;
+    background-color: var(--color700);
     box-shadow: 2px 2px 2px var(--color700);
+    color: white;
 }
-    .episode h1{
-        color: white;
-        padding: .1em .2em;
-        position: absolute;
-        z-index: 0;
-        background-color: var(--color400);
-        border-top-left-radius: 1rem;
-        border-bottom-right-radius: 1rem;
-    }
+.episode h1 {
+    position: absolute;
+    padding: 0.1em 0.2em;
+    background-color: var(--color400);
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    color: white;
+    z-index: 0;
+}
 
 /* Episode Image */
-.episodeImg{
+.episodeImg {
     display: flex;
-    border-radius: 1rem;
-    width: calc(100% - 2px * 2);
     justify-content: center;
+    width: calc(100% - 2px * 2);
+    border-radius: 1rem;
 }
-    .episodeImg a{
-        margin-bottom: 0;
-    }
-    .episodeImg img{
-        border-radius: 1rem;
-        border: 2px solid var(--color400);
-    }
+.episodeImg a {
+    margin-bottom: 0;
+}
+.episodeImg img {
+    border: 2px solid var(--color400);
+    border-radius: 1rem;
+}
 
 /* Episode Information Container */
-.episodeBtns{
+.episodeBtns {
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     text-align: center;
 }
-    .episodeBtns > *{
-        padding: .5em;
-    }
-    .episodeBtns h2{
-        margin-top: 0;
-    }
+.episodeBtns > * {
+    padding: 0.5em;
+}
+.episodeBtns h2 {
+    margin-top: 0;
+}
 
 /* Episode Text Information Container */
 /* (Used for Air Date: & Duration: ROWS) */
-.detailsGroup{
-    padding: 0;
-
+.detailsGroup {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 0;
 }
 
 /* This div is needed to place the text and Gif side by side */
 /* .detailsText{} */
 
 /* Indvidual Text Lines */
-.details{
-    font-size: .9em;
-
-    padding-top: .5em;
-    padding-left: .5em;
-
+.details {
     align-self: center;
+
+    padding-top: 0.5em;
+    padding-left: 0.5em;
     text-align: left;
-    
+    font-size: 0.9em;
 }
-    .details *{
-        flex: 1;
+.details * {
+    flex: 1;
+    border-radius: 0.5em;
 
-        margin: .5em;
-        border-radius: .5em;
-        
-        background-color: var(--color400);
+    margin: 0.5em;
 
-        text-align: center;
-    }
+    text-align: center;
+
+    background-color: var(--color400);
+}
 
 /* TLDW Icon */
 /* (Icon w/ giff next to air date/duration) */
-.tldwImg{
-    padding: 0 .2em;
-    border-radius: 1em;
+.tldwImg {
+    max-height: 100px;
 
     max-width: 100px;
-    max-height: 100px;
-    
+    padding: 0 0.2em;
+    border-radius: 1em;
+
     cursor: pointer;
 }
 
-.tldwGif:hover{
+.tldwGif:hover {
     content: url("../../assets/imgs/icons/tldw\(solid\).gif");
 }
 
 /* Button Containers */
-.subSection{
-    font-size: 1rem;
-
-    padding: .5em;
-    margin-top: .5em;
-    border-radius: 1rem;
-
+.subSection {
     display: flex;
     align-items: center;
 
+    padding: 0.5em;
+    border-radius: 1rem;
+    margin-top: 0.5em;
+    font-size: 1rem;
+
+    background-color: var(--color400);
+
     text-shadow: 1px 1px 1px black;
-
-    background-color: var(--color400);    
 }
-    .subSection *{
-        margin: 0;
-        flex: 1;
-    }
-    .subSection h2{
-        flex: 2;
-        
-    }
-    .subSection a{
-        font-size: 1.5rem;
+.subSection * {
+    flex: 1;
+    margin: 0;
+}
+.subSection h2 {
+    flex: 2;
+}
+.subSection a {
+    align-self: center;
 
-        padding: .2em;
+    padding: 0.2em;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.subSection a:hover {
+    color: var(--color700);
+    text-shadow: none;
+}
 
-        align-self: center;
-        text-align: center;
-    }
-    .subSection a:hover{
-        color: var(--color700);
-        text-shadow: none;
-    }
-
-.unavailable{
+.unavailable {
     color: var(--color700);
     text-shadow: none;
 }
@@ -365,7 +357,7 @@ body{
 
 /* 5.1 Tablet */
 @media (min-width: 25rem) {
-    .section .flexColToRow h1{
+    .section .flexColToRow h1 {
         font-size: 3em;
     }
 }
@@ -373,18 +365,18 @@ body{
 /* 5.2 Desktop */
 @media (min-width: 60rem) {
     /*===== Layout =====*/
-    .container{
+    .container {
         max-width: 60rem;
     }
 
-    .section .flexColToRow h1{
-        padding-left: .5em;
+    .section .flexColToRow h1 {
+        padding-left: 0.5em;
+        text-align: left;
 
         font-size: 3.5em;
-        text-align: left;
     }
 
-    .flexColToRow{
+    .flexColToRow {
         flex-direction: row;
     }
 
@@ -392,72 +384,71 @@ body{
     /* Episodes Section */
 
     /* Full Collections Section */
-    .fullCollection{
+    .fullCollection {
         flex-direction: column;
-        flex: .5;
+        flex: 0.5;
         margin: 1em 1em 0;
     }
 
     /* Individual Episodes */
-    .episodeImg img{
+    .episodeImg img {
         max-height: 300px;
     }
 
-    .episodeImg{
+    .episodeImg {
         justify-content: flex-end;
     }
 
-    .episode h1{
+    .episode h1 {
         position: relative;
-        background-color: transparent;
+        padding-right: 0.5em;
         border-radius: 0;
-        padding-right: .5em;
+        background-color: transparent;
     }
 
-    .episodeBtns{
-        padding-left: .5em;
+    .episodeBtns {
+        padding-left: 0.5em;
     }
 
-    
-    .detailsGroup{
+    .detailsGroup {
         justify-content: space-between;
     }
 
-    .details{
+    .details {
         align-self: flex-start;
     }
 
-    .subSection h2{
+    .subSection h2 {
         flex: 1;
     }
-    .subSection a{
+    .subSection a {
         display: flex;
-        font-size: 1rem;
         align-self: center;
+        padding: 0.5em;
         text-align: center;
-        padding: .5em;
+        font-size: 1rem;
     }
-        .subSection a::after{
-            align-self: center;
-        }
+    .subSection a::after {
+        align-self: center;
+    }
 
-    .icon-youtube:after{
+    .icon-youtube:after {
         content: "YouTube";
-        font-size: .9em;
+        font-size: 0.9em;
     }
 
-    .icon-twitch:after{
+    .icon-twitch:after {
         content: "Twitch";
-        font-size: .9em;
+        font-size: 0.9em;
     }
 
-    .icon-discord:after{
+    .icon-discord:after {
         content: "Discord";
-        font-size: .9em;
+        font-size: 0.9em;
     }
 
-    .icon-mp4:after{
+    .icon-mp4:after {
         content: "MP4s";
-        font-size: .9em;
+        font-size: 0.9em;
     }
 }

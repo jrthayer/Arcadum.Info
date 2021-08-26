@@ -3,7 +3,7 @@
 //------------//------------//------------//------------//------------
 //      1. Initialization
 //          1.1 Global Data Structures
-//          1.2 Intialize Components
+//          1.2 Initialize Components
 //      2. Features
 //          2.1 Next Show
 //          2.2 Dynamic Styling
@@ -52,7 +52,7 @@ var showColors = {
 };
 
 //------------//------------//------------ 
-//  1.2 Intialize Components
+//  1.2 Initialize Components
 //------------//------------//------------
 
 import * as schedule from './schedule.js';
