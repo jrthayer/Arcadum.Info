@@ -39,6 +39,11 @@
     text-align: center;
     overflow-wrap: break-word;
 }
+.miscLinks div a {
+    flex: 1;
+    flex-basis: 100%;
+}
+
 .webToon {
     content: url("../../assets/imgs/webToonIcon.png");
     max-width: 50px;
@@ -361,12 +366,24 @@ body {
 .news p:not(:last-of-type) {
     border-bottom: 1px solid currentColor;
 }
+.news div {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /* 
 ======================================
    5. Media Queries
 ====================================== 
 */
+/* 
+===== 5.1 Tablet/Desktop ===== 
+*/
+@media (min-width: 27rem) {
+    .miscLinks div a {
+        flex-basis: 35%;
+    }
+}
 
 /* 
 ===== 5.1 Tablet/Desktop ===== 
@@ -435,5 +452,9 @@ body {
     }
     .news p {
         padding: 1rem 2rem;
+    }
+
+    .miscLinks div a {
+        flex: 25%;
     }
 }
